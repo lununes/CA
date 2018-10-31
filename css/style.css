@@ -1116,10 +1116,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #999;
 }
 
-#bloco2 p {
-  line-height: 24px;
-  color: var(--main-color1);
-}
+#bloco2 p {line-height: 24px;}
 
 #bloco2 .legenda {
   font-size: 11px; 
@@ -1272,6 +1269,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Barra de Logos
 --------------------------------*/
 
+#barra-logos {
+  background-image: url("../img/bg1.png");
+  background-position: 0 -220px;
+  background-size: cover;
+}
+
+#barra-logos.intro-text {
+  background:transparent;
+}
+
 #barra-logos img {
   max-width: 225px;
   max-height: 100px;
@@ -1294,6 +1301,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 767px) {
+
+#barra-logos {background-position: 0 0px;}
+
   #barra-logos img {margin: 25px 0;}
 
 
@@ -1309,9 +1319,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #nav-class {
   /*background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2));*/
-  background-image: url("../img/bg1.png"); /* The image used */
-  background-position: 0 -220px;
-  background-size: cover;
+  /*background-image: url("../img/bg1.png");*/ /* The image used */
+  /*background-position: 0 -220px;
+  background-size: cover;*/
   padding: 60px 0;
 }
 

@@ -1,0 +1,20 @@
+
+/*Série 1 - Aula 1*/
+
+/* Para texto ao lado da imagem/ícone: */
+.timeline-float-left.serie1-aula1 .cd-timeline__content img {
+	margin:0;
+	float:left;
+}
+
+.timeline-float-left.serie1-aula1 .cd-timeline__content p {margin:30px 0;}
+
+
+/*Série 1 - Aula 3*/
+#call-to-action.serie1-aula3 {
+  background: linear-gradient(rgba(4, 41, 155, 0.65), rgba(0, 0, 0, 0.2)), url(../img/aula3/img1.png) fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.advanced-feature-img-right {padding: 60px 0 30px 30px;}
