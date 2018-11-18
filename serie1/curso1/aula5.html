@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <title>Curso Ciência Aberta - Série 1: Curso 1 - Aula 5: Ciência Cidadã</title>
@@ -14,24 +14,24 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet"> 
 
-  <!-- Bootstrap CSS File -->
+  <!-- Bootstrap CSS -->
   <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Libraries CSS Files -->
+  <!-- Biblioteca CSS -->
   <link href="../../lib/animate/animate.min.css" rel="stylesheet">
-  <link href="font-awesome/css/all.css" rel="stylesheet"> <!--Font Awesome: load all styles -->
+  <link href="font-awesome/css/all.css" rel="stylesheet"> <!--Font Awesome -->
   <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"><!--Ionicons-->
   <link href="../../lib/aos/aos.css" rel="stylesheet">
   <link href="../../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-  <!-- Main Stylesheet File -->
+  <!-- CSS geral das aulas e recursos visuais -->
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/style-visual-resources.css">
   <link rel="stylesheet" href="../../css/serie1/curso1/style-aulas.css">
 
 </head>
 
-<body>
+<body id="acessibilidade">
 
   <!--==========================
     Header
@@ -45,8 +45,8 @@
       </div>
 
       <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-has-children"><a href="#">Aulas</a>
+        <ul class="nav-menu" id="menu-curso1">
+          <li class="menu-has-children"><a href="#" class="sf-with-ul">Aulas</a>
             <ul>
               <li><h6>Curso 1 | o que é Ciência Aberta?</h6></li>
               <li class="d-none d-sm-block"><span class="section-divider serie1"></span></li>
@@ -60,10 +60,37 @@
               <li><a href="aula7.html">Aula 7: Boas práticas e ferramentas de ciência aberta</a></li>
             </ul>
           </li>
-          <li><a href="../../index.html">Outros Cursos do Ciência Aberta</a></li>
+          <li><a href='#' data-toggle="modal" data-target="#modal-bibliografia">Bibliografia</a></li>
+          <li><a href='#' data-toggle="modal" data-target="#modal-creditos">Créditos</a></li>
+          <li class="float-right"><a href="../../index.html"><i class="icon ion-md-apps" style="font-size: 18px;"></i> Outros Cursos do Ciência Aberta</a></li>
+          
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
+
+    <!--Breadcrumb-->
+    <div id="breadcrumb" class="d-none">
+      <div class="container">
+        <div class="row" data-aos="flip-right">
+          <div class="col-12">
+            <ul class="nav-menu">
+              <li><a href='aula1.html' target='_blank'><i class="fas fa-home"></i> Curso 1: O que é Ciência Aberta?</a> > <a href='aula1.html' target='_blank'>Aula 5 - Ciência Cidadã</a></li>
+              <li class="float-right">            
+                <div id="font-setting-buttons">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary decrease-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary reset-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary increase-me"><i class="fas fa-font"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!--Fim do Breadcrumb-->  
+
   </header><!-- #header -->
 
   <!--==========================
@@ -94,7 +121,7 @@
         <div class="row">
           <div class="col-lg-12 content wow fadeIn">
             <p>O acesso democratizado aos resultados da ciência, e o envolvimento do público nos processos de pesquisa,  dá força ao movimento conhecido por Ciência Cidadã.</p>
-            <p>Com esta breve introdução você poderá compreender em que consiste a ciência cidadã e como este conceito se integra na Ciência Aberta.</p>
+            <p>Nesta aula você poderá compreender em que consiste a ciência cidadã e como este conceito se integra na Ciência Aberta.</p>
 
           </div>
         </div>
@@ -117,7 +144,7 @@
                   <!--Box de citação curta -->
                 <div class="box-quote option1 col-12">
                   <p>Ciência cidadã é o envolvimento do público não acadêmico no processo de pesquisa científica - seja pesquisa orientada para a comunidade ou a nível global.</p>
-                  <p class="text-right quote-autor"><a href='https://www.fosteropenscience.eu/foster-taxonomy/open-science-definition' target='_blank'>citizenscience.org</a></p>
+                  <p class="text-right quote-autor"><a href='http://www.citizenscience.org/' target='_blank'>citizenscience.org</a></p>
                 </div>
                 <!--Fim de Box de citação curta-->
               </div>                 
@@ -144,7 +171,7 @@
                 <h4 class="text-center">Os 10 princípios de Ciência Cidadã </h4>
                 <span class="section-divider middle serie1"></span>
 
-                <p>A Associação Europeia de Ciência Cidadã define Ciência Cidadã como “um conceito flexível que pode ser adaptado e aplicado a diversas situações e disciplinas” e apresenta num documento director os seus 10 princípios.</p>
+                <p>A Associação Europeia de Ciência Cidadã define Ciência Cidadã como “um conceito flexível que pode ser adaptado e aplicado a diversas situações e disciplinas” e apresenta num documento diretor os seus 10 princípios.</p>
 
                 <!--Início timeline-->
             <div class="cd-timeline js-cd-timeline timeline-float-left serie1-aula1">
@@ -294,9 +321,25 @@
         </div>
       </div>
     </section><!-- #bloco4 -->
+
+    <!--==========================
+      Bloco 5 - Navegação entre aulas
+    ============================-->
+    <section id="nav-class">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 cta-btn-previous text-center">
+              <a class="cta-btn align-middle" href="aula4.html">Aula Anterior</a>
+            </div>
+            <div class="col-lg-6 cta-btn-next text-center">
+              <a class="cta-btn align-middle" href="aula6.html">Próxima Aula</a>
+          </div>
+        </div>
+    </div>
+    </section>
       
     <!--==========================
-      Bloco 5 - Barra de logos
+      Bloco 6 - Barra de logos
     ============================-->
     <section id="barra-logos" class="blocos">
       <div class="container">
@@ -313,28 +356,175 @@
         </div>
     </div>
     </section>
-      
-    <!--==========================
-      Bloco 6 - Navegação entre aulas
+    
+
+  <!--==========================
+      Modais - Bibliografia & Créditos
     ============================-->
-    <section id="nav-class">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-6 cta-btn-previous text-center">
-              <a class="cta-btn align-middle" href="aula4.html">Aula Anterior</a>
-            </div>
-            <div class="col-lg-6 cta-btn-next text-center">
-              <a class="cta-btn align-middle" href="aula6.html">Próxima Aula</a>
-          </div>
-        </div>
-    </div>
-    </section>
+
+      <!-- Modal Bibliografia-->
+          <div class="modal fade serie1" id="modal-bibliografia" tabindex="-1" role="dialog" aria-labelledby="modal-bibliografiaTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="modal-bibliografiaTitle">Referências bibliográficas</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                        
+                      <!--Accordion-->
+                        <ul id="accordion-bibliografia" class="accordion">
+
+                          <!--Item 1-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula1"> Aula 1 | Introdução à Ciência Aberta <i class="icon ion-md-remove"></i></a>
+                            <div id="aula1" class="collapse">
+                              <ul>
+                                <li>Inserir Bibliografia</li>
+                              </ul>           
+                            </div>
+                          </li>
+
+                          <!--Item 2-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula2"> Aula 2 | Acesso Aberto <i class="icon ion-md-remove"></i></a>
+                            <div id="aula2" class="collapse">
+                              <ul>
+                                <li>Inserir Bibliografia</li>
+                              </ul>           
+                            </div>
+                          </li>
+
+                          <!--Item 3-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula3"> Aula 3 | Dados de pesquisa abertos  <i class="icon ion-md-remove"></i></a>
+                            <div id="aula3" class="collapse">
+                              <ul>
+                                <li>Inserir Bibliografia</li>
+                              </ul> 
+                            </div>
+                          </li>
+
+                          <!--Item 4-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula4"> Aula 4 | Workflows Abertos <i class="icon ion-md-remove"></i></a>
+                            <div id="aula4" class="collapse">
+                              <ul>
+                                <li>Inserir Bibliografia</li>
+                              </ul> 
+                            </div>
+                          </li>
+
+                          <!--Item 5-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula5"> Aula 5 | Ciência Cidadã  <i class="icon ion-md-remove"></i></a>
+                            <div id="aula5" class="collapse">
+
+                              <ul>
+                                <li>Inserir Bibliografia</li>
+
+                              </ul>
+
+                            </div>
+                          </li>
+
+                          <!--Item 6-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula6"> Aula 6 | Inovação Aberta  <i class="icon ion-md-remove"></i></a>
+                            <div id="aula6" class="collapse">
+
+                            <ul>
+                              <li>Inserir Bibliografia</li>
+                            </ul>
+
+                            </div>
+                          </li>
+
+                          <!--Item 7-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula7"> Aula 7 | Boas práticas e ferramentas de ciência aberta  <i class="icon ion-md-remove"></i></a>
+                            <div id="aula7" class="collapse">
+                              <ul>
+                                <li>Inserir Bibliografia</li>
+                              </ul>
+                            </div>
+                          </li>
+
+                        </ul><!--Fim do Accordion-->
+                      <!-- Modal Bibliografia End -->
+
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      </div>
+                  </div>
+              </div>
+          </div><!-- Modal Bibliografia End -->
+
+        <<!-- Modal Créditos-->
+          <div class="modal fade serie1" id="modal-creditos" tabindex="-1" role="dialog" aria-labelledby="modal-creditosTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="modal-creditosTitle">Créditos</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                        <h6>Conteudistas:</h6>
+
+                        <ul>
+                          <li><strong>Aula 1 | Introdução à Ciência Aberta</strong><br/>Inserir nome</li>
+
+                          <li><strong>Aula 2 | Acesso Aberto</strong><br/>Inserir nome</li>
+
+                          <li><strong>Aula 3 | Dados de pesquisa abertos</strong><br/>Inserir nome</li>
+
+                          <li><strong>Aula 4 | Workflows Abertos</strong><br/>Inserir nome</li>
+
+                          <li><strong>Aula 5 | Ciência Cidadã</strong><br/>Inserir nome</li>
+
+                          <li><strong>Aula 6 | Inovação Aberta</strong><br/>Inserir nome</li>
+
+                          <li><strong>Aula7 | Boas práticas e ferramentas de ciência aberta</strong><br/>Inserir nome</li>
+                        </ul>
+
+                        <h6>Coordenação acadêmica:</h6>
+
+                        <ul>
+                          <li>Eloy Rodrigues</li>
+                          <li>Paula Xavier dos Santos</li>
+                        </ul>
+
+                        <h6>Design Educacional:</h6>
+
+                        <ul>
+                          <li>Ana Paula Mendonça</li>
+                          <li>Maria Luiza Panza Bruno </li>
+                        </ul>
+
+                        <h6>Design Gráfico:</h6>
+
+                        <ul>
+                          <li>Luciana Nunes</li>
+                        </ul>
+
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      </div>
+                  </div>
+              </div>
+          </div><!-- Modal Créditos End -->
 
   </main>
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- JavaScript Libraries -->
+  <!-- Biblioteca de JavaScripts-->
   <script src="../../lib/jquery/jquery.min.js"></script>
   <script src="../../lib/jquery/jquery-migrate.min.js"></script>
   <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -347,16 +537,28 @@
   <!--Ionicons-->
   <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
 
-
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!--FlipCards-->
-  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-
-  <!-- Template Main Javascript File -->
+  <!-- Javascripts-->
   <script src="../../js/main.js"></script>
   <script src="../../js/main-timeline.js"></script>
+
+  <!--Acessibilidade-->
+  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="../../js/jquery.font-accessibility.min.js"></script>
+
+  <script>
+  $(function(){
+
+    /* Botões de Acessibilidade */
+    $('#font-setting-buttons').easyView({
+      container: '#acessibilidade',
+      increaseSelector: '.increase-me',
+      decreaseSelector: '.decrease-me',
+      normalSelector: '.reset-me',
+      contrastSelector: '.change-me'
+    });
+
+  });
+  </script>
 
 </body>
 </html>

@@ -22,6 +22,24 @@ Visual Resources - General
 
 -------------------------------- */
 
+p.circle {
+  color: #fff;
+  border-radius: 50%;
+  background: var(--main-color3);
+  display: inline-block;
+  padding: 10px 18px;
+  margin-top:10%;
+  margin-left:35%;
+}
+
+@media (max-width: 767px) {
+  p.circle {margin-left:45%;}
+}
+
+@media (max-width: 576px) {
+  p.circle {margin-left:43%;}
+}
+
 
 /* References and Sources
 --------------------------------*/
@@ -135,6 +153,9 @@ Box de Citação Curta
     font-style: italic;
     color:var(--main-color1) !important;
 }
+
+.box-quote p.circle {color: #fff !important;}
+
 
 .box-quote h5  {font-weight: bold;}
 
@@ -502,6 +523,8 @@ Slider
     margin-left:0;
 }
 
+.carousel table td, .carousel table th {padding:6px;}
+
 @media (max-width: 991px) {
     .carousel img {
         top: 10px;
@@ -518,6 +541,9 @@ Slider
 
 @media (max-width: 576px) {
   .carousel article {padding: 20px 60px;}
+
+  .carousel .carousel-item {padding: 0 10px;}
+
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -805,7 +831,7 @@ Timeline
   .cd-timeline__content {
     margin-left: 0;
     padding: 1.2em;
-    width: 45%;
+    width: 46%;
     /* Force Hardware Acceleration */
     -webkit-transform: translateZ(0);
             transform: translateZ(0);

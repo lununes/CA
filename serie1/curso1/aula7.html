@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <title>Curso Ciência Aberta - Série 1: Curso 1 - Aula 7: Boas práticas e ferramentas de ciência aberta</title>
@@ -14,24 +14,24 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet"> 
 
-  <!-- Bootstrap CSS File -->
+  <!-- Bootstrap CSS -->
   <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Libraries CSS Files -->
+  <!-- Biblioteca CSS -->
   <link href="../../lib/animate/animate.min.css" rel="stylesheet">
-  <link href="font-awesome/css/all.css" rel="stylesheet"> <!--Font Awesome: load all styles -->
+  <link href="font-awesome/css/all.css" rel="stylesheet"> <!--Font Awesome -->
   <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"><!--Ionicons-->
   <link href="../../lib/aos/aos.css" rel="stylesheet">
   <link href="../../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-  <!-- Main Stylesheet File -->
+  <!-- CSS geral das aulas e recursos visuais -->
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/style-visual-resources.css">
   <link rel="stylesheet" href="../../css/serie1/curso1/style-aulas.css">
 
 </head>
 
-<body>
+<body id="acessibilidade">
 
   <!--==========================
     Header
@@ -59,10 +59,36 @@
               <li><a href="aula7.html">Aula 7: Boas práticas e ferramentas de ciência aberta</a></li>
             </ul>
           </li>
-          <li><a href="../../index.html">Outros Cursos do Ciência Aberta</a></li>
+          <li><a href='#' data-toggle="modal" data-target="#modal-bibliografia">Bibliografia</a></li>
+          <li><a href='#' data-toggle="modal" data-target="#modal-creditos">Créditos</a></li>
+          <li class="float-right"><a href="../../index.html"><i class="icon ion-md-apps" style="font-size: 18px;"></i> Outros Cursos do Ciência Aberta</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
+
+    <!--Breadcrumb-->
+    <div id="breadcrumb" class="d-none">
+      <div class="container">
+        <div class="row" data-aos="flip-right">
+          <div class="col-12">
+            <ul class="nav-menu">
+              <li><a href='aula1.html' target='_blank'><i class="fas fa-home"></i> Curso 1: O que é Ciência Aberta?</a> > <a href='aula1.html' target='_blank'>Aula 7 - Boas práticas e ferramentas de ciência aberta</a></li>
+              <li class="float-right">            
+                <div id="font-setting-buttons">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary decrease-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary reset-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary increase-me"><i class="fas fa-font"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!--Fim do Breadcrumb-->  
+
   </header><!-- #header -->
 
   <!--==========================
@@ -91,16 +117,14 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-12 content wow fadeIn text-center">
+          <div class="col-lg-12 content wow fadeIn">
             <p>Agora que já conhece os principais conceitos e componentes da Ciência Aberta, é útil que entenda como os pode aplicar. Neste módulo apresentam-se alguns passos práticos, bem como ferramentas e recursos,  para tornar sua pesquisa mais aberta.</p>
-            <p>Ao concluir este curso, você irá:</p>
+            <p>Ao concluir esta aula, você irá:</p>
 
             <div class="obj-lista col-12 col-md-8 offset-md-2 text-left">
               <ul class="list-group">
                 <li class="list-group-item wow slideInUp" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon ion-md-checkmark-circle-outline"></i> Conhecer boas práticas em ciência aberta;</li>
-                <li class="list-group-item wow slideInUp" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon ion-md-checkmark-circle-outline"></i> Conhecer boas práticas em ciência aberta;</li>
                 <li class="list-group-item wow slideInUp" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon ion-md-checkmark-circle-outline"></i> Estar preparado para atender às expectativas relacionadas à abertura de financiadores, editores e colegas;</li>
-                <li class="list-group-item wow slideInUp" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon ion-md-checkmark-circle-outline"></i> Conhecer algumas ferramentas e recursos úteis para ajudá-lo a incorporar a Ciência Aberta nas práticas de pesquisa de trabalho.</li>
               </ul>
             </div>
           </div>
@@ -117,67 +141,76 @@
               <div class="col-12 wow fadeInRight">
                 <h4 class="text-center">Boas práticas... </h4>
                 <span class="section-divider serie1 middle"></span>
-                <p>Promover a Ciência Aberta requer o envolvimento de todos os intervenientes no processo de investigação científica: investigadores/unidades de investigação, instituições de ensino, agências de financiamento.</p>
-                <p>No processo de investigação científica é necessário adaptar os métodos de trabalho em cada uma das etapas de forma a garantir o compromisso com a Ciência Aberta.</p>
-                <p>Considerar e assumir a Ciência Aberta no processo de investigação científica traduz-se para o investigador no seguinte conjunto de medidas:</p>
+                <p>A Ciência Aberta corresponde às melhores práticas científicas e promove a qualidade e a eficiência da pesquisa e da ciência. Assim, de modo a promover a Ciência Aberta e tirar o maior proveito da sua pesquisa, é necessário o envolvimento de todos os intervenientes, desde os pesquisadores, passando pelas instituições de ensino, cidadãos, empresas e agências de fomento.</p>
+                <p>Ao longo dos módulos anteriores demos algumas ideias sobre os benefícios da abertura do processo e resultados de pesquisa, e como essa abertura pode ser realizada, que iremos sumarizar neste módulo.</p>
+                <p>Assim, o pesquisador pode adotar e advogar as seguintes boas práticas no seu processo de pesquisa:</p>
               </div>
           </div>
+
           <div class="row wow">
-              <div class="col-12 col-md-6 text-center">
+              <div class="col-12 col-md-6">
                 
                 <!--Lista não-ordenadas genéricas-->
                 <div class="obj-lista">
                   <ul class="list-group">
-                    <li class="list-group-item wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Identificar com clareza e assumir políticas de copyright e direitos associados para acesso, uso e reprodução da informação alinhados com a disponibilização dos resultados de investigação em acesso aberto;</li>
-                    <li class="list-group-item wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Identificar com clareza e assumir políticas de copyright e direitos associados para acesso, uso e reprodução da informação alinhados com a disponibilização dos resultados de investigação em acesso aberto;</li>
-                    <li class="list-group-item wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Usar software open-source e normas e interfaces abertas;</li>
-                    <li class="list-group-item wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Produzir metadados para descrição dos resultados de investigação;</li>
-                    <li class="list-group-item wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Assegurar a reprodução dos resultados de investigação;</li>
-                    <li class="list-group-item wow slideInLeft" data-wow-duration="2.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Promover a interoperabilidade;</li>
-                    <li class="list-group-item wow slideInLeft" data-wow-duration="3s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Garantir a citação clara e correta de todas as fontes utilizadas;</li>
-                      <li class="list-group-item wow slideInLeft" data-wow-duration="3.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Promover e garantir a publicação em acesso aberto;</li>
+                    <li class="list-group-item wow slideInUp" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Publicar em acesso aberto: publicações, dados, métodos, software;</li>
+                    <li class="list-group-item wow slideInUp" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Colocar estes resultados de pesquisa em repositórios - institucionais ou disciplinares - que garantam a sua integridade e preservação;</li>
+                    <li class="list-group-item wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Sempre que possível, usar formatos abertos, software open-source e normas e interfaces abertas;</li>
+                    <li class="list-group-item wow slideInUp" data-wow-duration="1.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Usar licenças abertas, por ex. CC0 ou CC-BY;</li>
+                    <li class="list-group-item wow slideInUp" data-wow-duration="2s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Garantir a citação clara e correta de todas as fontes utilizadas;</li>
+                    <li class="list-group-item wow slideInUp" data-wow-duration="2.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Registar e descrever workflows, equipamentos e infraestruturas utilizadas no processo de pesquisa;</li>
                   </ul>
                 </div>
+
               </div>
-                  
-              <div class="col-12 col-md-6 wow fadeInRight text-center">
-                  
+
+              <div class="col-12 col-md-6">
                 <!--Lista não-ordenadas genéricas-->
                 <div class="obj-lista">
                   <ul class="list-group">
-                    <li class="list-group-item wow slideInRight" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Combinar indicadores de avaliação tradicional com alternativos para a aferição do impacto dos resultados de investigação e investigadores.</li>
-                    <li class="list-group-item wow slideInRight" data-wow-duration="1s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Registar e descrever workflows, equipamentos e infraestruturas utilizadas no processo de pesquisa;</li>
-                    <li class="list-group-item wow slideInRight" data-wow-duration="1.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Usar software open source;</li>
-                    <li class="list-group-item wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Partilhar código desenvolvido e as ferramentas que permitam a sua reprodução;</li>
-                    <li class="list-group-item wow slideInRight" data-wow-duration="2.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Usar plataformas Web colaborativas que permitam a interação entre pares;</li>
-                      <li class="list-group-item wow slideInRight" data-wow-duration="3s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Usar plataformas Web colaborativas que permitam a interação entre pares;</li>
+                    <li class="list-group-item wow slideInUp" data-wow-duration="3s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Produzir metadados para descrição dos resultados de pesquisa, assegurando a sua replicabilidade;</li>
+                    <li class="list-group-item wow slideInUp" data-wow-duration="3.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Promover a interoperabilidade;</li>
+                    <li class="list-group-item wow slideInUp" data-wow-duration="4s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Atribuir licenças e identificadores permanentes para partilha e uso da informação;</li>
+                    <li class="list-group-item wow slideInUp" data-wow-duration="4.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Verificar que as exigências da entidade de fomento são cumpridas.</li>
+                    <li class="list-group-item wow slideInUp" data-wow-duration="5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> Assegurar a ligação à sociedade e às empresas, de modo a que todos os que o desejem possam participar do desenvolvimento das pesquisas e delas beneficiar.</li>
                   </ul>
                 </div>
+
               </div>
-                
           </div><!--Fim da row-->
+      </div><!--Fim do container-->
+
+      <div class="container-fluid">
+          <div class="row video-bg">
+            <div class="col-md-6 offset-md-3">
+              <span class="section-divider serie1 middle"></span>
+              <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/iE7N3jgF4nU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+              <p class="reference-title text-center">Vídeo 8 - What is Open Research?</p>
+              <p class="source text-center">Fonte: <a href="https://www.youtube.com/embed/iE7N3jgF4nU" target="_blank">Wellcome Trust</a>.</p>
+              <span class="section-divider serie1 middle"></span>
+            </div>
+          </div>
       </div>
+
     </section><!-- #bloco2 -->
       
     <!--==========================
-      Bloco 3 - Ferramentas para a ciência aberta
+      Bloco 4 - Navegação entre aulas
     ============================-->
-    <section id="bloco3" class="section-bg blocos">
+    <section id="nav-class">
       <div class="container">
         <div class="row">
-          <div class="col-12" data-aos="fade-right">
-            <h4 class="text-center">Ferramentas para a ciência aberta</h4>
-            <span class="section-divider serie1 middle"></span>
+            <div class="col-lg-6 cta-btn-previous text-center">
+              <a class="cta-btn align-middle" href="aula6.html">Aula Anterior</a>
+            </div>
+            <div class="col-lg-6 cta-btn-next text-center">
+              <a class="cta-btn align-middle" href="#">Avaliação</a>
           </div>
-    
-          <div class="col-12 col-md-8 offset-md-2 content" data-aos="fade-left">
-            
-          </div>
-        </div> <!--Fim da row-->
-
-
-      </div> <!--Fim do Container-->
-    </section><!-- #bloco3 -->
+        </div>
+    </div>
+    </section>
       
     <!--==========================
       Bloco 5 - Barra de logos
@@ -196,29 +229,174 @@
           </div>
         </div>
     </div>
-    </section>
-      
-    <!--==========================
-      Bloco 6 - Navegação entre aulas
+
+  <!--==========================
+      Modais - Bibliografia & Créditos
     ============================-->
-    <section id="nav-class">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-6 cta-btn-previous text-center">
-              <a class="cta-btn align-middle" href="aula6.html">Aula Anterior</a>
-            </div>
-            <div class="col-lg-6 cta-btn-next text-center">
-              <a class="cta-btn align-middle" href="#">Fazer teste</a>
-          </div>
-        </div>
-    </div>
-    </section>
+
+      <!-- Modal Bibliografia-->
+          <div class="modal fade serie1" id="modal-bibliografia" tabindex="-1" role="dialog" aria-labelledby="modal-bibliografiaTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="modal-bibliografiaTitle">Referências bibliográficas</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                        
+                      <!--Accordion-->
+                        <ul id="accordion-bibliografia" class="accordion">
+
+                          <!--Item 1-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula1"> Aula 1 | Introdução à Ciência Aberta <i class="icon ion-md-remove"></i></a>
+                            <div id="aula1" class="collapse">
+                              <ul>
+                                <li>Inserir Bibliografia</li>
+                              </ul>           
+                            </div>
+                          </li>
+
+                          <!--Item 2-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula2"> Aula 2 | Acesso Aberto <i class="icon ion-md-remove"></i></a>
+                            <div id="aula2" class="collapse">
+                              <ul>
+                                <li>Inserir Bibliografia</li>
+                              </ul>           
+                            </div>
+                          </li>
+
+                          <!--Item 3-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula3"> Aula 3 | Dados de pesquisa abertos  <i class="icon ion-md-remove"></i></a>
+                            <div id="aula3" class="collapse">
+                              <ul>
+                                <li>Inserir Bibliografia</li>
+                              </ul> 
+                            </div>
+                          </li>
+
+                          <!--Item 4-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula4"> Aula 4 | Workflows Abertos <i class="icon ion-md-remove"></i></a>
+                            <div id="aula4" class="collapse">
+                              <ul>
+                                <li>Inserir Bibliografia</li>
+                              </ul> 
+                            </div>
+                          </li>
+
+                          <!--Item 5-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula5"> Aula 5 | Ciência Cidadã  <i class="icon ion-md-remove"></i></a>
+                            <div id="aula5" class="collapse">
+
+                              <ul>
+                                <li>Inserir Bibliografia</li>
+
+                              </ul>
+
+                            </div>
+                          </li>
+
+                          <!--Item 6-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula6"> Aula 6 | Inovação Aberta  <i class="icon ion-md-remove"></i></a>
+                            <div id="aula6" class="collapse">
+
+                            <ul>
+                              <li>Inserir Bibliografia</li>
+                            </ul>
+
+                            </div>
+                          </li>
+
+                          <!--Item 7-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula7"> Aula 7 | Boas práticas e ferramentas de ciência aberta  <i class="icon ion-md-remove"></i></a>
+                            <div id="aula7" class="collapse">
+                              <ul>
+                                <li>Inserir Bibliografia</li>
+                              </ul>
+                            </div>
+                          </li>
+
+                        </ul><!--Fim do Accordion-->
+                      <!-- Modal Bibliografia End -->
+
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      </div>
+                  </div>
+              </div>
+          </div><!-- Modal Bibliografia End -->
+
+        <<!-- Modal Créditos-->
+          <div class="modal fade serie1" id="modal-creditos" tabindex="-1" role="dialog" aria-labelledby="modal-creditosTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="modal-creditosTitle">Créditos</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                        <h6>Conteudistas:</h6>
+
+                        <ul>
+                          <li><strong>Aula 1 | Introdução à Ciência Aberta</strong><br/>Inserir nome</li>
+
+                          <li><strong>Aula 2 | Acesso Aberto</strong><br/>Inserir nome</li>
+
+                          <li><strong>Aula 3 | Dados de pesquisa abertos</strong><br/>Inserir nome</li>
+
+                          <li><strong>Aula 4 | Workflows Abertos</strong><br/>Inserir nome</li>
+
+                          <li><strong>Aula 5 | Ciência Cidadã</strong><br/>Inserir nome</li>
+
+                          <li><strong>Aula 6 | Inovação Aberta</strong><br/>Inserir nome</li>
+
+                          <li><strong>Aula7 | Boas práticas e ferramentas de ciência aberta</strong><br/>Inserir nome</li>
+                        </ul>
+
+                        <h6>Coordenação acadêmica:</h6>
+
+                        <ul>
+                          <li>Eloy Rodrigues</li>
+                          <li>Paula Xavier dos Santos</li>
+                        </ul>
+
+                        <h6>Design Educacional:</h6>
+
+                        <ul>
+                          <li>Ana Paula Mendonça</li>
+                          <li>Maria Luiza Panza Bruno </li>
+                        </ul>
+
+                        <h6>Design Gráfico:</h6>
+
+                        <ul>
+                          <li>Luciana Nunes</li>
+                        </ul>
+
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      </div>
+                  </div>
+              </div>
+          </div><!-- Modal Créditos End -->
 
   </main>
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- JavaScript Libraries -->
+  <!-- Biblioteca de JavaScripts-->
   <script src="../../lib/jquery/jquery.min.js"></script>
   <script src="../../lib/jquery/jquery-migrate.min.js"></script>
   <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -231,12 +409,28 @@
   <!--Ionicons-->
   <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
 
-  <!--FlipCards-->
-  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-
-  <!-- Template Main Javascript File -->
+  <!-- Javascripts-->
   <script src="../../js/main.js"></script>
   <script src="../../js/main-timeline.js"></script>
+
+  <!--Acessibilidade-->
+  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="../../js/jquery.font-accessibility.min.js"></script>
+
+  <script>
+  $(function(){
+
+    /* Botões de Acessibilidade */
+    $('#font-setting-buttons').easyView({
+      container: '#acessibilidade',
+      increaseSelector: '.increase-me',
+      decreaseSelector: '.decrease-me',
+      normalSelector: '.reset-me',
+      contrastSelector: '.change-me'
+    });
+
+  });
+  </script>
 
 </body>
 </html>

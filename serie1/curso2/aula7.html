@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <title>Curso Ciência Aberta - Série 1: Curso 2 - Aula 7: Qual Ciência Aberta precisamos?</title>
@@ -14,23 +14,23 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet"> 
 
-  <!-- Bootstrap CSS File -->
+  <!-- Bootstrap CSS -->
   <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Libraries CSS Files -->
+  <!-- Biblioteca CSS -->
   <link href="../../lib/animate/animate.min.css" rel="stylesheet">
-  <link href="font-awesome/css/all.css" rel="stylesheet"> <!--Font Awesome: load all styles -->
+  <link href="font-awesome/css/all.css" rel="stylesheet"> <!-- Font Awesome -->
   <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"><!--Ionicons-->
   <link href="../../lib/aos/aos.css" rel="stylesheet">
   <link href="../../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-  <!-- Main Stylesheet File -->
+  <!-- CSS geral das aulas e recursos visuais -->
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/style-visual-resources.css">
 
 </head>
 
-<body>
+<body id="acessibilidade">
 
   <!--==========================
     Header
@@ -71,11 +71,24 @@
       <div class="container">
         <div class="row" data-aos="flip-right">
           <div class="col-12">
-            <p><a href='introducao.html' target='_blank'><i class="fas fa-home"></i> Curso 2: Panorama histórico da Ciência aberta</a> > <a href='aula7.html' target='_blank'>Aula 7 - Qual Ciência Aberta precisamos?</a></p>
+            <ul class="nav-menu">
+              <li><a href='introducao.html' target='_blank'><i class="fas fa-home"></i> Curso 2: Panorama histórico da Ciência aberta</a> > <a href='aula7.html' target='_blank'>Aula 7 - Qual Ciência Aberta precisamos?</a></li>
+              <li class="float-right">            
+                <div id="font-setting-buttons">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary decrease-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary reset-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary increase-me"><i class="fas fa-font"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
     </div>
   </div>
+  <!--Fim do Breadcrumb-->  
+
   </header><!-- #header -->
 
   <!--==========================
@@ -109,7 +122,7 @@
 
           <div class="row justify-content-center">
             <!--Lista de objetivos-->
-            <div class="obj-lista col-12 col-md-8">
+            <div class="obj-lista col-10 col-md-8">
               <ul class="list-group">
                 <li class="list-group-item wow slideInUp" data-wow-duration="0.5s" data-wow-delay="0s"><i class="icon-bullet"></i> Como esse novo paradigma, cujas expectativas são variadas e exuberantes, irá lidar com velhas problemáticas como as assimetrias do fazer científico entre países?</li>
                 <li class="list-group-item wow slideInUp" data-wow-duration="1s" data-wow-delay="0s"><i class="icon-bullet"></i> Em que medida essas desigualdades podem ser minoradas ou agravadas?</li>
@@ -221,7 +234,7 @@
                     <li>
                       <a data-toggle="collapse" class="collapsed" href="#item6"> Incentivar o desenho de mecanismos inclusivos de informação e comunicação  <i class="icon ion-md-remove"></i></a>
                       <div id="item6" class="collapse">
-                        <p>As infraestructura, ferramentas, plataformas, software e tecnologias disponíveis na pesquisa científica muitas vezes excluem as pessoas com deficiências e/ou acesso digital limitado. A ciência aberta e colaborativa se apóia em tecnologias de código aberto, que são livres, acessíveis e de baixo custo, e que, portanto, permitem incluir ou interessar as personas que geralmente não participam do processo científico. Promovemos o desenho de tecnologias acessíveis e inclusivas que permitam a uma multiplicidade de atores com diversas capacidades, utilizar e criar ferramentas para acessar o conhecimento científico.</p>
+                        <p>As infraestrutura, ferramentas, plataformas, software e tecnologias disponíveis na pesquisa científica muitas vezes excluem as pessoas com deficiências e/ou acesso digital limitado. A ciência aberta e colaborativa se apóia em tecnologias de código aberto, que são livres, acessíveis e de baixo custo, e que, portanto, permitem incluir ou interessar as personas que geralmente não participam do processo científico. Promovemos o desenho de tecnologias acessíveis e inclusivas que permitam a uma multiplicidade de atores com diversas capacidades, utilizar e criar ferramentas para acessar o conhecimento científico.</p>
                       </div>
                     </li>
 
@@ -239,7 +252,7 @@
                 
                 <div class="row blocos justify-content-center">
                   <!--Saiba Mais-->
-                  <div class="saiba-mais col-12 col-md-8" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
+                  <div class="saiba-mais col-10 col-md-8" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
                     <div class="box-quote multi-border">
                       <h5><i class="fas fa-question-circle" data-fa-transform="grow-25"></i>Saiba mais:</h5>
                       <div class="saiba-mais-content">
@@ -347,10 +360,26 @@
               </div><!--Fim da coluna-->
           </div><!--Fim da row-->
         </div><!--Fim do container-->
-    </section><!-- #bloco4 -->        
+    </section><!-- #bloco4 -->   
+
+    <!--==========================
+      Bloco 5 - Navegação entre aulas
+    ============================-->
+    <section id="nav-class">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 cta-btn-previous text-center">
+              <a class="cta-btn align-middle" href="aula6.html">Aula Anterior</a>
+            </div>
+            <div class="col-lg-6 cta-btn-next text-center">
+              <a class="cta-btn align-middle" href="#">Avaliação</a>
+          </div>
+        </div>
+    </div>
+    </section>     
       
     <!--==========================
-      Bloco 5 - Barra de logos
+      Bloco 6 - Barra de logos
     ============================-->
     <section id="barra-logos" class="blocos">
       <div class="container">
@@ -363,22 +392,6 @@
             </div>
             <div class="col-md-3 offset-md-2">
               <a href="https://www.uminho.pt/" target="_blank"><img class="mx-auto d-block" src="../../img/logo-uminho.png" alt="Logo da Universidade do Minho"></a>
-          </div>
-        </div>
-    </div>
-    </section>
-      
-    <!--==========================
-      Bloco 6 - Navegação entre aulas
-    ============================-->
-    <section id="nav-class">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-6 cta-btn-previous text-center">
-              <a class="cta-btn align-middle" href="aula6.html">Aula Anterior</a>
-            </div>
-            <div class="col-lg-6 cta-btn-next text-center">
-              <a class="cta-btn align-middle" href="#">Fazer teste</a>
           </div>
         </div>
     </div>
@@ -656,7 +669,7 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- JavaScript Libraries -->
+  <!-- Biblioteca de JavaScripts-->
   <script src="../../lib/jquery/jquery.min.js"></script>
   <script src="../../lib/jquery/jquery-migrate.min.js"></script>
   <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -669,8 +682,26 @@
   <!--Ionicons-->
   <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
 
-  <!-- Template Main Javascript File -->
+  <!-- Javascripts-->
   <script src="../../js/main.js"></script>
+
+  <!--Acessibilidade-->
+  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="../../js/jquery.font-accessibility.min.js"></script>
+
+  <script>
+  $(function(){
+    /* Botões de Acessibilidade */
+    $('#font-setting-buttons').easyView({
+      container: '#acessibilidade',
+      increaseSelector: '.increase-me',
+      decreaseSelector: '.decrease-me',
+      normalSelector: '.reset-me',
+      contrastSelector: '.change-me'
+    });
+
+  });
+  </script>
 
 </body>
 </html>

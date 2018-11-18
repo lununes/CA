@@ -218,14 +218,50 @@ h5, h6 {margin-bottom:10px;}
   border-top: 1px solid #e8edee;
 }
 
+
+
+#breadcrumb .nav-menu > li {
+  margin-left:0;
+  white-space: normal;
+}
+
+#breadcrumb .nav-menu a {padding:0 8px 3px 8px;}
+
 #breadcrumb a {font-weight: 400;}
+
+#breadcrumb #font-setting-buttons {
+  position: relative;
+  top: -3px;
+}
+
+#breadcrumb .btn-outline-secondary {
+  border-color:var(--main-color2);
+  color: var(--main-color2);
+}
+
+#breadcrumb .btn-outline-secondary:hover {
+  background:var(--main-color3);
+  color:var(--white-color);
+  border-color:var(--main-color3);
+}
+
+#breadcrumb .fa-font::after {font-size: 0.67em;}
+#breadcrumb .decrease-me .fa-font::after {content:"\f068";}
+#breadcrumb .increase-me .fa-font::after {content:"\f067";}
 
 @media (max-width: 576px) {
   #breadcrumb {
   font-size:11px;
   padding: 6px 12px;
-  min-height: 66px;
+  min-height: 100px;
+  height: auto;
   }
+
+  #breadcrumb #font-setting-buttons {margin-top:8px;}
+}
+
+@media (max-width: 320px) {
+  #breadcrumb {min-height: 165px;}
 }
 
 /*--------------------------------------------------------------
@@ -1116,10 +1152,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #999;
 }
 
-#bloco2 p {
-  line-height: 24px;
-  color: var(--main-color1);
-}
+#bloco2 p {line-height: 24px;}
 
 #bloco2 .legenda {
   font-size: 11px; 
@@ -1272,6 +1305,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Barra de Logos
 --------------------------------*/
 
+#barra-logos {
+  background-image: url("../img/bg1.png");
+  background-position: 0 -220px;
+  background-size: cover;
+}
+
+#barra-logos.intro-text {
+  background:transparent;
+}
+
 #barra-logos img {
   max-width: 225px;
   max-height: 100px;
@@ -1294,6 +1337,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 767px) {
+
+#barra-logos {background-position: 0 0px;}
+
   #barra-logos img {margin: 25px 0;}
 
 
@@ -1309,9 +1355,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #nav-class {
   /*background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2));*/
-  background-image: url("../img/bg1.png"); /* The image used */
-  background-position: 0 -220px;
-  background-size: cover;
+  /*background-image: url("../img/bg1.png");*/ /* The image used */
+  /*background-position: 0 -220px;
+  background-size: cover;*/
   padding: 60px 0;
 }
 

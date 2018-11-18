@@ -10,9 +10,18 @@
 .timeline-float-left.serie1-aula1 .cd-timeline__content p {margin:30px 0;}
 
 
+/*Série 1 - Aula 2*/
+
+.dourada {color:#ac966f;}
+.verde {color:#76a146;}
+
 /*Série 1 - Aula 3*/
 #call-to-action.serie1-aula3 {
   background: linear-gradient(rgba(4, 41, 155, 0.65), rgba(0, 0, 0, 0.2)), url(../../../img/serie1/curso1/aula3/img1.png) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
+
+/*Aula 3*/
+
+.table td {vertical-align:middle;}

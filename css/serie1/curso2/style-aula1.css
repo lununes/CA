@@ -8,9 +8,20 @@
 	min-height:160px;
 }
 
+/*Carousel*/
+
+.carousel img {
+    position: relative;
+    top: 0px;
+    right: 20px;
+}
+
+.carousel table img {margin-right:10px;}
+
+
 /*Slider*/
 
-#carousel1 .carousel-inner {min-height: 615px;}
+#carousel1 .carousel-inner {min-height: 535px;}
 
 /*Infográfico Ecossistema*/
 

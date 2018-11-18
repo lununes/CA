@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <title>Curso Ciência Aberta - Série 1: Curso 2 - Aula 6: Visões críticas da Ciência Aberta</title>
@@ -14,23 +14,23 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet"> 
 
-  <!-- Bootstrap CSS File -->
+  <!-- Bootstrap CSS -->
   <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Libraries CSS Files -->
+  <!-- Biblioteca CSS -->
   <link href="../../lib/animate/animate.min.css" rel="stylesheet">
-  <link href="font-awesome/css/all.css" rel="stylesheet"> <!--Font Awesome: load all styles -->
+  <link href="font-awesome/css/all.css" rel="stylesheet"> <!-- Font Awesome -->
   <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"><!--Ionicons-->
   <link href="../../lib/aos/aos.css" rel="stylesheet">
   <link href="../../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-  <!-- Main Stylesheet File -->
+  <!-- CSS geral das aulas e recursos visuais -->
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/style-visual-resources.css">
 
 </head>
 
-<body>
+<body id="acessibilidade">
 
   <!--==========================
     Header
@@ -71,11 +71,24 @@
       <div class="container">
         <div class="row" data-aos="flip-right">
           <div class="col-12">
-            <p><a href='introducao.html' target='_blank'><i class="fas fa-home"></i> Curso 2: Panorama histórico da Ciência aberta</a> > <a href='aula6.html' target='_blank'>Aula 6 - Visões críticas da Ciência Aberta</a></p>
+            <ul class="nav-menu">
+              <li><a href='introducao.html' target='_blank'><i class="fas fa-home"></i> Curso 2: Panorama histórico da Ciência aberta</a> > <a href='aula6.html' target='_blank'>Aula 6 - Visões críticas da Ciência Aberta</a></li>
+              <li class="float-right">            
+                <div id="font-setting-buttons">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary decrease-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary reset-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary increase-me"><i class="fas fa-font"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
     </div>
   </div>
+  <!--Fim do Breadcrumb-->  
+
   </header><!-- #header -->
 
   <!--==========================
@@ -108,9 +121,9 @@
             <p>No artigo “O Futuro da Ciência Aberta”, o historiador e filósofo da economia Philip Mirowski (2018) faz críticas contumazes à proposta da Ciência Aberta, reconhecendo que ela não é um porvir, mas representa mudanças já em curso. O autor analisa os quatro principais argumentos contra o “antigo regime da ciência” e conclui que a Ciência Aberta, tal qual vem sendo implementada, não consertará aquilo que se julga problemático.</p>
             <p>Segundo o autor, além da iminente frustração de expectativas, o que está em jogo é a  quebra do monopólio histórico da produção de conhecimento a partir de um estranho discurso “sem cheiro de mercado”. Nesse sentido, Mirowski descreve a Ciência Aberta como a associação de um ethos de uma "ciência radicalmente colaborativa" às estruturas emergentes do "capitalismo de plataforma". Em suas palavras, "o movimento da  Ciência Aberta é um artefato do atual regime neoliberal da ciência, que reconfigura ambas instituições e a natureza  do conhecimento para melhor se adequar aos imperativos do mercado”. (2018, pg 172)</p>
 
-              <div class="row blocos">
+              <div class="row blocos justify-content-center">
                 <!--Saiba Mais-->
-                <div class="saiba-mais col-12 col-md-8 offset-md-2" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
+                <div class="saiba-mais col-10 col-md-8" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
                   <div class="box-quote multi-border">
                     <h5><i class="fas fa-question-circle" data-fa-transform="grow-25"></i>Saiba mais:</h5>
                     <div class="saiba-mais-content">
@@ -126,7 +139,7 @@
                           </div>
 
                           <div class="col-12 col-md-5 item item2 wow slideInUp" data-wow-duration="2s" data-wow-delay="0.5s">
-                            <h6 class="text-center"><strong>Coopetativismo de Plataforma:</strong></h6>
+                            <h6 class="text-center"><strong>Cooperativismo de Plataforma:</strong></h6>
                             <p>Scholz (2016) o propõe como alternativa à financerização da vida comum, pois considera que as cooperativas são um importante instrumento para a construção de poder econômico por grupos marginalizados. No contexto de uma economia digital, as cooperativas seriam plataformas com sistema de governança democrática, baseadas em valores como a solidariedade, de propriedade coletiva (das pessoas que produzem seu valor) e que objetivam o benefício de todos, e não sugam lucros para poucos acionistas.</p>
                           </div>
                         </div><!--Fim da comparação-->
@@ -204,16 +217,16 @@
               <span class="section-divider middle serie1"></span>
               <p>Refutados os principais argumentos favoráveis à Ciência Aberta, Mirowisky (2018) faz perguntas incômodas para questionar os interesses subjacentes às propostas, como:</p>
 
-              <div class="row">
+              <div class="row justify-content-center">
                 <!--Box simples-->
-                  <div class="box-quote col-12 col-md-5 wow fadeInUp">
+                  <div class="box-quote col-10 col-md-5 wow fadeInUp">
                     <p><i class="fas fa-quote-left" data-fa-transform="grow-15"></i> Quem precisamente pretende arrombar (crack) a ciência para abrí-la?  <i class="fas fa-quote-right" data-fa-transform="grow-15"></i></p>
                     <p class="text-right quote-autor">Mirowisky (2018)</p>
                   </div>
                   <!--Fim de Box simples-->
 
                 <!--Box simples-->
-                  <div class="box-quote col-12 col-md-5 offset-md-1 wow fadeInUp">
+                  <div class="box-quote col-10 col-md-5 offset-md-1 wow fadeInUp">
                     <p><i class="fas fa-quote-left" data-fa-transform="grow-15"></i> De onde vem o financiamento para tornar uma opinião vaga e mal especificada em um movimento?  <i class="fas fa-quote-right" data-fa-transform="grow-15"></i></p>
                     <p class="text-right quote-autor">Mirowisky (2018)</p>
                   </div>
@@ -225,13 +238,15 @@
 
               <p>Para tal, as antigas editoras estão investindo na acumulação desproporcional de conteúdos científicos e na aquisição de outros serviços, realizando uma “integração vertical” que garanta o seu monopólio sobre bens intelectuais assim como gerar novas fontes de lucro. As figuras abaixo ilustram o ciclo de vida da produção do conhecimento em etapas como pesquisa, publicação e avaliação (figura 1) e a presença da Elsevier, através de seus produtos e serviços (figura 2). </p>
 
-              <img class="rounded mx-auto d-block img-fluid" data-aos="flip-left" src="../../img/serie1/curso2/aula6/img3.png" alt="">
-              <p class="reference-title text-center">Figura 1 - “The Academic Knowledge Production Lifecycle”</p>
-              <p class="source text-center">Fonte: <a href="https://elpub.episciences.org/4618/pdf" target="_blank">POSADA, CHEN (2018, p.6)</a>.</p>
+              <img class="d-none d-sm-block rounded mx-auto img-fluid" data-aos="flip-left" src="../../img/serie1/curso2/aula6/img3-2.png" alt="">
+              <img class="d-block d-sm-none rounded mx-auto img-fluid" data-aos="flip-left" src="../../img/serie1/curso2/aula6/img3-2-mobile.png" alt="">
+              <p class="reference-title text-center">Figura 1 - O processo de produção do conhecimento acadêmico</p>
+              <p class="source text-center">Fonte: A partir de <a href="https://elpub.episciences.org/4618/pdf" target="_blank">POSADA, CHEN (2018, p.6)</a>.</p>
 
-              <img class="rounded mx-auto d-block img-fluid" data-aos="flip-left" src="../../img/serie1/curso2/aula6/img4.png" alt="">
-              <p class="reference-title text-center">Figura 2 - Elsevier Presence Throughout the Lifecycle</p>
-              <p class="source text-center">Fonte: <a href="https://elpub.episciences.org/4618/pdf" target="_blank">POSADA, CHEN (2018, p.6)</a>.</p>
+              <img class="d-none d-sm-block rounded mx-auto img-fluid" data-aos="flip-left" src="../../img/serie1/curso2/aula6/img4-2.png" alt="">
+              <img class="d-block d-sm-none rounded mx-auto img-fluid" data-aos="flip-left" src="../../img/serie1/curso2/aula6/img4-2-mobile.png" alt="">
+              <p class="reference-title text-center">Figura 2 - A presença da Elsevier ao longo do processo. As marcas aqui destacadas são de produtos adquiridos pela Elsevier.</p>
+              <p class="source text-center">Fonte: A partir de <a href="https://elpub.episciences.org/4618/pdf" target="_blank">POSADA, CHEN (2018, p.6)</a>.</p>
 
               <p>Se, por um lado, a integração de conteúdos e serviços acadêmicos pode gerar benefícios práticos para o desenvolvimento de pesquisa, os riscos associados à construção de monopólios são assustadores uma vez que essas empresas se tornam ponto de passagem obrigatório para a produção de conhecimento científico. A “integração vertical” de conteúdos e infraestruturas incorpora todo o fluxo de trabalho da pesquisa científica nos produtos, serviços e estratégias de cinco mega corporações. </p>
 
@@ -251,16 +266,16 @@
                 </div>
               </div>
 
-            <div class="row blocos">
+            <div class="row blocos justify-content-center">
               <!--Saiba Mais-->
-              <div class="saiba-mais col-12 col-md-8 offset-md-2" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
+              <div class="saiba-mais col-10 col-md-8" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
                 <div class="box-quote multi-border">
                   <h5><i class="fas fa-question-circle" data-fa-transform="grow-25"></i>Saiba mais:</h5>
                   <div class="saiba-mais-content">
                   
                     <img class="advanced-feature-img-left rounded mx-auto d-block img-fluid" data-aos="flip-left" width="200" src="../../img/serie1/curso2/aula6/img5.png" alt="">
 
-                    <p>É uma organização sem fins lucrativos, fundada em 2004 no Reino Unido, que atua como uma rede internacional de pessoas (profissionais, ativistas, pesquisadores e cidadãos) que buscam promover dados e conteúdos abertos em todas as suas formas, incluindo dados de governo, dados culturais e de pesquisa, dados pessoais, sensíveis ou sigilosos, segurança da informação, reúso e compartilhamento de dados e propriedade intelectual. </p>
+                    <p>Na contramão do capitalismo de plataforma e da integração vertical, o <a href='https://hcommons.org/' target='_blank'>Humanities Commons</a> é uma plataforma de acesso aberto, de código aberto e sem fins lucrativos, criada por sociedades acadêmicas para atender às necessidades de estudantes e pesquisadores do campo das Humanidades. Seu objetivo é ser um espaço para discutir, compartilhar e armazenar pesquisa e pedagogias inovadoras. É a principal alternativa a produtos como o <a href='https://www.academia.edu/' target='_blank'>Academia.edu</a> e o <a href='https://www.researchgate.net/' target='_blank'>Research Gate</a>.</p>
 
                    </div>
                 </div>
@@ -280,7 +295,7 @@
     <section id="bloco4" class="section-bg blocos">
       <div class="container">
         <div class="row">
-          <div class="col-12 wow fadeInLeft" data-wow-duration="0.5s"">
+          <div class="col-12 wow fadeInLeft" data-wow-duration="0.5s">
               <h4 class="text-center">A (in)justiça baseada em dados: discriminação, vigilância e perda de autonomia</h4>
               <span class="section-divider middle serie1"></span>
               <p>Como já vimos anteriormente, o novo horizonte da Ciência Aberta é a abertura de dados para pesquisa. O recente campo de estudos da “justiça de dados” (data justice) pretende pesquisar e refletir, a partir da ideia de justiça social, como os indivíduos, comunidades e diferentes “sujeitos de dados” estão implicados no processamento de dados e como eles são percebidos na sociedade como resultado da <strong>datificação</strong>.</p>
@@ -315,25 +330,25 @@
 
             <p>Algumas questões, eminentemente políticas, a serem enfrentadas nesse “lugar incômodo” onde acontece fricções entre indivíduos e Estado, entre o público e o privado, entre a ciência e o público, com reverberações em temas como privacidade, responsabilidade e prestação de contas (accountability) são:</p>
 
-              <div class="row">
+              <div class="row justify-content-center">
                 <!--Box simples-->
-                  <div class="box-quote col-12 col-md-5 wow fadeInUp">
+                  <div class="box-quote col-10 col-md-5 wow fadeInUp">
                     <p><i class="fas fa-quote-left" data-fa-transform="grow-15"></i> Como balancear e integrar a necessidade de ser visto e representado de maneira apropriada com as necessidade de autonomia e integridade?  <i class="fas fa-quote-right" data-fa-transform="grow-15"></i></p>
                     <p class="text-right quote-autor">(TAYLOR, 2017)</p>
                   </div>
                   <!--Fim de Box simples-->
 
                 <!--Box simples-->
-                  <div class="box-quote col-12 col-md-5 offset-md-1 wow fadeInUp">
+                  <div class="box-quote col-10 col-md-5 offset-md-1 wow fadeInUp">
                     <p><i class="fas fa-quote-left" data-fa-transform="grow-15"></i> Quais são os bons princípios de governança para o uso do <em>big data</em> em um contexto democrático e quem deve determiná-los?   <i class="fas fa-quote-right" data-fa-transform="grow-15"></i></p>
                     <p class="text-right quote-autor">(TAYLOR, 2017)</p>
                   </div>
                   <!--Fim de Box simples-->
               </div>
 
-            <div class="row blocos">
+            <div class="row blocos justify-content-center">
                 <!--Saiba Mais-->
-                <div class="saiba-mais col-12 col-md-8 offset-md-2" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
+                <div class="saiba-mais col-10 col-md-8" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
                   <div class="box-quote multi-border">
                     <h5><i class="fas fa-question-circle" data-fa-transform="grow-25"></i>Saiba mais:</h5>
                     <div class="saiba-mais-content">
@@ -371,7 +386,7 @@
 
        <div class="row justify-content-center">
           <!--Box simples-->
-            <div class="box-quote col-12 col-md-8 wow fadeInUp">
+            <div class="box-quote col-10 col-md-8 wow fadeInUp">
               <p><i class="fas fa-quote-left" data-fa-transform="grow-15"></i> O pensamento abissal consiste em conceder à Ciência Moderna o monopólio da distinção universal entre verdadeiro e falso em detrimento de corpos alternativos de conhecimento <i class="fas fa-quote-right" data-fa-transform="grow-15"></i></p>
               <p class="text-right quote-autor">(SOUZA SANTOS, 2007, p. 47).</p>
             </div>
@@ -388,10 +403,27 @@
           </div>
         </div> <!--Fim da row-->
       </div><!--Fim do container-->
-    </section><!-- #bloco5 -->        
+    </section><!-- #bloco5 -->  
+
+    <!--==========================
+      Bloco 6 - Navegação entre aulas
+    ============================-->
+    <section id="nav-class">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 cta-btn-previous text-center">
+              <a class="cta-btn align-middle" href="aula5.html">Aula Anterior</a>
+            </div>
+            <div class="col-lg-6 cta-btn-next text-center">
+              <a class="cta-btn align-middle" href="aula7.html">Próxima Aula</a>
+          </div>
+        </div>
+    </div>
+    </section>
+
       
    <!--==========================
-      Bloco 6 - Barra de logos
+      Bloco 7 - Barra de logos
     ============================-->
     <section id="barra-logos" class="blocos">
       <div class="container">
@@ -409,21 +441,6 @@
     </div>
     </section>
       
-    <!--==========================
-      Bloco 7 - Navegação entre aulas
-    ============================-->
-    <section id="nav-class">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-6 cta-btn-previous text-center">
-              <a class="cta-btn align-middle" href="aula5.html">Aula Anterior</a>
-            </div>
-            <div class="col-lg-6 cta-btn-next text-center">
-              <a class="cta-btn align-middle" href="aula7.html">Próxima Aula</a>
-          </div>
-        </div>
-    </div>
-    </section>
 
   <!--==========================
       Modais - Bibliografia & Créditos
@@ -697,7 +714,7 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- JavaScript Libraries -->
+  <!-- Biblioteca de JavaScripts-->
   <script src="../../lib/jquery/jquery.min.js"></script>
   <script src="../../lib/jquery/jquery-migrate.min.js"></script>
   <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -710,16 +727,27 @@
   <!--Ionicons-->
   <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
 
-
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!--FlipCards-->
-  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-
-  <!-- Template Main Javascript File -->
+  <!-- Javascripts-->
   <script src="../../js/main.js"></script>
   <script src="../../js/main-timeline.js"></script>
+
+  <!--Acessibilidade-->
+  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="../../js/jquery.font-accessibility.min.js"></script>
+
+  <script>
+  $(function(){
+    /* Botões de Acessibilidade */
+    $('#font-setting-buttons').easyView({
+      container: '#acessibilidade',
+      increaseSelector: '.increase-me',
+      decreaseSelector: '.decrease-me',
+      normalSelector: '.reset-me',
+      contrastSelector: '.change-me'
+    });
+
+  });
+  </script>
 
 </body>
 </html>

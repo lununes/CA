@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <title>Curso Ciência Aberta - Série 1: Curso 2 - Introdução</title>
@@ -14,25 +14,25 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet"> 
 
-  <!-- Bootstrap CSS File -->
+  <!-- Bootstrap CSS -->
   <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Libraries CSS Files -->
+  <!-- Biblioteca CSS -->
   <link href="../../lib/animate/animate.min.css" rel="stylesheet">
-  <link href="font-awesome/css/all.css" rel="stylesheet"> <!--Font Awesome: load all styles -->
+  <link href="font-awesome/css/all.css" rel="stylesheet"> <!-- Font Awesome -->
   <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"><!--Ionicons-->
   <link href="../../lib/aos/aos.css" rel="stylesheet">
   <link href="../../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-  <!-- Main Stylesheet File -->
+  <!-- CSS geral das aulas e recursos visuais -->
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/style-visual-resources.css">
   <link rel="stylesheet" href="../../css/style-aulas.css">
 
 </head>
 
-<body>
-
+<body id="acessibilidade">
+<!-- Template Main Javascript File -->
   <!--==========================
     Header
   ============================-->
@@ -72,11 +72,24 @@
       <div class="container">
         <div class="row" data-aos="flip-right">
           <div class="col-12">
-            <p><a href='introducao.html' target='_blank'><i class="fas fa-home"></i> Curso 2: Panorama histórico da Ciência aberta</a> > <a href='introducao.html' target='_blank'>Introdução</a></p>
+            <ul class="nav-menu">
+              <li><a href='introducao.html' target='_blank'><i class="fas fa-home"></i> Curso 2: Panorama histórico da Ciência aberta</a> > <a href='introducao.html' target='_blank'>Introdução</a></li>
+              <li class="float-right">            
+                <div id="font-setting-buttons">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary decrease-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary reset-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary increase-me"><i class="fas fa-font"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
     </div>
   </div>
+  <!--Fim do Breadcrumb-->  
+
   </header><!-- #header -->
 
   <!--==========================
@@ -85,8 +98,7 @@
   <section id="intro" class="triangle" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
     <div class="intro-text">
       <p class="headline-small" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">Série 1 | Curso 2</p>
-      <h2 data-aos="fade-in" data-aos-duration="850" data-aos-delay="600"><span>Panorama Histórico da</span> Ciência Aberta?</h2>
-      <!--<img data-aos="fade-in" data-aos-duration="1500" data-aos-delay="900" src="img/logo-Escola-Corporativa-Fiocruz.png" alt="Logo da Escola Corporativa Fiocruz" title="Escola Corporativa Fiocruz"/>-->
+      <h2 data-aos="fade-in" data-aos-duration="850" data-aos-delay="600"><span>Panorama Histórico da</span> Ciência Aberta</h2>
     </div>
 
   </section><!-- #intro -->
@@ -123,7 +135,23 @@
     </section><!-- #bloco1 -->
 
     <!--==========================
-      Bloco 2 - Barra de logos
+      Bloco 2 - Navegação entre aulas
+    ============================-->
+    <section id="nav-class">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 cta-btn-previous text-center">
+              <a class="cta-btn align-middle" href="../../index.html">Ver Outros Cursos</a>
+            </div>
+            <div class="col-lg-6 cta-btn-next text-center">
+              <a class="cta-btn align-middle" href="aula1.html">Próxima Aula</a>
+          </div>
+        </div>
+    </div>
+    </section>
+
+    <!--==========================
+      Bloco 3 - Barra de logos
     ============================-->
     <section id="barra-logos" class="blocos">
       <div class="container">
@@ -141,22 +169,6 @@
     </div>
     </section>
       
-    <!--==========================
-      Bloco 3 - Navegação entre aulas
-    ============================-->
-    <section id="nav-class">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-6 cta-btn-previous text-center">
-              <a class="cta-btn align-middle" href="../../index.html">Ver Outros Cursos</a>
-            </div>
-            <div class="col-lg-6 cta-btn-next text-center">
-              <a class="cta-btn align-middle" href="aula1.html">Próxima Aula</a>
-          </div>
-        </div>
-    </div>
-    </section>
-
   <!--==========================
       Modais - Bibliografia & Créditos
     ============================-->
@@ -429,7 +441,7 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- JavaScript Libraries -->
+  <!-- Biblioteca de JavaScripts-->
   <script src="../../lib/jquery/jquery.min.js"></script>
   <script src="../../lib/jquery/jquery-migrate.min.js"></script>
   <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -443,8 +455,26 @@
   <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
 
 
-  <!-- Template Main Javascript File -->
+  <!-- Javascripts-->
   <script src="../../js/main.js"></script>
+
+  <!--Acessibilidade-->
+  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="../../js/jquery.font-accessibility.min.js"></script>
+
+  <script>
+  $(function(){
+    /* Botões de Acessibilidade */
+    $('#font-setting-buttons').easyView({
+      container: '#acessibilidade',
+      increaseSelector: '.increase-me',
+      decreaseSelector: '.decrease-me',
+      normalSelector: '.reset-me',
+      contrastSelector: '.change-me'
+    });
+
+  });
+  </script>
 
 </body>
 </html>

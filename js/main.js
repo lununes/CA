@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
     });
     $mobile_nav.find('> ul').attr({
       'class': '',
-      'id': ''
+      'id': 'mobile-menu'
     });
     $('body').append($mobile_nav);
     $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fas fa-bars"></i></button>');
