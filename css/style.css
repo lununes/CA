@@ -206,7 +206,7 @@ h5, h6 {margin-bottom:10px;}
 #breadcrumb {
   background: #fff;
   padding: 12px 0;
-  height: 45px;
+  height: auto;
   transition: all 0.5s;
   /*box-shadow: 2px 1px 3pc rgb(0,0,0, 0.2);*/
   position: fixed;

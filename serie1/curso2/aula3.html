@@ -28,6 +28,7 @@
   <!-- CSS geral das aulas e recursos visuais -->
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/style-visual-resources.css">
+  <link rel="stylesheet" href="../../css/serie1/curso2/style-aula3.css">
 
 </head>
 
@@ -344,16 +345,26 @@
 
         <div class="row blocos justify-content-center">
             <!--Saiba Mais-->
-            <div class="saiba-mais col-10 col-md-8" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
-              <div class="box-quote multi-border" style="padding:30px 0;">
-                <h5 style="padding:30px;"><i class="fas fa-question-circle" data-fa-transform="grow-25"></i>Saiba mais:</h5>
+            <div class="saiba-mais col-10 col-md-10" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
+              <div class="box-quote multi-border">
+                <h5><i class="fas fa-question-circle" data-fa-transform="grow-25"></i>Saiba mais:</h5>
                 <div class="saiba-mais-content">
                   <ul>
-                    <li style="padding:30px;"><i class="icon ion-ios-arrow-forward"></i> Conheça a <a href="http://periodicos.fiocruz.br/pt-br/content/pol%C3%ADtica-de-acesso-aberto-ao-conhecimento-da-fiocruz" target="_blank">árvore de decisão para compartilhamento e abertura de dados sensíveis</a> de forma aberta e ética elaborada pela <em>Australian National Data Service</em>.<br/></li>
+                    <li><i class="icon ion-ios-arrow-forward"></i> Conheça a <a href="http://periodicos.fiocruz.br/pt-br/content/pol%C3%ADtica-de-acesso-aberto-ao-conhecimento-da-fiocruz" target="_blank">árvore de decisão para compartilhamento e abertura de dados sensíveis</a> de forma aberta e ética elaborada pela <em>Australian National Data Service</em>.<br/></li>
 
-                   <li class="d-none d-sm-block"><script id="infogram_0_politica_de_acesso_aberto_ao_conhecimento__fiocruz" title="Política de Acesso Aberto ao Conhecimento | Fiocruz" src="https://e.infogram.com/js/dist/embed.js?A4I" type="text/javascript"></script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/politica_de_acesso_aberto_ao_conhecimento__fiocruz" style="color:#989898!important;text-decoration:none!important;" target="_blank">Política de Acesso Aberto ao Conhecimento | Fiocruz</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div><br/><p class="text-right quote-autor">Fonte: <a href="http://periodicos.fiocruz.br/pt-br/content/pol%C3%ADtica-de-acesso-aberto-ao-conhecimento-da-fiocruz" target="_blank">Flávia Lobato (Portal de Periódicos Fiocruz)</a>, a partir da <em>Australian National Data Service</em></p></li>
+                    <li>
+                      <div id="fluxograma">
+                        <div class="header">
+                          <h5>Publicação e Compartilhamento de Dados Sensíveis <a href="#" data-toggle="modal" data-target="#modal-fluxograma"><i class="fas fa-question-circle"></i></a></h5>
+                          <h6>Quando e como publicar dados sensíveis da forma mais aberta e ética possível</h6>
+                          <p>Para mais informações veja <a href='https://www.ands.org.au/working-with-data/sensitive-data/sharing-sensitive-data' target='_blank'>a página do Australian National Data Service, que trata do compartilhamento seguro de dados sensíveis</a>.</p>
+                        </div>
+                        <p>Dados sensíveis identificam indivíduos, espécies, objetos ou locais, podendo acarretar riscos de discriminação, danos ou atenção indesejada.</p>
+                        <img class="d-none d-sm-block rounded mx-auto img-fluid" src="../../img/serie1/curso2/aula3/fluxograma.svg" />
+                        <img class="d-block d-sm-none rounded mx-auto img-fluid" src="../../img/serie1/curso2/aula3/fluxograma-mobile2.svg">
 
-                   <li class="d-block d-sm-none"><img class="rounded mx-auto img-fluid" src="../../img/serie1/curso2/aula3/infogram.png" alt="Política de Acesso Aberto ao Conhecimento | Fiocruz"><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/politica_de_acesso_aberto_ao_conhecimento__fiocruz" style="color:#989898!important;text-decoration:none!important;" target="_blank">Política de Acesso Aberto ao Conhecimento | Fiocruz</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div><br/><p class="text-right quote-autor" style="padding:0 30px;">Fonte: <a href="http://periodicos.fiocruz.br/pt-br/content/pol%C3%ADtica-de-acesso-aberto-ao-conhecimento-da-fiocruz" target="_blank">Flávia Lobato (Portal de Periódicos Fiocruz)</a>, a partir da <em>Australian National Data Service</em></p></li>
+                      </div>
+                    </li>
 
 
                   </ul>
@@ -675,6 +686,29 @@
                   </div>
               </div>
           </div><!-- Modal Créditos End -->
+
+          <!-- Modal Fluxograma -->
+          <div class="modal fade serie1" id="modal-fluxograma" tabindex="-1" role="dialog" aria-labelledby="modal-creditosTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="modal-creditosTitle">Créditos</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Tradução livre do material elaborado pelo Australian National Data Service. Decisive-Decision-Tree: Publishing and Sharing Sensitive Data. Disponível em: <a href='https://www.ands.org.au/__data/assets/pdf_file/0010/385309/sensitive-decision-tree.pdf' target='_blank'>https://www.ands.org.au/__data/assets/pdf_file/0010/385309/sensitive-decision-tree.pdf</a></p>
+
+                        <p>Licença: Creative Commons Australia Attribution 3.0.</p>
+
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      </div>
+                  </div>
+              </div>
+          </div><!-- Modal Fluxograma End -->
 
   </main>
 
