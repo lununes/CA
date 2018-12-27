@@ -351,8 +351,25 @@ Box de Saiba Mais
     border-right: 5px solid #fff;
     box-shadow: 1px 2px 1px rgb(0,0,0, 0.2);
     width: 1.1em;
-	height: 1.1em;
+	  height: 1.1em;
 }
+
+.saiba-mais a.modal-legenda .fa-question-circle {
+  left: 0;
+  top: 0;
+  position: relative;
+  font-size: inherit;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  margin-right: 0;
+  margin-left: 5px;
+  color: var(--link-color1);
+  transition: 0.5s;
+}
+
+.saiba-mais a:hover.modal-legenda .fa-question-circle {color:var(--link-color-hover);}
 
 .saiba-mais-content {
   position: relative;
@@ -631,7 +648,10 @@ Timeline
   opacity: 0.3;
 }
 
-.cd-timeline h6  {font-family: "Montserrat", sans-serif;}
+.cd-timeline h6  {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
 
 @media only screen and (min-width: 1170px) {
   .cd-timeline {

@@ -7,6 +7,22 @@
 
 #fluxograma p {padding: 0 15px;}
 
+#fluxograma p.destaque {
+	font-size: 16px;
+	font-weight: 400;
+	padding: 15px 60px;
+	border: 1px solid var(--main-color3);
+	margin: 0px 60px 30px 60px;
+}
+
+@media only screen and (max-width: 767px) {
+
+	#fluxograma p.destaque  {
+		padding: 15px 10px;
+		margin: 0px 20px 30px 20px;
+	}
+}
+
 #fluxograma .header {
 	background:var(--white-color);
 	padding:30px 20px;
