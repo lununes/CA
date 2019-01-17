@@ -725,36 +725,46 @@ Timeline
   .cd-timeline__img h4.ano {
   font-size: 10px;
   margin: 15px 0;
-}
+  }
+
+   .cd-timeline__img h4.ano.mes {margin: 8px 0;}
 }
 
 /*Tablets and some large devices(>768)*/
 @media (min-width: 768px) and (max-width: 1169px) {
 	.cd-timeline__img h4 {margin: 4px 0;}
+
+  .cd-timeline__img h4.ano {
+    font-size: 10px;
+    margin: 14px 0;
+  }
+
+  .cd-timeline__img h4.ano.mes {margin: 8px 0;}
+
 }
 
-.cd-timeline__img img {
-  display: block;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
-}
+  .cd-timeline__img img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+  }
 
-.cd-timeline__img.cd-timeline__option1{
-  background: var(--main-color2);
-}
+  .cd-timeline__img.cd-timeline__option1{
+    background: var(--main-color2);
+  }
 
-.cd-timeline__img.cd-timeline__option2 {
-  background: #c03b44;
-}
+  .cd-timeline__img.cd-timeline__option2 {
+    background: #c03b44;
+  }
 
-.cd-timeline__img.cd-timeline__option3 {
-  background: #f0ca45;
-}
+  .cd-timeline__img.cd-timeline__option3 {
+    background: #f0ca45;
+  }
 
 @media only screen and (min-width: 1170px) {
   .cd-timeline__img {
