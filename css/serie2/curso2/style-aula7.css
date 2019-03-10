@@ -1,0 +1,12 @@
+/*Slider*/
+
+.carousel .carousel-item {
+    padding-left: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .carousel .carousel-item {
+    padding-left: 0;
+    }
+}

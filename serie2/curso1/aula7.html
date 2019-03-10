@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131194878-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131194878-1');
+  </script>
+  <meta charset="utf-8">
+  <title>Curso Ciência Aberta - Série 1: Curso 1 - Aula 7: Educação Aberta</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Ciência, Fiocruz, Curso, Ciência Aberta" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/favicon.ico" rel="icon">
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/indice.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet"> 
+
+  <!-- Bootstrap CSS -->
+  <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Biblioteca CSS -->
+  <link href="../../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="font-awesome/css/all.css" rel="stylesheet"> <!--Font Awesome -->
+  <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"><!--Ionicons-->
+  <link href="../../lib/aos/aos.css" rel="stylesheet">
+  <link href="../../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- CSS geral das aulas e recursos visuais -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/style-visual-resources.css">
+  <link rel="stylesheet" href="../../css/serie1/curso1/style-aulas.css">
+
+</head>
+
+<body id="acessibilidade">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="https://campusvirtual.fiocruz.br/portal/formacao-modular/ciencia-aberta" class="scrollto"><img src="../../img/logo-cv-black.svg" alt="Ir para o Campus Virtual" title="Campus Virtual"/> </a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-has-children"><a href="#">Aulas</a>
+            <ul>
+              <li><h6>Curso 1 | o que é Ciência Aberta?</h6></li>
+              <li class="d-none d-sm-block"><span class="section-divider serie1"></span></li>
+              <li class="d-block d-sm-none"><span class="section-divider mobile"></span></li>
+              <li><a href="aula1.html">Aula 1: Introdução à Ciência Aberta</a></li>
+              <li><a href="aula2.html">Aula 2: Acesso Aberto</a></li>
+              <li><a href="aula3.html">Aula 3: Dados de pesquisa abertos</a></li>
+              <li><a href="aula4.html">Aula 4: Workflows Abertos</a></li>
+              <li><a href="aula5.html">Aula 5: Ciência Cidadã</a></li>
+              <li><a href="aula6.html">Aula 6: Inovação Aberta</a></li>
+              <li><a href="aula7.html">Aula 7: Educação Aberta</a></li>
+              <li><a href="aula8.html">Aula 8: Boas práticas em ciência aberta</a></li>
+            </ul>
+          </li>
+          <li><a href='#' data-toggle="modal" data-target="#modal-bibliografia">Bibliografia</a></li>
+          <li><a href='#' data-toggle="modal" data-target="#modal-creditos">Créditos</a></li>
+          <!-- <li class="float-right"><a href="https://campusvirtual.fiocruz.br/portal/formacao-modular/ciencia-aberta"><i class="icon ion-md-apps" style="font-size: 18px;"></i> Outros Cursos do Ciência Aberta</a></li> -->
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+
+    <!--Breadcrumb-->
+    <div id="breadcrumb" class="d-none">
+      <div class="container">
+        <div class="row" data-aos="flip-right">
+          <div class="col-12">
+            <ul class="nav-menu">
+              <li><a href='aula1.html' target='_blank'><i class="fas fa-home"></i> Curso 1: O que é Ciência Aberta?</a> > <a href='aula7.html' target='_blank'>Aula 7 - Educação Aberta</a></li>
+              <li class="float-right">            
+                <div id="font-setting-buttons">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary decrease-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary reset-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary increase-me"><i class="fas fa-font"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!--Fim do Breadcrumb-->  
+
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="triangle" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
+    <div class="intro-text">
+      <p class="headline-small" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">Série 1 | Curso 1</p>
+      <h2 data-aos="fade-in" data-aos-duration="850" data-aos-delay="600"><span>O que é</span> Ciência Aberta?</h2>
+      <!--<img data-aos="fade-in" data-aos-duration="1500" data-aos-delay="900" src="img/logo-Escola-Corporativa-Fiocruz.png" alt="Logo da Escola Corporativa Fiocruz" title="Escola Corporativa Fiocruz"/>-->
+    </div>
+
+  </section><!-- #intro -->
+
+  <main id="main">
+      
+    <!--==========================
+      Bloco 1 - Boas práticas e ferramentas de ciência aberta
+    ============================-->
+    <section id="bloco1" class="blocos" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="1000">
+      <div class="container">
+        <div class="section-header">
+          <p class="headline-small text-center">Aula 7</p>
+          <h3 class="section-title">Educação Aberta</h3>
+          <span class="section-divider serie1 middle"></span>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 content wow fadeIn">
+            <p>Objetivos educacionais: :</p>
+
+            <div class="obj-lista col-12 col-md-8 offset-md-2 text-left">
+              <ul class="list-group">
+                <li class="list-group-item wow slideInUp" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon ion-md-checkmark-circle-outline"></i> Compreender o conceito de Educação aberta no contexto da Ciência aberta</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><!--/container-->
+    </section><!-- #bloco1 -->
+
+    <!--==========================
+      Bloco 2 - Introdução
+    ============================-->
+    <section id="bloco2" class="section-bg blocos">
+      <div class="container">
+          <div class="row justify-content-center wow">
+              <div class="col-12 wow fadeInRight">
+                <h4 class="text-center">Introdução</h4>
+                <span class="section-divider serie1 middle"></span>
+
+                <p>O termo <strong>Educação Aberta</strong> é utilizado na literatura há décadas, expressando muitas vezes formas inovadoras de educação, modelos pedagógicos revolucionários e mais recentemente relacionado com movimentos de acesso aberto. Lewis e Spencer (1986) definem a educação aberta como um termo utilizado para descrever cursos flexíveis, desenvolvidos para atender necessidades individuais; que visam remover as barreiras de acesso à educação tradicional, e sugerem uma filosofia de aprendizagem centrada no aluno (SANTOS, 2012).</p>
+
+                <p>Duas das principais características da educação aberta superior são:</p>
+
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <img class="mx-auto d-block img-fluid" src="../../img/serie1/curso1/aula7/ic1.svg" width="100" alt="">
+                    <p class="text-center">Flexibilidade na admissão de estudantes</p>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <img class="mx-auto d-block img-fluid" src="../../img/serie1/curso1/aula7/ic2.svg" width="100" alt="">
+                    <p class="text-center">Acesso à educação formal sem custo para o estudante</p>
+                  </div>
+                </div><br/>
+
+                <p>Educação aberta pode ser entendida de várias formas, porém, em todas as suas definições e aplicações, há um conjunto de práticas que tendem a caracterizá-la. Essas práticas têm enfoques específicos dependendo do contexto, do sistema de aprendizagem e do momento histórico. </p>
+
+                <p>Não exaustivamente, elas estão relacionadas a um ou a vários dos seguintes itens:</p>
+
+               <div class="row"> 
+                 <div class="col-12 col-md-8 offset-md-2">
+                  <div class="obj-lista">
+                    <ul class="list-group">
+                      <li class="list-group-item wow slideInLeft" data-wow-duration="0.5s"><i class="icon-bullet"></i> A liberdade do estudante decidir onde estudar, podendo ser de sua casa, do seu trabalho ou até mesmo da própria instituição de ensino e/ou pólos de aprendizagem;</li>
+                      <li class="list-group-item wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> A possibilidade de se estudar por módulos, acúmulo de créditos ou qualquer outra forma que permita ao estudante aprender de forma compatível com o ritmo necessário para seu estilo de vida;</li>
+                      <li class="list-group-item wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> A utilização da autoinstrução, com reconhecimento formal[1] ou informal da aprendizagem por meio de certificação opcional;</li>
+                      <li class="list-group-item wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> A isenção de taxas de matrícula, mensalidades e outros custos que seriam considerados uma barreira ao acesso à educação formal;</li>
+                      <li class="list-group-item wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> A isenção de vestibulares e da necessidade de apresentar qualificações prévias, que poderiam constituir uma barreira de acesso à educação formal;</li>
+                      <li class="list-group-item wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> A acessibilidade dos cursos para alunos portadores de alguma deficiência física, bem como dos que têm alguma desvantagem social;</li>
+                      <li class="list-group-item wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon-bullet"></i> A provisão de recursos educacionais abertos, utilizados tanto na educação formal quanto na informal.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <p>Além desses itens, podemos incluir outros aspectos que são interdependentes de outras práticas para efetivamente constituírem educação aberta. Por exemplo, práticas pedagógicas centradas no aluno, a utilização de materiais educacionais criados por estudantes, o acesso aberto a repositórios de pesquisas científicas e a utilização de software de código aberto para fins educacionais.(SANTOS,2012)</p>
+
+              <p>Desde a década de 70 a discussão sobre Educação aberta relaciona-se também a práticas de ensino coerentes com uma visão de sociedade mais libertária e democrática.</p>
+
+                <!--Box de citação curta -->
+                <div class="row justify-content-center">
+                  <div class="box-quote option1 col-10 col-md-8" data-aos="flip-right">
+                    <p class="text-center"><i class="fas fa-quote-left" data-fa-transform="grow-15"></i> A educação não é um negócio, é criação <i class="fas fa-quote-right" data-fa-transform="grow-15"></i></p>
+                    <p class="text-right quote-autor">István Mészaros</p>
+                  </div>
+                </div>
+                <!--Fim de Box de citação curta--> 
+
+                <p>Para o autor dessa frase, István Mészaros, devemos reafirmar a educação na sua natureza de qualificar para a vida e não para o mercado. Pensando nessa concepção de educação:</p>
+
+                <!--Box simples-->
+                <div class="row justify-content-center wow slideInUp">
+                  <div class="box-quote col-10 col-md-8">
+                    <p class="text-center"><strong>Qual seria seu papel na construção de uma sociedade mais democrática? </strong></p>
+                  </div>
+                </div>
+                <!--Fim de Box simples-->
+
+                <p>O simples acesso à escola não garante uma educação de qualidade e nem mesmo o acesso ao conhecimento. Para o autor as ações vão muito além dos espaços da sala de aula (MÉSZAROS, 2014).</p>
+
+                <p>O debate e as iniciativas em torno do acesso aberto ao conhecimento vêm crescendo nos últimos anos, e se expande para outras áreas. Podemos afirmar que as questões referentes ao acesso aberto se relacionam com a ciência e a educação. E no campo da educação, com a oferta de cursos na web e com o direito de se utilizar recursos educacionais abertos.</p>
+              </div>
+          </div>
+      </div><!--Fim do container-->
+
+    </section><!-- #bloco2 -->
+
+    <!--==========================
+      Bloco 3 - A Educação Aberta
+    ============================-->
+    <section id="bloco3" class="section-bg2 blocos">
+        <div class="container">
+          <div class="row wow">
+              <div class="col-12 fadeInRight">
+                <h4 class="text-center">A Educação Aberta</h4>
+                <span class="section-divider middle serie1"></span>
+                
+                <!--Box simples-->
+                <div class="row justify-content-center wow slideInUp">
+                  <div class="box-quote col-10 col-md-8">
+                    <p class="text-center"><strong>Em que medida a discussão sobre o modelo de ciência indica o tipo de desenvolvimento de um país?</strong></p>
+                  </div>
+                </div>
+                <!--Fim de Box simples-->
+
+                <p>Neste cenário ganha espaço a ampliação da discussão para as possibilidades e obstáculos de uma ciência aberta e uma educação aberta. Para alguns autores, essa questão está colocada ao se discutir modelos de desenvolvimento, uma vez que os pobres são certamente os mais afetados pelos sistemas de apropriação privada do conhecimento, principalmente em áreas sensíveis, como a de medicamentos, agricultura e alimentação (ALBAGLI, 2014). Estamos diante de novas perspectivas para uma antiga questão, o direito ao conhecimento, enquanto direito do cidadão ao acesso à educação, ao saber. Pode-se afirmar que o debate atual sobre o direito ao conhecimento torna-se um dos temas centrais na construção da democracia nas sociedades contemporâneas.</p>
+
+                <p>Ampliar o acesso ao saber demanda esforços de natureza política, implicações ideológicas e enfrentamentos no campo do direito, mais especificamente de direitos autorais.  Neste contexto de contradições e antagonismos, vimos crescer a defesa por uma educação aberta e pelo uso de recursos educacionais abertos.</p>
+
+                <p>Recursos educacionais abertos podem ser considerados componentes (ou estratégias/práticas) da educação aberta, que é praticada atualmente dentro de uma perspectiva de compartilhamento de conteúdo digital com licença de uso aberta.(SANTOS,2012)</p>
+
+                <p>No centro desse debate entre a promoção da educação aberta e a proteção por propriedade intelectual, desdobram-se na verdade os interesses econômicos de editoras, instituições de ensino particulares, e muitas vezes atingem o ensino público em geral, e especialmente o universo da pós-graduação, especialização ou formação profissional continuada.</p>
+
+                <img class="advanced-feature-img-left mx-auto d-block img-fluid" data-aos="flip-right" src="../../img/serie1/curso1/aula2/img1.png" alt=""/>
+
+                <p>O debate sobre acesso aberto deve ser ampliado, o conteúdo científico e didático compõe uma “educação aberta” e aponta  diferentes cenários e definições sobre o papel da ciência.  Existe um consenso sobre a importância da educação nas sociedades e sua prioridade. Partindo dessa premissa, a escola ou qualquer instituição de ensino pode, portanto, ser vista como um “bem comum” (MANTOVANI; DIAS; LIESENBERG. 2006). </p>
+                
+              </div>
+
+          </div><!--Fim da row-->
+        </div><!--Fim do container-->
+    </section><!-- #bloco3 -->
+      
+    <!--==========================
+      Bloco 4 - Navegação entre aulas
+    ============================-->
+    <section id="nav-class">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 cta-btn-previous text-center">
+              <a class="cta-btn align-middle" href="aula6.html">Aula Anterior</a>
+            </div>
+            <div class="col-lg-6 cta-btn-next text-center">
+              <a class="cta-btn align-middle" href="aula8.html">Próxima Aula</a>
+          </div>
+        </div>
+    </div>
+    </section>
+      
+    <!--==========================
+      Bloco 5 - Barra de logos
+    ============================-->
+    <section id="barra-logos" class="blocos">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h6 class="text-center">Parceiros:</h6>
+          </div>
+            <div class="col-md-3 offset-md-2">
+              <a href="http://escolacorporativa.fiocruz.br/" target="_blank"><img class="mx-auto d-block" src="../../img/logo-Escola-Corporativa-Fiocruz.png" alt="Logo da Escola Corporativa da Fiocruz"></a>
+            </div>
+            <div class="col-md-3 offset-md-2">
+              <a href="https://www.uminho.pt/" target="_blank"><img class="mx-auto d-block" src="../../img/logo-uminho.png" alt="Logo da Universidade do Minho"></a>
+          </div>
+        </div>
+    </div>
+
+  <!--==========================
+      Modais - Bibliografia & Créditos
+    ============================-->
+
+<!-- Modal Bibliografia-->
+          <div class="modal fade serie1" id="modal-bibliografia" tabindex="-1" role="dialog" aria-labelledby="modal-bibliografiaTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="modal-bibliografiaTitle">Referências bibliográficas</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                        
+                        <!--Accordion-->
+                        <ul id="accordion-bibliografia" class="accordion">
+
+                          <!--Item 1-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula1"> Aula 1 | Introdução à Ciência Aberta <i class="icon ion-md-remove"></i></a>
+                            <div id="aula1" class="collapse">
+                              <ul>
+                                <li>FOSTER, Open Science Definition: <a href='https://www.fosteropenscience.eu/foster-taxonomy/open-science-definition' target='_blank'>https://www.fosteropenscience.eu/foster-taxonomy/open-science-definition</a></li>
+
+                                <li>FOSTER introdução: <a href='https://www.fosteropenscience.eu/content/what-open-science-introduction' target='_blank'>https://www.fosteropenscience.eu/content/what-open-science-introduction</a></li>
+
+                                <li>Glossário de Ciência Aberta: <a href='http://www.ciencia-aberta.pt/glossario' target='_blank'>http://www.ciencia-aberta.pt/glossario</a></li>
+
+                                <li>Infográfico 10 razões para a ciência aberta: <a href='http://docs.wixstatic.com/ugd/a8bd7c_2a8c57f2c5664d68a00569bc2a0343ea.pdf' target='_blank'>http://docs.wixstatic.com/ugd/a8bd7c_2a8c57f2c5664d68a00569bc2a0343ea.pdf</a> </li>
+
+                                <li>Open Science Taxonomy (projeto FOSTER): <a href='https://www.fosteropenscience.eu/foster-taxonomy/open-science' target='_blank'>https://www.fosteropenscience.eu/foster-taxonomy/open-science</a> </li>
+
+                                <li>Vídeo Fiocruz Ciência Aberta (CONFOA): <a href='https://vimeo.com/237718228' target='_blank'>https://vimeo.com/237718228</a> </li>
+
+                                <li>Vídeo Eloy Rodrigues sobre Ciência Aberta: <a href='https://www.youtube.com/watch?v=i9gWw0CvD5A' target='_blank'>https://www.youtube.com/watch?v=i9gWw0CvD5A</a></li>
+                              </ul>           
+                            </div>
+                          </li>
+
+                          <!--Item 2-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula2"> Aula 2 | Acesso Aberto <i class="icon ion-md-remove"></i></a>
+                            <div id="aula2" class="collapse">
+                              <ul>
+                                <li>Budapeste pelo Acesso Aberto (Budapest Open Access Initiative), também conhecida por BOAI: <a href='https://www.budapestopenaccessinitiative.org/' target='_blank'>https://www.budapestopenaccessinitiative.org/</a></li>
+
+                                <li>DOAJ - Directory of Open Access Journals - <a href='https://doaj.org/' target='_blank'>https://doaj.org/</a></li>
+
+                                <li>Infográfico - principais vantagens de publicar em acesso aberto: <a href='http://docs.wixstatic.com/ugd/a8bd7c_503bd4fcaa3d45f79a1a9702acad94f7.pdf' target='_blank'>http://docs.wixstatic.com/ugd/a8bd7c_503bd4fcaa3d45f79a1a9702acad94f7.pdf</a></li>
+
+                                <li>OpenDOAR - <a href='http://www.opendoar.org/' target='_blank'>http://www.opendoar.org/</a></li>
+
+                                <li>Repositório Institucional da Fiocruz – ARCA - <a href='https://www.arca.fiocruz.br/' target='_blank'>https://www.arca.fiocruz.br/</a></li>
+
+                                <li>Vídeo What is Open Access: <a href='https://www.youtube.com/watch?time_continue=301&v=gzRgknylTEM' target='_blank'>https://www.youtube.com/watch?time_continue=301&v=gzRgknylTEM</a></li>
+                              </ul>           
+                            </div>
+                          </li>
+
+                          <!--Item 3-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula3"> Aula 3 | Dados de pesquisa abertos  <i class="icon ion-md-remove"></i></a>
+                            <div id="aula3" class="collapse">
+                              <ul>
+                                <li>Infográfico - 5 níveis de abertura de dados: <a href='https://5stardata.info/en/' target='_blank'>https://5stardata.info/en/</a></li>
+
+                                <li>Princípios FAIR - <a href='https://www.nature.com/articles/sdata201618' target='_blank'>https://www.nature.com/articles/sdata201618</a></li>
+
+                                <li>Vídeo Dados Abertos (CONFOA): <a href='https://vimeo.com/237718271' target='_blank'>https://vimeo.com/237718271</a></li>
+
+                                <li>Vídeo de Pedro Príncipe: <a href='https://www.youtube.com/watch?v=WVRXRCvWKSw&t=2s' target='_blank'>https://www.youtube.com/watch?v=WVRXRCvWKSw&t=2s</a></li>
+
+                              </ul> 
+                            </div>
+                          </li>
+
+                          <!--Item 4-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula4"> Aula 4 | Workflows Abertos <i class="icon ion-md-remove"></i></a>
+                            <div id="aula4" class="collapse">
+                              <ul>
+
+                                <li>República Portuguesa. Ministério da Ciência, Tecnologia e Ensino Superior. Ciência Aberta. <a href='http://websectes.fccn.pt/MOOC-CA-modulo3/mtodos.html' target='_blank'>http://websectes.fccn.pt/MOOC-CA-modulo3/mtodos.html</a> </li>
+
+                                <li>Software Sustainability Institute. <a href='https://www.software.ac.uk/resources/guides/software-management-plans' target='_blank'>https://www.software.ac.uk/resources/guides/software-management-plans</a></li>
+
+                                <li>Vídeo FAIR Software? How Can We Make Easier to Find, Access, Deposit and Reuse Software - Neil Chue Hong (Software Sustainability Institute): <a href='https://media.ed.ac.uk/media/0_p03epvcf' target='_blank'></a></li>
+
+                                <li>Vídeo Ivo Grigorov: <a href='https://youtu.be/aOhQZIQ9iVQ' target='_blank'>https://youtu.be/aOhQZIQ9iVQ</a> </li>
+
+                                <li>Wikipedia. Process-data diagram of Open source software development: <a href='https://en.wikipedia.org/wiki/File:OSSD_process_data_diagram.png ' target='_blank'>https://en.wikipedia.org/wiki/File:OSSD_process_data_diagram.png</a> </li>
+
+                                <li>Wikipedia. List of free and open-source software packages: <a href='https://en.wikipedia.org/wiki/List_of_free_and_open-source_software_packages' target='_blank'>https://en.wikipedia.org/wiki/List_of_free_and_open-source_software_packages</a></li>
+
+                              </ul> 
+                            </div>
+                          </li>
+
+                          <!--Item 5-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula5"> Aula 5 | Ciência Cidadã  <i class="icon ion-md-remove"></i></a>
+                            <div id="aula5" class="collapse">
+
+                              <ul>
+                                <li>citizenscience.org: <a href='http://citizenscience.org/' target='_blank'>http://citizenscience.org/</a></li>
+
+                                <li>Dez princípios da ciência cidadã - <a href='http://ecsa.citizen-science.net/sites/default/files/ecsa_ten_principles_of_cs_portuguese.pdf' target='_blank'>http://ecsa.citizen-science.net/sites/default/files/ecsa_ten_principles_of_cs_portuguese.pdf</a></li>
+
+                                <li>SiBBr - Sistema de Informação sobre a Biodiversidade Brasileira: <a href='http://www.sibbr.gov.br/cienciacidada/' target='_blank'>http://www.sibbr.gov.br/cienciacidada/</a></li>
+
+                                <li>Vídeo - Guardiões da Chapada: <a href='https://vimeo.com/218991252' target='_blank'>https://vimeo.com/218991252</a></li>
+
+                              </ul>
+
+                            </div>
+                          </li>
+
+                          <!--Item 6-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula6"> Aula 6 | Inovação Aberta  <i class="icon ion-md-remove"></i></a>
+                            <div id="aula6" class="collapse">
+
+                            <ul>
+
+                              <li>Choose a License.com: <a href='https://choosealicense.com/' target='_blank'>https://choosealicense.com/</a></li>
+                              
+                              <li>Creative Commons Toolkit for Business - The 6 Benefits Explained in Detail: <a href='https://docs.google.com/document/d/1rDLqZ95fatIAz-17efwJL7oXz9Y48peExZF4y4EQNks/edit' target='_blank'>https://docs.google.com/document/d/1rDLqZ95fatIAz-17efwJL7oXz9Y48peExZF4y4EQNks/edit</a></li>
+
+                              <li>GRUPO FLEURY | Movimento Open Startups: <a href='https://www.youtube.com/watch?v=OEZriBwJl5w&list=PLabHAShjn8gdNL3VSZD0Lz6DqfzuKoNbj' target='_blank'>https://www.youtube.com/watch?v=OEZriBwJl5w&list=PLabHAShjn8gdNL3VSZD0Lz6DqfzuKoNbj</a></li>
+
+                              <li>Manual de Formação em Ciência Aberta - Licenciamento Aberto e Formatos de Ficheiros: <a href='https://github.com/Open-Science-Training-Handbook/Open-Science-Training-Handbook_PT/blob/master/02IntroducaoaCienciaAberta/06Licenciamento_Aberto_e_Formatos_de_Ficheiros.md' target='_blank'>https://github.com/Open-Science-Training-Handbook/Open-Science-Training-Handbook_PT/blob/master/02IntroducaoaCienciaAberta/06Licenciamento_Aberto_e_Formatos_de_Ficheiros.md</a></li>
+
+                              <li>O movimento 100 Open Startups: <a href='https://www.openstartups.net/br-pt/' target='_blank'>https://www.openstartups.net/br-pt/</a></li>
+
+                              <li>Rahman, H., Ramos, I. Open Innovation in SMEs: From Closed Boundaries to Networked Paradigm. Issues in Informing Science and Information Technology. v. 7, 2010.</li>
+
+                              <li>Vídeo RRI for Business and Industry: <a href='https://www.youtube.com/watch?v=FZhsvxmq8X4' target='_blank'>https://www.youtube.com/watch?v=FZhsvxmq8X4</a></li>
+
+                            </ul>
+
+                            </div>
+                          </li>
+
+                          <!--Item 7-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula7"> Aula 7 | Educação Aberta  <i class="icon ion-md-remove"></i></a>
+                            <div id="aula7" class="collapse">
+                              <ul>
+                                <li>Albagli, S. (2015). Ciência aberta em questão. Ciência aberta, questões abertas. Brasília: IBICT.</li>
+
+                                <li>Mantovani, O., Dias, M. H. P., & Liesenberg, H. (2006). Conteúdos abertos e compartilhados: novas perspectivas para a educação. Educação & Sociedade.</li>
+
+                                <li>Mészáros, I. (2014). The necessity of social control. NYU Press.</li>
+
+                              </ul>
+                            </div>
+                          </li>
+
+                          <!--Item 8-->
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#aula8"> Aula 8 | Boas práticas em ciência aberta  <i class="icon ion-md-remove"></i></a>
+                            <div id="aula8" class="collapse">
+                              <ul>
+
+                                <li>Vídeo What is Open Research? - <a href='https://www.youtube.com/watch?v=iE7N3jgF4nU' target='_blank'>https://www.youtube.com/watch?v=iE7N3jgF4nU</a></li>
+
+                                <li>Why open research: <a href='http://whyopenresearch.org/index' target='_blank'>http://whyopenresearch.org/index</a></li>
+
+                              </ul>
+                            </div>
+                          </li>    
+
+                        </ul><!--Fim do Accordion-->
+
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      </div>
+                  </div>
+              </div>
+          </div><!-- Modal Bibliografia End -->
+
+        <!-- Modal Créditos-->
+          <div class="modal fade serie1" id="modal-creditos" tabindex="-1" role="dialog" aria-labelledby="modal-creditosTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="modal-creditosTitle">Créditos</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+
+                        <h6>Ministério da Saúde</h6>
+
+                        <ul>
+                          <li>Gilberto Occhi<br/> <small><em>Ministro</em></small></li>
+                        </ul>
+
+                        <h6>Ministério da Ciência, Tecnologia, Inovação e Comunicação</h6>
+
+                        <ul>
+                          <li>Gilberto Kassab<br/> <small><em>Ministro</em></small></li>
+                        </ul>
+
+                        <h6>Fundação Oswaldo Cruz – Fiocruz</h6>
+
+                        <ul>
+                          <li>Nísia Trindade Lima<br/> <small><em>Presidente</em></small></li>
+                        </ul>
+
+                        <h6>Vice-Presidência Ensino, Informação e Comunicação (VPEIC)</h6>
+
+                        <ul>
+                          <li>Manoel Barral Netto<br/> <small><em>Vice-Presidente</em></small></li>
+                        </ul>
+
+                        <h6>Coordenação de Informação e Comunicação</h6>
+
+                        <ul>
+                          <li>Paula Xavier dos Santos<br/> <small><em>Coordenadora</em></small></li>
+                        </ul>
+
+                        <h6>Campus Virtual Fiocruz</h6>
+
+                        <ul>
+                          <li>Ana Cristina da Matta Furniel<br/> <small><em>Coordenadora</em></small></li>
+                        </ul>
+
+                        <h6>Escola Corporativa Fiocruz</h6>
+
+                        <ul>
+                          <li>Carla Xavier dos Santos Kaufmann<br/> <small><em>Diretora</em></small></li>
+                        </ul>
+
+                        <h6>Universidade do Minho</h6>
+
+                        <ul>
+                          <li>Eloy Rodrigues<br/> <small><em>Diretor dos Serviços de Documentação</em></small></li>
+                        </ul>
+
+                        <h6>Coordenadores acadêmicos</h6>
+
+                        <ul>
+                          <li>Eloy Rodrigues – Universidade do Minho</li>
+                          <li>Paula Xavier dos Santos – Fiocruz</li>
+                        </ul>
+
+                        <h6>Coordenadores de produção</h6>
+
+                        <ul>
+                          <li>Ana Cristina da Matta Furniel – Campus Virtual Fiocruz</li>
+                          <li>Carla Xavier dos Santos Kaufmann – Escola Corporativa Fiocruz</li>
+                        </ul>
+
+                        <h6>Designers Educacionais</h6>
+
+                        <ul>
+                          <li>Ana Paula Bernardo Mendonça – Campus Virtual Fiocruz</li>
+                          <li>Maria Luiza Panza Bruno – Escola Corporativa Fiocruz</li>
+                        </ul>
+
+
+                        <h6>Conteudistas:</h6>
+
+                        <ul>
+                          <li><strong>Aula 1 | Introdução à Ciência Aberta</strong>,<br/><strong>Aula 2 | Acesso Aberto</strong>,<br/><strong>Aula 3 | Dados de pesquisa abertos</strong>,<br/><strong>Aula 4 | Workflows Abertos</strong>,<br/><strong>Aula 5 | Ciência Cidadã</strong>,<br/><strong>Aula 6 | Inovação Aberta</strong> & <br/><strong>Aula 8 | Boas práticas em ciência aberta</strong><br/>Eloy Rodrigues, Antónia Correia, José Carvalho & Pedro Príncipe (Universidade do Minho) </li>
+
+                          <li><strong>Aula7 | Educação Aberta</strong><br/>Ana Cristina da Matta Furniel, Ana Paula Bernardo Mendonça & Rosane Mendes (Campus Virtual Fiocruz)</li>
+
+                        </ul>
+
+                        <h6>Designer de Interface:</h6>
+
+                        <ul>
+                          <li>Luciana Nunes</li>
+                        </ul>
+
+                        <h6>Apoio Técnico:</h6>
+
+                        <ul>
+                          <li>Eduardo Xavier da Silva (Campus Virtual Fiocruz)</li>
+                        </ul>
+
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      </div>
+                  </div>
+              </div>
+          </div><!-- Modal Créditos End -->
+
+  </main>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Biblioteca de JavaScripts-->
+  <script src="../../lib/jquery/jquery.min.js"></script>
+  <script src="../../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../lib/easing/easing.min.js"></script>
+  <script src="../../lib/aos/aos.js"></script>
+  <script src="../../lib/superfish/hoverIntent.js"></script>
+  <script src="../../lib/superfish/superfish.min.js"></script>
+  <script src="../../lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="../../lib/wow/wow.min.js"></script>
+  <!--Ionicons-->
+  <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+
+  <!-- Javascripts-->
+  <script src="../../js/main.js"></script>
+  <script src="../../js/main-timeline.js"></script>
+
+  <!--Acessibilidade-->
+  <script src="../../js/jquery-2.2.1.min.js"></script>
+  <script src="../../js/jquery.font-accessibility.min.js"></script>
+
+  <script>
+  $(function(){
+
+    /* Botões de Acessibilidade */
+    $('#font-setting-buttons').easyView({
+      container: '#acessibilidade',
+      increaseSelector: '.increase-me',
+      decreaseSelector: '.decrease-me',
+      normalSelector: '.reset-me',
+      contrastSelector: '.change-me'
+    });
+
+  });
+  </script>
+
+</body>
+</html>

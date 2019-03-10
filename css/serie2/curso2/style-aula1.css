@@ -1,0 +1,310 @@
+
+/*Série 1 - Curso 2 */
+
+/*Lista*/
+
+.obj-lista .list-group-item {
+	font-size:14px;
+	min-height:160px;
+}
+
+/*Carousel*/
+
+.carousel img {
+    position: relative;
+    top: 0px;
+    right: 20px;
+}
+
+.carousel table img {margin-right:10px;}
+
+
+/*Slider*/
+
+#carousel1 .carousel-inner {min-height: 535px;}
+
+/*Infográfico Ecossistema*/
+
+.circle-container {
+    position: relative;
+    width: 24em;
+    height: 24em;
+    padding: 2.8em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+    border: 1px dashed var(--main-color2);
+    border-radius: 50%;
+    margin: 1.75em auto 6em;
+}
+
+.circle-container div {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 4em; height: 4em;
+    margin: -2em; /* 2em = 4em/2 */ /* half the width */
+}
+
+
+.circle-container a {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 4em; height: 4em;
+    margin: -2em; /* 2em = 4em/2 */ /* half the width */
+}
+
+.circle-container .deg0 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-governanca-over.svg') no-repeat 0 0;
+    width:100%;
+}
+
+.circle-container .deg45 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-pesquisa-over.svg') no-repeat 0 0;
+    width:100%;
+}
+
+.circle-container .deg90 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-planos-estrategicos-over.svg') no-repeat 0 0;
+    width:100%;
+}
+
+.circle-container .deg135 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-gestao-de-dados-over.svg') no-repeat 0 0;
+    width:100%;
+}
+
+.circle-container .deg180 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-plataformas-tecnologicas-over.svg') no-repeat 0 0;
+    width:100%;
+}
+
+.circle-container .deg225 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-principios-e-padroes-over.svg') no-repeat 0 0;
+    width:100%;
+}
+
+.circle-container .deg270 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-capacitacao-over.svg') no-repeat 0 0;
+    width:100%;
+}
+
+.circle-container .deg315 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-comunicacao-over.svg') no-repeat 0 0;
+    width:100%;
+}
+
+.circle-container div p {
+    font-size: 10px;
+    position: absolute;
+    top: 70px;
+    font-weight: 500;
+}
+
+.circle-container img { display: block; width: 100%; }
+
+.deg0 {
+    -webkit-transform: translate(12em);
+    -moz-transform: translate(12em);
+    -ms-transform: translate(12em);
+    -o-transform: translate(12em);
+    transform: translate(12em);
+} /* 12em = half the width of the wrapper */
+.lt-ie9 .deg0 {
+    margin-left: 10em;
+}
+.deg45 {
+    -webkit-transform: rotate(45deg) translate(12em) rotate(-45deg);
+    -moz-transform: rotate(45deg) translate(12em) rotate(-45deg);
+    -ms-transform: rotate(45deg) translate(12em) rotate(-45deg);
+    -o-transform: rotate(45deg) translate(12em) rotate(-45deg);
+    transform: rotate(45deg) translate(12em) rotate(-45deg);
+}
+.lt-ie9 .deg45 {
+    margin: 6.485em;
+}
+.deg135 {
+    -webkit-transform: rotate(135deg) translate(12em) rotate(-135deg);
+    -moz-transform: rotate(135deg) translate(12em) rotate(-135deg);
+    -ms-transform: rotate(135deg) translate(12em) rotate(-135deg);
+    -o-transform: rotate(135deg) translate(12em) rotate(-135deg);
+    transform: rotate(135deg) translate(12em) rotate(-135deg);
+}
+.lt-ie9 .deg135 {
+    margin: 6.485em -10.485em;
+}
+
+.deg90 {
+    -webkit-transform: rotate(90deg) translate(12em) rotate(-90deg);
+    -moz-transform: rotate(90deg) translate(12em) rotate(-90deg);
+    -ms-transform: rotate(90deg) translate(12em) rotate(-90deg);
+    -o-transform: rotate(90deg) translate(12em) rotate(-90deg);
+    transform: rotate(90deg) translate(12em) rotate(-90deg);
+}
+
+.deg180 {
+    -webkit-transform: translate(-12em);
+    -moz-transform: translate(-12em);
+    -ms-transform: translate(-12em);
+    -o-transform: translate(-12em);
+    transform: translate(-12em);
+}
+.lt-ie9 .deg180 {
+    margin-left: -14em;
+}
+
+.deg225 {
+    -webkit-transform: rotate(225deg) translate(12em) rotate(-225deg);
+    -moz-transform: rotate(225deg) translate(12em) rotate(-225deg);
+    -ms-transform: rotate(225deg) translate(12em) rotate(-225deg);
+    -o-transform: rotate(225deg) translate(12em) rotate(-225deg);
+    transform: rotate(225deg) translate(12em) rotate(-225deg);
+}
+.lt-ie9 .deg225 {
+    margin: -10.485em;
+}
+
+
+.deg270{
+    -webkit-transform: rotate(270deg) translate(12em) rotate(-270deg);
+    -moz-transform: rotate(270deg) translate(12em) rotate(-270deg);
+    -ms-transform: rotate(270deg) translate(12em) rotate(-270deg);
+    -o-transform: rotate(270deg) translate(12em) rotate(-270deg);
+    transform: rotate(270deg) translate(12em) rotate(-270deg);
+}
+
+.deg315 {
+    -webkit-transform: rotate(315deg) translate(12em) rotate(-315deg);
+    -moz-transform: rotate(315deg) translate(12em) rotate(-315deg);
+    -ms-transform: rotate(315deg) translate(12em) rotate(-315deg);
+    -o-transform: rotate(315deg) translate(12em) rotate(-315deg);
+    transform: rotate(315deg) translate(12em) rotate(-315deg);
+}
+.lt-ie9 .deg315 {
+    margin: -10.485em 6.485em;
+}
+
+@media (max-width: 575px) {
+
+    .circle-container {
+        width: 15em;
+        height: 15em;
+    }
+
+    .circle-container div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 3.5em;
+        height: 3.5em;
+        margin: -1.2em;
+    }
+
+    .circle-container a {
+        width: 3.5em;
+        height: 3.5em;
+        margin: -1.2em;
+    }
+
+    .circle-container div p {font-size: 9px;}
+
+    .deg0 {
+        -webkit-transform: rotate(-8deg) translate(7.5em) rotate(8deg);
+        -moz-transform: rotate(-8deg) translate(7.5em) rotate(8deg);
+        -ms-transform: rotate(-8deg) translate(7.5em) rotate(8deg);
+        -o-transform: rotate(-8deg) translate(7.5em) rotate(8deg);
+        transform: rotate(-8deg) translate(7.5em) rotate(8deg);
+    }
+
+    .deg45 {
+        -webkit-transform: rotate(50deg) translate(7.6em) rotate(-50deg);
+        -moz-transform: rotate(50deg) translate(7.6em) rotate(-50deg);
+        -ms-transform: rotate(50deg) translate(7.6em) rotate(-50deg);
+        -o-transform: rotate(50deg) translate(7.6em) rotate(-50deg);
+        transform: rotate(50deg) translate(7.6em) rotate(-50deg);
+    }
+
+    .deg135 {
+        -webkit-transform: rotate(139deg) translate(9em) rotate(-139deg);
+        -moz-transform: rotate(139deg) translate(9em) rotate(-139deg);
+        -ms-transform: rotate(139deg) translate(9em) rotate(-139deg);
+        -o-transform: rotate(139deg) translate(9em) rotate(-139deg);
+        transform: rotate(139deg) translate(9em) rotate(-139deg);
+    }
+
+    .deg90 {
+        -webkit-transform: rotate(99deg) translate(8em) rotate(-99deg);
+        -moz-transform: rotate(99deg) translate(8em) rotate(-99deg);
+        -ms-transform: rotate(99deg) translate(8em) rotate(-99deg);
+        -o-transform: rotate(99deg) translate(8em) rotate(-99deg);
+        transform: rotate(99deg) translate(8em) rotate(-99deg);
+
+    }
+
+    .deg180 {
+        -webkit-transform: rotate(3deg) translate(-9.5em) rotate(-3deg);
+        -moz-transform: rotate(3deg) translate(-9.5em) rotate(-3deg);
+        -ms-transform: rotate(3deg) translate(-9.5em) rotate(-3deg);
+        -o-transform: rotate(3deg) translate(-9.5em) rotate(-3deg);
+        transform: rotate(3deg) translate(-9.5em) rotate(-3deg);
+    }
+
+    .deg225{
+        -webkit-transform: rotate(225deg) translate(10em) rotate(-225deg);
+        -moz-transform: rotate(225deg) translate(10em) rotate(-225deg);
+        -ms-transform: rotate(225deg) translate(10em) rotate(-225deg);
+        -o-transform: rotate(225deg) translate(10em) rotate(-225deg);
+        transform: rotate(225deg) translate(10em) rotate(-225deg);
+    }
+
+    .deg270 {
+        -webkit-transform: rotate(264deg) translate(10em) rotate(-264deg);
+        -moz-transform: rotate(264deg) translate(10em) rotate(-264deg);
+        -ms-transform: rotate(264deg) translate(10em) rotate(-264deg);
+        -o-transform: rotate(264deg) translate(10em) rotate(-264deg);
+        transform: rotate(264deg) translate(10em) rotate(-264deg);
+    }
+
+    .deg315 {
+        -webkit-transform: rotate(300deg) translate(8.5em) rotate(-300deg);
+        -moz-transform: rotate(300deg) translate(8.5em) rotate(-300deg);
+        -ms-transform: rotate(300deg) translate(8.5em) rotate(-300deg);
+        -o-transform: rotate(300deg) translate(8.5em) rotate(-300deg);
+        transform: rotate(300deg) translate(8.5em) rotate(-300deg);
+    }
+
+}
+
+/* this is just for showing the angle on hover */
+.circle-container a:not(.center):before {
+    position: absolute;
+    width: 4em;
+    color: white;
+    opacity: 0;
+    background: transparent;
+    font: 1.25em/3.45 "Montserrat", monospace;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-indent: -2em;
+    text-shadow: 0 0 .1em deeppink;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    content:'°';
+}
+.circle-container a:hover:before { opacity: 1; }
+
+.circle-container:hover:after { opacity: 1; }
+.circle-container a:not(.center):after {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 4px; height: 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 .5em .5em white;
+    margin: -2px;
+    background: deeppink;
+    opacity: .3;
+    content: '';
+}
+.circle-container:hover a:after { opacity: 1; }
+.circle-container a:hover:after { opacity: .3; }

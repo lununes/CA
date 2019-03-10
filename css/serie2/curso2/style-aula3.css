@@ -1,0 +1,69 @@
+/*Fluxograma*/
+
+#fluxograma {
+	margin-top:20px;
+	background-color: var(--white-color);
+}
+
+#fluxograma p {padding: 0 15px;}
+
+#fluxograma p.destaque {
+	font-size: 16px;
+	font-weight: 400;
+	padding: 15px 60px;
+	border: 1px solid var(--main-color3);
+	margin: 0px 60px 30px 60px;
+}
+
+@media only screen and (max-width: 767px) {
+
+	#fluxograma p.destaque  {
+		padding: 15px 10px;
+		margin: 0px 20px 30px 20px;
+	}
+}
+
+#fluxograma .header {
+	background:var(--white-color);
+	padding:30px 20px;
+	margin-bottom: 20px;
+}
+#fluxograma .header p {
+	font-size: 12px;
+	margin-bottom: 0;
+	padding:0;
+}
+
+#fluxograma h5, #fluxograma h6 {
+	font-family: 'Montserrat', sans-serif;
+	color: var(--main-color1);
+}
+
+#fluxograma h5 {
+	border-bottom:none;
+	margin-bottom:5px;
+	font-weight: 600;
+}
+
+#fluxograma h6 {
+	font-weight: 400;
+	font-style: italic;
+	border-bottom:1px solid var(--main-color2);
+	padding-bottom:15px;
+	margin-bottom: 15px;
+}
+
+#fluxograma .fa-question-circle {
+	position: relative;
+	top: 0;
+	left: 8px;
+	font-size: 20px;
+	border: transparent;
+	box-shadow: none;
+	color: var(--main-color2);
+}
+
+#fluxograma .fa-question-circle:hover {color:var(--main-color3);}
+
+#modal-fluxograma p {word-wrap: break-word;}
+
