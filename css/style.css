@@ -340,6 +340,13 @@ h5, h6 {margin-bottom:10px;}
   line-height: 56px;
 }
 
+#intro h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--main-color1);
+  margin-top: 20px;
+  padding: 0 15px;
+}
+
 #intro.programa h2 {font-size:60px;}
 
 #intro h2 span {

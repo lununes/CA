@@ -1,6 +1,287 @@
 
 /*Série 1 - Aula 1*/
 
+/* -------------------------------- 
+
+Infográfico (esquema) circular
+
+-------------------------------- */
+
+#aula1-circle .circle-container {
+    position: relative;
+    width: 33em;
+    height: 33em;
+    padding: 5.8em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+/*    border: 1px dashed #666;*/
+    border-radius: 50%;
+    margin: 8em auto;
+}
+
+#aula1-circle .circle-container .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10em;
+    height: 10em;
+    margin: -5em; /* 2em = 4em/2 */ /* half the width */
+    border: 2px solid var(--main-color2);
+    border-radius: 50%;
+    background-color: var(--main-color3);
+    text-align: center;
+}
+
+#aula1-circle .circle-container .inner-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#aula1-circle .circle-container p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.25rem;
+    color: #fff;
+}
+
+#aula1-circle .circle-container a {
+    overflow: hidden;
+/*    cursor: default;*/
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--main-color4);
+    padding: 3px 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    line-height: 0;
+    text-decoration: none !important;
+        -webkit-animation: circle-plus 5s linear 2s infinite;
+    animation: circle-plus 3s linear infinite;
+}
+
+#aula1-circle .circle-container hr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 1px;
+    background-color: var(--main-color2);
+    transform: translate(-50%);
+    margin: 0;
+}
+
+#aula1-circle .circle-container hr::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 2px;
+    background-color:var(--main-color2);
+    transform: translate(-50%) rotate(60deg);
+}
+
+#aula1-circle .circle-container hr::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 2px;
+    background-color:var(--main-color2);
+    transform: translate(-50%) rotate(120deg);
+}
+
+@media (max-width: 575px) {
+
+  #aula1-circle .circle-container div p {font-size: 10px;}
+}
+
+#aula1-circle .circle-container div p a {
+  margin: 0;
+  top: 0;
+  left: 0;
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+#aula1-circle .circle-container img { display: block; width: 100%; }
+
+
+#aula1-circle .deg-middle {
+    -webkit-transform: translate(0em);
+    -moz-transform: translate(0em);
+    -ms-transform: translate(0em);
+    -o-transform: translate(0em);
+    transform: translate(0em);
+} /* 12em = half the width of the wrapper */
+
+
+#aula1-circle .circle-container .deg-middle a {
+  
+  text-align: center
+}
+
+#aula1-circle .circle-container .deg-middle p {
+
+}
+
+#aula1-circle .deg0 {
+    -webkit-transform: translate(16em);
+    -moz-transform: translate(16em);
+    -ms-transform: translate(16em);
+    -o-transform: translate(16em);
+    transform: translate(16em);
+} /* 12em = half the width of the wrapper */
+#aula1-circle .lt-ie9 .deg0 {
+    margin-left: 10em;
+}
+
+#aula1-circle .deg60 {
+    -webkit-transform: rotate(60deg) translate(16em) rotate(-60deg);
+    -moz-transform: rotate(60deg) translate(16em) rotate(-60deg);
+    -ms-transform: rotate(60deg) translate(16em) rotate(-60deg);
+    -o-transform: rotate(60deg) translate(16em) rotate(-60deg);
+    transform: rotate(60deg) translate(16em) rotate(-60deg);
+}
+#aula1-circle .lt-ie9 .deg60 {
+    margin: 6.485em;
+}
+
+#aula1-circle .deg120 {
+    -webkit-transform: rotate(120deg) translate(16em) rotate(-120deg);
+    -moz-transform: rotate(120deg) translate(16em) rotate(-120deg);
+    -ms-transform: rotate(120deg) translate(16em) rotate(-120deg);
+    -o-transform: rotate(120deg) translate(16em) rotate(-120deg);
+    transform: rotate(120deg) translate(16em) rotate(-120deg);
+}
+
+#aula1-circle .deg180 {
+    -webkit-transform: translate(-17em);
+    -moz-transform: translate(-17em);
+    -ms-transform: translate(-17em);
+    -o-transform: translate(-17em);
+    transform: translate(-17em);
+}
+#aula1-circle .lt-ie9 .deg180 {
+    margin-left: -14em;
+}
+
+#aula1-circle .deg240 {
+    -webkit-transform: rotate(240deg) translate(17em) rotate(-240deg);
+    -moz-transform: rotate(240deg) translate(17em) rotate(-240deg);
+    -ms-transform: rotate(240deg) translate(17em) rotate(-240deg);
+    -o-transform: rotate(240deg) translate(17em) rotate(-240deg);
+    transform: rotate(240deg) translate(17em) rotate(-240deg);
+}
+#aula1-circle .lt-ie9 .deg240 {
+    margin: -10.485em;
+}
+
+
+#aula1-circle .deg300{
+    -webkit-transform: rotate(300deg) translate(17em) rotate(-300deg);
+    -moz-transform: rotate(300deg) translate(17em) rotate(-300deg);
+    -ms-transform: rotate(300deg) translate(17em) rotate(-300deg);
+    -o-transform: rotate(300deg) translate(17em) rotate(-300deg);
+    transform: rotate(300deg) translate(17em) rotate(-300deg);
+}
+
+
+@media (max-width: 575px) {
+
+    #aula1-circle .circle-container {
+        width: 15em;
+        height: 15em;
+        margin: 10em auto;
+    }
+
+    #aula1-circle .circle-container hr {
+        width: 20em;
+}
+
+    #aula1-circle .circle-container hr::after {
+        width: 20em;
+}
+
+    #aula1-circle .circle-container hr::before {
+        width: 20em;
+}
+    
+    #aula1-circle .circle-container .circle {
+        width: 8em;
+        height: 8em;
+        margin: -4em; /* 2em = 4em/2 */ /* half the width */
+}
+
+    #aula1-circle .circle-container a {
+        width: 3.5em;
+        height: 3.5em;
+        margin: -1.2em;
+    }
+
+    #aula1-circle .circle-container div p {
+        font-size: 0.65em;
+        top: 60px;
+        width: 81px;
+        line-height: 1.5em
+    }
+
+    #aula1-circle .deg0 {
+        -webkit-transform: rotate(-0deg) translate(10em) rotate(0deg);
+        -moz-transform: rotate(-0deg) translate(10em) rotate(0deg);
+        -ms-transform: rotate(-0deg) translate(10em) rotate(0deg);
+        -o-transform: rotate(-0deg) translate(10em) rotate(0deg);
+        transform: rotate(-0deg) translate(10em) rotate(0deg);
+    }
+
+    #aula1-circle .deg60 {
+        -webkit-transform: rotate(60deg) translate(10em) rotate(-60deg);
+        -moz-transform: rotate(60deg) translate(10em) rotate(-60deg);
+        -ms-transform: rotate(60deg) translate(10em) rotate(-60deg);
+        -o-transform: rotate(60deg) translate(10em) rotate(-60deg);
+        transform: rotate(60deg) translate(10em) rotate(-60deg);
+    }
+
+    #aula1-circle .deg120 {
+        -webkit-transform: rotate(120deg) translate(10em) rotate(-120deg);
+        -moz-transform: rotate(120deg) translate(10em) rotate(-120deg);
+        -ms-transform: rotate(120deg) translate(10em) rotate(-120deg);
+        -o-transform: rotate(120deg) translate(10em) rotate(-120deg);
+        transform: rotate(120deg) translate(10em) rotate(-120deg);
+
+    }
+    
+    #aula1-circle .deg180 {
+        -webkit-transform: rotate(0deg) translate(-10em) rotate(-0deg);
+        -moz-transform: rotate(0deg) translate(-10em) rotate(-0deg);
+        -ms-transform: rotate(0deg) translate(-10em) rotate(-0deg);
+        -o-transform: rotate(0deg) translate(-10em) rotate(-0deg);
+        transform: rotate(0deg) translate(-10em) rotate(-0deg);
+    }
+
+    #aula1-circle .deg240{
+        -webkit-transform: rotate(240deg) translate(10em) rotate(-240deg);
+        -moz-transform: rotate(240deg) translate(10em) rotate(-240deg);
+        -ms-transform: rotate(240deg) translate(10em) rotate(-240deg);
+        -o-transform: rotate(240deg) translate(10em) rotate(-240deg);
+        transform: rotate(240deg) translate(10em) rotate(-240deg);
+    }
+
+    #aula1-circle .deg300 {
+        -webkit-transform: rotate(300deg) translate(10em) rotate(-300deg);
+        -moz-transform: rotate(300deg) translate(10em) rotate(-300deg);
+        -ms-transform: rotate(300deg) translate(10em) rotate(-300deg);
+        -o-transform: rotate(300deg) translate(10em) rotate(-300deg);
+        transform: rotate(300deg) translate(10em) rotate(-300deg);
+    }
+}
+
+
+
+
 /* Para texto ao lado da imagem/ícone: */
 .timeline-float-left.serie1-aula1 .cd-timeline__content img {
 	margin:0;
