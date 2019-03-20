@@ -302,9 +302,7 @@ Infográfico (esquema) circular
 
 /*Série 1 - Aula 3*/
 #call-to-action.serie1-aula3 {
-  background: linear-gradient(rgba(4, 41, 155, 0.65), rgba(0, 0, 0, 0.2)), url(../../../img/serie1/curso1/aula3/img1.png) fixed center center;
-  background-size: cover;
-  padding: 80px 0;
+  
 }
 
 /*Aula 3*/
