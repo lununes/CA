@@ -1303,6 +1303,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   .advanced-feature-img-right, .advanced-feature-img-left {
     max-width: 50%;
   }
+
+  img.img-fluid {margin-bottom:20px;}
 }
 
 @media (max-width: 767px) {
