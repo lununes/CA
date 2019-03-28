@@ -2040,6 +2040,45 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
+# Generic Table
+--------------------------------------------------------------*/
+.table-responsive {
+  background-color: #fff;
+}
+
+.table-responsive.table-bordered {
+  border: none;
+}
+
+.table-responsive table {
+  margin: 0;
+}
+
+.table-responsive table thead th {
+  border: none;
+}
+
+.table-responsive th {
+  background-color: var(--main-color3);
+  color: #fff;
+  border:1px solid var(--main-color3);
+}
+
+.table-responsive td,
+.table-responsive tr {
+  border: 1px solid var(--main-color2)
+}
+
+/*--------------------------------------------------------------
+# Ordered List
+--------------------------------------------------------------*/
+ol li::before {
+  content: "";
+  color: var(--main-color3);
+  font-weight: bold;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
