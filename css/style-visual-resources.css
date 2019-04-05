@@ -56,7 +56,7 @@ p.circle {
 .source {
   font-size:11px;
   font-style: italic;
-  margin: 0px 0 30px 0;
+  /*margin: 0px 0 30px 0;*/
 }
 
 
@@ -1130,6 +1130,57 @@ Slider
 .carousel-control-next-icon {background-image: url('../img/ic-ionicons_svg_ios-arrow-forward.svg');}
 
 .carousel-control-prev-icon {background-image: url('../img/ic-ionicons_svg_ios-arrow-back.svg');}
+
+
+/* --------------------------------
+
+Tabela
+
+---------------------------------*/
+
+.table-responsive {
+  background-color: #fff;
+}
+
+.table-responsive.table-bordered {
+  border: none;
+}
+
+.table-responsive table {
+  font-size:14px;
+  margin: 0;
+}
+
+.table-responsive table thead th {
+  border: none;
+}
+
+.table-responsive th {
+  background-color: var(--main-color3);
+  color: #fff;
+  border:1px solid var(--main-color2);
+}
+
+.table-responsive td,
+.table-responsive tr {
+  border: 1px solid var(--main-color2)
+}
+
+.table ul li {
+  margin-bottom:10px;
+}
+
+.table td, .table th {vertical-align: middle;}
+
+.table thead th {vertical-align: middle;}
+
+@media (max-width: 767px) {
+
+  .table {font-size:10px;}
+
+  .table thead th {padding:0;}
+
+}
 
 
 /* -------------------------------- 
