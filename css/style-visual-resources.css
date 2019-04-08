@@ -1161,6 +1161,8 @@ Tabela
   border:1px solid var(--main-color2);
 }
 
+.table-responsive th a {color:#fff;}
+
 .table-responsive td,
 .table-responsive tr {
   border: 1px solid var(--main-color2)
