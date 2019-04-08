@@ -645,11 +645,13 @@ b, strong {font-weight: 700;}
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(52, 59, 64, 0.9);
-  left: -260px;
-  width: 260px;
+  background: var(--main-color2);
+  opacity: 0.8;
+  left: -85%;
+  width: 85%;
   overflow-y: auto;
   transition: 0.4s;
+  padding-right: 15px;
 }
 
 #mobile-nav ul {
@@ -723,6 +725,11 @@ body.mobile-nav-active #mobile-nav {
 
 body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
+}
+
+.submenu-unidade {
+  color: var(--main-color2) !important;
+  text-transform: uppercase !important;
 }
 
 /*--------------------------------------------------------------

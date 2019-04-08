@@ -60,10 +60,10 @@ Infográfico (esquema) circular
     text-decoration: none !important;
 }
 
-#aula1-circle .inner-circle span {
+/*#aula1-circle .inner-circle span {
     transform: scale3d(0.5, 0.5, 0.5);
     animation: move 1s ease-out infinite alternate;
-}
+}*/
 
 /*#aula1-circle .inner-circle .fa-plus-circle {
     color: var(--main-color3);
@@ -74,10 +74,10 @@ Infográfico (esquema) circular
     top: 82%;
 }*/
 
-@keyframes move {
+/*@keyframes move {
   0% { transform: translateY(0); }
   100% { transform: translateY(-10px); }
-}
+}*/
 
 #aula1-circle .circle-container hr {
     position: absolute;
