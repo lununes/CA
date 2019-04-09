@@ -475,13 +475,14 @@ Infográfico circular
     margin: 1.75em auto 6em;
 }
 
-.circle-container div {
+.circle-container .circle {
     position: absolute;
-    top: 50%; left: 50%;
-    width: 4em; height: 4em;
+    top: 50%; 
+    left: 50%;
+    width: 4em; 
+    height: 4em;
     margin: -2em; /* 2em = 4em/2 */ /* half the width */
 }
-
 
 .circle-container a {
     display: block;
@@ -490,7 +491,54 @@ Infográfico circular
     top: 50%; left: 50%;
     width: 4em; height: 4em;
     margin: -2em; /* 2em = 4em/2 */ /* half the width */
+}.circle-container .deg0 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-governanca-over.svg') no-repeat 0 0;
+    width:100%;
 }
+
+.circle-container .deg45 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-pesquisa-over.svg') no-repeat 0 0;
+    width:100%;
+}
+
+.circle-container .deg90 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-planos-estrategicos-over.svg') no-repeat 0 0;
+    width:100%;
+}
+
+.circle-container .deg135 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-gestao-de-dados-over.svg') no-repeat 0 0;
+    width:100%;
+}
+
+.circle-container .deg180 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-plataformas-tecnologicas-over.svg') no-repeat 0 0;
+    width:100%;
+}
+
+.circle-container .deg225 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-principios-e-padroes-over.svg') no-repeat 0 0;
+    width:100%;
+}
+
+.circle-container .deg270 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-capacitacao-over.svg') no-repeat 0 0;
+    width:100%;
+}
+
+.circle-container .deg315 a:hover:before {
+    background: transparent url('../../../img/serie1/curso2/aula1/circle-comunicacao-over.svg') no-repeat 0 0;
+    width:100%;
+}
+
+.circle-container .circle p {
+    font-size: 10px;
+    position: absolute;
+    top: 70px;
+    font-weight: 500;
+}
+
+.circle-container img { display: block; width: 100%; }
 
 .circle-container .deg0 a:hover:before {
     background: transparent url('../../../img/serie1/curso2/aula1/circle-governanca-over.svg') no-repeat 0 0;
@@ -531,15 +579,6 @@ Infográfico circular
     background: transparent url('../../../img/serie1/curso2/aula1/circle-comunicacao-over.svg') no-repeat 0 0;
     width:100%;
 }
-
-.circle-container div p {
-    font-size: 10px;
-    position: absolute;
-    top: 70px;
-    font-weight: 500;
-}
-
-.circle-container img { display: block; width: 100%; }
 
 .deg0 {
     -webkit-transform: translate(12em);
@@ -710,7 +749,6 @@ Infográfico circular
         -o-transform: rotate(300deg) translate(8.5em) rotate(-300deg);
         transform: rotate(300deg) translate(8.5em) rotate(-300deg);
     }
-
 }
 
 /* this is just for showing the angle on hover */
@@ -732,13 +770,17 @@ Infográfico circular
     transition: opacity 0.5s ease-in-out;
     content:'°';
 }
+
 .circle-container a:hover:before { opacity: 1; }
 
 .circle-container:hover:after { opacity: 1; }
+
 .circle-container a:not(.center):after {
     position: absolute;
-    top: 50%; left: 50%;
-    width: 4px; height: 4px;
+    top: 50%; 
+    left: 50%;
+    width: 4px; 
+    height: 4px;
     border-radius: 50%;
     box-shadow: 0 0 .5em .5em white;
     margin: -2px;
@@ -746,7 +788,9 @@ Infográfico circular
     opacity: .3;
     content: '';
 }
+
 .circle-container:hover a:after { opacity: 1; }
+
 .circle-container a:hover:after { opacity: .3; }
 
 

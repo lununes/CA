@@ -15,7 +15,7 @@ Infográfico (esquema) circular
     width: 33em;
     height: 33em;
     padding: 5.8em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
-/*    border: 1px dashed #666;*/
+	border: none;
     border-radius: 50%;
     margin: 8em auto;
 }
@@ -27,11 +27,19 @@ Infográfico (esquema) circular
     width: 10em;
     height: 10em;
     margin: -5em; /* 2em = 4em/2 */ /* half the width */
-    border: 2px solid var(--main-color2);
+    /*border: 2px solid var(--main-color2);*/
     border-radius: 50%;
     background-color: var(--main-color3);
     text-align: center;
 }
+
+/*#aula1-circle .circle-container div {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: 4em; height: 4em;
+    margin: -2em; /* 2em = 4em/2 */ /* half the width /
+}*/
 
 #aula1-circle .circle-container .inner-circle {
     position: absolute;
@@ -40,25 +48,86 @@ Infográfico (esquema) circular
     transform: translate(-50%, -50%);
 }
 
-#aula1-circle .circle-container p {
+#aula1-circle .circle-container .circle p {
+	color: #fff;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.25rem;
-    color: #fff;
+    position: relative;
+    top:0;   
 }
 
 #aula1-circle .circle-container a {
-    overflow: hidden;
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    background-color: var(--main-color4);
-    padding: 3px 10px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    line-height: 0;
-    text-decoration: none !important;
+	border-radius: 50%;
+	border: transparent;
+	overflow: visible;
+	position: relative;
+	width: 0;
+	height: 0;
+	margin: -10px -20px 0;
 }
+
+#aula1-circle a {text-decoration: none !important;}
+    
+#aula1-circle i.fas {
+position: relative;
+transform: scale3d(0.5, 0.5, 0.5);
+animation: 
+          move 1s ease-out infinite alternate;
+          /*pulse 3s infinite;*/
+}
+
+#aula1-circle .fa-plus-circle {
+  color: var(--main-color2);
+  display: block;
+  font-size: 33px;
+  position: absolute;
+  align-self: end;
+  top: 82%;
+}
+
+@media (max-width: 768px) {
+
+  #aula1-circle .fa-plus-circle {
+  	font-size: 23px;
+  	left: 5px;
+  }
+
+  #aula1-circle .deg-middle .fa-plus-circle  {
+  	left: 26px;
+    top: -8px;
+  }
+
+}
+
+#aula1-circle .fa-plus-circle:hover {color: #fff;}
+
+ @keyframes move {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0% {
+    opacity:0;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50%{
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity:1;
+  }
+} 
 
 /*#aula1-circle .inner-circle span {
     transform: scale3d(0.5, 0.5, 0.5);
@@ -114,10 +183,13 @@ Infográfico (esquema) circular
 
 @media (max-width: 575px) {
 
-  #aula1-circle .circle-container div p {font-size: 10px;}
+  #aula1-circle .circle-container .circle p {
+  	font-size: 10px;
+  	line-height: 1rem;
+  }
 }
 
-#aula1-circle .circle-container div p a {
+#aula1-circle .circle-container .circle p a {
   margin: 0;
   top: 0;
   left: 0;
@@ -143,8 +215,12 @@ Infográfico (esquema) circular
   text-align: center
 }
 
-#aula1-circle .circle-container .deg-middle p {
+@media (max-width: 575px) {
 
+  #aula1-circle .circle-container .deg-middle p {
+  	left:10%;
+  	top:40%;
+  }
 }
 
 #aula1-circle .deg0 {
@@ -208,6 +284,14 @@ Infográfico (esquema) circular
     transform: rotate(300deg) translate(17em) rotate(-300deg);
 }
 
+#aula1-circle .circle-container a:not(.center):before {content:'';}
+
+#aula1-circle .circle-container a:not(.center):after {
+    box-shadow: none;
+    background: transparent;
+}
+
+
 
 @media (max-width: 575px) {
 
@@ -230,15 +314,15 @@ Infográfico (esquema) circular
 }
     
     #aula1-circle .circle-container .circle {
-        width: 8em;
-        height: 8em;
-        margin: -4em; /* 2em = 4em/2 */ /* half the width */
+        width: 6em;
+        height: 6em;
+        margin: -3em -3em; /* 2em = 4em/2 */ /* half the width */
 }
 
     #aula1-circle .circle-container a {
-        width: 3.5em;
-        height: 3.5em;
-        margin: -1.2em;
+		width: 0;
+		height: 0;
+		margin: -0.7em -1.2em 0;
     }
 
     #aula1-circle .circle-container div p {
@@ -249,11 +333,11 @@ Infográfico (esquema) circular
     }
 
     #aula1-circle .deg0 {
-        -webkit-transform: rotate(-0deg) translate(10em) rotate(0deg);
-        -moz-transform: rotate(-0deg) translate(10em) rotate(0deg);
-        -ms-transform: rotate(-0deg) translate(10em) rotate(0deg);
-        -o-transform: rotate(-0deg) translate(10em) rotate(0deg);
-        transform: rotate(-0deg) translate(10em) rotate(0deg);
+        -webkit-transform: rotate(-0deg) translate(7em) rotate(0deg);
+        -moz-transform: rotate(-0deg) translate(7em) rotate(0deg);
+        -ms-transform: rotate(-0deg) translate(7em) rotate(0deg);
+        -o-transform: rotate(-0deg) translate(7em) rotate(0deg);
+        transform: rotate(-0deg) translate(7em) rotate(0deg);
     }
 
     #aula1-circle .deg60 {
@@ -274,11 +358,11 @@ Infográfico (esquema) circular
     }
     
     #aula1-circle .deg180 {
-        -webkit-transform: rotate(0deg) translate(-10em) rotate(-0deg);
-        -moz-transform: rotate(0deg) translate(-10em) rotate(-0deg);
-        -ms-transform: rotate(0deg) translate(-10em) rotate(-0deg);
-        -o-transform: rotate(0deg) translate(-10em) rotate(-0deg);
-        transform: rotate(0deg) translate(-10em) rotate(-0deg);
+        -webkit-transform: rotate(0deg) translate(-7em) rotate(-0deg);
+        -moz-transform: rotate(0deg) translate(-7em) rotate(-0deg);
+        -ms-transform: rotate(0deg) translate(-7em) rotate(-0deg);
+        -o-transform: rotate(0deg) translate(-7em) rotate(-0deg);
+        transform: rotate(0deg) translate(-7em) rotate(-0deg);
     }
 
     #aula1-circle .deg240{
@@ -348,7 +432,7 @@ Infográfico (esquema) circular
     height: 16em;
 }
 
-#un2-aula6.circle-container div {
+#un2-aula6.circle-container .circle{
     top: 40%;
     left: 42%;
     width: 7em;
