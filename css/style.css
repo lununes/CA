@@ -280,7 +280,7 @@ b, strong {font-weight: 700;}
 --------------------------------------------------------------*/
 #intro {
   width: 100%;
-  height: 60vh; /*100vh é o original*/
+  height: 67vh; /*100vh é o original*/
   /*background: linear-gradient(45deg, #1de099, #1dc8cd);*/
   background-image: url("../img/bg1-v2.png"); /* The image used */
   background-color: rgb(255,255,255, 0.5);
