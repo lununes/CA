@@ -1086,6 +1086,54 @@ Modal
     padding: 2px 10px;
 }
 
+.modal.serie2 .btn-secondary {
+    border: 1px solid var(--secondary-color1);
+    background-color: transparent;
+    color: var(--secondary-color1);
+    margin-top: 10px;
+    padding: 2px 10px;
+}
+
+.modal.serie2 .btn-secondary:hover  {
+    border: 1px solid var(--link-color-hover);
+    background-color: var(--link-color-hover);
+    color: var(--white-color);
+    margin-top: 10px;
+    padding: 2px 10px;
+}
+
+.modal.serie3 .btn-secondary {
+    border: 1px solid var(--main-color4);
+    background-color: transparent;
+    color: var(--main-color4);
+    margin-top: 10px;
+    padding: 2px 10px;
+}
+
+.modal.serie3 .btn-secondary:hover  {
+    border: 1px solid var(--link-color-hover);
+    background-color: var(--link-color-hover);
+    color: var(--white-color);
+    margin-top: 10px;
+    padding: 2px 10px;
+}
+
+.modal.serie4 .btn-secondary {
+    border: 1px solid var(--main-color6);
+    background-color: transparent;
+    color: var(--main-color6);
+    margin-top: 10px;
+    padding: 2px 10px;
+}
+
+.modal.serie4 .btn-secondary:hover  {
+    border: 1px solid var(--link-color-hover);
+    background-color: var(--link-color-hover);
+    color: var(--white-color);
+    margin-top: 10px;
+    padding: 2px 10px;
+}
+
 .modal li {margin-bottom:10px;}
 
 
