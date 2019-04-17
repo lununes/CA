@@ -38,6 +38,13 @@
   <link rel="stylesheet" href="../../../css/style-visual-resources.css">
   <link rel="stylesheet" href="../../../css/serie2/curso1/style-aulas.css">
 
+  <style>
+  	.marcos:hover  {
+  		opacity:0.5;
+  	}
+
+  </style>
+
 </head>
 
 <body id="acessibilidade">
@@ -198,8 +205,9 @@
         </div>
         
       <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8">
-              <img src="https://cursos.campusvirtual.fiocruz.br/local/public_content/23/direitos_autorais_19-julho.jpg" width="100%">
+          <div class="col-12 col-md-10">
+          	  <p class="text-center"><small><em>(<i class="icon ion-ios-resize"></i> Clique na imagem para ampliá-la.)</em></small></p>
+              <a class="marcos" href='#' data-toggle="modal" data-target="#modal-marcos-internacionais"><img src="https://cursos.campusvirtual.fiocruz.br/local/public_content/23/direitos_autorais_19-julho.jpg" width="100%"></a>
           </div>
       </div>
         </div>
@@ -218,8 +226,9 @@
         </div>
           
         <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8">
-              <img src="https://cursos.campusvirtual.fiocruz.br/local/public_content/23/direitos_autorais_brasil_8-julho-B.jpg" width="100%">
+          <div class="col-12 col-md-10">
+          	 <p class="text-center"><small><em>(<i class="icon ion-ios-resize"></i> Clique na imagem para ampliá-la.)</em></small></p>
+             <a class="marcos" href='#' data-toggle="modal" data-target="#modal-marcos-nacionais"><img src="https://cursos.campusvirtual.fiocruz.br/local/public_content/23/direitos_autorais_brasil_8-julho-B.jpg" width="100%"></a>
           </div>
         </div>
 
@@ -289,6 +298,51 @@
         </div>
     </div>
     </section>
+
+
+  <!--==========================
+      Modal Marcos Históricos
+    ============================-->
+
+  <!-- Modal Marcos Hitóricos Internacionais -->
+  <div class="modal fade serie2" id="modal-marcos-internacionais" tabindex="-1" role="dialog" aria-labelledby="modal-creditosTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered img" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modal-creditosTitle">Marcos Históricos Internacionais</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+              	<img class="rounded mx-auto img-fluid" src="../../../img/serie2/Curso1/Unidade1/aula2/direitos-autorais-marcos-historicos-internacionais.jpg"/>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+          </div>
+      </div>
+  </div><!-- Modal Legenda End -->
+
+    <!-- Modal Marcos Hitóricos Nacionais -->
+  <div class="modal fade serie2" id="modal-marcos-nacionais" tabindex="-1" role="dialog" aria-labelledby="modal-creditosTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered img" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modal-creditosTitle">Marcos Históricos Nacionais</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+              	<img class="rounded mx-auto img-fluid" src="../../../img/serie2/Curso1/Unidade1/aula2/direitos-autorais-marcos-historicos-nacionais.jpg"/>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+          </div>
+      </div>
+  </div><!-- Modal Legenda End -->             
 
 
   <!--==========================
