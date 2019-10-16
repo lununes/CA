@@ -6,7 +6,7 @@
     --main-color1: #222; /*Black*/
     --main-color2: #601848; /*Violet*/
     --main-color3: #2dc997; /*Green*/
-    --main-color4: #f07241; /*Orange*/
+    --main-color4: #ff8831; /*Orange*/
     --main-color5: #eff5f5; /*Light Gray*/
     --main-color6: #00478a; /*Dark Blue*/
 
@@ -15,6 +15,11 @@
     --link-color1: #911166; /*Violet*/
     --link-color-hover: #2dc997; /*Green*/
     --white-color: #fff;
+
+    /*Serie 3*/
+    --main-color4: #ef7216; /*Orange*/
+    --main-color4-over: #febf00; /*Mustard*/
+    --main-color4-pressed: #b2550f; /*Bronze*/
 }
 
 /*--------------------------------------------------------------
@@ -100,10 +105,14 @@ b, strong {font-weight: 700;}
 .back-to-top i {color: var(--white-color);}
 
 
+/*Serie 2*/
 .back-to-top.serie2 {background:var(--secondary-color1);}
-
-
 .back-to-top.serie2:hover {background:var(--main-color3);}
+
+/*Serie 3*/
+.back-to-top.serie3 {background:var(--main-color4);}
+.back-to-top.serie3:hover {background:var(--main-color4-over);}
+
 
 
 
@@ -256,9 +265,19 @@ b, strong {font-weight: 700;}
 
 #breadcrumb .nav-menu a {padding:0 8px 3px 8px;}
 
+/*Série2*/
 #breadcrumb.serie2 .nav-menu a {color:var(--secondary-color1);}
-
 #breadcrumb.serie2 .nav-menu a:hover {color:var(--main-color3);}
+
+/*Série3*/
+#breadcrumb.serie3 .nav-menu a {color:var(--main-color4);}
+#breadcrumb.serie3 .nav-menu a:hover {color:var(--main-color4-over);}
+#breadcrumb.serie3 .nav-menu a:pressed {color:var(--main-color4-pressed);}
+#breadcrumb.serie3 a.btn-outline-secondary:hover {
+  background:var(--main-color4-over);
+  color:var(--white-color);
+  border-color:var(--main-color4);
+}
 
 #breadcrumb a {font-weight: 400;}
 
@@ -278,13 +297,19 @@ b, strong {font-weight: 700;}
   border-color:var(--main-color3);
 }
 
+/*Serie 2*/
 #breadcrumb.serie2 .btn-outline-secondary {
     border-color: var(--secondary-color1);
     color: var(--secondary-color1);
 }
-
 #breadcrumb.serie2 .btn-outline-secondary:hover {color:var(--white-color) !important;}
 
+
+/*Serie 3*/
+#breadcrumb.serie3 .btn-outline-secondary {
+    border-color: var(--main-color4);
+    color: var(--main-color4);
+}
 
 #breadcrumb .fa-font::after {font-size: 0.67em;}
 #breadcrumb .decrease-me .fa-font::after {content:"\f068";}
@@ -310,7 +335,7 @@ b, strong {font-weight: 700;}
 --------------------------------------------------------------*/
 #intro {
   width: 100%;
-  height: 67vh; /*100vh é o original*/
+  height: 75vh; /*100vh é o original*/
   /*background: linear-gradient(45deg, #1de099, #1dc8cd);*/
   background-image: url("../img/bg1-v2.png"); /* The image used */
   background-color: rgb(255,255,255, 0.5);
@@ -339,7 +364,7 @@ b, strong {font-weight: 700;}
 }
 
 #intro .intro-text {
-  padding-top: 120px;
+  padding-top: 15%;
   text-align: center;
   vertical-align: top;
 }
@@ -356,7 +381,7 @@ b, strong {font-weight: 700;}
 }
 
 @media (max-width: 767px) {
-  #intro .intro-text {padding-top: 90px;}
+  #intro .intro-text {padding-top: 25vh/*90px;*/}
 }
 
 @media (max-width: 576px) {
@@ -371,7 +396,7 @@ b, strong {font-weight: 700;}
 #intro h2 {
   font-family: 'Montserrat', sans-serif;
   color: var(--main-color1);
-  margin: 10px 0;
+  margin: 30px 0;
   padding: 0 15px;
   font-size: 48px;
   font-weight: 700;
@@ -400,7 +425,13 @@ b, strong {font-weight: 700;}
 
 @media (max-width: 768px) {
   #intro h2 {
-    font-size: 28px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  #intro.serie2 h2 {
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 
@@ -478,8 +509,6 @@ b, strong {font-weight: 700;}
 }
 
 @media (max-width: 576px) {
-
-  #intro h2 {line-height:33px;}
 
   #intro .intro-text img {width: 190px;}
 
@@ -624,6 +653,8 @@ b, strong {font-weight: 700;}
 
 #nav-menu-container.serie2 .menu-has-children h6 {color:var(--secondary-color1);}
 
+#nav-menu-container.serie3 .menu-has-children h6 {color:var(--main-color4);}
+
 #nav-menu-container .menu-has-children .section-divider.serie1 {margin-bottom:0;}
 
 @media (max-width: 768px) {
@@ -644,21 +675,29 @@ b, strong {font-weight: 700;}
   outline: none;
 }
 
-.nav-menu.serie2 a {color:var(--secondary-color1);} 
-
-.nav-menu.serie3 a {color:var(--main-color4);} 
-
-.nav-menu.serie4 a {color:var(--main-color6);} 
-
-
 .nav-menu a:hover {color: var(--link-color-hover);}
+
+/*Serie 2*/
+.nav-menu.serie2 a {color:var(--secondary-color1);} 
+.nav-menu.serie2 a:hover {color: var(--link-color-hover);}
+
+/*Serie 3*/
+.nav-menu.serie3 a {color:var(--main-color4);} 
+.nav-menu.serie3 a:hover {color:var(--main-color4-over);}
+.nav-menu.serie3 a:pressed {color:var(--main-color4-pressed);}
+
+/*Serie 4*/
+.nav-menu.serie4 a {color:var(--main-color6);} 
 
 
 .nav-menu > li {
   margin-left: 10px;
 }
 
-.nav-menu.serie2 a {font-weight: 700;}
+.nav-menu.serie1 a,
+.nav-menu.serie2 a,
+.nav-menu.serie3 a,
+.nav-menu.serie4 a {font-weight: 400;}
 
 .nav-menu.serie2 .menu-has-children ul li a {font-weight: 400;}
 
@@ -863,7 +902,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-divider.serie1, .section-divider.serie1.middle {background: transparent url(../img/divide.png) no-repeat center 0;}
 .section-divider.serie2, .section-divider.serie2.middle {background: transparent url(../img/serie2-divide.png) no-repeat center 0;}
 .section-divider.serie3, .section-divider.serie3.middle {background: transparent url(../img/serie3-divide.png) no-repeat center 0;}
-.section-divider.serie3, .section-divider.serie4.middle {background: transparent url(../img/serie4-divide.png) no-repeat center 0;}
+.section-divider.serie4, .section-divider.serie4.middle {background: transparent url(../img/serie4-divide.png) no-repeat center 0;}
 
 .section-divider.mobile {background: transparent url(../img/divide-mobile.png) no-repeat center 0;}
 
@@ -1488,14 +1527,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #barra-logos img {margin: 25px 0;}
 
-
   /*#intro.programa #barra-logos img.logo-uminho{
     left: 50%;
     position: relative;
     margin-left: -25%;
   }*/
 }
-
 
 /* Navegação entre aulas
 --------------------------------*/
@@ -1704,6 +1741,100 @@ body.mobile-nav-active #mobile-nav-toggle {
 #features .section-description {
   padding-bottom: 10px;
 }
+
+/* Capa - Capítulos
+--------------------------------*/
+
+.capa-capitulos {
+  /*background:#ff8831;*/
+  background: linear-gradient(-90deg, rgba(254, 191, 0, 0.6), rgba(255, 136, 49, 0.8)), url("../img/bg1-v2-serie3.png") fixed center center;
+  padding: 15vh 0;
+  background-size: cover;
+}
+
+.capa-capitulos h1,
+.capa-capitulos h2,
+.capa-capitulos h3, 
+.capa-capitulos h4,  
+.capa-capitulos h5,  
+.capa-capitulos h6 {color:var(--white-color);}
+
+.capa-capitulos .cta-title {
+  color: var(--white-color);
+  font-weight: 700;
+}
+
+.capa-capitulos .cta-text {
+  color: var(--white-color);
+}
+
+.capa-capitulos span.tit1 {
+  animation: showup 7s infinite;
+}
+
+.capa-capitulos span.tit1 {
+  animation: showup 7s infinite;
+}
+
+.capa-capitulos span.tit2 {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+.capa-capitulos span.tit2 span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+@media (min-width: 769px) {
+  .capa-capitulos .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.capa-capitulos .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 25px;
+  transition: background 0.5s;
+  margin: 10px;
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
+}
+
+.capa-capitulos .cta-btn:hover {
+  background: #1dc8cd;
+  border: 2px solid #1dc8cd;
+}
+
 
 /* Call To Action Section
 --------------------------------*/
