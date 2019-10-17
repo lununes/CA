@@ -119,6 +119,9 @@ Accordion
 
 .accordion a:hover, .accordion a:focus {color:var(--main-color3);}
 
+/*Série 3*/
+.serie3 .accordion a:hover, .accordion a:focus {color: var(--main-color4-over);}
+
 .accordion a.collapse {color: #33cccc;}
 
 .accordion p a{
@@ -195,7 +198,9 @@ Box de Citação Curta
 .box-quote i, .box-quote  .svg-inline--fa {color: var(--main-color3);}
 
 /*serie3*/
-.serie3 .box-quote i, .serie3 .box-quote .svg-inline--fa {color: var(--main-color4);}
+.serie3 .fa-chevron-right {
+  color: var(--main-color4);
+}
 
 .box-quote i {font-size:20px;}
 
@@ -479,6 +484,117 @@ Círculo de fundo (css shape)
   border-color: var(--main-color2);
   color:var(--main-color2);
 }
+
+/* -------------------------------- 
+
+Fotografias Hover & tooltip
+
+-------------------------------- */
+
+.pic-container img{
+    border: 1px solid #d2d2d2;
+    padding: 3px;
+    width: 200px;
+}
+
+.pic-container{
+    max-width: 210px;
+    /*max-height: 210px;*/
+    margin-bottom: 190px; 
+}
+
+.pic, .pic2{
+    background: #fff;
+    position: absolute;
+    
+    -webkit-transition: all 0.2s ease;
+     transition: all 0.2s ease;
+    
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+    box-shadow: 3px 1px 10px -2px #aaa;  
+}
+
+.pic:nth:child(1){
+    z-index: 3;
+}
+.pic:nth-child(2){
+    z-index: 1;
+}
+.pic:nth-child(3){
+    z-index: 2;
+}
+.pic-container:hover .pic:nth-child(1)
+{
+    -webkit-transform: rotate(15deg);
+     transform: rotate(15deg);
+    
+    -webkit-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+
+.pic-container:hover .pic2:nth-child(2){
+    -webkit-transform: rotate(7deg);
+     transform: rotate(7deg);
+     
+    -webkit-transition: all 0.10s ease;
+     transition: all 0.10s ease;
+}
+
+.pic-container:hover .pic2:nth-child(3){
+    -webkit-transform: rotate(-5deg);
+     transform: rotate(-5deg);
+}
+.pic-caption{
+    background: #82a3d4;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    top:0;
+    left: 200px;
+    width: 600px;
+    
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    
+    -webkit-opacity: 0;
+    opacity: 0;
+    
+}
+.pic-caption:hover{
+    background: #607fae;
+}
+.pic-container:hover .pic-caption{
+    left:230px;
+    -webkit-opacity: 1;
+    opacity: 1;
+}
+
+/* -------------------------------- 
+
+Fotografias Hover & Accordion
+
+-------------------------------- */
+
+.accordion-foto.accordion a {padding: 18px 0 50px;}
+
+.accordion-foto.accordion li {
+    border-bottom: transparent;
+}
+
+.accordion-foto .accordion-foto-conteudo p {
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  box-shadow: 3px 1px 10px -2px #aaa;
+  padding: 20px;
+  margin-top: 20px;
+  max-width: 200px;
+} 
+
 
 
 /* -------------------------------- 
@@ -1188,7 +1304,10 @@ Slider
   margin-bottom: 30px;
 }
 
-.carousel .carousel-item {padding-left:130px;}
+.carousel .carousel-item {
+  padding-left: 100px;
+  padding-right: 100px;
+}
 
 .carousel-indicators .active {background-color: var(--main-color3);}
 
@@ -1212,6 +1331,12 @@ Slider
     right: 40px;
 }
 
+/*Série 3*/
+.carousel.serie3 img {
+  right:0;
+  top:0;
+}
+
 .carousel table img {
     top: 0;
     right:0;
@@ -1225,6 +1350,10 @@ Slider
         top: 10px;
         right: 0;
         margin-bottom: 45px;
+    }
+    /*série 3*/
+    .carousel.serie3 img {
+        margin-bottom: 0;
     }
 }
 
