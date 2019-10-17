@@ -10,8 +10,12 @@
 
     gtag('config', 'UA-131194878-1');
   </script>
+
+  <!--Grafismo animado (Particles.js)-->
+  <script type="text/javascript" src="../../lib/particles/particles.js"></script>
+
   <meta charset="utf-8">
-  <title>Curso Ciência Aberta - Série 1: Curso 2 - Aula 3: Ciência Aberta e saúde: abertura dos dados governamentais</title>
+  <title>Curso Ciência Aberta - Série 3: Curso 1 - Aula 3: Experiência Nacional e Regional</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Ciência, Fiocruz, Curso, Ciência Aberta" name="keywords">
   <meta content="" name="description">
@@ -22,13 +26,11 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet"> 
-
   <!-- Bootstrap CSS -->
   <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Biblioteca CSS -->
   <link href="../../lib/animate/animate.min.css" rel="stylesheet">
-
   <link href="font-awesome/css/all.css" rel="stylesheet"> <!-- Font Awesome -->
   <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"><!--Ionicons-->
   <link href="../../lib/aos/aos.css" rel="stylesheet">
@@ -37,7 +39,7 @@
   <!-- CSS geral das aulas e recursos visuais -->
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/style-visual-resources.css">
-  <link rel="stylesheet" href="../../css/serie1/curso2/style-aula3.css">
+  <link rel="stylesheet" href="../../css/serie3/curso2/style-aula1.css">
 
 </head>
 
@@ -53,21 +55,18 @@
         <a href="https://campusvirtual.fiocruz.br/portal/formacao-modular/ciencia-aberta" class="scrollto"><img src="../../img/logo-cv-black.svg" alt="Ir para o Campus Virtual" title="Campus Virtual"/> </a>
       </div>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
+      <nav id="nav-menu-container" class="serie3">
+        <ul class="nav-menu serie3">
           <li class="menu-has-children"><a href="#">Aulas</a>
             <ul>
-              <li><h6>Curso 2 | Panorama Histórico da Ciência Aberta</h6></li>
-              <li class="d-none d-sm-block"><span class="section-divider serie1"></span></li>
+              <li><h6>Curso 1 | Acesso Aberto</h6></li>
+              <li class="d-none d-sm-block"><span class="section-divider serie3"></span></li>
               <li class="d-block d-sm-none"><span class="section-divider mobile"></span></li>
-              <li><a href="introducao.html">Introdução</a></li>
-              <li><a href="aula1.html">Aula 1: Cenário Internacional</a></li>
-              <li><a href="aula2.html">Aula 2: Cenário Brasileiro</a></li>
-              <li><a href="aula3.html">Aula 3: Ciência Aberta e saúde: abertura dos dados governamentais</a></li>
-              <li><a href="aula4.html">Aula 4: Os obstáculos que a Ciência Aberta pretende mitigar</a></li>
-              <li><a href="aula5.html">Aula 5: Uma Ciência Aberta, várias expectativas</a></li>
-              <li><a href="aula6.html">Aula 6: Visões críticas da Ciência Aberta</a></li>
-              <li><a href="aula7.html">Aula 7: Qual Ciência Aberta precisamos?</a></li>
+              <li><a href="aula1.html">Aula 1: O Que é o Acesso Aberto?</a></li>
+              <li><a href="aula2.html">Aula 2: O Panorama Internacional</a></li>
+              <li><a href="aula3.html">Aula 3: Experiência Nacional e Regional</a></li>
+              <li><a href="aula4.html">Aula 4: Relatos da Nossa Experiência</a></li>
+              <li><a href="aula5.html">Aula 5: Implicações na Comunicação Científica</a></li>
             </ul>
           </li>
           <li><a href='#' data-toggle="modal" data-target="#modal-bibliografia">Bibliografia</a></li>
@@ -77,13 +76,14 @@
       </nav><!-- #nav-menu-container -->
     </div>
 
+
     <!--Breadcrumb-->
-    <div id="breadcrumb" class="d-none">
+    <div id="breadcrumb" class="d-none serie3">
       <div class="container">
         <div class="row" data-aos="flip-right">
           <div class="col-12">
             <ul class="nav-menu">
-              <li><a href='introducao.html' target='_blank'><i class="fas fa-home"></i> Curso 2: Panorama histórico da Ciência Aberta</a> > <a href='aula3.html' target='_blank'>Aula 3 - Ciência Aberta e saúde: abertura dos dados governamentais</a></li>
+              <li><a href='aula1.html' target='_blank'><i class="fas fa-home"></i> Curso 1: Acesso Aberto</a> > <a href='aula3.html' target='_blank'>Aula 3 - Experiência Nacional e Regional</a></li>
               <li class="float-right">            
                 <div id="font-setting-buttons">
                   <div class="btn-group">
@@ -102,305 +102,367 @@
 
   </header><!-- #header -->
 
-  <!--==========================
+
+  <main id="main" class="serie3">
+
+   <!--==========================
     Intro Section
   ============================-->
-  <section id="intro" class="triangle" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
+  <section id="intro" class="triangle serie3" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
     <div class="intro-text">
-      <p class="headline-small" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">Série 1 | Curso 2</p>
-      <h2 data-aos="fade-in" data-aos-duration="850" data-aos-delay="600"><span>Panorama Histórico da</span> Ciência Aberta</h2>
+      <p class="headline-small serie3" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">Série 3 | Curso 1</p>
+      <h2 data-aos="fade-in" data-aos-duration="850" data-aos-delay="600"><span>Acesso</span> Aberto</h2>
+      <!--<img data-aos="fade-in" data-aos-duration="1500" data-aos-delay="900" src="img/logo-Escola-Corporativa-Fiocruz.png" alt="Logo da Escola Corporativa Fiocruz" title="Escola Corporativa Fiocruz"/>-->
     </div>
 
-  </section><!-- #intro -->
-
-  <main id="main">
+  </section><!-- #intro -->   
       
     <!--==========================
-      Bloco 1 - Ciência Aberta e saúde: abertura dos dados governamentais
+      Bloco 1 - Introdução
     ============================-->
     <section id="bloco1" class="blocos" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="1000">
       <div class="container">
         <div class="section-header">
           <p class="headline-small text-center">Aula 3</p>
-          <h3 class="section-title">Ciência Aberta e saúde: abertura dos dados governamentais</h3>
-          <span class="section-divider serie1 middle"></span>
+          <h3 class="section-title">Experiência Nacional e Regional</h3>
+          <span class="section-divider serie3 middle"></span>
         </div>
 
-        <div class="row">
-          <div class="col-12">
-            <p>A Ciência Aberta é amplamente defendida em termos de transparência, reprodutibilidade, disseminação e transferência de novos conhecimentos para a sociedade. Devido a sua complexidade, notamos que as práticas na área da saúde se concentraram principalmente em dois aspectos: Acesso Aberto à publicações científicas e, mais recentemente, compartilhamento e abertura de dados.</p>
+        <div class="row justify-content-center align-items-center mb-3 mt-3">
+          <div class="col-8 col-md-3 aos-init aos-animate" data-aos="flip-left">
+            <img class="d-sm-block mx-auto img-fluid aos-init aos-animate" src="../../img/serie3/Curso1/aula2/img1.svg" width="100%">
           </div>
-
-          <div class="col-12 col-lg-6 content">
-            <p>A crescente produção e uso de dados têm promovido debates sobre sua importância, potencialidades, desafios e impactos nos diversos setores de uma sociedade conectada e global. Como resultado do crescimento exponencial, surgem novas práticas de produção de conhecimento que utilizam grandes volumes de dados. Emerge uma nova forma de produção de conhecimento baseada no uso intensivo de dados, algoritmos, modelagens computacionais sofisticadas através de iniciativas colaborativas como a E-Science (Appel, 2014).</p>
-
-            <p>Um exemplo é a iniciativa <a href='https://nectar.org.au/' target='_blank'><em>National EResearch Collaboration Tools and Resources (Nectar)</em></a> criada pelo governo australiano em parceria com instituições acadêmicas e comunidades de pesquisa na constituição de laboratórios virtuais e ferramentas de pesquisa e-research, uma nuvem nacional de pesquisa denominada <em>Nectar Cloud</em> e o <em>National Server Program.</em></p>
+          <div class="col-12 col-md-7 aos-init" data-aos="zoom-in">
+            <p>Nessa aula trataremos do desenvolvimento nacional consciente da importância do Acesso Aberto, vamos entender mais? </p>
+            <p>Aproveite o conteúdo e desejamos a você bons estudos!</p>
           </div>
-
-          <div class="col-12 col-lg-6 content" data-aos="flip-left">
-            <img class="roundedmx-auto d-block img-fluid"  src="../../img/serie1/curso2/aula3/img1.jpg" alt="">
-          </div>
-
-
-        </div><!--Fim da row-->
-
-        <div class="row blocos">
-         <!--Importante/Atenção-->
-            <div class="atencao col-12 col-md-8 offset-md-2">
-              <div class="box-quote multi-border">
-                <h5><i class="fas fa-exclamation"></i>Importante:</h5>
-                <div class="atencao-content">
-                  <p>Dados sempre foram ativos fundamentais para produção de conhecimento cuja aquisição e tratamento para análise demandam a maior parte do tempo e dos recursos financeiros destinados às pesquisas. Atualmente, são necessárias novas competências e conhecimentos para gerenciar e extrair conhecimentos confiáveis de grande volume de dados oriundos de distintas fontes, catalisando questões que fizeram emergir uma nova área: a ciência de dados.</p>
-
-                  <p><i class="icon ion-ios-arrow-forward"></i> Para saber mais sobre a profissão do cientista de dados veja o relatório <a href='http://visit.crowdflower.com/rs/416-ZBE-142/images/CrowdFlower_DataScienceReport_2016.pdf' target='_blank'><em>Data Science Report, 2016</em></a>.</p>
-                </div>
-              </div>
-            </div><!--Fim do Importante-->
-
-        </div><!--Fim da row-->
+        </div>
+        </div>
       </div><!--/container-->
     </section><!-- #bloco1 -->
 
-      
     <!--==========================
-      Bloco 2 - Dados governamentais administrativos
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos blocos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-out-down" data-aos-easing="ease-out-back">O Movimento do Acesso Aberto no Brasil</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+    
+    <!--==========================
+      Bloco 2 - Origens do Acesso Aberto
     ============================-->
     <section id="bloco2" class="section-bg blocos">
-        <div class="container-fluid">
-          <div class="row wow">
-
-              <div class="col-12 wow fadeInUp">
-                <h4 class="text-center">Dados governamentais administrativos</h4>
-                <span class="section-divider middle serie1"></span>
+        <div class="container">
+          <div class="row wow justify-content-center">
+              <div class="col-12">
+                <div class="row justify-content-center aos-init aos-animate" data-aos="flip-up">
+                  <div class="col-12 col-md-8">
+                  <p style="font-size:18px;" class="text-center"><strong>O movimento no Brasil teve em sua origem diversas iniciativas, como você verá a seguir:</strong></p>
+                </div>
               </div>
 
-                <div class="col-lg-5 col-md-5 about-img">
-                  <img src="../../img/serie1/curso2/aula3/img2.png" alt="" class="wow fadeInLeft rounded">
+              <div class="col-12 col-md-8">
+                <h4 class="text-center">SciElo - <em>Scientific Electronic Library Online</em></h4>
+                <span class="section-divider middle serie3"></span>
+
+                <p>Criada em 1998,  a SciELO se define como um “Projeto que tem por objetivo o desenvolvimento de uma metodologia comum para a preparação, armazenamento, disseminação e avaliação da produção científica em formato eletrônico.”</p>
+
+              </div>
+
+              
+
+              <div class="row justify-content-center">
+                  <div class="col-12">
+                    <p>A disseminação, circulação e o <a href='#' data-toggle="modal" data-target="#modal-glossario5" style="cursor: help;">compartilhamento</a> da informação e do conhecimento entre os pares sempre foi o modo “normal” da pesquisa intelectual, do funcionamento da atividade acadêmica e científica, mesmo antes de ela se ter cristalizado e institucionalizado nas suas formas atuais. Vamos entender como isso ocorreu? Veja no gráfico:</p>
                 </div>
+              </div>
 
-                <div class="col-lg-7 col-md-7 wow fadeInRight">
-                  <p>Dada a relevância da abertura de dados com finalidade de pesquisa, <a href='https://www.fosteropenscience.eu/taxonomy/term/115' target='_blank'>dados governamentais administrativos</a> também podem ser parte do escopo da Ciência Aberta embora a sua abertura se relacione mais com temas como a transparência pública, o acesso à informação e à participação do cidadão. </p>
+              <div class="row mb-3">
+                <div class="col-12 col-md-4 mt-3 mb-5">
+                 <!--Accordion-->
+                      <ul id="accordion-foto-hover" class="accordion accordion-foto wow fadeInUp">
 
-                  <!--Box simples-->
-                  <div class="box-quote option1">
-                    <h6>Exememplo:</h6>
-                    <p><strong>Parceria para o <a href='http://governoaberto.cgu.gov.br/' target='_blank'>Governo Aberto - Open Government Partnership - OGP</a></strong></p>
-                    <p>O Brasil é um dos fundadores da OGP, iniciativa multilateral lançada em 2011 que visa melhorar a capacidade de resposta dos governos aos cidadãos através da abertura de dados.</p>
-                  </div>
-                  <!--Fim de Box simples--> 
+                        <!--Item 1-->
+                        <li>
+                          <a data-toggle="collapse" class="collapsed" href="#accordion-foto1">
+                              <!--Fotografias Hover & Accordion-->
+                <div class="pic-container mx-auto">
+                    <img src="../../img/serie3/Curso1/aula2/img3.svg" class="pic" />
+                    <img src="../../img/serie3/Curso1/aula2/img3-a.svg" class="pic2" />
+                    <img src="../../img/serie3/Curso1/aula2/img3.svg" class="pic" />
                 </div>
-          </div><!--Fim da row-->
-        </div><!--Fim do container fluid-->
+                <!-- Fim e Fotografias Hover & Accordion -->
+              </a>
+                          <div id="accordion-foto1" class="accordion-foto-conteudo collapse">
+                            <p class="m-0 mx-auto">O crescimento acentuado do volume da literatura científica foi acompanhado pela “comercialização” do sistema de comunicação da ciência, e pela perda do seu controle por parte do mundo académico e científico.</p>      
+                          </div>
+                        </li>
+                    </ul>
+                    <!--Fim do Accordion-->
+                </div> <!--fim da coluna-->
 
-        <div class="container">
-          <div class="row blocos">
-            <div class="col-12 col-md-6">
-              <p>Considerando o papel da ciência na busca de conhecimento e fornecimento de evidências para orientar ações em prol da humanidade, e os esforços na área da <a href='http://www.fiocruz.br/bibsp/cgi/cgilua.exe/sys/start.htm?sid=107' target='_blank'>saúde pública</a>, o acesso e uso de bases de dados governamentais administrativos para fins de pesquisa e de políticas públicas possuem grande potencial - especialmente quando vinculados a dados de múltiplas fontes por possibilitar elucidar efeitos de fatores econômicos, sociais e ambientais sobre a saúde das pessoas e populações.</p>
+                <div class="col-12 col-md-4 mt-3 mb-5">
+                 <!--Accordion-->
+                      <ul id="accordion-foto-hover2" class="accordion accordion-foto wow fadeInUp">
 
-              <p>Estudos na área de saúde pública que empregam abordagens exploratórias de dados são mais econômicos e consomem menos tempo do que os métodos tradicionais que subsidiam estudos de base populacional, por exemplo. Alguns países, como Noruega, Finlândia e Suécia, consideram que os dados administrativos são recursos importantes para pesquisa (Conelly et al., 2016).</p>
-
-              <p>Vale destacar que, dada a sua origem, o acesso a dados governamentais administrativos com finalidade de pesquisa, principalmente aqueles contendo informações pessoais, deve garantir e manter a confidencialidade, proteger a privacidade individual, respeitar aspectos legais e garantir a segurança da informação. </p>
-
-              <p>Um consenso ainda não foi alcançado para abordar todas as questões pertinentes ao acesso, uso e reutilização desses dados com finalidade de pesquisa, principalmente aqueles que contêm informações pessoais. Tópicos que têm sido amplamente discutidos, sendo parte de um esforço para manter a confidencialidade, proteger a privacidade individual, respeitar os termos de consentimento e gerenciar a segurança da informação.</p>
-            </div>
-
-            <!--Importante/Atenção-->
-              <div class="atencao col-12 col-md-6">
-                <div class="box-quote multi-border">
-                  <h5><i class="fas fa-exclamation"></i>Importante:</h5>
-                  <div class="atencao-content">
-                    <p><strong>Dados governamentais administrativos:</strong></p> 
-                    <p>São informações coletadas por qualquer departamento ou agência do governo em seus serviços rotineiros a exemplo de registros escolares, informações sobre saúde etc.</p>
-
-                    <p><strong>Exemplo:</strong> Dados administrativos de serviços públicos de saúde podem ser integrados com dados de programas de bem-estar social permitindo avaliar os possíveis impactos de políticas públicas sobre a saúde dos beneficiários, vide efeitos de programa de transferência condicionada de renda sobre a mortalidade infantil no Brasil (Rasella et al., 2013). </p>
-                  </div>
+                        <!--Item 2-->
+                        <li>
+                          <a data-toggle="collapse" class="collapsed" href="#accordion-foto2">
+                              <!--Fotografias Hover & Accordion-->
+                <div class="pic-container mx-auto">
+                    <img src="../../img/serie3/Curso1/aula2/img3.svg" class="pic" />
+                    <img src="../../img/serie3/Curso1/aula2/img3.svg" class="pic2" />
+                    <img src="../../img/serie3/Curso1/aula2/img4.svg" class="pic" />
                 </div>
-              </div><!--Fim do Importante-->
+                <!-- Fim e Fotografias Hover & Accordion -->
+              </a>
+                          <div id="accordion-foto2" class="accordion-foto-conteudo collapse">
+                            <p class="m-0 mx-auto">A função essencial das revistas científicas - a divulgação de resultados de investigação para promover a disseminação do conhecimento e o avanço da ciência – foi obscurecida pelos objetivos comerciais das <a href='#' data-toggle="modal" data-target="#modal-glossario6" style="cursor: help;">editoras</a>.</p>      
+                          </div>
+                        </li>
+                    </ul>
+                    <!--Fim do Accordion-->
+                </div> <!--fim da coluna-->
 
-          </div><!--Fim da row-->
-        </div><!--Fim do container-->
+                <div class="col-12 col-md-4 mt-3 mb-5">
+                 <!--Accordion-->
+                      <ul id="accordion-foto-hover3" class="accordion accordion-foto wow fadeInUp">
+
+                        <!--Item 3-->
+                        <li>
+                          <a data-toggle="collapse" class="collapsed" href="#accordion-foto3">
+                              <!--Fotografias Hover & Accordion-->
+                <div class="pic-container mx-auto">
+                    <img src="../../img/serie3/Curso1/aula2/img3.svg" class="pic" />
+                    <img src="../../img/serie3/Curso1/aula2/img4.svg" class="pic2" />
+                    <img src="../../img/serie3/Curso1/aula2/img5.svg" class="pic" />
+                </div>
+                <!-- Fim e Fotografias Hover & Accordion -->
+              </a>
+                          <div id="accordion-foto3" class="accordion-foto-conteudo collapse">
+                            <p class="m-0 mx-auto">No  meio acadêmico e entre os profissionais de informação, gerou a designada <a href='#' data-toggle="modal" data-target="#modal-glossario7" style="cursor: help;">“crise dos periódicos”</a> e das graves consequências que as limitações ao acesso à literatura produziam ao próprio sistema científico.</p>      
+                          </div>
+                        </li>
+                    </ul>
+                    <!--Fim do Accordion-->
+                </div> <!--fim da coluna-->
+
+              </div><!--fim da row-->
+
+                 <!--Box de citação curta -->
+              <div class="row justify-content-center serie3">
+                <div class="col-12 col-md-10">
+                 <div class="box-quote option1 aos-init aos-animate" data-aos="">
+                  <p><img class="advanced-feature-img-right aos-init aos-animate mx-auto d-block" data-aos="flip-left" src="../../img/serie3/curso1/aula2/img2.jpg" alt="">
+                    A iniciativa de Acesso Aberto de Budapeste (Budapest Open Access Initiative - BOAI (BUDAPEST, 2002)) tornou o Acesso Aberto como o acesso totalmente irrestrito e gratuito a literatura acadêmica revisada por pares e disponível no mundo por parte de qualquer cientista, acadêmico, professor, estudante ou outro interessado, desfazendo as barreiras que impedem o acesso a esta literatura. Outro ponto importante, é a Declaração de Budapeste que estabelece duas estratégias para viabilizar o acesso aberto, a Via Verde e a Via Dourada, veja abaixo o que significa:</p>
+                </div>
+                </div>
+              </div><!--fim da coluna-->
+              </div><!--fim da row-->
+              <!--Fim de Box de citação curta--> 
+
+        </div> <!-- fim container -->
     </section><!-- #bloco2 -->
 
     <!--==========================
-      Bloco 3 - Uso de dados administrativos para pesquisa
+    Capa - Capítulos
+  ============================-->
+        <section  class="capa-capitulos blocos">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 text-center">
+                <h1 class="cta-title" data-aos="zoom-out-down" data-aos-easing="ease-out-back">Evolução do Acesso Aberto</h1>
+              </div>
+             </div>
+          </div>
+        </section><!-- #call-to-action -->
+
+    <!--==========================
+
+      Bloco 3 - Evolução do Acesso Aberto
+
     ============================-->
     <section id="bloco3" class="section-bg2 blocos">
       <div class="container">
-          <div class="row">
-            <div class="col-12">
-                <h4>Uso de dados administrativos para pesquisa</h4>
-                <span class="section-divider serie1"></span>
-              </div>
+        <div class="row">
+          <div class="col-12 wow fadeInLeft" data-wow-duration="0.5s">
+              <h4 class="text-center">Evolução do Acesso Aberto</h4>
+              <span class="section-divider serie3 middle"></span>
+
+              <div class="row justify-content-center">
+                <div class="col-12 ">
+                <p>Nas duas últimas décadas o acesso aberto cresceu na grande maioria  dos países e das disciplinas. No início do século, a percentagem dos artigos científicos disponíveis em acesso aberto <a href='#' data-toggle="modal" data-target="#modal-glossario8" style="cursor: help;">era pouco mais que residual.</a> Nos dias de hoje, apesar da dificuldade em obter dados e projeções  integralmente fiáveis e abrangentes e da grande variedade de estimativas realizadas, essa percentagem já poderá situar-se em torno dos 50%.</p>
+
+                <p><strong>O crescimento do acesso aberto está diretamente associado à evolução das políticas, das revistas e dos repositórios. E é sobre esse assunto que veremos nas próximas telas.</strong></p>
           </div>
-
-          <div class="row wow d-flex flex-row-reverse bd-highlight">
-
-              <div class="col-12 col-md-6">
-                <img class="rounded advanced-feature-img-right wow fadeInUp" src="../../img/serie1/curso2/aula3/img3.png" alt=""/>
-              </div>
-
-              <div class="col-12 col-md-6 wow fadeInLeft">
-                <p>O acesso, tratamento e uso de dados administrativos para fins de pesquisa apresentam muitos desafios relacionados principalmente com questões éticas, legais e de segurança da informação para proteger os dados pessoais dos cidadãos. Pesquisadores que usam dados administrativos com informações pessoais trabalham sob condições estritas, conforme ditado pelos departamentos do governo (Conelly et al., 2016).</p>
-
-                <p>O acesso requer base legal, arranjos de segurança apropriados, uso exclusivo para um propósito previamente especificado, credenciais apropriadas da instituição solicitante e parecer ético favorável do estudo proposto. Além disso, os pesquisadores assumem a responsabilidade de usar os dados apenas para fins legítimos, bem como estar ciente de que ações legais serão tomadas se os dados forem utilizados inadequadamente ou sem o devido cuidado (Harron et al., 2017).</p>
-
-                <p>Vale ressaltar que dados individualizados são requeridos exclusivamente para fins de aplicação de técnicas de vinculação de dados com posterior anonimização dos dados, cuja divulgação em publicações científicas ocorre em formato de dados agregados a exemplo de tabelas e gráficos. Para entender melhor o conceito de anonimização, consulte o <a class="scrollto" href='#saiba-mais1'>material complementar sugerido no item Saiba Mais</a>.</p>
-              </div>
-          </div><!--Fim da row-->
-          <div class="row">
-            <div class="col-12">
-              <p>O novo Regulamento Geral de Proteção de Dados da União Europeia (UE 2016/679) estabelece diretrizes sobre o uso de dados pessoais para pesquisa, unificando as práticas dos países membros a partir de 25 de maio de 2018. No Brasil, esforços consideráveis têm sido empreendidos particularmente durante o ano de 2018 para regulamentar o uso de dados pessoais para pesquisa de interesse público. Dentre os quais destacamos:</p>
-            </div>
-
-            <div class="obj-lista col-12 col-md-8 offset-md-2 text-left">
-              <ul class="list-group">
-                <li class="list-group-item wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon ion-md-checkmark-circle-outline"></i> Em <strong>fevereiro de 2018</strong>, a Comissão Intergestores Tripartite do Sistema Único de Saúde (SUS) realizou consulta pública sobre a resolução que dispõe sobre a proteção e o tratamento de dados pessoais em saúde e o estabelecimento dos procedimentos para acesso à informação e cessão de bases de dados contendo informações pessoais custodiadas pelo SUS.</li>
-
-                <li class="list-group-item wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"><i class="icon ion-md-checkmark-circle-outline"></i> Em <strong>29 de maio de 2018</strong> foi aprovado por consenso o PL 4060/5276 na Câmara dos Deputados, seguindo para aprovação no Senado. O PL 4060/5276 disciplina as regras para acesso a bases de dados pessoais por órgãos de pesquisa, que deverão ser tratados e mantidos exclusivamente dentro do órgão em ambiente controlado e seguro com a finalidade de realização de estudos e pesquisas, incluindo sempre que possível a anonimização dos dados e aderência aos devidos padrões éticos.</li>
-
-                <li class="list-group-item wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.6s"><i class="icon ion-md-checkmark-circle-outline"></i> Em seguida, em <strong>03 de Julho de 2018</strong>, a Comissão de Assuntos Econômicos do Senado (CAE) aprovou parecer favorável ao Projeto de Lei da Câmara para ser votado no plenário visando regulamentar a proteção de dados pessoais no Brasil, tanto pelo poder público quanto pela iniciativa privada - PLC 53/2018. </li>
-
-                <li class="list-group-item wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.7s"><i class="icon ion-md-checkmark-circle-outline"></i> A Lei de Proteção de Dados Pessoais foi aprovada em <strong>10 de julho de 2018</strong> pelo Senado</li>
-
-                <li class="list-group-item wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.8s"><i class="icon ion-md-checkmark-circle-outline"></i> Em 14 de agosto de 2018 foi sancionada com vetos pela Presidência da República <a href='http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2018/Lei/L13709.htm' target='_blank'>LEI Nº 13.709</a>. </li>
-              </ul>
-            </div>
-          </div> <!--Fim da row-->
-
-        <div id="saiba-mais1" class="row blocos justify-content-center">
-            <!--Saiba Mais-->
-            <div class="saiba-mais col-10 col-md-8" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
-              <div class="box-quote multi-border">
-                <h5><i class="fas fa-question-circle" data-fa-transform="grow-25"></i>Saiba mais:</h5>
-                <div class="saiba-mais-content">
-                  <a href='https://www.arca.fiocruz.br/handle/icict/28838' target='_blank'><img class="float-left rounded img-fluid" src="../../img/serie1/curso2/aula3/img4.jpg" alt="" width="300" style="margin:0 10px 10px 0;"></a>
-                
-                  <p>A publicação <a href='https://www.arca.fiocruz.br/handle/icict/28838' target='_blank'>“Marcos legais nacionais em face da abertura de dados para pesquisa em saúde: dados pessoais, sensíveis ou sigilosos e propriedade intelectual”</a> identifica as normas legais que incidem sobre questões relacionadas à abertura de dados para pesquisa em saúde, entre elas a utilização e proteção de dados pessoais, sensíveis ou sigilosos, segurança da informação, reúso e compartilhamento de dados e propriedade intelectual. </p>
-                 </div>
-              </div>
-            </div>
-            <!--Fim do Saiba Mais-->
         </div>
-      </div>
+
+        <!--Slider-->
+                <section id="aula2-carrossel" class="carousel slide wow fadeInUp serie3" data-ride="false" aria-labelledby="carouselheading">
+                  <div class="row justify-content-center">
+                    <div class="box-quote col-10 col-md-12">
+                      <ol class="carousel-indicators">
+                          <li data-target="#aula1-carrossel" data-slide-to="0" class="active"></li>
+                          <li data-target="#aula1-carrossel" data-slide-to="1"></li>
+                          <li data-target="#aula1-carrossel" data-slide-to="2"></li>
+                      </ol>
+
+                      <div class="carousel-inner">
+                        <!--ítem 1-->
+                        <article class="carousel-item active">
+                            <div class="row justify-content-center d-flex flex-row-reverse bd-highlight">
+                              <div class="col-12">
+                                <h5>Políticas</h5>
+                                <p><img class="advanced-feature-img-right aos-init aos-animate img-fluid  mx-auto d-block" data-aos="zoom-in" src="../../img/serie3/curso1/aula2/img6.png" alt="">As políticas de acesso aberto começaram a ser estabelecidas a partir de 2003 e, na última década,  proliferaram  entre as instituições que realizam pesquisa (Universidades), entre as agências de fomento e outras entidades financiadoras da pesquisa. Atualmente existem mais de 900 políticas registadas no <a href='#' data-toggle="modal" data-target="#modal-glossario9" style="cursor: help;"><em>Registry of Open Access Repositories Mandatory Archiving Policies</em></a> de mais de 700 instituições de pesquisa e de quase todos os principais financiadores de pesquisa a nível mundial.</p>
+                              </div>
+
+                            </div>
+                        </article>
+
+                        <!--ítem 2-->
+                        <article class="carousel-item">
+                            <div class="row justify-content-center d-flex flex-row-reverse bd-highlight">
+                               <div class="col-12">
+                                  <h5>Revistas de Acesso Aberto</h5>
+
+                                  <div class="row d-flex flex-row-reverse">
+                                    <div class="col-12 col-md-5">
+                                      <img class="p-0 advanced-feature-img-right aos-init aos-animate img-fluid mx-auto d-block" data-aos="zoom-in" src="../../img/serie3/curso1/aula2/img7.jpg" alt="">
+                                      <p class="source text-center">Fonte: <a href="https://3.bp.blogspot.com/-WXqsilc4hkY/XCqKP8HxyGI/AAAAAAAABXo/P9ABGUj4KQAs72M7Xs4Z0OlytjzcglkZQCEwYBhgL/s400/DOAJgrowjournals.jpg " target="_blank">https://3.bp.blogspot.com/-WXqsilc4hkY/XCqKP8HxyGI/AAAAAAAABXo/P9ABGUj4KQAs72M7Xs4Z0OlytjzcglkZQCEwYBhgL/s400/DOAJgrowjournals.jpg </a>.</p>
+                                    </div>
+
+                                    <div class="col-12 col-md-7">
+                                      <p>As revistas de acesso aberto, que eram algumas centenas em 2002, registaram também um grande crescimento e, atualmente, há cerca de  de 13000 revistas registadas no Directory of Open Access Journals - DOAJ. Desse total de revistas, mais de 1300 são do Brasil.</p>
+
+                                      <p>O crescimento do número total de revistas de acesso aberto, foi acompanhado pelo aumento do número de revistas que usam taxas de publicação, as denominadas  Article Processing Charges - APCs), quer revistas integralmente de acesso aberto, quer das chamadas revistas híbridas, que usam simultaneamente assinaturas e taxas de publicação. Apesar deste aumento das revistas que usam APCs, elas continuam a representar menos de 30% do total de revistas de acesso aberto, pois a grande maioria, mais de 70%,  não utiliza taxas de publicação.</p>
+                                    </div>
+
+                                  </div><!--Fim da row-->
+                                  
+                                </div>
+                            </div>
+                        </article>
+
+                        <!--Ítem 3-->
+                  <article class="carousel-item">
+                            <div class="row justify-content-center d-flex flex-row-reverse bd-highlight">
+                               <div class="col-12">
+                                  <h5>Repositórios de Acesso Aberto</h5>
+
+                                  <div class="row d-flex flex-row-reverse">
+                                    <div class="col-12 col-md-5">
+                                      <img class="p-0 advanced-feature-img-right aos-init aos-animate img-fluid mx-auto d-block" data-aos="zoom-in" src="../../img/serie3/curso1/aula2/img8.png" alt="">
+                                      <p class="source text-center">Fonte: <a href="http://v2.sherpa.ac.uk/view/repository_visualisations/1.html" target="_blank">http://v2.sherpa.ac.uk/view/repository_visualisations/1.html</a>.</p>
+                                    </div>
+
+                                    <div class="col-12 col-md-7">
+                                      <p>Verificou-se também um crescimento muito significativo dos repositórios de acesso aberto, que eram poucas dezenas em 2002 e hoje são mais de 4000,dos quais mais de 100 são do Brasil.</p>
+
+                                      <p>A grande maioria das instituições de pesquisa mais relevantes do mundo possuem e utilizam repositórios institucionais. Para além do crescimento do número de repositórios, nos últimos dez anos, também foram constituídas  redes nacionais (como RCAAP em Portugal) e regionais de repositórios na Europa (OpenAIRE), na América Latina (La Referencia) e em  países da Ásia, como o Japão e a  China,  e também na Oceânia. </p>
+                                    </div>
+
+                                  </div><!--Fim da row-->
+                                </div>
+                            </div>
+                        </article>
+
+                      </div>
+
+                      <a class="carousel-control-prev" href="#aula2-carrossel" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Anterior</span>
+                      </a>
+                      <a class="carousel-control-next" href="#aula2-carrossel" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          
+                          <span class="sr-only">Próximo</span>
+                      </a>
+                    </div><!--Fim do caroussel inner-->
+                  </div>
+              </section><!--Fim do Slider-->
+
+            </div><!--fim da coluna-->
+        </div><!--fim da row-->
+      </div><!--Fim do Container-->
     </section><!-- #bloco3 -->
       
     <!--==========================
-      Bloco 4 - Cidacs
+      Bloco 4 - Situação do Acesso Aberto 
     ============================-->
     <section id="bloco4" class="section-bg blocos">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12" data-aos="fade-right">
-            <h4 class="text-center">Cidacs</h4>
-            <span class="section-divider serie1 middle"></span>
+            <h4 class="text-center">Situação do Acesso Aberto</h4>
+            <span class="section-divider serie3 middle"></span>
           </div>
-    
-          <div class="col-12" data-aos="fade-left">
-            <img class="float-left d-none d-md-block" src="../../img/serie1/curso2/aula3/img5.png" alt="" style="margin:0 10px 10px 0;">
-            <img class="float-left d-block d-md-none mx-auto d-block" src="../../img/serie1/curso2/aula3/img5.png" width="300" alt="" style="margin:0 10px 10px 0;">
-            <p>Em consonância com o acesso, tratamento, integração e uso de grande volume de dados oriundos de múltiplas fontes para pesquisas de interesse para a saúde pública, a Fiocruz inaugurou em dezembro de 2016 o <a href='https://cidacs.bahia.fiocruz.br/' target='_blank'>Centro de Integração de Dados e conhecimentos para Saúde – Cidacs</a>, vinculado ao Instituto Gonçalo Moniz (Fiocruz Bahia).</p>
 
-            <p>O centro possui infraestrutura, recursos computacionais, sistema de processamento e integração, de dados com qualidade e acurácia. Oferece acesso controlado aos dados integrados e anonimizados com métodos, técnicas e protocolos aderentes a aspectos regulatórios nacionais e internacionais de privacidade, ética e de segurança da informação.</p>
-
-            <p>A missão do Cidacs é: realizar pesquisas, desenvolver metodologias investigativas e promover a capacitação profissional e científica a partir da integração de grande volume de dados oriundos de distintas fontes para ampliar o entendimento dos determinantes sociais e ambientais sobre a saúde da população, além de apoiar a tomada de decisões em políticas públicas em benefício da sociedade.</p>
-
-            <p></p>
+          <div class="col-12 col-lg-6 content wow fadeIn">
+            <p>Nos últimos anos, sobretudo após a publicação do <a href='#' data-toggle="modal" data-target="#modal-glossario10" style="cursor: help;">relatório Finch em 2012</a> e especialmente em alguns países europeus, como o Reino Unido, a Holanda e Alemanha, que sediam os grandes grupos editoriais que dominam a publicação científica,  se observou uma reorientação de estratégia e a uma grande pressão por parte de decisores políticos e de alguns setores da comunidade científica, para promover o acesso aberto dourado. Para além do relatório Finch, são exemplos deste movimento a <a href='#' data-toggle="modal" data-target="#modal-glossario11" style="cursor: help;">orientação</a> definida pelo governo holandês em novembro de 2013, expressando preferência pela via dourada e a <a href="https://oa2020.org/" target="_blank">iniciativa OA2020</a>, promovida Max Planck Society, para transformar o atual sistema de comunicação científica convertendo o modelo de assinaturas para o acesso aberto dourado, o que é conhecido como <em>“flipping”</em>.</p>
           </div>
-        </div> <!--Fim da row-->
 
-        <div class="row blocos justify-content-center">
-            <!--Saiba Mais-->
-            <div class="saiba-mais col-10 col-md-8" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
-              <div class="box-quote multi-border">
-                <h5><i class="fas fa-question-circle" data-fa-transform="grow-25"></i>Saiba mais:</h5>
-                <div class="saiba-mais-content">
-                <div class="row video-bg">
-                    <div class="col-md-12">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6HyqV_1gOjw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                      </div>
-                      <p class="reference-title text-center">Vídeo 1 - Centro de Integração de Dados e Conhecimento para Saúde (CIDACS)</p>
-                      <p class="source text-center">Fonte: <a href="https://www.youtube.com/embed/6HyqV_1gOjw" target="_blank">Fiocruz Bahia</a>.</p>
-                    </div>
-                </div>
-                 </div>
-              </div>
-            </div>
-            <!--Fim do Saiba Mais-->
-        </div>
-
+          <div class="col-12 col-lg-6 content wow fadeIn">
+            <p>O raciocínio invocado para estas posições e iniciativas é a necessidade de acelerar a transição para o acesso aberto, e garantir a sustentabilidade do sistema, assegurando o financiamento das publicações.</p>
+            <p>Esta inflexão, privilegiando o acesso aberto dourado, tem sido em alguns casos expressamente apoiada pelos grandes grupos editoriais ou objetivamente promovida pelas incertezas e obstáculos que alguns desses mesmo grupos têm criado em torno do acesso aberto através dos repositórios. </p>
+            <p>Mas, por outro lado, ela tem também suscitado fortes reservas e críticas frontais em muitos setores do movimento de acesso aberto, quer na Europa ou fora dela.</p>
+          </div>
+        </div><!--Fim da row-->
       </div> <!--Fim do Container-->
-
     </section><!-- #bloco4 -->
 
-
-    <!--==========================
-      Bloco 5 - Análise de riscos e benefícios no uso de dados
+     <!--==========================
+      Bloco 5 - Conclusão
     ============================-->
-    <section id="bloco5" class="section-bg2 blocos">
+    <section id="bloco5" class="blocos" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="1000">
       <div class="container">
+        <div class="section-header">
+        <h4 class="text-center">Conclusão</h4>
+        <span class="section-divider serie3 middle"></span>
+        </div>
+
         <div class="row justify-content-center">
-          <div class="col-12" data-aos="fade-up">
-            <h4 class="text-center">Análise de riscos e benefícios no uso de dados</h4>
-            <span class="section-divider serie1 middle"></span>
-          </div>
-    
-          <div class="col-12 wow slideInUp">
-            <img class="rounded float-right advanced-feature-img-right wow fadeInUp" src="../../img/serie1/curso2/aula3/img6.jpg" width="600" alt=""/>
-            <p>Equilíbrio entre riscos e benefícios da pesquisa, transparência, oposição ao uso comercial, garantia de segurança na guarda dos dados e a certeza de que sua utilização terá valor científico e social de relevante interesse público são aspectos essenciais para que a sociedade aprove o uso e a vinculação de dados administrativos contendo informações pessoais com finalidade de pesquisa (Wright, 2014). Inclusive alguns autores, como a bioeticista Lisa M. Lee (2017), defendem que não utilizar dados disponíveis para pesquisa também se constitui como falta de ética por impedir os benefícios que poderiam advir para a sociedade.</p>
+          <div class="col-12 content">
 
-            <p>No entanto, é necessário um ambiente de tratamento, vinculação, anonimização e análise dos dados projetados para garantir privacidade e segurança da informação por meio de configurações físicas e virtuais seguras, que restrinjam o acesso aos dados identificados e a (re) identificação dos indivíduos (Silva, 2012; Harron et al., 2017).</p>
-
-            <p>Para que os dados possam ser utilizados e preservados destaca-se a necessidade da descrição das condições e dos resultados que os originaram através do provimento de metadados. No caso,  podem ser publicados apenas os metadados para que a existência dos dados e sua descrição se tornem públicas. A decisão de prover acesso controlado aos dados vinculados e anonimizados com finalidade de pesquisa depende da análise de aspectos éticos e legais. Quando possível, e sob condições específicas, é fornecido o acesso controlado - como acontece, por exemplo, para pesquisas no campo da saúde pública.</p>
-
-            <p>A garantia de segurança, privacidade, confidencialidade e de direitos sobre os dados são partes constituintes da abertura de dados. Verifica-se, portanto, que os desafios de ordem ética, legal e de direitos individuais e coletivos no acesso, compartilhamento e reuso de dados com finalidade de pesquisa na área da saúde pública são reconhecidos e apoiados, desde que realizados de maneira transparente e responsável.</p>
-
-          </div>
-        </div> <!--Fim da row-->
-
-        <div class="row blocos justify-content-center">
+            <div class="row justify-content-center mb-5">
             <!--Saiba Mais-->
-            <div class="saiba-mais col-10 col-md-10" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
-              <div class="box-quote multi-border">
-                <h5><i class="fas fa-question-circle" data-fa-transform="grow-25"></i>Saiba mais:</h5>
-                <div class="saiba-mais-content">
-                  <ul>
-                    <li>
-                      <div id="fluxograma">
-                        <div class="header">
-                          <h5>Árvore de decisão para compartilhamento e abertura de dados sensíveis <a href="#" data-toggle="modal" data-target="#modal-fluxograma"><i class="fas fa-question-circle"></i></a></h5>
-                          <h6>Quando e como publicar dados sensíveis da forma aberta e ética</h6>
-                          <p>Adaptado de material elaborado pela <em>Australian National Data Service</em>. Para mais informações veja <a href='https://www.ands.org.au/working-with-data/sensitive-data/sharing-sensitive-data' target='_blank'>a página do Australian National Data Service, que trata do compartilhamento seguro de dados sensíveis</a>.</p>
-                        </div>
-                        <p class="destaque">Dados sensíveis identificam indivíduos, espécies, objetos ou locais, podendo acarretar riscos de discriminação, danos ou atenção indesejada.</p>
-                        <img class="d-none d-sm-block rounded mx-auto img-fluid" src="../../img/serie1/curso2/aula3/fluxograma.svg" />
-                        <img class="d-block d-sm-none rounded mx-auto img-fluid" src="../../img/serie1/curso2/aula3/fluxograma-mobile2.svg">
+        <div class="saiba-mais col-10 col-md-8 serie3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
+          <div class="box-quote multi-border">
+            <h5><i class="fas fa-question-circle" data-fa-transform="grow-25"></i>Saiba mais:</h5>
+            <div class="saiba-mais-content">
+              <p>Para saber mais sobre o privilégio do acesso aberto dourado:</p>
+              <p><i class="fas fa-chevron-right"></i><a href="https://www.elsevier.com/connect/working-towards-a-transition-to-open-access" target="_blank">Grandes grupos editoriais: <em>“Working towards a transition to open access”</em></a></p>
 
-                      </div>
-                    </li>
+              <p>Repositórios:</p>
 
+              <p><i class="fas fa-chevron-right"></i><a href="https://www.coar-repositories.org/activities/advocacy-leadership/statements-and-guidelines/petition-against-elseviers-sharing-policy/)" target="_blank">Declaração contra as alterações das políticas da Elsevier (ocorridas em 2015), promovida pela Confederação de Repositórios de Acesso Aberto e assinada por quase 300 organizações</a></p>
+              
+              <p><i class="fas fa-chevron-right"></i><a href="https://www.coar-repositories.org/news-media/coar-and-unesco-joint-statement-about-open-access/" target="_blank"><em>Joint statement about open access by COAR and UNESCO</em></a></p>
+              
+              <p><i class="fas fa-chevron-right"></i><a href="http://reuniondeconsorcios.conricyt.mx/index.php/primera-reunion/declaraciones/?lang=pb" target="_blank">Declaração da primeira reunião de consórcios da América Latina e o Caribe</a></p>
+             </div>
+          </div>
+        </div>
+        <!--Fim do Saiba Mais-->
+      </div>
 
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!--Fim do Saiba Mais-->
+      <p>Sua aula terminou aqui! Esperamos você na aula 3. Bons estudos!</p>
+
+          </div>
         </div>
 
-        <div class="row">
-            <div class="col-12">
-              <p>Esses aspectos são convergentes com os princípios FAIR, que distinguem dados e metadados para apoiar uma ampla gama de circunstâncias especiais, incluindo dados pessoais e sensíveis.</p>
-            </div>
-        </div>
-
-      </div> <!--Fim do Container-->
+      </div><!--/container-->
+    </section><!-- #bloco1 -->
       
-    </section><!-- #bloco5 -->
-
     <!--==========================
-      Bloco 5 - Navegação entre aulas
+      Bloco 6 - Navegação entre aulas
     ============================-->
-    <section id="nav-class">
+    <section id="nav-class" class="serie3">
       <div class="container">
         <div class="row">
             <div class="col-lg-6 cta-btn-previous text-center">
@@ -412,11 +474,11 @@
         </div>
     </div>
     </section>
-      
+
     <!--==========================
-      Bloco 6 - Barra de logos
+      Bloco 7 - Barra de logos
     ============================-->
-    <section id="barra-logos" class="blocos">
+    <section id="barra-logos" class="blocos serie3">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -433,11 +495,214 @@
     </section>
 
   <!--==========================
+      Modais - Glossário
+    ============================-->
+
+   <!-- Glossário 5 -->
+    <div class="modal fade cd-timeline serie3" id="modal-glossario5" tabindex="-1" role="dialog" aria-labelledby="modalTitle1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle1">Compartilhamento</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>É estabelecido na comunidade científica, desde o intenso intercâmbio epistolar que precedeu e acompanhou a criação das primeiras revistas científicas* em meados do século XVII até à circulação de preprints e reprints (cópias de artigos publicados em revistas científicas) no século XX, que esteve na origem do primeiro repositório científico moderno, o Arxiv. Por outro lado, na origem do movimento do acesso aberto atual estão os problemas, limitações e contradições do sistema de comunicação da ciência, em particular os relacionados com as revistas científicas no final do século XX. Veja a seguir esses problemas:</p>
+                    <p><small>* <em>Le Journal des sçavans e The Philosophical Transactions of the Royal Society</em>, ambas criadas em 1665</small></p>
+                </div>
+                <div class="modal-footer">
+                    <!--<a href="#" role="button" class="btn btn-primary btn-matricula">Matricule-se</a>-->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- Modal End -->
+
+   <!-- Glossário 6 -->
+    <div class="modal fade cd-timeline serie3" id="modal-glossario6" tabindex="-1" role="dialog" aria-labelledby="modalTitle1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle1">Editoras</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Nesse mesmo período, as editoras viveram um processo de fusões e aquisições, que criou um mercado com contornos monopolistas.</p>
+                </div>
+                <div class="modal-footer">
+                    <!--<a href="#" role="button" class="btn btn-primary btn-matricula">Matricule-se</a>-->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- Modal End -->
+
+   <!-- Glossário 7 -->
+    <div class="modal fade cd-timeline serie3" id="modal-glossario7" tabindex="-1" role="dialog" aria-labelledby="modalTitle1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle1">Crise dos periódicos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Aumento brutal do custo das assinaturas de revistas e consequentes cancelamentos de assinaturas por muitas bibliotecas.</p>
+                </div>
+                <div class="modal-footer">
+                    <!--<a href="#" role="button" class="btn btn-primary btn-matricula">Matricule-se</a>-->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- Modal End -->
+
+   <!-- Glossário 8 -->
+    <div class="modal fade cd-timeline serie3" id="modal-glossario8" tabindex="-1" role="dialog" aria-labelledby="modalTitle1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle1"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Na contramão dessa estatística, em países como o Brasil, por meio da Scielo, desde 1997 muitas revistas de acesso aberto se estabeleceram. E, em disciplinas como a Física, desde 1991 era feito um uso generalizado de prepints e do Arxiv)a</p>
+                </div>
+                <div class="modal-footer">
+                    <!--<a href="#" role="button" class="btn btn-primary btn-matricula">Matricule-se</a>-->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- Modal End -->    
+
+    <!-- Glossário 9 -->
+    <div class="modal fade cd-timeline serie3" id="modal-glossario9" tabindex="-1" role="dialog" aria-labelledby="modalTitle1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle1">Registry of Open Access Repositories Mandatory Archiving Policies</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><a href="https://roarmap.eprints.org/" target="_blank">Registro internacional de pesquisa</a> que mapeia o crescimento do acesso aberto e das políticas adotadas por universidades, instituições e financiadoras de pesquisa.</p>
+                </div>
+                <div class="modal-footer">
+                    <!--<a href="#" role="button" class="btn btn-primary btn-matricula">Matricule-se</a>-->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- Modal End -->
+
+    <!-- Glossário 10 -->
+    <div class="modal fade cd-timeline serie3" id="modal-glossario10" tabindex="-1" role="dialog" aria-labelledby="modalTitle1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle1">Registry of Open Access Repositories Mandatory Archiving Policies</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong><a href="https://www.acu.ac.uk/research-information-network/finch-report-final" target="_blank"><i class="far fa-file-alt"></i> FINCH, Janet Chair – Expanding access to published research: the Finch Report. Report of the UK Government Working Group on Expanding Access to Published Research</a></strong></p>. 
+
+                    <p>Este relatório expressou a preferência e recomendação política a favor do acesso aberto dourado -“Gold OA” com o pagamento de taxas de publicação, geralmente designadas APCs-, desvalorizando e subalternizando o papel dos repositórios e o acesso aberto verde -<em>“Green OA”</em>-.</p>
+                </div>
+                <div class="modal-footer">
+                    <!--<a href="#" role="button" class="btn btn-primary btn-matricula">Matricule-se</a>-->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- Modal End -->      
+
+    <!-- Glossário 11 -->
+    <div class="modal fade cd-timeline serie3" id="modal-glossario11" tabindex="-1" role="dialog" aria-labelledby="modalTitle1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle1"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Esta orientação foi expressa pela primeira vez na carta do Secretário de Estado Sander Dekker ao parlamento holandês e reafirmada posteriormente em diversas ocasiões.</p>
+
+                    <p>Disponível em: <a href="https://www.rijksoverheid.nl/documenten/kamerstukken/2013/11/15/kamerbrief-over-open-access-van-publicaties" target="_blank">https://www.rijksoverheid.nl/documenten/kamerstukken/2013/11/15/kamerbrief-over-open-access-van-publicaties</a></p>. 
+                </div>
+                <div class="modal-footer">
+                    <!--<a href="#" role="button" class="btn btn-primary btn-matricula">Matricule-se</a>-->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- Modal End -->  
+
+
+ <!--==========================
+      Modal Legenda
+    ============================-->
+    
+  <!-- Modal Legenda -->
+  <div class="modal fade serie3" id="modal-legenda" tabindex="-1" role="dialog" aria-labelledby="modal-creditosTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modal-creditosTitle">Como habilitar legenda em Português no Youtube?</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <p>Para ativar a exibição da legenda em português no Youtube, siga o seguinte passo-a-passo:</p>
+
+                <p><strong>1) Clique no ícone de legenda/closed caption, para habilitar a legenda.</strong></p>
+
+                <img class="rounded mx-auto img-fluid" src="../../img/serie3/curso1/tutorial-legenda/passo1.jpg" width="800" alt="Passo 1"/><br/><br/>
+
+                 <p><strong>2) Em seguida, clique no ícone de engrenagem e selecione a opção "Legenda/CC" (ou "<em>Subtitle/CC</em>", caso suas opções de menu estejam em inglês).</strong></p>
+
+                <img class="rounded mx-auto img-fluid" src="../../img/serie3/curso1/tutorial-legenda/passo2.jpg" width="800" alt="Passo 2: Clique no botão de configuração."/><br/><br/>
+
+                <p><strong>3) Selecione a opção "Traduzir Automaticamente" (ou "<em>Auto-translate</em>", caso suas opções de menu estejam em inglês).</strong></p>
+
+                <img class="rounded mx-auto img-fluid" src="../../img/serie3/curso1/tutorial-legenda/passo3.jpg" width="800" alt="Passo 3"/><br/><br/>
+
+                <p><strong>4) Na lista de idiomas exibida, escolha o português</strong></p>
+
+                <img class="rounded mx-auto img-fluid" src="../../img/serie3/curso1/tutorial-legenda/passo4.jpg" width="800" alt="Passo 4"/><br/><br/>
+
+                <p><strong>5) Pronto! Sua legenda já foi modificada para o português!</strong></p>
+
+                <img class="rounded mx-auto img-fluid" src="../../img/serie3/curso1/tutorial-legenda/passo5.jpg" width="800" alt="Passo 5"/><br/><br/>
+
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+          </div>
+      </div>
+  </div><!-- Modal Legenda End -->   
+
+
+  <!--==========================
       Modais - Bibliografia & Créditos
     ============================-->
 
       <!-- Modal Bibliografia-->
-          <div class="modal fade serie1" id="modal-bibliografia" tabindex="-1" role="dialog" aria-labelledby="modal-bibliografiaTitle" aria-hidden="true">
+          <div class="modal fade serie3" id="modal-bibliografia" tabindex="-1" role="dialog" aria-labelledby="modal-bibliografiaTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                       <div class="modal-header">
@@ -641,8 +906,8 @@
               </div>
           </div><!-- Modal Bibliografia End -->
 
-        <!-- Modal Créditos-->
-          <div class="modal fade serie1" id="modal-creditos" tabindex="-1" role="dialog" aria-labelledby="modal-creditosTitle" aria-hidden="true">
+<!-- Modal Créditos-->
+          <div class="modal fade serie3" id="modal-creditos" tabindex="-1" role="dialog" aria-labelledby="modal-creditosTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                       <div class="modal-header">
@@ -754,34 +1019,12 @@
                       </div>
                   </div>
               </div>
-          </div><!-- Modal Créditos End -->      
+          </div><!-- Modal Créditos End -->        
 
-          <!-- Modal Fluxograma -->
-          <div class="modal fade serie1" id="modal-fluxograma" tabindex="-1" role="dialog" aria-labelledby="modal-creditosTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title" id="modal-creditosTitle">Créditos</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                          </button>
-                      </div>
-                      <div class="modal-body">
-                        <p>Tradução livre do material elaborado pelo Australian National Data Service. Decisive-Decision-Tree: Publishing and Sharing Sensitive Data. Disponível em: <a href='https://www.ands.org.au/__data/assets/pdf_file/0010/385309/sensitive-decision-tree.pdf' target='_blank'>https://www.ands.org.au/__data/assets/pdf_file/0010/385309/sensitive-decision-tree.pdf</a></p>
-
-                        <p>Licença: Creative Commons Australia Attribution 3.0.</p>
-
-                      </div>
-                      <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                      </div>
-                  </div>
-              </div>
-          </div><!-- Modal Fluxograma End -->
 
   </main>
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <a href="#" class="back-to-top serie3"><i class="fa fa-chevron-up"></i></a>
 
   <!-- Biblioteca de JavaScripts-->
   <script src="../../lib/jquery/jquery.min.js"></script>
@@ -793,6 +1036,7 @@
   <script src="../../lib/superfish/superfish.min.js"></script>
   <script src="../../lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="../../lib/wow/wow.min.js"></script>
+
   <!--Ionicons-->
   <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
 
@@ -801,7 +1045,7 @@
   <script src="../../js/main-timeline.js"></script>
 
   <!--Acessibilidade-->
-   <script src="../../js/jquery-2.2.1.min.js"></script>
+  <script src="../../js/jquery-2.2.1.min.js"></script>
   <script src="../../js/jquery.font-accessibility.min.js"></script>
 
   <script>
@@ -817,6 +1061,8 @@
 
   });
   </script>
+
+
 
 </body>
 </html>

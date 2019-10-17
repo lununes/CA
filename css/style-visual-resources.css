@@ -197,6 +197,12 @@ Box de Citação Curta
 
 .box-quote i, .box-quote  .svg-inline--fa {color: var(--main-color3);}
 
+/*Serie 3*/
+.box-quote i, 
+.box-quote .svg-inline--fa {
+    color: var(--main-color4);
+}
+
 /*serie3*/
 .serie3 .fa-chevron-right {
   color: var(--main-color4);
@@ -364,6 +370,12 @@ Box de Saiba Mais
 	color: var(--main-color3);
 	margin-right:15px;
   font-size:40px;
+}
+
+/*Série 3*/
+.saiba-mais .svg-inline--fa, 
+.saiba-mais .fa-question-circle {
+  color: var(--main-color4);
 }
 
 .saiba-mais .fa-question-circle {
@@ -1449,6 +1461,11 @@ Tabs
     color: #495057;
     background-color: #fff;
     border-color: var(--main-color4) var(--main-color4) var(--white-color);
+}
+
+.abas.serie3  .nav-tabs .nav-link:focus, 
+.abas.serie3  .nav-tabs .nav-link:hover {
+   border-color: var(--main-color4) var(--main-color4) var(--white-color);
 }
 
 .abas.serie3 .tab-content {
