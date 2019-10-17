@@ -17,7 +17,12 @@ f/*--------------------------------------------------------------
 
     --amareloIFHT: #F1C14D;
     --amareloIFHT-over: #F1B523;
-    --amareloIFHT-pressed: #E5A914; 
+    --amareloIFHT-pressed: #E5A914;
+
+    /*Serie 3*/
+    --main-color4: #ef7216; /*Orange*/
+    --main-color4-over: #febf00; /*Mustard*/
+    --main-color4-pressed: #b2550f; /*Bronze*/ 
 }
 
 /* -------------------------------- 
@@ -189,6 +194,9 @@ Box de Citação Curta
 
 .box-quote i, .box-quote  .svg-inline--fa {color: var(--main-color3);}
 
+/*serie3*/
+.serie3 .box-quote i, .serie3 .box-quote .svg-inline--fa {color: var(--main-color4);}
+
 .box-quote i {font-size:20px;}
 
 .box-quote .source {font-size: 11px;}
@@ -309,6 +317,8 @@ Box de Saiba Mais
   border-radius: 20px;
 }
 
+.saiba-mais.serie3 .multi-border::before{border: 4px solid var(--main-color4);}
+
 .saiba-mais .multi-border::after{
   content: "";
   position: absolute;
@@ -328,6 +338,11 @@ Box de Saiba Mais
 	color: var(--main-color2);
 	border-bottom:1px solid var(--main-color2);
   margin-bottom:20px;
+}
+
+.saiba-mais.serie3 h5 {
+  color: var(--main-color4-pressed);
+  border-bottom:1px solid var(--main-color4-pressed);
 }
 
 .saiba-mais .box-quote {
@@ -385,6 +400,13 @@ Box de Saiba Mais
 .saiba-mais-content {
   position: relative;
   z-index: 1;
+}
+
+.saiba-mais.serie3 .carousel .carousel-item,
+.saiba-mais.serie3 .carousel article {padding:0;}
+.saiba-mais.serie3 .carousel .box-quote {
+  border:none;
+  box-shadow: 5px 3px 5px rgba(0,0,0, 0.2);
 }
 
 /* -------------------------------- 
@@ -1111,8 +1133,8 @@ Modal
 }
 
 .modal.serie3 .btn-secondary:hover  {
-    border: 1px solid var(--link-color-hover);
-    background-color: var(--link-color-hover);
+    border: 1px solid var(--main-color4-over);
+    background-color: var(--main-color4-over);
     color: var(--white-color);
     margin-top: 10px;
     padding: 2px 10px;
@@ -1171,6 +1193,11 @@ Slider
 .carousel-indicators .active {background-color: var(--main-color3);}
 
 .carousel-indicators li {background-color: var(--main-color2);}
+
+/*Série 3*/
+.carousel.serie3 .carousel-indicators .active {background-color: var(--main-color4-over);}
+.carousel.serie3  .carousel-indicators li {background-color: var(--main-color4);}
+
 
 .carousel article {padding: 20px 60px;}
 
@@ -1274,6 +1301,31 @@ Tabela
 
   .table thead th {padding:0;}
 
+}
+
+/* -------------------------------- 
+
+Tabs
+
+-------------------------------- */
+
+/*Série3*/
+
+.abas.serie3 .nav-tabs {
+    border-color: var(--main-color4);
+}
+
+.abas.serie3 .nav-tabs .nav-item.show .nav-link, 
+.abas.serie3  .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: var(--main-color4) var(--main-color4) var(--white-color);
+}
+
+.abas.serie3 .tab-content {
+    border: 1px solid var(--main-color4);
+    border-top: none;
+    background: var(--white-color);
 }
 
 
