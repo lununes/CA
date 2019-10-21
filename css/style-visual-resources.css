@@ -17,7 +17,12 @@ f/*--------------------------------------------------------------
 
     --amareloIFHT: #F1C14D;
     --amareloIFHT-over: #F1B523;
-    --amareloIFHT-pressed: #E5A914; 
+    --amareloIFHT-pressed: #E5A914;
+
+    /*Serie 3*/
+    --main-color4: #ef7216; /*Orange*/
+    --main-color4-over: #febf00; /*Mustard*/
+    --main-color4-pressed: #b2550f; /*Bronze*/ 
 }
 
 /* -------------------------------- 
@@ -136,6 +141,15 @@ Accordion
   margin-right: 5px;
 }
 
+/*Série 3*/
+.serie3 .accordion a:hover, 
+.accordion a:focus,
+.serie3 .accordion a.collapsed:hover,
+.serie3 .accordion a.collapsed:focus
+ {color: var(--main-color4-over);}
+
+.serie3 .accordion a.collapsed {color: var(--main-color4);}
+
 
 /* -------------------------------- 
 
@@ -188,6 +202,13 @@ Box de Citação Curta
 }
 
 .box-quote i, .box-quote  .svg-inline--fa {color: var(--main-color3);}
+
+/*serie3*/
+.serie3 .fa-chevron-right, 
+.serie3 .box-quote i, 
+.serie3 .box-quote .svg-inline--fa {
+  color: var(--main-color4);
+}
 
 .box-quote i {font-size:20px;}
 
@@ -309,6 +330,8 @@ Box de Saiba Mais
   border-radius: 20px;
 }
 
+.saiba-mais.serie3 .multi-border::before{border: 4px solid var(--main-color4);}
+
 .saiba-mais .multi-border::after{
   content: "";
   position: absolute;
@@ -330,6 +353,11 @@ Box de Saiba Mais
   margin-bottom:20px;
 }
 
+.saiba-mais.serie3 h5 {
+  color: var(--main-color4-pressed);
+  border-bottom:1px solid var(--main-color4-pressed);
+}
+
 .saiba-mais .box-quote {
   border: 2px dotted var(--main-color2);
   box-shadow:none;
@@ -344,6 +372,12 @@ Box de Saiba Mais
 	color: var(--main-color3);
 	margin-right:15px;
   font-size:40px;
+}
+
+/*Série 3*/
+.serie3 .saiba-mais .svg-inline--fa, 
+.serie3 .saiba-mais .fa-question-circle {
+  color: var(--main-color4);
 }
 
 .saiba-mais .fa-question-circle {
@@ -385,6 +419,13 @@ Box de Saiba Mais
 .saiba-mais-content {
   position: relative;
   z-index: 1;
+}
+
+.saiba-mais.serie3 .carousel .carousel-item,
+.saiba-mais.serie3 .carousel article {padding:0;}
+.saiba-mais.serie3 .carousel .box-quote {
+  border:none;
+  box-shadow: 5px 3px 5px rgba(0,0,0, 0.2);
 }
 
 /* -------------------------------- 
@@ -457,6 +498,117 @@ Círculo de fundo (css shape)
   border-color: var(--main-color2);
   color:var(--main-color2);
 }
+
+/* -------------------------------- 
+
+Fotografias Hover & tooltip
+
+-------------------------------- */
+
+.pic-container img{
+    border: 1px solid #d2d2d2;
+    padding: 3px;
+    width: 200px;
+}
+
+.pic-container{
+    max-width: 210px;
+    /*max-height: 210px;*/
+    margin-bottom: 190px; 
+}
+
+.pic, .pic2{
+    background: #fff;
+    position: absolute;
+    
+    -webkit-transition: all 0.2s ease;
+     transition: all 0.2s ease;
+    
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+    box-shadow: 3px 1px 10px -2px #aaa;  
+}
+
+.pic:nth:child(1){
+    z-index: 3;
+}
+.pic:nth-child(2){
+    z-index: 1;
+}
+.pic:nth-child(3){
+    z-index: 2;
+}
+.pic-container:hover .pic:nth-child(1)
+{
+    -webkit-transform: rotate(15deg);
+     transform: rotate(15deg);
+    
+    -webkit-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+
+.pic-container:hover .pic2:nth-child(2){
+    -webkit-transform: rotate(7deg);
+     transform: rotate(7deg);
+     
+    -webkit-transition: all 0.10s ease;
+     transition: all 0.10s ease;
+}
+
+.pic-container:hover .pic2:nth-child(3){
+    -webkit-transform: rotate(-5deg);
+     transform: rotate(-5deg);
+}
+.pic-caption{
+    background: #82a3d4;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    top:0;
+    left: 200px;
+    width: 600px;
+    
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    
+    -webkit-opacity: 0;
+    opacity: 0;
+    
+}
+.pic-caption:hover{
+    background: #607fae;
+}
+.pic-container:hover .pic-caption{
+    left:230px;
+    -webkit-opacity: 1;
+    opacity: 1;
+}
+
+/* -------------------------------- 
+
+Fotografias Hover & Accordion
+
+-------------------------------- */
+
+.accordion-foto.accordion a {padding: 18px 0 50px;}
+
+.accordion-foto.accordion li {
+    border-bottom: transparent;
+}
+
+.accordion-foto .accordion-foto-conteudo p {
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  box-shadow: 3px 1px 10px -2px #aaa;
+  padding: 20px;
+  margin-top: 20px;
+  max-width: 200px;
+} 
+
 
 
 /* -------------------------------- 
@@ -866,9 +1018,9 @@ Hover Boxes
       background-color: rgba(196, 224, 249, 1);
       transform: translateX(-200px);
       transition: all 0.4s 0.4s, 
-      //             border 0.4s 0s, 
-      //             height 0.4s 0s, 
-      //             margin 0.4s 0s;
+                  border 0.4s 0s, 
+                  height 0.4s 0s, 
+                  margin 0.4s 0s;
   }
     
   /*.btn {opacity: 0;}*/
@@ -1064,6 +1216,9 @@ Lista Simples
   margin-top: 3px;
 }
 
+/*Série 3*/
+.serie3 .obj-lista .list-group-item i.icon-bullet {background: transparent url("../img/ic-list-bullet-serie3.svg") no-repeat 0 0;}
+
 /* -------------------------------- 
 
 Modal
@@ -1111,8 +1266,8 @@ Modal
 }
 
 .modal.serie3 .btn-secondary:hover  {
-    border: 1px solid var(--link-color-hover);
-    background-color: var(--link-color-hover);
+    border: 1px solid var(--main-color4-over);
+    background-color: var(--main-color4-over);
     color: var(--white-color);
     margin-top: 10px;
     padding: 2px 10px;
@@ -1166,11 +1321,19 @@ Slider
   margin-bottom: 30px;
 }
 
-.carousel .carousel-item {padding-left:130px;}
+.carousel .carousel-item {
+  padding-left: 100px;
+  padding-right: 100px;
+}
 
 .carousel-indicators .active {background-color: var(--main-color3);}
 
 .carousel-indicators li {background-color: var(--main-color2);}
+
+/*Série 3*/
+.carousel.serie3 .carousel-indicators .active {background-color: var(--main-color4-over);}
+.carousel.serie3  .carousel-indicators li {background-color: var(--main-color4);}
+
 
 .carousel article {padding: 20px 60px;}
 
@@ -1183,6 +1346,12 @@ Slider
   position: relative;
     top: -50px;
     right: 40px;
+}
+
+/*Série 3*/
+.carousel.serie3 img {
+  right:0;
+  top:0;
 }
 
 .carousel table img {
@@ -1198,6 +1367,10 @@ Slider
         top: 10px;
         right: 0;
         margin-bottom: 45px;
+    }
+    /*série 3*/
+    .carousel.serie3 img {
+        margin-bottom: 0;
     }
 }
 
@@ -1276,6 +1449,36 @@ Tabela
 
 }
 
+/* -------------------------------- 
+
+Tabs
+
+-------------------------------- */
+
+/*Série3*/
+
+.abas.serie3 .nav-tabs {
+    border-color: var(--main-color4);
+}
+
+.abas.serie3 .nav-tabs .nav-item.show .nav-link, 
+.abas.serie3  .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: var(--main-color4) var(--main-color4) var(--white-color);
+}
+
+.abas.serie3  .nav-tabs .nav-link:focus, 
+.abas.serie3  .nav-tabs .nav-link:hover {
+   border-color: var(--main-color4) var(--main-color4) var(--white-color);
+}
+
+.abas.serie3 .tab-content {
+    border: 1px solid var(--main-color4);
+    border-top: none;
+    background: var(--white-color);
+}
+
 
 /* -------------------------------- 
 
@@ -1329,6 +1532,9 @@ Timeline
   background: var(--main-color2);
   opacity: 0.3;
 }
+
+/*Série 3*/
+.serie3 .cd-timeline__container::before {background: var(--main-color4-pressed);}
 
 .cd-timeline h6  {
   font-family: "Montserrat", sans-serif;
@@ -1436,9 +1642,14 @@ Timeline
     margin-top: -12px;
   }
 
-  .cd-timeline__img.cd-timeline__option1{
+  .cd-timeline__img.cd-timeline__option1 {
     background: var(--main-color2);
   }
+
+  /*Série 3*/
+  .serie3 .cd-timeline__img.cd-timeline__option1 {
+    background: var(--main-color4);
+}
 
   .cd-timeline__img.cd-timeline__option2 {
     background: #c03b44;
@@ -2068,4 +2279,5 @@ Horizontal Timeline
     -o-transform: translateX(0%);
     transform: translateX(0%);
   }
+}
 }
