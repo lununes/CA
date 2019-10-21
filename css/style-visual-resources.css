@@ -1527,6 +1527,9 @@ Timeline
   opacity: 0.3;
 }
 
+/*Série 3*/
+.serie3 .cd-timeline__container::before {background: var(--main-color4-pressed);}
+
 .cd-timeline h6  {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -1634,8 +1637,13 @@ Timeline
   }
 
   .cd-timeline__img.cd-timeline__option1 {
-    background: var(--main-color4);
+    background: var(--main-color2);
   }
+
+  /*Série 3*/
+  .serie3 .cd-timeline__img.cd-timeline__option1 {
+    background: var(--main-color4);
+}
 
   .cd-timeline__img.cd-timeline__option2 {
     background: #c03b44;
