@@ -1016,9 +1016,9 @@ Hover Boxes
       background-color: rgba(196, 224, 249, 1);
       transform: translateX(-200px);
       transition: all 0.4s 0.4s, 
-      //             border 0.4s 0s, 
-      //             height 0.4s 0s, 
-      //             margin 0.4s 0s;
+                  border 0.4s 0s, 
+                  height 0.4s 0s, 
+                  margin 0.4s 0s;
   }
     
   /*.btn {opacity: 0;}*/
@@ -1634,8 +1634,8 @@ Timeline
     margin-top: -12px;
   }
 
-  .cd-timeline__img.cd-timeline__option1{
-    background: var(--main-color2);
+  .cd-timeline__img.cd-timeline__option1 {
+    background: var(--main-color4);
   }
 
   .cd-timeline__img.cd-timeline__option2 {
@@ -2266,4 +2266,5 @@ Horizontal Timeline
     -o-transform: translateX(0%);
     transform: translateX(0%);
   }
+}
 }

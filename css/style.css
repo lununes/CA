@@ -383,9 +383,9 @@ b, strong {font-weight: 700;}
   vertical-align: top;
 }
 
-@media (min-width: 1600px) { 
+/* @media (min-width: 1600px) { 
   #intro .intro-text {padding-top: 230px;}
-}
+} */
 
 #intro.programa .intro-text{padding-top:125px;/*padding-top:210px;*/}
 
