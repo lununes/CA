@@ -119,9 +119,6 @@ Accordion
 
 .accordion a:hover, .accordion a:focus {color:var(--main-color3);}
 
-/*Série 3*/
-.serie3 .accordion a:hover, .accordion a:focus {color: var(--main-color4-over);}
-
 .accordion a.collapse {color: #33cccc;}
 
 .accordion p a{
@@ -143,6 +140,15 @@ Accordion
   position:static;
   margin-right: 5px;
 }
+
+/*Série 3*/
+.serie3 .accordion a:hover, 
+.accordion a:focus,
+.serie3 .accordion a.collapsed:hover,
+.serie3 .accordion a.collapsed:focus
+ {color: var(--main-color4-over);}
+
+.serie3 .accordion a.collapsed {color: var(--main-color4);}
 
 
 /* -------------------------------- 
