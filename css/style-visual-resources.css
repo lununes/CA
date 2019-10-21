@@ -197,14 +197,10 @@ Box de Citação Curta
 
 .box-quote i, .box-quote  .svg-inline--fa {color: var(--main-color3);}
 
-/*Serie 3*/
-.box-quote i, 
-.box-quote .svg-inline--fa {
-    color: var(--main-color4);
-}
-
 /*serie3*/
-.serie3 .fa-chevron-right {
+.serie3 .fa-chevron-right, 
+.serie3 .box-quote i, 
+.serie3 .box-quote .svg-inline--fa {
   color: var(--main-color4);
 }
 
@@ -373,8 +369,8 @@ Box de Saiba Mais
 }
 
 /*Série 3*/
-.saiba-mais .svg-inline--fa, 
-.saiba-mais .fa-question-circle {
+.serie3 .saiba-mais .svg-inline--fa, 
+.serie3 .saiba-mais .fa-question-circle {
   color: var(--main-color4);
 }
 
@@ -1213,6 +1209,9 @@ Lista Simples
   margin-right: 10px;
   margin-top: 3px;
 }
+
+/*Série 3*/
+.serie3 .obj-lista .list-group-item i.icon-bullet {background: transparent url("../img/ic-list-bullet-serie3.svg") no-repeat 0 0;}
 
 /* -------------------------------- 
 
