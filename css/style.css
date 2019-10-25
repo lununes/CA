@@ -854,6 +854,15 @@ b, strong {font-weight: 700;}
   display: none;
 }
 
+/*Série 3*/
+
+#mobile-nav.serie3 {background: var(--main-color4-pressed);}
+
+#mobile-nav.serie3 ul .menu-has-children i.fa-chevron-up,
+#mobile-nav.serie3 ul .menu-item-active,
+#mobile-nav.serie3 ul li a:hover {color: var(--main-color4-over);}
+
+
 /* Mobile Nav body classes */
 body.mobile-nav-active {
   overflow: hidden;
