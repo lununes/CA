@@ -207,7 +207,7 @@ Box de Citação Curta
 .serie3 .fa-chevron-right, 
 .serie3 .box-quote i, 
 .serie3 .box-quote .svg-inline--fa {
-  color: var(--main-color4);
+  color: var(--main-color4-pressed);
 }
 
 .box-quote i {font-size:20px;}
@@ -1448,6 +1448,16 @@ Tabela
   .table thead th {padding:0;}
 
 }
+
+/*Série 3*/
+
+.table-responsive.serie3 th {
+  background-color: var(--main-color4);
+  color: #fff;
+  border:1px solid var(--main-color4-pressed);
+}
+
+.table-responsive.serie3 td, .table-responsive.serie3 tr{border: 1px solid var(--main-color4-pressed);}
 
 /* -------------------------------- 
 
