@@ -1658,6 +1658,30 @@ Hover Boxes
 }   
 
 
+/*Série 3*/
+.serie3 .layer .inner {background: rgb(255,175,94, 0.8);}
+
+.serie3  .inner .fa-plus-circle {
+  color: var(--main-color4);
+  font-size: 45px;
+}
+
+.serie3 div[class*="item-box"] h2 {
+  text-align: center;
+  top: -6%;
+}
+
+.serie3 .box-txt {font-size: 14px;}
+
+.serie3 .box-txt li {margin-bottom:10px;}
+
+@media (max-width: 767px){
+
+  .serie3.aula4 #bloco3 .box-txt {top:10%;}
+
+}
+
+
 
 /* -------------------------------- 
 
