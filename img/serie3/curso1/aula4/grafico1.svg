@@ -1,0 +1,60 @@
+
+
+<!-- Gráfico1  -->
+<svg id="LivrosPublicados" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"  >
+
+	<style type="text/css">
+		.legenda text{font-size:16px;}
+		.linhas line{fill:none;stroke:#87C6C0;stroke-width:0.9;stroke-miterlimit:10;}
+		.st3{fill:none;}
+		.barra1{fill:#FEBF00;}
+		.barra2{fill:#FF8831;}
+		.st6{fill:#FFFFFF;}
+		.text-right {text-align:right}
+		#grafico1 g, 
+		#grafico1 text {font-family:"Montserrat";}
+
+		#grafico1 .valores {
+			fill:#ffffff;
+			font-size:45px;
+			font-weight:500;
+		}
+	</style>
+
+	<g id="grafico1">
+
+		<g class="legenda-eixoX">
+			<text transform="matrix(1 0 0 1 174.6006 487.7236)">0</text>
+			<text transform="matrix(1 0 0 1 703.5488 487.7236)">464</text>
+		</g>
+
+		<g class="linhas">
+			<line x1="179.9" y1="460.3" x2="719" y2="460.3"/>
+			<line x1="179.9" y1="460.3" x2="179.9" y2="145.5"/>
+			<line x1="269.7" y1="460.3" x2="269.7" y2="144.9"/>
+			<line x1="359.6" y1="460.3" x2="359.6" y2="144.9"/>
+			<line x1="449.4" y1="460.3" x2="449.4" y2="144.9"/>
+			<line x1="539.3" y1="460.3" x2="539.3" y2="144.9"/>
+			<line x1="629.1" y1="460.3" x2="629.1" y2="144.9"/>
+			<line x1="719" y1="460.3" x2="719" y2="144.9"/>
+		</g>
+
+		<g class="barras">
+			<rect class="barra1" x="179.9" y="289.1" width="327.1" height="113.2"/>
+			<rect class="barra2" x="179.9" y="176.3" width="506.8" height="113.2"/>
+		</g>
+
+		<g class="legenda-eixoY text-right">
+			<text x="50" y="229.5" class="small">Na Scielo Livros</text>
+			<text x="11.5" y="337.5" class="small">Fora da Scielo Livros</text>
+		</g>
+
+		<g class="valores">
+			<text class="valores" x="575" y="245">282</text>
+			<text class="valores" x="405" y="360" >182</text>
+		</g>
+
+
+	</g>
+</svg>
+<!--Fim do Gráfico1-->
