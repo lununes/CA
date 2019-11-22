@@ -111,10 +111,6 @@ Accordion
   margin: 0 30px 20px 30px;
 }
 
-/*Série 3*/
-
-.serie3 .accordion .fa-times {position: relative;}
-
 @media (max-width: 768px) {
   .accordion a {font-size: 18px;}
 
@@ -153,6 +149,8 @@ Accordion
  {color: var(--main-color4-over);}
 
 .serie3 .accordion a.collapsed {color: var(--main-color4);}
+
+.serie3 .accordion .fa-times {position: relative;}
 
 
 /* -------------------------------- 
