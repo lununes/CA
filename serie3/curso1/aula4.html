@@ -664,6 +664,8 @@
                       font-size:45px;
                       font-weight:500;
                     }
+                     #grafico1 .legenda-eixoY text,
+                     #grafico1 .legenda-eixoX text {font-size:24px;}
                   </style>
 
                   <g id="grafico1">
@@ -690,8 +692,10 @@
                     </g>
 
                     <g class="legenda-eixoY text-right">
-                      <text x="50" y="229.5" class="small">Na Scielo Livros</text>
-                      <text x="11.5" y="337.5" class="small">Fora da Scielo Livros</text>
+                      <text x="124" y="228" class="small">Na</text>
+                      <text x="10" y="255" class="small">Scielo Livros</text>
+                      <text x="68" y="337" class="small">Fora da</text>
+                      <text x="11.5" y="368" class="small">Scielo Livros</text>
                     </g>
 
                     <g class="valores">
@@ -708,61 +712,44 @@
             <div class="col-12 col-md-6">
               <h6 class="text-center">Gráfico 2:</h6>
               <h5 class="text-center">Publicações da Editora Fiocruz na Scielo Livros por modalidade de acesso<br/>(1994-2018)</h5>
-              <!-- Gráfico1  -->
-                <svg id="LivrosPublicados" xmlns="http://www.w3.org/2000/svg" viewBox="0 120 800 500"  >
+              <!-- Gráfico2  -->
+              <svg id="ModalidadeAcesso" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 465">
+              <style type="text/css">
+                  .legenda text{font-size:16px;}
+                  .arco1{fill:#F05E23;}
+                  .arco2{fill:#FF8831;}
+                  .text-right {text-align:right}
+                  #grafico2 g, 
+                  #grafico2 text {font-family:"Montserrat";}
+                  #grafico2 .valores {
+                    fill:#ffffff;
+                    font-size:45px;
+                    font-weight:500;
+                  }
+                  #grafico2 .legenda-eixoY text {font-size:24px;}
+              </style>
 
-                  <style type="text/css">
-                    #grafico1 .legenda text{font-size:16px;}
-                    #grafico1 .linhas line{fill:none;stroke:#87C6C0;stroke-width:0.9;stroke-miterlimit:10;}
-                    #grafico1 .barra1{fill:#FEBF00;}
-                    #grafico1 .barra2{fill:#FF8831;}
-                    #grafico1 g, 
-                    #grafico1 text {font-family:"Montserrat";}
+              <g id="grafico2">
+                <path class="arco1" d="M396.1,229.9L244.9,361.3c-72.6-83.5-63.7-209.9,19.8-282.5c37.2-32.4,82-49.1,131.4-49.1V229.9z"/>
+                <path class="arco2" d="M396.1,229.9V29.7c110.6,0,200.2,89.7,200.2,200.2s-89.7,200.2-200.2,200.2c-61.2,0-111-22.7-151.1-68.9
+          L396.1,229.9z"/>
 
-                    #grafico1 .valores {
-                      fill:#ffffff;
-                      font-size:45px;
-                      font-weight:500;
-                    }
-                  </style>
+                <g class="valores">
+                  <text x="470" y="240" class="small">180</text>  
+                  <text x="250" y="240" class="small">102</text>
+                </g>
 
-                  <g id="grafico1">
+                <g class="legenda-eixoY text-right">
+                  <text x="625" y="240" class="small">Acesso</text>
+                  <text x="625" y="270" class="small">Aberto</text>
+                  <text x="90" y="240" class="small">Acesso</text>
+                  <text x="40" y="270" class="small">Controlado</text>
+                </g>
+                
+              </g>
 
-                    <g class="legenda-eixoX">
-                      <text transform="matrix(1 0 0 1 174.6006 487.7236)">0</text>
-                      <text transform="matrix(1 0 0 1 703.5488 487.7236)">464</text>
-                    </g>
-
-                    <g class="linhas">
-                      <line x1="179.9" y1="460.3" x2="719" y2="460.3"/>
-                      <line x1="179.9" y1="460.3" x2="179.9" y2="145.5"/>
-                      <line x1="269.7" y1="460.3" x2="269.7" y2="144.9"/>
-                      <line x1="359.6" y1="460.3" x2="359.6" y2="144.9"/>
-                      <line x1="449.4" y1="460.3" x2="449.4" y2="144.9"/>
-                      <line x1="539.3" y1="460.3" x2="539.3" y2="144.9"/>
-                      <line x1="629.1" y1="460.3" x2="629.1" y2="144.9"/>
-                      <line x1="719" y1="460.3" x2="719" y2="144.9"/>
-                    </g>
-
-                    <g class="barras">
-                      <rect class="barra1" x="179.9" y="289.1" width="327.1" height="113.2"/>
-                      <rect class="barra2" x="179.9" y="176.3" width="506.8" height="113.2"/>
-                    </g>
-
-                    <g class="legenda-eixoY text-right">
-                      <text x="50" y="229.5" class="small">Na Scielo Livros</text>
-                      <text x="11.5" y="337.5" class="small">Fora da Scielo Livros</text>
-                    </g>
-
-                    <g class="valores">
-                      <text class="valores" x="575" y="245">282</text>
-                      <text class="valores" x="405" y="360" >182</text>
-                    </g>
-
-
-                  </g>
-                </svg>
-                <!--Fim do Gráfico1-->
+              </svg>
+                <!--Fim do Gráfico2-->
             </div>
 
           </div><!--fim da row-->
@@ -782,7 +769,7 @@
                      <!--Início tabela horizontal-->
                         <div class="row mt-3 mb-5">
                           <div class="col-12 col-md-4 offset-md-1">
-                            <img class="img-responsive img-rounded center-block" src="../../img/serie3/curso1/aula4/ic7.svg" width="200"/>
+                            <img class="img-responsive img-rounded mx-auto d-block" src="../../img/serie3/curso1/aula4/ic7.svg" width="200"/>
                           </div>
 
                           <div class="col-12 col-md-6 mt-4">
@@ -875,6 +862,7 @@
                     </p>
 
                    </div>
+                   <div class="clear" style="clear:both"></div>
                 </div>
               </div>
               <!--Fim do Saiba Mais-->
@@ -1171,6 +1159,7 @@
           <p>A Fiocruz tem uma tradição no campo da divulgação científica e  contribui de modo efetivo para o avanço do movimento do acesso aberto através do livre acesso à sete importantes revistas científicas que tratam de temas estratégicos em saúde. Essa diversidade retrata as diferentes áreas do conhecimento e atuação a que se dedica a instituição.</p>
 
           <img class="d-sm-block mx-auto img-fluid aos-init aos-animate mt-5" src="../../img/serie3/curso1/aula4/img15.jpg" width="800">
+          <p class="reference-title text-center">Figura 1 - Revistas Científicas da Fiocruz integradas ao Portal de Períódicos</p>
 
           <div class="row justify-content-center mt-5">
             <div class="col-12">
@@ -1293,7 +1282,7 @@
                 <!--Comparação-->
                 <div class="row" id="quadro-comparacao">
                   <div class="col-12 col-md-5 item item1 wow slideInUp" data-wow-duration="2s">
-                    <img class="mx-auto d-block" src="../../img/serie3/curso1/aula1/img3.svg" alt="" width="300px"/>
+                    <img class="mx-auto d-block mb-2" src="../../img/serie3/curso1/aula4/logo-scielo.png" alt="" width="150"/>
                     <h5 class="text-center dourada"><strong>SciELO</strong></h5>
                     <p>A <em>Scientific Electronic Library Online (SciELO</em>) visa a publicação de periódicos eletrônicos na internet, principalmente os produzidos por países ibero-americanos. </p>
                     
@@ -1308,7 +1297,7 @@
                   </div>
 
                   <div class="col-12 col-md-5 item item2 wow slideInUp" data-wow-duration="2s" data-wow-delay="0.5s">
-                    <img class="mx-auto d-block" src="../../img/serie3/curso1/aula1/img4.svg" alt="" width="300px"/>
+                    <img class="mx-auto d-block mb-3" src="../../img/serie3/curso1/aula4/SEER.png" alt="" width="250"/>
                     <h5 class="text-center verde"><strong>Open Journal System- OJS/SEER</strong></h5>
                     <p>O Sistema Eletrônico de Editoração de Revistas (SEER) é um software desenvolvido para a construção e gestão de uma publicação periódica eletrônica. </p>
                     <p>Os periódicos Reciis e Visa em Debate são mantidos em sistema baseado em Open Journal System, que disponibiliza uma interface OAI-PMH e também foi utilizado para obter as informações dos artigos seguindo o mesmo processo descrito na integração com a SciELO.</p>
@@ -1440,7 +1429,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 text-center">
-            <h1 class="cta-title" data-aos="zoom-out-down" data-aos-easing="ease-out-back">Saúde: Emergêcia Sanitária</h1>
+            <h1 class="cta-title" data-aos="zoom-out-down" data-aos-easing="ease-out-back">Saúde: Emergência Sanitária</h1>
           </div>
          </div>
       </div>
@@ -1456,17 +1445,37 @@
 
               <p>Como já visto anteriormente, o acesso aberto é uma importante prática no contexto da ciência aberta, parte integrante do ciclo de produção do conhecimento científico, quando o realimenta a partir da promoção do acesso a resultados científicos considerados certificados dentro do processo de comunicação científica. Nas diversas situações em que se pode perceber sua relevância, destacam-se aqui as situações de emergência em saúde pública, especificamente o caso do Zika vírus, onde houve uma urgência pelo aumento da velocidade da circulação de dados, informações e conhecimentos produzidos para contenção, diminuição e busca por soluções para as situações de risco observada neste caso. </p>
 
-              <p><strong>Mas o que é uma emergência em saúde pública?</strong> Acho que não precisamos valorizar tanto a emergência. Poderíamos apresentar apenas o conceito/ data do Zika e seguir para o título seguinte “Motivações para o acesso aberto” . </p>
+              <h5><strong>Mas o que é uma emergência em saúde pública?</strong></h5>
 
               <p>O conceito de emergência em saúde pública de importância internacional (ESPII), denotando uma situação de risco extremo de propagação de doenças, foi estabelecido no <a href='http://portal.anvisa.gov.br/documents/375992/4011173/Regulamento+Sanit%C3%A1rio+Internacional.pdf/42356bf1-8b68-424f-b043-ffe0da5fb7e5' target='_blank'>Regulamento Sanitário Internacional (RSI)</a>, que foi aprovado em 23 de maio de 2005, durante a 58ª Assembleia da Organização Mundial de Saúde (OMS), por meio da resolução <a href='https://www.who.int/csr/ihr/WHA58-en.pdf' target='_blank'>WHA58.3</a>. Nas versões anteriores* ao RSI 2005 este termo não era utilizado.</p>
 
-          <div class="section-header mt-5">
-            <h4 class="text-center">Motivações para o acesso aberto a publicações e dados científicos em situações de emergência em saúde pública</h4>
-            <span class="section-divider serie3 middle"></span>
-          </div>
+              <div class="row justify-content-center">
+                <div class="col-12">
 
-          <p>A pesquisa científica no contexto de uma emergência em saúde é essencial. Novas respostas, em tempos diferentes das pesquisas rotineiras, são extremamente necessárias para frear e controlar a propagação de doenças e todos os riscos globais que elas representam. Desta forma, a ciência pode fornecer respostas imediatas para garantir a contenção, o tratamento e a prevenção desse eventos, auxiliando na redução do intervalo de tempo entre a declaração de emergência de saúde pública e a disponibilidade de tecnologias médicas eficazes.</p>
-              
+                 <div class="section-header">
+                    <h4 class="text-center">Motivações para o acesso aberto a publicações e dados científicos em situações de emergência em saúde pública</h4>
+                    <span class="section-divider serie3 middle"></span>
+                  </div>
+
+                  <div class="float-left">
+                    <p class="m-0"><img class="d-sm-block img-fluid aos-init mr-md-4 mb-3 mx-auto aos-animate rounded" data-aos="zoom-in" src="../../img/serie3/curso1/aula4/img16.jpg" width="350"/></p>
+                    <p class="source text-center mb-0">Fonte: <a href="https://www.pexels.com/photo/adult-biology-chemical-chemist-356040/" target="_blank">Pexels</a>.</p>
+                  </div>
+       
+                  <p>A pesquisa científica no contexto de uma emergência em saúde é essencial. Novas respostas, em tempos diferentes das pesquisas rotineiras, são extremamente necessárias para frear e controlar a propagação de doenças e todos os riscos globais que elas representam. Desta forma, a ciência pode fornecer respostas imediatas para garantir a contenção, o tratamento e a prevenção desse eventos, auxiliando na redução do intervalo de tempo entre a declaração de emergência de saúde pública e a disponibilidade de tecnologias médicas eficazes.</p>
+
+                  <h5><strong>O caso do vírus Zika</strong></h5>
+
+                  <div class="float-right">
+                    <p class="m-0"><img class="d-sm-block img-fluid aos-init mr-md-4 mb-3 mx-auto aos-animate rounded" data-aos="zoom-in" src="../../img/serie3/curso1/aula4/img17.png" width="350"></p>
+                    <p class="source text-center mb-0">Fonte: <a href="https://www.dodlive.mil/2016/08/04/dod-personnel-heres-how-to-protect-yourself-from-zika/" target="_blank">DoDLive</a>.</p>
+                  </div>
+
+                  <p>2015 foi um ano marcante para o Brasil. Houve a confirmação da circulação do vírus zika, que foi um caso emblemático para a ciência brasileira, pois potencializou a capacidade de dar respostas a um evento atípico. Tratou-se de uma situação de emergência em saúde pública declarada nacional e internacionalmente, numa época em que o país atravessa um período conturbado na sua história, com uma crise política grave e cortes orçamentários, em áreas como a saúde e a educação. Apesar disto, o país conseguiu enfrentar e dar respostas científicas essenciais sobre o vírus que circulava de forma muito ativa e atingia, principalmente, a camada da sociedade brasileira que mais sofre com o descaso político de muitas décadas, o nordeste brasileiro. A rede de informações e conhecimentos criada durante a epidemia envolveu profissionais de diversas áreas, como médicos, pesquisadores, técnicos do governo, o próprio governo, pacientes e sociedade.</p>
+
+                </div><!--fim da coluna-->
+              </div><!--fim da row-->
+
             </div><!--fim da col-->
            </div><!--Fim da row--> 
 
@@ -1474,7 +1483,7 @@
     </section><!-- #bloco11 -->
 
     <!--==========================
-      Bloco 13 - Conclusão
+      Bloco 12 - Conclusão
     ============================-->
     <section id="bloco13" class="blocos" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="1000">
         <div class="container">
@@ -1485,17 +1494,20 @@
   
           <div class="row">
             <div class="col-12 content">
-                <img class="advanced-feature-img-right img-fluid mx-auto d-block aos-init" src="../../img/serie1/curso2/aula1/img2.png" data-aos="flip-right" width="200">
-  
                 <p>Na literatura científica continua sendo a principal fonte de dados para pesquisa, seja qual for a área do conhecimento. Mesmo assim, o acesso a artigos ainda apresenta barreiras, sejam ligadas a questões econômicas ou a questões que envolvem direitos de propriedade intelectual. O incentivo à abertura e ao compartilhamento de dados de pesquisa esteve presente em toda a epidemia do Zika e continuou após o período de maior emergência. Também houve um apelo maior para o acesso aberto às publicações científicas, um movimento que antecede o movimento da abertura dos dados, mas que precisou ser relembrado e reiterado durante a epidemia. Entretanto, a literatura científica sobre o zika era escassa no início da emergência. De acordo pesquisa bibliométrica elaborada por  Martins (2016, p. 8), “o resultado da pesquisa variou de duas publicações, em 1952, a 70, somente no mês de janeiro de 2016”. O acesso aberto aos poucos artigos existentes até 2015 foi essencial para as pesquisas durante a emergência. Entretanto a necessidade de acesso aberto não se restringia à temática do zika. Era necessário analisar outras temáticas, associadas aos dados que estavam sendo coletados de pacientes, para respostas que vinham sendo estudadas naquele período. Neste ponto, a declaração de compartilhamento anteriormente citada (<a href='https://wellcome.ac.uk/what-we-do/our-work/statement-data-sharing-public-health-emergencies' target='_blank'>Statement on Data Sharing in Public Health Emergencies</a>) teve grande influência para o acesso aberto no período. As principais revistas científicas da área da saúde assinaram esta declaração e assumiram o compromisso do acesso aberto.</p>
+
+                <p>Além do aumento do acesso aos artigos e periódicos, verificou-se também um aumento no número de artigos publicados em revistas com acesso aberto estabelecido. Em análise sobre o tipo de disponibilização da produção científica sobre a temática do Zika, Araújo et al (2017, p.7) constatam que houve “um crescimento da utilização dos periódicos de acesso aberto como veículo de divulgação dos resultados de pesquisa sobre o tema Zika, indicando um alinhamento ao apelo da OMS de uma disseminação aberta do conhecimento gerado nas pesquisas sobre o tema, com o objetivo de otimizar o enfrentamento da doença”.</p>
+
+                <p>O exemplo da emergência em saúde pública do zika mostra que mesmos fluxos tradicionais e consolidados de informações científicas podem ser alterados quando o campo científico necessita dar respostas científica rápidas. Deixa claro que os avanços observados no período apresentado estão relacionados com a adoção de uma perspectiva mais ágil e aberta da divulgação dos resultados de pesquisa. Processos científicos mais abertos são essenciais não somente para os pares científicos, mas principalmente para a sociedade, com todas as vantagens e benefícios que a ciência pode oferecer.</p>
+
             </div>
           </div>
   
         </div><!--/container-->
-      </section><!-- #bloco13 -->
+      </section><!-- #bloco12 -->
 
     <!--==========================
-      Bloco 14 - Navegação entre aulas
+      Bloco 13 - Navegação entre aulas
     ============================-->
     <section id="nav-class" class="serie3">
       <div class="container">
@@ -1511,7 +1523,7 @@
     </section>
       
     <!--==========================
-      Bloco 15 - Barra de logos
+      Bloco 14 - Barra de logos
     ============================-->
     <section id="barra-logos" class="blocos serie3">
       <div class="container">
