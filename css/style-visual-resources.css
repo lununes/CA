@@ -633,7 +633,8 @@ Hover Boxes
   /*Série 3*/
 
   .serie3 div[class*=item-box] {  
-    height: 400px;
+    height: auto;
+    min-height: 400px;
     overflow: hidden;
     position: relative;
     margin-bottom: 60px;
@@ -1658,7 +1659,6 @@ Hover Boxes
   .box-txt {
     font-size: 13px;
     left:10%;
-    top: -15%;
   }
 
 }   
