@@ -107,3 +107,15 @@
 .aula1 .flip-card-front .card-title {
     top: calc(50% - 200px);
 }
+
+.aula2 .flip-card {
+    height: 400px;
+}
+
+.aula2 .flip-card-front .card-title h2 {
+    font-size: 1.5em;
+}
+
+.aula2 .flip-card-front .card-title {
+    padding: 40% 5%;
+}
