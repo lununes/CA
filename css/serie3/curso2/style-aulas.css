@@ -87,3 +87,23 @@
     border-left: 1px solid var(--main-color4-pressed);
     padding-left: 16px;
 }
+
+/* FLIP CARD */
+
+.aula1 .flip-card {
+    height: 500px;
+}
+
+.aula1 .flip-card-front {
+    background-color: rgb(255,175,94, 0.8);
+}
+
+.aula1 .flip-card-back .card-text {
+    font-size: 14px;
+    text-align: left;
+
+}
+
+.aula1 .flip-card-front .card-title {
+    top: calc(50% - 200px);
+}
