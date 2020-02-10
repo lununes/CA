@@ -48,14 +48,14 @@
 } */
 
 
-#bloco3 .accordion .card {
+.aula1 .accordion .card {
     border: none;
     margin-bottom: 20px;
     border-radius: 0px;
     float:none;
 }
 
-#bloco3 .accordion .card .card-header {
+.aula1 .accordion .card .card-header {
     background-color:var(--main-color4);
     border-radius: 5px;
     -webkit-box-shadow: 1px 2px 4px rgba(0,0,0,0.4);
@@ -65,16 +65,16 @@
     padding: 20px
 }
 
-#bloco3 .accordion .card .card-header h6 {
+.aula1 .accordion .card .card-header h6 {
     font-family: "CircularAirPro-Bold", sans-serif;
     color: #fff
 }
 
-#bloco3 .accordion .card .card-header i {
+.aula1 .accordion .card .card-header i {
     font-size: 24px
 }
 
-#bloco3 .accordion .card .card-header:hover {
+.aula1 .accordion .card .card-header:hover {
     -webkit-box-shadow: 1px 4px 16px rgba(0,0,0,0.3);
     box-shadow: 1px 4px 16px rgba(0,0,0,0.3);
     -webkit-transition: 0.2s;
@@ -83,7 +83,7 @@
     transform: scale(1.01)
 }
 
-#bloco3 .accordion p {
+.aula1 .accordion p {
     border-left: 1px solid var(--main-color4-pressed);
     padding-left: 16px;
 }
