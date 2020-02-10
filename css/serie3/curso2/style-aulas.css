@@ -48,6 +48,9 @@
 } */
 
 
+/* AULA 1
+________________________________________*/
+
 .aula1 .accordion .card {
     border: none;
     margin-bottom: 20px;
@@ -108,6 +111,10 @@
     top: calc(50% - 200px);
 }
 
+
+/* AULA 2
+________________________________________*/
+
 .aula2 .flip-card {
     height: 400px;
 }
@@ -119,3 +126,7 @@
 .aula2 .flip-card-front .card-title {
     padding: 40% 5%;
 }
+
+/* AULA 3
+________________________________________*/
+
