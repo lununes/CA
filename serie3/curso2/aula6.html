@@ -11,7 +11,7 @@
     gtag('config', 'UA-131194878-1');
   </script>
   <meta charset="utf-8">
-  <title>Curso Ciência Aberta - Série 3: Curso 2 - Aula 4: FAIR: Dos princípios à prática</title>
+  <title>Curso Ciência Aberta - Série 3: Curso 2 - Aula 6: Políticas dos financiadores, requisitos das revistas científicas e repositórios de dados em saúde</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Ciência, Fiocruz, Curso, Ciência Aberta" name="keywords">
   <meta content="" name="description">
@@ -36,7 +36,7 @@
   <!-- CSS geral das aulas e recursos visuais -->
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/style-visual-resources.css">
-
+  <link rel="stylesheet" href="../../css/serie3/curso2/style-aulas.css">
 
 </head>
 
@@ -56,7 +56,7 @@
         <ul class="nav-menu serie3">
           <li class="menu-has-children"><a href="#">Aulas</a>
             <ul>
-              <li><h6>Curso 1 | Acesso Aberto</h6></li>
+              <li><h6>Curso 2 | Dados Abertos</h6></li>
               <li class="d-none d-sm-block"><span class="section-divider serie3"></span></li>
               <li class="d-block d-sm-none"><span class="section-divider mobile"></span></li>
               <li><a href="aula1.html">Aula 1: O Que é o Acesso Aberto?</a></li>
@@ -80,7 +80,7 @@
         <div class="row" data-aos="flip-right">
           <div class="col-12">
             <ul class="nav-menu">
-              <li><a href='aula1.html' target='_blank'><i class="fas fa-home"></i> Curso 2: Dados Abertos</a> > <a href='aula4.html' target='_blank'>Aula 4 - FAIR: Dos princípios à prática</a></li>
+              <li><a href='aula1.html' target='_blank'><i class="fas fa-home"></i> Curso 2: Dados Abertos</a> > <a href='aula4.html' target='_blank'>Aula 6 - Políticas dos financiadores, requisitos das revistas científicas e repositórios de dados em saúde</a></li>
               <li class="float-right">            
                 <div id="font-setting-buttons">
                   <div class="btn-group">
@@ -120,14 +120,14 @@
     <section id="bloco1" class="blocos" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="1000">
       <div class="container">
         <div class="section-header">
-          <p class="headline-small text-center">Aula 4</p>
-          <h3 class="section-title">FAIR: Dos princípios à prática</h3>
+          <p class="headline-small text-center">Aula 6</p>
+          <h3 class="section-title">Políticas dos financiadores, requisitos das revistas científicas e repositórios de dados em saúde</h3>
           <span class="section-divider serie3 middle"></span>
         </div>
 
         <div class="row">
           <div class="col-12 content">
-            <p>Seja bem-vindo a aula 4 do seu curso! Aqui você terá acesso ao o que é e aplicações do FAIR, um acrônimo para Findable, Accessible, Interoperable and Reusable (FAIR). Ele serve para apoiá-lo na gestão de dados e divulgação.</p>
+            <p>Seja bem-vindo a aula 6 do seu curso! Como já comentamos anteriormente, o tema da gestão, compartilhamento e abertura de dados oriundos de pesquisa está ganhando cada vez mais força no cenário internacional. Nesta aula, vamos conhecer um pouco das políticas dos financiadores, os requisitos solicitados pelas revistas científicas para a publicação de artigos e as opções de repositórios para o depósito de  dados no campo da saúde.</p>
             <p>Aproveite o conteúdo e bons estudos!</p>
           </div>
 
@@ -142,53 +142,131 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 text-center">
-            <h1 class="cta-title" data-aos="zoom-out-down" data-aos-easing="ease-out-back">Introdução</h1>
+            <h1 class="cta-title" data-aos="zoom-out-down" data-aos-easing="ease-out-back">Financiadores</h1>
           </div>
          </div>
       </div>
     </section><!-- #call-to-action -->
       
     <!--==========================
-      Bloco 2 - Introdução 
+      Bloco 2 - Financiadores 
     ============================-->
     <section id="bloco2" class="blocos">
         <div class="container">
-          <div class="row justify-content-center wow">
-              <div class="col-12 wow fadeIn">
-                <h4 class="text-center">O Acesso Aberto da Fiocruz</h4>
-                <span class="section-divider middle serie3"></span>
-              </div>
-          </div><!--Fim da row-->
 
           <div class="row mb-5">
             <div class="col-12 col-md-6 mb-5 mb-md-0">
-              <p>Alguma vez você já teve problema com seu computador que levou à perda de dados ou informações importantes sobre a sua pesquisa? Se isso já aconteceu com você, quanto tempo levou para recuperar esses dados? Se você precisar consultar dados de mais de dois ou três anos atrás, ainda será capaz de entendê-los e fazer bom uso deles? Alguma vez, já leu uma publicação interessante e desejou ter acesso aos dados originais por considerá-los úteis para o seu trabalho? Você considera boa prática científica disponibilizar os dados e detalhes do seu experimento para que outros cientistas possam reproduzi-lo e verificar sua pesquisa? Ou, já pensou na economia de tempo e dinheiro se seus dados pudessem estar disponíveis para reutilização em novas pesquisas? Bem, se você já passou por alguma dessas situações, certamente conseguirá imaginar o quanto uma gestão de dados apropriada poderia evitar incidentes dessa natureza e contribuir para agilizar a expansão do conhecimento.</p>
+              <p>As agências governamentais de fomento à pesquisa e os financiadores privados estão mais exigentes quanto a gestão, compartilhamento e abertura de dados. Esta mudança vem se operacionalizando através de políticas e orientações sobre boas práticas em pesquisa, especialmente aquelas financiadas com recursos públicos. O Conselho de Pesquisa do Reino Unido (Research Councils UK), por exemplo, estabeleceu como seu o primeiro princípio que "Publicly funded research data are a public good, produced in the public interest, which should be made openly available with as few restrictions as possible in a timely and responsible manner.  Nesse sentido, os dados são considerados um bem público que deve estar aberto a todos os interessados e preservado para sua futura reutilização.</p>
             </div>
             <div class="col-12 col-md-6 mb-5 mb-md-0">
-              <img src="../../img/serie3/curso2/aula4/img1.jpg" alt="Foto do Fio Cruz" width="100%" height="auto" class="rounded mx-auto d-block">
-              <p class="text-muted small">Foto de bruce mars no Pexels</p>
-            </div>
-            <div class="col-12 col-md-12 mb-5 mb-md-0">
-              <p>A produção do conhecimento baseada em dados vem crescendo muito rapidamente. Além disso, novas tecnologias estão surgindo, facilitando o acesso, transferência e análise de dados - criando oportunidades inéditas para o avanço científico. No entanto, isso é potencializado se os dados de pesquisa estiverem bem descritos, bem estruturados, propriamente armazenados e disponíveis para outros utilizarem. Mas, como fazer isso? Perguntas dessa ordem estão permanentemente presentes no mundo científico, e com mais intensidade, nas práticas da ciência de dados. A resposta é simples, por meio de um adequado gerenciamento dos dados. Foi exatamente para atender tais necessidades que surgiram os princípios FAIR.</p>
+              <p>O caráter indutor das políticas de financiadores, que recentemente passaram a exigir a elaboração de um Plano de Gestão de Dados (PGD) para a concessão de recursos financeiros para pesquisa, influencia diretamente as instituições de ensino e pesquisa e as práticas de gestão, compartilhamento e abertura dos dados de pesquisadores. Como destacado na aula 5, o Plano de Gestão de Dados (PGD) é um documento no qual o pesquisador descreve e organiza atividades e processos associados ao ciclo de vida dos dados.</p>
+              <p><b>Principais políticas e declarações que regulamentam a gestão, compartilhamento e abertura de dados no campo da Saúde</b></p>
             </div>
           </div>
-          <div class="row align-items-center mb-5">
-            <div class="col-12 col-md-6">
-              <h5>Mas que princípios são esses? O que eles representam? Para que servem e como implementá-los?</h5>
+
+          <!--Início tabela horizontal-->
+          <div class="row mt-3 mb-5 justify-content-center">
+            <div class="col-12">
+              <div class="table-responsive serie3 aula6" data-aos="fade-up">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="text-center">Agências Financiadoras</th scope="col">
+                      <th class="text-center">Bill & Melinda Gates Foundation (Estados Unidos)</th>
+                      <th scope="col" class="text-center">Canadian Institutes of Health Research (Canadá)</th>
+                      <th class="text-center">National Institutes of Health NIH (Estados Unidos)</th>
+                      <th class="text-center">Medical Research Council (Reino Unido)</th>
+                      <th class="text-center">Wellcome Trust (Reino Unido)</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td><b>Título da(s) Política(s)</b></td>
+                      <td><a href="https://gatesopenresearch.org/about/policies#dataavail" target="_blank">Open Data Policy</a><br>Destaque: O item 7 desta política trata da disponibilidade de dados).</td>
+                      <td><a href="http://www.science.gc.ca/eic/site/063.nsf/eng/h_83F7624E.html?OpenDocument" target="_blank">Tri-Agency Statement of Principles on Digital Data Management.</a></td>
+                      <td><a href="https://grants.nih.gov/grants/policy/data_sharing/" target="_blank">NIH Data Sharing Policy.</a></td>
+                      <td><a href="https://mrc.ukri.org/documents/pdf/mrc-data-sharing-policy/" target="_blank">UK Medical Research Council Data Sharing Policy.</a></td>
+                      <td><a href="https://wellcome.ac.uk/what-we-do/our-work/sharing-research-data-improve-public-health-full-joint-statement-funders-health" target="_blank">The Wellcome Trust - Sharing research data to improve public health - joint statement of purpose.</a></td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Descreve os requisitos ou orientações para um PGD?</b></td>
+                      <td>Não.<br>Disponibiliza diretrizes para os dados <a href="https://gatesopenresearch.org/for-authors/data-guidelines" target="_blank">(Gates Open Research Data Guidelines)</a>.</td>
+                      <td>Sim.<br>Indica a ferramenta <a href="https://assistant.portagenetwork.ca/en" target="_blank">DMP Assistant</a> para elaboração do PGD.</td>
+                      <td>Sim.<br><a href="https://grants.nih.gov/grants/sharing_key_elements_data_sharing_plan.pdf" target="_blank">Key Elements to Consider in Preparing a Data Sharing Plan Under NIH Extramural Support</a><br><a href="https://grants.nih.gov/grants/sharing_example_data_sharing_plan.doc" target="_blank">Example Plan addressing Key Elements for a Data Sharing Plan under NIH Extramural Support.</a></td>
+                      <td>Sim.<br><a href="https://mrc.ukri.org/funding/guidance-for-applicants/2-the-application/#dmplans" target="_blank">Data Management plans – Guidance for applicant</a><br><a href="https://mrc.ukri.org/documents/doc/data-management-plan-template" target="_blank">Data Management Plan Template</a><br><a href="https://mrc.ukri.org/documents/pdf/what-is-a-data-management-plan/" target="_blank">Data Management Plan – FAQs and guidance.</a></td>
+                      <td>Sim.<br><a href="https://wellcome.ac.uk/funding/managing-grant/developing-outputs-management-plan" target="_blank">Guidance on completing an outputs management plan.</a></td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Específica os prazos para o compartilhamento de dados?</b></td>
+                      <td>Não.</td>
+                      <td>Sim.</td>
+                      <td>Sim.</td>
+                      <td>Não.</td>
+                      <td>Sim.</td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Descreve os requisitos para o uso de bancos de dados ou repositórios públicos?</b></td>
+                      <td>Sim.</td>
+                      <td>Sim.</td>
+                      <td>Não.</td>
+                      <td>Não.</td>
+                      <td>Sim.</td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Possui os requisitos em relação à ética ou à proteção da confidencialidade?</b></td>
+                      <td>Sim.</td>
+                      <td>Não.</td>
+                      <td>Sim.</td>
+                      <td>Sim.</td>
+                      <td>Sim.</td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Abrange medidas específicas para rastrear ou garantir o cumprimento da política?</b></td>
+                      <td>Não.</td>
+                      <td>Não.</td>
+                      <td>Sim.</td>
+                      <td>Não.</td>
+                      <td>Sim.</td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Aponta outras políticas relacionadas?</b></td>
+                      <td>Não.</td>
+                      <td>Não.</td>
+                      <td>Sim.<br>Atualmente, existem outras <a href="https://www.nlm.nih.gov/NIHbmic/nih_data_sharing_policies.html" target="_blank">17 políticas de compartilhamento de dados específicas nas</a> temáticas de pesquisa em saúde, como por exemplo, coordenadas atômicas de estruturas biomoleculares, genômica, doenças raras, entre outras.</td>
+                      <td>Sim.<br><a href="https://mrc.ukri.org/publications/browse/mrc-policy-and-guidance-on-sharing-of-research-data-from-population-and-patient-studies/" target="_blank">MRC Policy and Guidance on Sharing of Research Data from Population and Patient Studies.</a><br><a href="https://mrc.ukri.org/research/policies-and-guidance-for-researchers/open-research-data-clinical-trials-and-public-health-interventions/" target="_blank">MRC Policy on Open Research Data from Clinical Trials and Public Health Intervention Studies.</a><br><a href="https://www.ukri.org/funding/information-for-award-holders/data-policy/" target="_blank">UKRI Data Sharing Principles.</a><br><a href="https://www.ukri.org/files/legacy/documents/concordatonopenresearchdata-pdf/" target="_blank"> Concordat on Open Research Data.</a><br><a href="https://www.oecd-ilibrary.org/science-and-technology/oecd-principles-and-guidelines-for-access-to-research-data-from-public-funding_9789264034020-en-fr">OECD Principles and Guidelines for Access to Research Data from Public Funding.</a></td>
+                      <td>Sim.<br><a href="https://www.sanger.ac.uk/sites/default/files/Jul2018/Data_Sharing_Policy_and_Guidelines_July_2018.pdf" target="_blank">Wellcome Trust Sanger Institute Data Sharing Policy and Guidelines.</a><br><a href="https://wellcome.ac.uk/news/sharing-data-during-zika-and-other-global-health-emergencies" target="_blank">Statement on Data Sharing in Public Health Emergencies.</a><br><a href="https://wellcome.ac.uk/funding/guidance/data-software-materials-management-and-sharing-policy" target="_blank">Data, software and materials management and sharing policy.</a><br><a href="https://www.oecd-ilibrary.org/science-and-technology/oecd-principles-and-guidelines-for-access-to-research-data-from-public-funding_9789264034020-en-fr" target="_blank">OECD Principles and Guidelines for Access to Research Data from Public Funding.</a></td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Considera a aplicação dos princípios FAIR?
+                      </b></td>
+                      <td>Sim.<br>DOI:10.25504/FAIRsharing.aebs2d.</td>
+                      <td>Não.</td>
+                      <td>Sim.<br>DOI:10.25504/FAIRsharing.ej56wy.</td>
+                      <td>Sim.<br>DOI:10.25504/fairsharing.e94547.</td>
+                      <td>Sim.<br>DOI:10.25504/FAIRsharing.mrrnp0.</td>
+                    </tr>
+
+                   
+
+                  </tbody>
+                </table>
+              </div>
+
             </div>
-            <div class="col-12 col-md-6 mb-5 mb-md-0">
-              <p>Historicamente, vale lembrar que as primeiras manifestações sobre o tema surgiram, entre 13 e 16 de Janeiro de 2014, quando um grupo de especialistas, representantes da academia, agências de fomento a pesquisa, editores científicos e representantes da área industrial se reuniram em um workshop intitulado Jointly designing a data FAIRPORT, no Lorentz Centre, em Leiden, Holanda. Esse encontro foi marcado pela discussão sobre a criação de uma infraestrutura global que pudesse dar suporte as publicações e os dados originados em pesquisa, promovendo seu compartilhamento, reutilização e até novas descoberta,. A partir desse encontro em Leiden, criou-se um conjunto de práticas orientadoras voltadas para a boa gestão de dados denominada “FAIR Principles”.</p>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-10 card rounded border-0 shadow p-5">
-              <p class="m-0">Tais princípios são, na realidade, um acrônimo para Findable, Accessible, Interoperable and Reusable (FAIR). Eles foram inicialmente disponibilizados para comentários no site do FORCE 112 e posteriormente publicados na revista Scientific Data, da Nature, em 2016, no artigo de Wilkinson, M. D. et al.(2016) denominado: <a href="https://www.nature.com/articles/sdata201618" target="_blank">The FAIR Guiding Principles for scientific data management and stewardship.</a></p>
-            </div>
-          </div>
-          
-    </div><!--Fim do container-->
-    </section><!-- #bloco2 -->
-     
+          </div><!--fim da row-->
+          <!--Fim da Tabela horizontal-->
+
+        </div>
+    </section>
+
     <!--==========================
       Capa - Capítulos
     ============================-->
@@ -196,17 +274,253 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 text-center">
-            <h1 class="cta-title" data-aos="zoom-out-down" data-aos-easing="ease-out-back">O que significa FAIR?</h1>
+            <h1 class="cta-title" data-aos="zoom-out-down" data-aos-easing="ease-out-back">Revistas Científicas</h1>
           </div>
          </div>
       </div>
     </section><!-- #call-to-action -->
 
     <!--==========================
-      Bloco 3  - O que significa FAIR? 
+      Bloco 3 - Revistas Científicas
     ============================-->
-    <section id="bloco3" class="section-bg2 blocos">
+    <section id="bloco3" class="blocos">
       <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <p>As revistas científicas, especialmente as internacionais, estão adotando políticas editoriais que exigem a disponibilização dos dados no processo de submissão e publicação de um  artigo. A PLOS One, por exemplo, exige a disponibilização dos dados brutos de pesquisas em repositórios abertos a fim de que possam ser consultados pelos leitores. Já a Nature age em sentido oposto, apenas recomendando essa medida de transparência. Há ainda uma tendência a aceitação de preprints e as propostas de mudanças em torno das formas de avaliação (agora aberta) por pares. Esses são alguns dos desafios que deverão ser enfrentados pelas revistas.</p>
+            <a href="https://blog.scielo.org/blog/2018/09/17/aos-20-anos-a-rede-scielo-atualiza-prioridades-e-avanca-para-a-ciencia-aberta/#.XfjZH-hKjIU" target="_blank">Leia mais neste artigo</a>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="../../img/serie3/curso2/aula6/img1.jpg" alt="" width="100%">
+            <p class="text-muted small">Fonte: <a href="https://blog.scielo.org/blog/2018/09/17/aos-20-anos-a-rede-scielo-atualiza-prioridades-e-avanca-para-a-ciencia-aberta/#.XkN8RGhKjIV" target="_blank">https://blog.scielo.org/</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos blocos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-out-down" data-aos-easing="ease-out-back">Repositório de dados em saúde: tipologia e características</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Bloco 4 - Repositório de dados em saúde: tipologia e características
+    ============================-->
+    <section id="bloco4" class="blocos section-bg2">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-12 col-md-10 mb-3 mb-md-0">
+            <p>Os repositórios cumprem a função de armazenar e disponibilizar dados para terceiros. Certamente, encontrar um repositório de dados compatível com sua pesquisa dinamiza o trabalho do  pesquisador. O re3data.org é um catálogo internacional que lista mais de 2 mil repositórios de dados. Ele é uma boa fonte para fonte para os pesquisadores localizarem repositórios que atendam as especificidades de suas pesquisas.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <p>Outra ferramenta relevante é o <a href="https://explore.openaire.eu/" target="_blank">OpenAIRE Explore</a>, um serviço de pesquisa por publicações, conjunto de dados, software e outros resultados de pesquisa com informações sobre financiadores e comunidades de pesquisadores.</p>
+            <p>Veja ao lado mais alguns exemplos desses repositórios:</p>
+          </div>
+          <div class="col-12 col-md-8 mb-3 mb-md-0">
+            <!--Accordion-->
+            <ul id="accordion1" class="accordion wow fadeInUp">
+
+              <!--Item 1-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#biomedicina">Biomedicina, Epidemiologia, Pesquisa Clínica e Saúde Pública <i class="icon ion-md-remove"></i></a>
+                <div id="biomedicina" class="collapse">
+                  <p><a href="https://www.immport.org/" target="_blank">ImmPort :</a> Armazena dados de pesquisas financiados pelo National Institutes of Health (NIH).</p>
+                  <p><a href="https://www.fludb.org/brc/home.spg?decorator=influenza" target="_blank">Influenza Research Database (IRD):</a> Disponibiliza dados de vigilância epidemiológica de influenza em aves e não humanos, dados clínicos humanos associados a extratos de vírus, características fenotípicas de vírus isolados de extratos e todos os dados genômicos e proteômicos disponíveis em repositórios públicos para vírus influenza.</p>
+                  <p><a href="https://www.icpsr.umich.edu/icpsrweb/NAHDAP/" target="_blank">National Addiction & HIV Data Archive Program (NAHDAP):</a> Coleta, preserva e divulga dados sobre  toxicodependência e pesquisa sobre o HIV. Abrange uma ampla gama de drogas legais e ilícitas (álcool, tabaco, maconha, cocaína, drogas sintéticas e outras) e as trajetórias, padrões e conseqüências do uso de drogas, bem como preditores e resultados relacionados.</p>
+                  <p><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">PubMed Labs:</a> Ferramenta experimental da National Library of Medicine (NLM). que visa melhorar a qualidade da pesquisa e a usabilidade do PubMed.</p>
+                </div>
+              </li>
+
+              <!--Item 2-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#ciências">Ciências Humanas e Sociais <i class="icon ion-md-remove"></i></a>
+                <div id="ciências" class="collapse">
+                  <p><a href="https://www.icpsr.umich.edu/icpsrweb/" target="_blank">Inter-University Consortium for Political and Social Research (ICPSR):</a> Dedicado ao campo das ciências sociais e áreas afins.</p>
+                  <p><a href="https://qdr.syr.edu/" target="_blank">Qualitative Data Repository (QDR):</a> Oferece amplo leque de pesquisas qualitativas e multimétodos nas ciências sociais, além de orientações sobre como  gerenciar, compartilhar, citar e reutilizar dados qualitativos, contribuindo para a geração de padrões comuns.</p>  
+                </div>
+              </li>
+
+              <!--Item 3-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#multidisciplinares">Multidisciplinares <i class="icon ion-md-remove"></i></a>
+                <div id="multidisciplinares" class="collapse">
+                  <p><a href="https://datadryad.org/">Dryad Digital Repository:</a> Oferece serviço de curadoria e agrega ampla diversidade de dados subjacentes às publicações científicas.</p>
+                  <p><a href="https://figshare.com/" target="_blank">Figshare:</a> O repositório permite o upload de qualquer tipo de resultado de pesquisa - incluindo pôsteres, apresentações, conjuntos de dados, código etc - expandindo as possibilidades de comunicação entre pares.</p>
+                  <p><a href="https://dataverse.harvard.edu/" target="_blank">Harvard Dataverse:</a> Um repositório de dados que permite o compartilhamento, preservação, citação, exploração e análise dados de pesquisa. Está aberto a todos os pesquisadores, dentro e fora da comunidade de Harvard. Também, é considerada uma tecnologia robusta para uso em repositórios institucionais de dados.</p>
+                  <p><a href="https://zenodo.org/" target="_blank">Zenodo:</a> Armazena dados multidisciplinares, software, materiais de conferência e conteúdo educacional e informativo. O acesso ao conteúdo do Zenodo está aberto a todos, apenas para fins não militares.</p>
+                </div>
+              </li>
+            </ul><!--Fim do Accordion-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Bloco 5  - Plataformas de compartilhamento de dados
+    ============================-->
+    <section id="bloco5" class="blocos section-bg">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="wow fadeInLeft" data-wow-duration="0.5s">
+              <h4 class="text-center">Plataformas de compartilhamento de dados</h4>
+              <span class="section-divider middle serie3"></span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <p>Atualmente, as práticas de compartilhamento e abertura de dados ainda são bastante limitadas. No entanto, nos campos nos quais o compartilhamento de dados é uma prática essencial para a realização da pesquisa, existem incentivos para tal, pois os pesquisadores frequentemente estão envolvidos em projetos colaborativos. Veja mais ao lado:</p>
+          </div>
+          <div class="col-12 col-md-8 mb-3 mb-md-0">
+            <!--Accordion-->
+            <ul id="accordion-portal" class="accordion wow fadeInUp">
+
+              <!--Item 1-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#F1000Research">F1000Research <i class="icon ion-md-remove"></i></a>
+                <div id="F1000Research" class="collapse">
+                  <p><a href="https://f1000research.com/" target="_blank">F1000Research:</a> Plataforma de publicação de “pesquisa aberta” que oferece publicação imediata de artigos e dados subjacentes - sem intermediação editorial. Oferece revisão por pares aberta e inclusão de dados.</p>
+                </div>
+              </li>
+
+              <!--Item 2-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#openScience">OpenScience Framework (OSF) <i class="icon ion-md-remove"></i></a>
+                <div id="openScience" class="collapse">
+                  <p><a href="https://osf.io/" target="_blank">OpenScience Framework (OSF):</a> Repositório de gerenciamento de projetos, gratuito e de código aberto, que oferece suporte durante todo o ciclo de vida do projeto. Seue fluxo de trabalho, conecta os  muitos produtos que os pesquisadores usam para otimizar processos e aumentar a eficiência.</p>
+                </div>
+              </li>
+
+              <!--Item 3-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#Wellcome">Wellcome Open Research <i class="icon ion-md-remove"></i></a>
+                <div id="Wellcome" class="collapse">
+                  <p><a href="https://wellcomeopenresearch.org/" target="_blank">Wellcome Open Research:</a> Plataforma desenvolvida pela agência de financiamento homônima para uso exclusivo de pesquisas financiadas por ela. Objetiva viabilizar suas políticas de acesso aberto e dados abertos, publica diversos tipos de artigos que são submetidos a revisão por pares aberta e indexados no PubMed, entre outros. Todas as pesquisas, incluindo ensaios clínicos, revisões sistemáticas, ferramentas de software, artigos de método e muitas outras, podem ser publicadas independentemente do nível de interesse ou novidade.</p>
+                </div>
+              </li>
+            </ul><!--Fim do Accordion-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Bloco 6  - Exemplos para doenças infecciosas
+    ============================-->
+    <section id="bloco6" class="blocos section-bg2">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="wow fadeInLeft" data-wow-duration="0.5s">
+              <h4 class="text-center">Exemplos para doenças infecciosas</h4>
+              <span class="section-divider middle serie3"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-12 col-md-10 mb-3 mb-md-0">
+            <p>	Abaixo apresentamos cinco exemplos nos campos das Doenças Infecciosas, Malária, Pesquisas Clínicas, Vigilância Demográfica e de Saúde, além da emergente Humanidades Digitais.</p>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <h5 class="mb-4">DOENÇAS INFECCIOSAS</h5>
+          </div>
+          <div class="col-12 col-md-8 mb-3 mb-md-0 obj-lista">  
+            <ul class="list-group">
+              <li class="list-group-item"><i class="icon-bullet"></i> Observatório de Dados de Doenças Infecciosas <a href="https://www.iddo.org/" target="_blank">(Infectious Diseases Data Observatory - IDDO)</a> - Coordenado pelo ‘Centre for Tropical Medicine’ e ‘Global Health” da Universidade de Oxford, oferece uma plataforma de compartilhamento de dados clínicos, laboratoriais e epidemiológicos entre as comunidades de pesquisa em gestão clínica e pesquisa de doenças infecciosas. O seu portfólio, em expansão, inclui Ebola, malária e leishmaniose visceral.</li>
+              <li class="list-group-item"><i class="icon-bullet"></i> <a href="https://www.wwarn.org/" target="_blank">WorldWide Antimalarial Resistance Network</a> (WWARN) é a plataforma colaborativa do Infectious Diseases Data Observatory (IDDO), que gera recursos e evidências ​​ sobre os fatores que afetam a eficácia dos medicamentos antimaláricos.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <h5 class="mb-4">HUMANIDADES DIGITAIS</h5>
+          </div>
+          <div class="col-12 col-md-8 mb-3 mb-md-0 obj-lista">
+            <ul class="list-group">
+              <li class="list-group-item"><i class="icon-bullet"></i> <a href="https://hcommons.org/" target="_blank">Humanities Commons</a> é uma plataforma elaborada a partir das demandas de pesquisadores do campo das humanidades e oferece diversos serviços, entre eles,   o repositório de acesso aberto, o <a href="https://hcommons.org/core/" target="_blank">Commons Open Repository Exchange (CORE)</a>, para registro e preservação de pesquisas.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <h5 class="mb-4">PESQUISAS CLÍNICAS</h5>
+          </div>
+          <div class="col-12 col-md-8 mb-3 mb-md-0 obj-lista">
+            <ul class="list-group">
+              <li class="list-group-item"><i class="icon-bullet"></i> O <a href="https://yoda.yale.edu/welcome-yoda-project" target="_blank">Yale University Open Data Access</a> - Projeto YODA disponibiliza dados  e incentiva a exploração de recursos adicionais de compartilhamento de dados, incluindo:
+                <ul>
+                  <li><a href="https://www.clinicalstudydatarequest.com/" target="_blank">ClinicalStudyDataRequest.com</a>: Consórcio de provedores de dados de estudos clínicos que facilita o acesso a dados em nível de paciente.</li>
+                  <li><a href="https://sleepdata.org/" target="_blank">National Sleep Research Resource</a>: Agrega, sistematiza e organiza dados clínicos e de sono de milhares de indivíduos originados em  estudos de coorte ou ensaios clínicos, oferecendo ferramentas de exploração e visualização de dados.</li>
+                  <li><a href="https://www.nlm.nih.gov/NIHbmic/nih_data_sharing_repositories.html" target="_blank">NIH Data Sharing Repositories</a>: Lista de repositórios do NIH nos quais todos os  dados estão acessíveis para reutilização. Tais como  BioLINCC, ClinicalTrials.gov, dbGaP, NIDDK, GenBank, etc.</li>
+                  <li><a href="http://www.pfizer.com/science/clinical-trials/trial-data-and-results" target="_blank">Pfizer Trial Data and Results</a>: Recurso de compartilhamento de dados de testes clínicos da Pfizer.</li>
+                </ul>
+              </li>
+              <li class="list-group-item"><i class="icon-bullet"></i> <a href="https://projectdatasphere.org/projectdatasphere/html/home" target="_blank">Project Data Sphere</a> - Laboratório de biblioteca digital gratuito oferece plataforma na qual a comunidade de pesquisa pode compartilhar, integrar e analisar dados históricos, em nível de pacientes, de ensaios clínicos de câncer de fase III acadêmicos e industriais.</li>
+              <li class="list-group-item"><i class="icon-bullet"></i> <a href="https://dcri.org/our-work/analytics-and-data-science/data-sharing/" target="_blank">Supporting Open Access for Researchers (SOAR)</a> - Colaboração entre Duke University School of Medicine e a Bristol-Myers Squibb (BMS) na abertura de dados de protocolos, relatórios completos de estudos clínicos e dados não identificados no nível do paciente.</li>
+              <li class="list-group-item"><i class="icon-bullet"></i> <a href="http://vivli.org/" target="_blank">Vivli</a> - É uma plataforma de compartilhamento e análise de dados de ensaios clínicos de nível de participante individual  concluídos para servir a comunidade internacional de pesquisa.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <h5 class="mb-4">VIGIL NCIA DEMOGRÁFICA E DE SAÚDE</h5>
+          </div>
+          <div class="col-12 col-md-8 mb-3 mb-md-0 obj-lista">
+            <ul class="list-group">
+              <li class="list-group-item"><i class="icon-bullet"></i> <a href="http://www.indepth-network.org/" target="_blank">International Network for the Demographic Evaluation of Populations and Their Health - INDEPTH</a> é uma rede global de centros de pesquisa em health and demographic surveillance systems (HDSSs), que realiza avaliações longitudinais de saúde e demográficas de populações em países de baixa e média renda (LMICs). Seu repositório de dados <a href="http://www.indepth-ishare.org/" target="_blank">INDEPTH Network Data Repository</a>, financiado pela Wellcome Trust, disponibiliza conjuntos de dados (microdados longitudinais anônimos) para orientar prioridades e políticas de saúde com base em evidências científicas atualizadas.
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos blocos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-out-down" data-aos-easing="ease-out-back">Publicação de dados e as revistas de dados (data journals)</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Bloco 7  - Publicação de dados e as revistas de dados (data journals) 
+    ============================-->
+    <section id="bloco7" class="section-bg2 blocos">
+      <div class="container">
+
+        <div class="row mb-5">
+          <div class="col-12 col-md-10">
+            <p>No modelo tradicional de publicação, os conjuntos de dados - tanto aqueles que deram origem aos artigos como aqueles que não foram aproveitados em publicações - não se configuravam como elementos da comunicação científica. Recentemente, os conjuntos de dados passaram a ser  reconhecidos como resultados de pesquisa por si mesmos e, como tal, são publicáveis.</p>
+            <p>Geralmente, os os data papers não incluem interpretação, discussão ou análise (uma exceção pode ser a discussão de diferentes métodos para coletar os dados). Seu diferencial é o compartilhamento de dados em uma estrutura padronizada que, tal qual as publicações tradicionais, são igualmente revisados por pares e citáveis. Aqui, a disponibilização de dados tende a ser mais completa do que a realizada via repositório que podem apenas exigir seus metadados.</p>
+          </div>
+        </div>
+
         <div class="row align-items-center">
           <div class="col-12 col-md-8">
             <p>Siga as setas abaixo para entender o significado:</p>

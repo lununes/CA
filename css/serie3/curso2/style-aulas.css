@@ -127,6 +127,15 @@ ________________________________________*/
     padding: 40% 5%;
 }
 
-/* AULA 3
+/* AULA 6
 ________________________________________*/
 
+.aula6 .table td,
+.aula6 .table th {
+    vertical-align: top;
+    width: 15%;
+}
+
+.aula6 tr: first-child {
+    width: 20%;
+}
