@@ -127,6 +127,69 @@ ________________________________________*/
     padding: 40% 5%;
 }
 
+/* AULA 5
+________________________________________*/
+
+/* Imagem */
+
+#imagem-base {
+    position: relative;
+    min-width: 200px;
+    max-width: 100%;
+    min-height: 200px;
+    height: 100%;
+    background-color: chocolate;
+}
+
+#centro {
+    height: 60%;
+    background-color: crimson;
+    width: 60%;
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+#disco-left-top,
+#disco-right-top,
+#disco-left-bottom,
+#disco-right-bottom {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+#disco-left-top {
+    top: 0;
+    left: 0;
+    background-color: darkcyan;
+    border-top-left-radius: 100%;
+}
+
+#disco-right-top {
+    top: 0;
+    right: 0;
+    background-color: rgb(54, 190, 190);
+    border-top-right-radius: 100%;
+}
+
+#disco-left-bottom {
+    bottom: 0;
+    left: 0;
+    background-color: rgb(12, 247, 247);
+    border-bottom-left-radius: 100%;
+}
+
+#disco-right-bottom {
+    bottom: 0;
+    right: 0;
+    background-color: darkcyan;
+    border-bottom-right-radius: 100%;
+}
+
+
+
 /* AULA 6
 ________________________________________*/
 
