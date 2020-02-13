@@ -208,7 +208,8 @@ Box de Citação Curta
 /*serie3*/
 .serie3 .fa-chevron-right, 
 .serie3 .box-quote i, 
-.serie3 .box-quote .svg-inline--fa {
+.serie3 .box-quote .svg-inline--fa,
+.serie3 p i {
   color: var(--main-color4-pressed);
 }
 
