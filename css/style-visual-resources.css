@@ -182,6 +182,30 @@ Box de Citação Curta
 
 -------------------------------- */
 
+.citacao .box-quote::before {
+  content: "\f10d";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--azul-pressed);
+}
+
+.citacao .box-quote::after {
+  content: "\f10e";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--azul-pressed);
+  left: 93%;
+  position: relative;
+}
+
+/* Série 4 */
+.serie4 .citacao .box-quote::before,
+.serie4 .citacao .box-quote::after {
+  color: var(--azul-pressed);
+}
+
 .box-quote {
   padding: 30px;
   background: var(--white-color);
@@ -2230,11 +2254,18 @@ Slider
 .carousel-control-next-icon, .carousel-control-prev-icon {
     padding: 24px;
     border-radius: 24px;
+    background:#fff;
 }
 
-.carousel-control-next-icon {background-image: url('../img/ic-ionicons_svg_ios-arrow-forward.svg');}
+.carousel-control-next-icon {
+  background-image: url('../img/ic-ionicons_svg_ios-arrow-forward.svg');
+  background-position: 0.15rem 0;
+}
 
-.carousel-control-prev-icon {background-image: url('../img/ic-ionicons_svg_ios-arrow-back.svg');}
+.carousel-control-prev-icon {
+  background-image: url('../img/ic-ionicons_svg_ios-arrow-back.svg');
+  background-position:-0.15rem 0;
+}
 
 
 /* --------------------------------
