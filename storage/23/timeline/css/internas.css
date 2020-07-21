@@ -1,0 +1,8 @@
+@font-face {
+    font-family: intFont;
+    src: url(fonts/font.ubuntu.css.woff);
+}
+
+div {
+    font-family: intFont;
+}
