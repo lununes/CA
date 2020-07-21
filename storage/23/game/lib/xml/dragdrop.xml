@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <events>
+        <event id="submit">
+			<click>
+				<function name="submit">this</function>
+			
+			</click>
+		</event>
+		
+		 <event id="reset">
+			<click>
+				<function name="reset">this</function>
+			</click>
+		</event>
+		
+		<event id="sca">
+			<click>
+				<function name="sca">this</function>
+			</click>
+		</event>
+		
+		<event id="sma">
+			<click>
+				<function name="sma">this</function>
+			</click>
+		</event>
+		
+    </events>
+	
+<!--	<text id="title" x="30" y="30" width="900" anim="top" animtime="1" animdelay="0"><![CDATA[<h1>Arraste para a coluna correta</h1><p>1 -> Área 1, 2 -> Área 2</p>]]></text> -->
+	
+	<image id="cenario" x="0" y="0" anim="show" animdelay="0"><![CDATA[lib/assets/cenario.jpg]]></image>
+	<image id="estante01" x="70" y="70" anim="show" animdelay="0"><![CDATA[lib/assets/estante_01.png]]></image> <!-- 103 -->
+	<image id="estante02" x="70" y="173" anim="show" animdelay="0"><![CDATA[lib/assets/estante_02.png]]></image> <!-- 87 -->
+	<image id="estante03" x="70" y="260" anim="show" animtime="2" animdelay="0"><![CDATA[lib/assets/estante_03.png]]></image> <!-- 88 -->
+	<image id="estante05" x="70" y="348" anim="show" animtime="2" animdelay="0"><![CDATA[lib/assets/estante_05.png]]></image> <!-- 89 -->
+	<image id="estante06" x="70" y="437" anim="show" animtime="2" animdelay="0"><![CDATA[lib/assets/estante_06.png]]></image><!-- 86 -->
+	<image id="estante07" x="70" y="522" anim="show" animtime="2" animdelay="0"><![CDATA[lib/assets/estante_07.png]]></image><!-- 90 -->
+	<image id="estante07_07" x="70" y="612" anim="show" animtime="2" animdelay="0"><![CDATA[lib/assets/estante_07_07.png]]></image><!-- 37 -->
+	<image id="globo" x="150" y="12" anim="show" animtime="2" animdelay="0"><![CDATA[lib/assets/globo.png]]></image><!-- 37 --> 
+	<image id="avatar_jogo" x="420" y="70" anim="show" animtime="2" animdelay="0"><![CDATA[lib/assets/avatar_jogo.png]]></image>
+	
+	<!--Áreas para arrastar -->
+	
+	
+
+	
+	<box id="dropBox1" x="75" y="70" width="290" height="100" anim="none" animtime="0" animdelay="0" className="">
+	<text id="dropLabel1" x="18" y="45" height="" width="300" anim="alpha" animtime="0.5" animdelay="0"><![CDATA[<p>[3]</p>]]></text>
+	</box>
+	
+	<box id="dropBox2" x="75" y="172" width="290" height="85" anim="none" animtime="0" animdelay="0" className="">
+	<text id="dropLabel2" x="18" y="30" height="" width="300" anim="alpha" animtime="0.5" animdelay="0"><![CDATA[<p>[5]</p>]]> </text>
+	</box>
+	
+	<box id="dropBox3" x="75" y="259" width="290" height="88" anim="none" animtime="0" animdelay="0" className="">
+	<text id="dropLabel3" x="18" y="30" height="" width="300" anim="alpha" animtime="0.5" animdelay="0"><![CDATA[<p>[1]</p>]]> </text>
+	</box>
+	
+	<box id="dropBox5" x="75" y="350" width="290" height="86" anim="none" animtime="0" animdelay="0" className="">
+	<text id="dropLabel5" x="18" y="30" height="" width="300" anim="alpha" animtime="0.5" animdelay="0"><![CDATA[<p>[6]</p>]]> </text>
+	</box>
+	
+	<box id="dropBox6" x="75" y="439" width="290" height="82" anim="none" animtime="0" animdelay="0" className="">
+	<text id="dropLabel6" x="18" y="30" height="" width="300" anim="alpha" animtime="0.5" animdelay="0"><![CDATA[<p>[4]</p>]]> </text>
+	</box>
+	
+	<box id="dropBox7" x="75" y="524" width="290" height="92" anim="none" animtime="0" animdelay="0" className="">
+	<text id="dropLabel7" x="18" y="30" height="" width="300" anim="alpha" animtime="0.5" animdelay="0"><![CDATA[<p>[2]</p>]]> </text>
+	</box>
+	
+	
+	
+	<!--
+	<box id="dropBox1bg" x="75" y="70" width="290" height="100" anim="drop" animtime="0.3" animdelay="0" className="dropZone">
+		<text id="dropLabel2" x="18" y="8" height="" width="300" anim="alpha" animtime="0.5" animdelay="0"><![CDATA[<p>[ 001 ]</p>]]></text>
+	</box>
+	
+	<box id="dropBox1bg" x="75" y="172" width="290" height="85" anim="drop" animtime="0.3" animdelay="0" className="dropZone">
+		<text id="dropLabel2" x="18" y="8" height="" width="300" anim="alpha" animtime="0.5" animdelay="0"><![CDATA[<p>[ 002 ]</p>]]></text>
+	</box>
+	
+	<box id="dropBox1bg" x="75" y="259" width="290" height="88" anim="drop" animtime="0.3" animdelay="0" className="dropZone">
+		<text id="dropLabel2" x="18" y="8" height="" width="300" anim="alpha" animtime="0.5" animdelay="0"><![CDATA[<p>[ 003 ]</p>]]></text>
+	</box>
+	
+	<box id="dropBox1bg" x="75" y="350" width="290" height="86" anim="drop" animtime="0.3" animdelay="0" className="dropZone">
+		<text id="dropLabel2" x="18" y="8" height="" width="300" anim="alpha" animtime="0.5" animdelay="0"><![CDATA[<p>[ 004 ]</p>]]></text>
+	</box>
+	
+	<box id="dropBox1bg" x="75" y="439" width="290" height="82" anim="drop" animtime="0.3" animdelay="0" className="dropZone">
+		<text id="dropLabel2" x="18" y="8" height="" width="300" anim="alpha" animtime="0.5" animdelay="0"><![CDATA[<p>[ 005 ]</p>]]></text>
+	</box>
+	
+	<box id="dropBox1bg" x="75" y="524" width="290" height="92" anim="drop" animtime="0.3" animdelay="0" className="dropZone">
+		<text id="dropLabel2" x="18" y="8" height="" width="300" anim="alpha" animtime="0.5" animdelay="0"><![CDATA[<p>[ 006 ]</p>]]></text>
+	</box>	
+	-->
+	
+
+	
+	
+	
+	<!--arrastáveis-->
+	<image id="drag3" x="630" y="150" anim="show" animtime="0.3" animdelay="0.6" className="dragItem"><![CDATA[lib/assets/doc3.png]]></image>
+	<image id="drag7" x="890" y="150" anim="show" animtime="0.3" animdelay="0.6" className="dragItem"><![CDATA[lib/assets/doc7.png]]></image>
+	<image id="drag1" x="630" y="270" anim="show" animtime="0.3" animdelay="0.6" className="dragItem"><![CDATA[lib/assets/doc1.png]]></image>
+	<image id="drag6" x="890" y="270" anim="show" animtime="0.3" animdelay="0.6" className="dragItem"><![CDATA[lib/assets/doc6.png]]></image>
+	<image id="drag2" x="630" y="390" anim="show" animtime="0.3" animdelay="0.6" className="dragItem"><![CDATA[lib/assets/doc2.png]]></image>
+	<image id="drag5" x="890" y="390" anim="show" animtime="0.3" animdelay="0.6" className="dragItem"><![CDATA[lib/assets/doc5.png]]></image>
+
+
+	
+   
+	
+	<!--buttons-->
+	<button id="submitBtn" x="630" y="520" anim="disable" className="myButton" event="submit"><![CDATA[<p>Confirmar</p>]]></button>
+	<button id="resetBtn" x="738" y="match" anim="hide" className="myButton" event="reset"><![CDATA[<p>Reiniciar</p>]]></button>
+	<button id="scaBtn" x="+=10" y="match" anim="hide" className="myButton" event="sca"><![CDATA[<p>Visualizar respostas</p>]]></button>
+	<button id="smaBtn" x="match" y="match" anim="hide" className="myButton" event="sma"><![CDATA[<p>Minhas respostas</p>]]></button>
+	
+    <custom id="custom" type="dragdrop">
+	
+        <settings dropscale="0.55" attempts="" forcedragall="true"/>
+
+        <drag match="1">drag1</drag>
+		<drag match="2">drag2</drag>
+		<drag match="3">drag3</drag>
+		<drag match="5">drag5</drag>
+		<drag match="6">drag6</drag>
+		<drag match="7">drag7</drag>
+	
+      
+        <drop id="1" dropposition="show" stack="true" stackpaddingv="5" stackpaddingh="3" maxdrop="1" xoffset="23" yoffset="47">dropBox1</drop>
+        <drop id="2" dropposition="show" stack="true" stackpaddingv="5" stackpaddingh="3" maxdrop="1" xoffset="23" yoffset="32">dropBox2</drop>
+		<drop id="3" dropposition="show" stack="true" stackpaddingv="5" stackpaddingh="3" maxdrop="1" xoffset="23" yoffset="33">dropBox3</drop>
+		<drop id="5" dropposition="show" stack="true" stackpaddingv="5" stackpaddingh="3" maxdrop="1" xoffset="23" yoffset="30">dropBox5</drop>
+		<drop id="6" dropposition="show" stack="true" stackpaddingv="5" stackpaddingh="3" maxdrop="1" xoffset="23" yoffset="28">dropBox6</drop>
+		<drop id="7" dropposition="show" stack="true" stackpaddingv="5" stackpaddingh="3" maxdrop="1" xoffset="23" yoffset="29">dropBox7</drop>
+		
+		<!--Repostas -->
+		<fb id="pass" event="">	
+			<text id="passTxt" x="630" y="280" height="" width="110" anim="left" animtime="0.5" animdelay="0" ease="Regular.easeOut" className="feedbackBox"><![CDATA[<p>Parabéns.</p>]]></text>
+		</fb>
+		
+		<fb id="partial" event="">	
+			<text id="partialTxt" x="630" y="280" height="" width="410" anim="left" animtime="0.5" animdelay="0" ease="Regular.easeOut" className="feedbackBox"><![CDATA[<p>Não foi desta vez!</p><p>Tente novamente.</p>]]></text>	
+		</fb>
+		
+		<fb id="fail" event="">	
+			<text id="failTxt" x="630" y="280" height="" width="410" anim="left" animtime="0.5" animdelay="0" ease="Regular.easeOut" className="feedbackBox"><![CDATA[<p>Tente novamente ou clique em visualizar respostas.</p>]]></text>
+		</fb>
+		
+	<!--	<fb id="generic" event="">	
+			<text id="genericTxt" x="630" y="600" height="" width="410" anim="alpha" animtime="1" animdelay="0" ease="Regular.easeOut" className="feedbackBox"><![CDATA[<p>Direitos Fundamentais Constitucionais</p><p>Tratado da ONU para inclusão de pessoas com defifiência</p>, 2a (Área 2), 1 (Área 1), 1a (Área 1), 1b (Área 1), 3 (Não corresponde). </p>]]></text>		
+		</fb> -->
+		
+		<!--/Respostas -->
+    </custom>
+
+</data>
+

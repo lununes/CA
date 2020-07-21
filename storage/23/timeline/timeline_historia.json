@@ -1,0 +1,830 @@
+{
+    "scale": "human",
+   
+	"title": {
+          "text": {
+          "headline": "História dos Direitos Autorais",
+          "text": "Navegue pela linha do tempo e conheça um pouco mais sobre os marcos históricos dos Direitos Autorais."
+              },
+          
+             "background": {
+                "color": "#333",
+                "opacity": "50",
+                "url": null
+            }
+ 		
+    },
+	
+    "events": [
+   
+        {
+        	"start_date": {
+                "year": "-3500",
+                "display_date": " "
+                
+            },
+			
+            
+		   "text": {
+                "headline": "Antiguidade e Idade Média: sinais de fumaça",
+                "text":     "É possível afirmar que a espiritualidade da criação, que hoje chamamos de autoria, já havia sido reconhecida na Antiguidade assim como sua materialidade, que estariam ligadas à singularidade dos manuscritos. "
+            },
+		
+            
+            "media":{
+            "url": "images/biblioteca.jpg",
+            "thumbnail": "images/biblioteca_peq.jpg",
+			"credit": "Biblioteca de St. Gallen. <br/>http://gnomonique.com.br/suica-st-gallen/"
+            },
+            "unique_id": ""
+            },            
+      
+            {
+        	"start_date": {
+                "year":			"-340",
+                "display_date": "Antiguidade"
+            },
+			
+			        
+            "background": {
+               
+                "opacity": "50",
+                "url": null
+            },
+            
+            "text": {
+            "headline": "Grécia",
+            "text":     "<p>Nesta época já se percebe o reconhecimento social da atribuição de autoria pela criação, em especial os escritos filosóficos e as obras dramáticas, teatrais.</p><p>Contudo, ainda não há uma distinção entre bens intelectuais e materiais, tampouco havendo a atribuição de direitos intelectuais sobre a autoria.</p>"
+            },
+            
+            "media":{
+            "url": "images/grecia.jpg",
+            "thumbnail": "images/grecia_peq.jpg",
+            "credit": "Raffaello Sanzio, Escola de Atenas, c. 1506-1510.<br/> https://pt.wikipedia.org/wiki/Escola_de_Atenas#/media/File:Sanzio_01.jpg"
+             },
+            "unique_id": ""
+            },
+         
+   		       
+             {
+        	"start_date": {
+                "year":			"-340",
+                "display_date": "Antiguidade"
+            },
+            
+          	
+			
+            "text": {
+                "headline": "Roma",
+                "text":     "<p>Roma tinha um sistema jurídico bastante desenvolvido para a época. Inclusive influenciou bastante o direito moderno codificado.</p><p>Um dos instrumentos que podiam ser usados para defesa de direitos que conhecemos hoje é a actio injuriaum, mecanismo que permite defender-se contra a usurpação de autoria e uso indevido do nome do autor.</p><p>Outro instituto jurídico de relevância é o da Acessão, pelo qual um bem acede a outro, tornando-se indivisível. Neste caso um deles passa a ter caráter acessório e fica incorporado no principal. É o caso de, por exemplo, alguém esculpir ou pintar num mármore ou tela alheios, e passa-se a questionar quem é o dono do resultado final: o escultor/pintor ou o dono do mármore ou tela?</p>"
+            },
+            
+            "media":{
+            "url": "images/roma.jpg",
+            "thumbnail": "images/roma_peq.jpg",
+			"credit": "Palazzo Madama (Roma), Cesare Maccari. <br/> https://pt.wikipedia.org/wiki/Roma_Antiga#/media/File:Maccari-Cicero.jpg."
+            },
+            "unique_id": ""
+            },
+            
+            {
+        	"start_date": {
+                "year":			"901",
+                "display_date": "Séculos X a XIV"
+            },
+         
+          	   
+            "text": {
+                "headline": "Alta Idade Média",
+                "text":     "<p>Na Idade Média prosperavam os escribas. A função dos escribas era de reproduzir textos cristãos e algumas obras clássicas, o mais literalmente possível. Não são autores, pois a finalidade não era criar, e sim reproduzir.</p><p>A produção e reprodução literárias nesta época ficaram concentradas nos monastérios.</p><p>Nestes casos, as obras novas referiam-se ao local de origem. Podemos dizer que eram protótipos do que veio hoje a ser conhecido como obras coletivas, já que não havia individualização da autoria, e tampouco a proteção de direitos sobre ela.</p><p>A expansão das universidades abriu novas oportunidades de conhecimento e ensino.</p><p>Como consequência, houve a necessidade de ampliação do número de bibliotecas existentes tanto quanto do número de livros.</p><p>São também observados neste período de transição da Idade Média para a Idade Moderna um crescimento da população alfabetizada e uma melhora no nível educacional geral.</p><p>Em conjunto, estas transformações trouxeram um aumento da demanda por livros.</p><p>Essa demanda social, na transição da Idade Média para a Idade Moderna, criou um ambiente propício às inovações tecnológicas e, também, sociais.</p>"
+            },
+            
+            "media":{
+            "url": "images/alta_idade_media.jpg",
+            "thumbnail": "images/alta_idade_media.jpg",
+			"credit":"Nurembergue 1493, Alemanha. <br/> https://commons.wikimedia.org/wiki/File:Nuernberg_schedel.jpg"
+            },
+            "unique_id": ""
+            },
+                    
+             
+           {
+            "start_date": {
+                "year":			"1400",
+                "display_date": " "
+            },
+          
+            
+            "background": {
+				"opacity":"50"
+				
+            },
+            
+            "media": {
+            "url": "images/gutenberg3.jpg",
+            
+           
+            "credit": "Johannes Guteberg",
+            "url": "<blockquote><p><b>Imprensa é um exército de 26 soldados de chumbo com o qual se pode conquistar o mundo.</b></p></blockquote>"
+               
+                
+            },
+            "text": {
+                "headline": "Século XV",
+                "text": "Era moderna"
+                
+            }
+                      
+      },
+      
+        {
+            "start_date": {
+                "year":			"1401",
+                "display_date": "Século XV"
+            },
+         
+           
+                "media": {
+                "url": "images/gutenberg.jpg",
+                "thumbnail": "images/gutenberg_peq.jpg",
+                "thumb": " ",
+				"credit": "Johannes Gutenberg (1400 - 1468) inventor de impressão examina uma página de sua primeira imprensa. (Foto: Rischgitz / Getty Images)<br/> http://associated-labels.com/news/the-first-information-age-inventing-the-printing-press-history-101/"
+			},
+            
+            "text": {
+                "headline": "A prensa, os tipos gráficos e o papel",
+                "text": "<p>Tradicionalmente os livros e profissionais remetem à invenção da prensa e dos tipos móveis por Gutenberg no século XV como o marco inicial da proteção jurídica das obras literárias.</p><p>Estes desenvolvimentos tecnológicos permitem a reprodução de obras em grande escala.</p><p>Com isso, criam as bases para a construção de uma indústria cultural.</p><p>E também a demanda para a atribuição de direitos sobre as obras, devido às possibilidades econômicas surgidas.</p>"
+                
+            }
+                      
+      },
+      
+       {
+            "start_date": {
+                "year":			"1401",
+                 "display_date": "Século XV"
+            },
+                      
+             "media": {
+                "url": "images/gutenberg3.jpg",
+                "thumbnail": "images/gutenberg_peq3.jpg",
+                "thumb": "",
+				"credit": "Joannes Gutenberg. <br/> http://cp91279.biography.com/Johannes-Gutenberg_The-Printing-Press_HD_768x432-16x9.jpg"
+			
+            },
+            "text": {
+                "headline": "Privilégios da Impressão",
+                "text": "<p>Esta demanda por proteção jurídica à edição de material impresso - livros, em especial - veio dos editores.</p><p>A justificativa foram os altos investimentos necessários para a produção gráfica e distribuição dos exemplares.</p><p>Argumentavam que sem uma proteção jurídica os altos riscos desestimulariam o investimento e o desenvolvimento desta indústria.</p><p>Os editores tiveram êxito e obtiveram junto aos governantes a atribuição de um direito exclusivo, um monopólio temporário de impressão e comercialização das obras exploração: eram os privilégios de impressão.</p><p>Os privilégios consistiam assim em um incentivo econômico à indústria pela atribuição de uma exclusividade temporária para impressão e comercialização de livros.</p><p>Os primeiros privilégios foram concedidos em Veneza na segunda metade do Século XV.</p><p>A exclusividade e temporalidade são características fundantes e permanentes do sistema de proteção da propriedade intelectual e dos direitos autorais.</p>"
+
+                
+            }
+                      
+      },
+      
+      
+       {
+            "start_date": {
+                "year":			"1578",
+                 "display_date": "Século XVI"
+            },
+                      
+             "media": {
+                "url": "images/gutenberg2.jpg",
+                "thumbnail": "images/gutenberg2_peq.jpg",
+                "thumb": "",
+				"credit": "William Caxton mostrando exemplares de sua impressão para o rei Eduardo IV e sua rainha. Publicado no The Graphic, em 1877, referindo-se à Celebração de Caxton. A Celebração de Caxton, comemorando o 400º aniversário do primeiro livro impresso na Inglaterra, ocorreu em Londres, no verão de 1877.<br/>https://commons.wikimedia.org/wiki/File:The_Caxton_Celebration_-_William_Caxton_showing_specimens_of_his_printing_to_King_Edward_IV_and_his_Queen.jpg"
+            },
+            "text": {
+                "headline": "França, 1578 - Domínio Público",
+                "text": "<p>Até esta época, os privilégios eram concedidos para a impressão de qualquer obra literária, novas ou antigas.</p><p>Na segunda metade do Século XVI, pela primeira vez, na França, os privilégios passaram a ser atribuídos apenas às obras novas.</p><p>Com isso, inaugura-se o conceito de domínio público sobre obras resultantes da criação literária e as obras antigas passam a poder ser livremente impressas e comercializadas sem as restrições impostas pelos privilégios.</p><p>Como se pode imaginar, a concessão dos privilégios apenas às novas obras alimentou nos autores da época a percepção de sua importância, dado que os editores necessitavam de produtos originais para obterem a exclusividade.</p>"
+                
+            }
+                      
+      },
+      
+       
+      {
+             "start_date": {
+                "year":			"1662",
+                "display_date": "Século XVII"
+            },
+       
+            "background": {
+				"opacity":"50"
+			 },
+           
+            "media": {
+           		"url": "images/inglaterra.jpg",
+           		"thumbnail": "images/inglaterra_peq.jpg",
+            	"caption": "Armas reais da Inglaterra, 1558–1603<br/>https://upload.wikimedia.org/wikipedia/commons/3/3a/Coat_of_Arms_of_England_(1558-1603).svg"
+                    	
+            },
+            
+            "text": {
+                "headline": "Inglaterra, 1662 - Aprovação do Licensing Act na Inglaterra",
+                "text": "<p>O Licensing Act Amplia o alcance e reforça a atuação e poder da Sationer’s Company, associação de editores na Inglaterra cujos sócios monopolizavam o comércio livreiro.</p><p>Com o Licensing Act qualquer impressão e comercialização sem o devido registro na entidade tornam-se ilegais.</p><p>Esta legislação não afeta diretamente os direitos autorais, mas mostra a força econômica e política da indústria editorial então, e mantém o mercado fechado a novos empreendedores.</p>"
+            }
+       },
+       
+        {
+             "start_date": {
+                "year":			"1710",
+                "display_date": "Século XVII"
+            },
+       
+            "background": {
+				"opacity":"50"
+			 },
+           
+            "media": {
+           		"url": "images/inglaterra2.jpg",
+           		"thumbnail": "images/inglaterra2_peq.jpg",
+            	"caption": "Brasão real do Reino Unido, da Grã-Bretanha e Irlanda do Norte, usado pela rainha Elizabeth II, de 1953 até o presente (como usado em todos os seus reinos, exceto a Escócia). <br/> https://commons.wikimedia.org/wiki/File:Royal_Coat_of_Arms_of_the_United_Kingdom.svg"
+				
+                    	
+            },
+            
+            "text": {
+                "headline": "Inglaterra, 1710 - Promulgação do Copyright Act pela Rainha Ana",
+                "text": "<p>Promulga-se em 1710 na Inglaterra o Copyright Act pela Rainha Ana na Inglaterra.</p><p>Esta é a primeira legislação que coloca o autor como titular originário dos direitos autorais sobre as obras que criar.</p><p>Além disso, o Copyright Act admite os autores como titulares dos direitos e não mais como detentores de privilégios.</p><p>Inicia-se com isso a era dos direitos autorais em substituição à era dos privilégios de impressão.</p><p>O registro da obra para fins de proteção continuou a ser exigido.</p><p>Introduz-se ainda o domínio público tanto para as obras antigas quanto as novas, sendo mais uma característica inovadora da legislação.</p><p>Interessante notar a função dupla do Copyright Act: (I) impedir a publicação de livros sem o consentimento de seus autores ou proprietários; e (II) para incentivar homens instruídos a comporem e escreverem livros úteis.</p>"
+            }
+       },
+         
+       {
+            "start_date": {
+                "year":	"1710",
+                "display_date": "1710 - Promulgação do Copyright Act pela Rainha Ana"
+            },
+         	
+         	"background": {
+				"opacity":"50",
+				"url": "images/statute_of_anne.jpg"
+			  
+            },
+           
+             "media": {
+                "caption": "",
+                "credit": "",
+                "url": "https://pt.wikipedia.org/wiki/Estatuto_da_Rainha_Ana"
+            }
+            
+       },
+        
+       
+       {
+            "start_date": {
+                "year":	"1777",
+                "display_date": "Século XVIII"
+            },
+            
+            "media": {
+                "url": "images/rei_franca.jpg",
+                "thumbnail": "images/rei_franca_peq.jpg",
+                "thumb": "",
+				"credit": "Luis XVI, rei da França e Navarra (1754-1793), sob a Grande traje real em 1779 - Google Art Project <br/>https://upload.wikimedia.org/wikipedia/commons/c/ce/Antoine-Fran%C3%A7ois_Callet_-_Louis_XVI%2C_roi_de_France_et_de_Navarre_%281754-1793%29%2C_rev%C3%AAtu_du_grand_costume_royal_en_1779_-_Google_Art_Project.jpg"
+            },
+            
+            "text": {
+            	"headline": "França, 1777, 1791 e 1793 - Estabelecimento dos Direitos Autorais (Droit d’Auteur) de Representação e Reprodução.",
+                "text": "<p>O reconhecimento da precedência do autor em relação ao livreiro no tange aos direitos sobre a obra, pelo Conselho do Rei na França em 1777 amplia a ideia de que o autor possui direitos patrimoniais originários sobre a obra que criou. Nesta fase ainda eram tidos como privilégios e eram perpétuos. O objetivo era garantir uma remuneração aos autores pelo seu trabalho.</p><p>Em 1791 são assegurados os direitos de representação na França. Com isso passa a se proteger a comunicação da obra ao público, como nos casos de recitação pública, execução lírica, representação dramática, entre outros.</p><p>Em 1793, há a consagração dos direitos de reprodução na França. Com isso a reprodução de exemplares das obras (partituras, textos, etc.) passa a ser reservada originalmente aos autores, já não mais como privilégios, mas como direitos.</p>"
+               
+            }
+        },
+        
+          {
+            "start_date": {
+                "year":	"1783",
+                "display_date": "Século XVIII"
+            },
+            
+            "media": {
+            	"caption": "Constituição Federal dos EUA - 1787",
+             
+                "thumbnail": "images/estados_unidos_peq.jpg",
+                "thumb": ""
+            },
+            "background": {
+            	"url": "images/estados_unidos_back.jpg"
+            },
+            
+            "text": {
+            	"headline": "Estados Unidos",
+                "text": "<p>Resolução do Congresso Continental americano em 1783, no qual se sugeriu que todos os estados adotassem uma medida de proteção, contendo todos os elementos do Estatuto inglês, ou seja, do Copyright Act da Rainha Ana.</p><p>Em 1787 A Constituição federal dos EUA atribui poderes ao Congresso para estabelecer uma exclusividade em favor dos autores e inventores por um tempo limitado (“to promote the progress of science and useful arts, by securing for limited times to authors and inventors the exclusive right to their respective writings and discoveries”).</p><p>Em 1790 foi aprovada a primeira legislação americana de direitos autorais. Tinha por objetivo explícito atribuir uma exclusividade, um monopólio temporário, sujeito a condições específicas, a fim de incentivar a criação intelectual, e limitado no tempo para encorajar a criatividade e a maior disseminação possível de trabalhos criativos.</p>"
+               
+            }
+        },
+ 
+       
+        
+        {
+            "start_date": {
+                "year":	"1827",
+                "display_date": "Século XIX"
+            },
+         
+                "media": {
+                "credit": "Reprodução da lei de 11 de agosto de 1827 que criou os cursos de direito no Brasil<br/>http://www.revistas.usp.br/rfdusp/article/viewFile/67463/70073",
+                "url": "images/lei_1827.jpg",
+                "thumbnail": "images/lei_1827_peq.jpg"
+            },
+                   
+            "text": {
+            	"headline": "Brasil, 1827 - Proteção dos direitos autorais dos Professores dos Cursos de Direitos",
+                "text": "<p>A primeira proteção dos direitos autorais no Brasil não foi geral, para todos, mas especial, para alguns.</p><p>A lei que criou os Cursos de Direito no país em 1827 atribuiu aos professores destes cursos – chamados de Lentes – o direito exclusivo por 10 anos.</p><p>Assim dispunha a legislação: “Os Lentes farão a escolha dos compêndios da sua profissão, ou os arranjarão, não existindo já feitos, com tanto que as doutrinas estejam de acordo com o sistema jurado pela nação, estes compêndios, depois de aprovados pela Congregação, servirão interinamente; submetendo-se porém a aprovação da Assembléia Geral, e o governo fará imprimir e fornecer às escolas, competindo aos seus autores o privilégio exclusivo da obra por dez anos.</p>"
+               
+            }
+        },
+        
+           
+        {
+            "start_date": {
+                "year":	"1830",
+                "display_date": "Século XIX"
+            },
+         
+            "media": {
+            "credit": "Código criminal de 1830<br/>https://pt.wikipedia.org/wiki/C%C3%B3digo_Criminal_de_1830#/media/File:C%C3%B3digo_Criminal_de_1830.jpg",
+            "url": "images/codigo_criminal.jpg",
+            "thumbnail": "images/codigo_criminal_peq.jpg"
+            },
+                        
+            "text": {
+            	"headline": "Brasil, 1830 - Proteção Penal aos direitos Autorais no Código Criminal de 1830 no Brasil",
+                "text": "<p>A proteção geral dos direitos autorais no Brasil inicia-se com a criminalização dos usos não autorizados e, não, ao contrário do que se deveria esperar, com a atribuição de direitos.</p><p>Apesar da proteção formal ter ocorrido apenas pela legislação criminal, os juristas da época reconheciam a impossibilidade de uma proteção apenas criminal e que esta significava o reconhecimento destes direitos no plano do direito civil.</p><p>Esta proteção jurídica então teria, a partir da análise civilista do Código Criminal, a seguinte configuração:<p>(a) apenas os autores brasileiros estariam protegidos;</p><p>(b) o autor teria proteção por dez anos após a sua morte;</p><p>(c) os herdeiros seriam beneficiados por 10 anos após a morte do Autor;</p><p>(d) caberia ao Autor o direito exclusivo de utilização econômica da obra;</p><p>(e) a pessoa jurídica poderia ser titular, ainda que derivado, dos direitos autorais, pelo prazo de 10 anos, a partir de sua comunicação ao público.</p>"
+
+               
+            }
+        },
+        
+        {
+            "start_date": {
+                "year":	"1890",
+                "display_date": "Século XIX"
+            },
+         
+                "media": {
+                "caption": "Código penal de 1890",
+                "credit": "",
+                "url": "images/codigo_penal.jpg",
+                "thumbnail": "images/codigo_penal_peq.jpg"
+            },
+                        
+            "text": {
+            	"headline": "Brasil, 1890 - Proteção Penal aos direitos autorais no primeiro Código Penal da República no Brasil",
+                "text": "<p>Concebidos à época como Propriedade Literária e Artística, logo no início da República foi assegurada a proteção criminal destes direitos.</p><p>Ficaram protegidos os direitos de representação e reprodução, garantindo instrumentos de defesa contra plágios e contrafação.</p><p>O prazo de proteção manteve-se em 10 anos após a morte do autor, além da possibilidade das penas pecuniárias.</p>"
+
+               
+            }
+        },
+        
+          {
+            "start_date": {
+                "year":	"1891",
+                "display_date": "Século XIX",
+                "unique_id": "teste"
+            },
+          
+         
+                "media": {
+                "credit": "Aurélio de Figueiredo: Juramento da Constituição, c. 1891<br/>https://pt.wikipedia.org/wiki/Constitui%C3%A7%C3%A3o_brasileira_de_1891#/media/File:CF_-_1891.jpg",
+                "url": "images/constituicao_1891.jpg",
+                "thumbnail": "images/constituicao_1891_peq.jpg"
+            },
+                        
+            "text": {
+            	"headline": "Brasil, 1891 - A primeira Constituição Republicana do Brasil garante a existência dos direitos autorais.",
+                "text": "<p>Com o advento da Constituição, é garantido aos autores a exclusividade de exploração das obras protegidas por direitos autorais.</p><p>O texto explicita o caráter comercial dos direitos de reprodução e dos direitos autorais.</p><p>Assim dispõe o seu artigo 72, § 26 - Aos autores de obras literárias e artísticas é garantido o direito exclusivo de reproduzi-Ias, pela imprensa ou por qualquer outro processo mecânico. Os herdeiros dos autores gozarão desse direito pelo tempo que a lei determinar.</p>"
+
+               
+            }
+        },
+        
+         {
+            "start_date": {
+                "year":	"1898",
+                "display_date": "Século XIX"
+            },
+         
+                "media": {
+                "credit": "Da lavratura do 1º Registro em 16/12/1899 até o encerramento do Livro nº 1, em 17/12/1973, foram registradas 1.928 obras publicadas.<br/>http://www.stf.jus.br/arquivo/sijed/02.pdf",
+                "url": "images/1898.jpg",
+                "thumbnail": "images/1898_peq.jpg"
+            },
+                        
+            "text": {
+            	"headline": "Brasil, 1898 - Promulgação da Lei nº 496",
+                "text": "<p>Conhecida como Lei Medeiros e Albuquerque, finalmente é promulgado o primeiro estatuto civil para regulamentação dos direitos autorais no Brasil.</p><p>A legislação foi muito inovadora para a época, e teve vigência até o advento do Código Civil de 1916.</p><p>Antes disso, sua proteção era garantida apenas através do direito penal.</p>"
+               
+            }
+        },
+        
+        
+         {
+            "start_date": {
+                "year":	"1886",
+                "display_date": "Século XIX"
+            },
+         
+                "media": {
+                "credit": "Cidade de Berna, capital da Suiça <br/>http://img.myswitzerland.com/mys/n49914/images/buehne/bern-ticket.jpg",
+                "url": "images/berna.jpg",
+                "thumbnail": "images/berna.jpg"
+            },
+                        
+            "text": {
+            	"headline": "Suiça, 1886 - Convenção de Berna",
+                "text": "<p>Foi o primeiro instrumento internacional ultilateral para a proteção aos direitos autorais, estabelecendo padrões mínimos de proteção para os países signatários com relação ao seu objeto e prazo de duração.</p><p>A Convenção foi revista em Paris (1896) e Berlim (1908), completada em Berna (1914), revista em Roma (1928), Bruxelas (1948), Estocolmo (1967) e Paris (1971), e emendada em 1979.</p><p>Desde 1967 que a Convenção é administrada pela World Intellectual Property Organization (WIPO).</p><p>A versão atual da Convenção de Berna é de adesão obrigatória para os países que aderiram à Organização Mundial do Comércio.</p><p>Desde a sua instituição é o principal instrumento internacional de normatização dos direitos autorais.</p>"
+               
+            }
+        },
+		
+		{
+            "start_date": {
+                "year":	"1948",
+                "display_date": "Século XX"
+            },
+         
+                "media": {
+                "caption": "Foto da ONU  - Em 1950, no segundo aniversário da adopção da Declaração Universal dos Direitos Humanos, os alunos da Creche Escola Internacional das Nações Unidas em Nova York viram um cartaz do documento histórico.",
+                "credit": "",
+                "url": "images/declaracao-onu.jpg",
+                "thumbnail": "images/declaracao-onu.jpg"
+            },
+                        
+            "text": {
+            	"headline": "1948 - Declaração Universal de Direitos Humanos",
+                "text": "<p>A Declaração Universal de Direitos Humanos, primeiro acordo internacional de direitos humanos, capitaneada pela Organização das Nações Unidas, foi impulsionada pelos horrores das duas grandes guerras mundiais.</p><p>Esta Declaração trata tanto da proteção às invenções e criações como do direito de acesso aos avanços científicos e às expressões culturais.</p><p>A versão atual da Convenção de Berna é de adesão obrigatória para os países que aderiram à Organização Mundial do Comércio.</p><p>Eis o que dispõe o artigo 27: 1. Toda pessoa tem o direito de participar livremente da vida cultural da comunidade, de fruir as artes e de participar do processo científico e de seus benefícios.</p><p> 2. Toda pessoa tem direito à proteção dos interesses morais e materiais decorrentes de qualquer produção científica, literária ou artística da qual seja autor.</p>"
+               
+            }
+        },
+		{
+            "start_date": {
+                "year":	"1952",
+                "display_date": "Século XX"
+            },
+         
+                "media": {
+                "credit": "Genebra  - Local onde foi assinado a Convenção Universal Sobre o Direito do Autor<br/>http://cidadesemfotos.blogspot.com.br/2012/03/fotos-de-genebra-suica.html",
+                "url": "images/genebra.jpg",
+                "thumbnail": "images/genebra_peq.jpg"
+            },
+                        
+            "text": {
+            	"headline": "1952 - Convenção Universal de Direitos de Autor",
+                "text": "<p>A Convenção Universal de Direitos de Autor foi uma reação ao aspecto eurocêntrico da Convenção de Berna;</p><p>É um instrumento com maior flexibilidade e que busca atender às particularidades dos países signatários.</p><p>Foi revista em 1971 juntamente com a Convenção de Berna, de forma a se aproximarem no conteúdo.</p><p>Perdeu protagonismo quando do advento do Acordo TRIPS/ADPIC, que obrigou a todos os países signatários da Organização Mundial do Comércio a subscreverem a Convenção de Berna.</p>"
+               
+            }
+        },
+        
+        {
+            "start_date": {
+                "year":		"1961", 
+                "display_date": "Século XX"
+            },
+            
+            
+            "background": {
+				"opacity":"50"
+            },
+            
+             "media": {
+                "credit": "Coliseu de Roma<br/>https://upload.wikimedia.org/wikipedia/commons/d/d8/Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
+                "url": "images/coliseu_roma.jpg",
+				"thumbnail": "images/coliseu_roma.jpg"
+            },
+            "text": {
+                "headline": "1961 - Convenção de Roma",
+                "text": "<p>A Convenção de Roma estabeleceu no plano internacional os chamados direitos conexos ao direito de autor.</p><p>Estes direitos alcançam as interpretações dos artistas e a execução musical pelos músicos</p><p>Além dos artistas intérpretes e executantes, são também atribuídos direitos conexos aos produtores de fonogramas pelas gravações e às empresas de radiodifusão pelas transmissões.</p><p>Pela primeira vez desde o advento dos direitos autorais, passamos a ter, no plano internacional, titulares originais que não são pessoas físicas. </p>"
+            }
+        },
+		
+		 {
+            "start_date": {
+                "year":		"1966", 
+                "display_date": "Século XX"
+            },
+            
+            
+            "background": {
+				"opacity":"50"
+            },
+            
+             "media": {
+                "credit": "Carta das Nações Unidas <br/>https://nacoesunidas.org/carta/",
+                "url": "images/carta_onu.jpg",
+				"thumbnail": "images/carta_onu.jpg"
+            },
+            "text": {
+                "headline": "1966 - Pacto Internacional dos Direitos Civis e Políticos",
+                "text": "<p>O objetivo do Pacto é assegurar que todos sejam respeitados em suas liberdades civis e que possam exercer seus direitos políticos.</p><p>Este acordo é fundamentado na Carta das Nações Unidas e detalha preceitos instituídos na Declaração Universal de Direitos Humanos.</p>"
+            }
+        },
+		
+		{
+            "start_date": {
+                "year":		"1966", 
+                "display_date": "Século XX"
+            },
+            
+            
+            "background": {
+				"opacity":"50"
+            },
+            
+            
+            "text": {
+                "headline": "1966 - Pacto Internacional dos Direitos Econômicos, Sociais e Culturais",
+                "text": "<p>Busca-se com este Tratado assegurar no plano internacional as condições básicas de trabalho, de associação sindical e assistência previdenciária.</p><p>As questões referentes ao direito à moradia, saúde, educação e cultura também são regulamentadas, comprometendo as Nações com estes objetivos.</p>"
+            }
+        },
+		
+		
+		 {
+            "start_date": {
+                "year":		"1969", 
+                "display_date": "Século XX"
+            },
+            
+                                 
+             "media": {
+                "credit": "http://www.cidh.oas.org/basicos/portugues/c.Convencao_Americana.htm",
+                "url": "images/san_jose.jpg",
+				"thumbnail": "images/san_jose.jpg"
+            },
+            "text": {
+                "headline": "1969 - Pacto de San Jose da Costa Rica (Convenção Americana de Direitos Humanos) ",
+                "text": "<p>Trata-se da Convenção Americana de Direitos Humanos.</p><p>Tem por finalidade consolidar neste Continente, dentro do quadro das instituições democráticas, um regime de liberdade pessoal e de justiça social, fundado no respeito dos direitos essenciais do homem.</p><p>Voltado prioritariamente para os direitos e liberdades civis e políticos, estabelece o desenvolvimento progressivo (e a proibição de retrocesso) no âmbito dos direitos culturais.</p>"
+
+            }
+        },
+		
+		{
+            "start_date": {
+                "year":		"1971", 
+                "display_date": "Século XX"
+            },
+                      
+                      
+             "media": {
+                "credit": "Cidade de Genebra - Suiça<br/>http://cidadesemfotos.blogspot.com.br/2012/03/fotos-de-genebra-suica.html",
+                "url": "images/genebra.jpg",
+				"thumbnail": "images/genebra_peq.jpg"
+            },
+            "text": {
+                "headline": "1971 - Convenção de Genebra ",
+                "text": "<p>Esta Convenção teve por objetivo garantir a proteção aos produtores de fonogramas (na época, discos de vinil, e hoje os CDs e DVDs).</p><p>Os países signatários se obrigaram a impedir a reprodução, importação e distribuição não autorizadas de fonogramas.</p>"
+
+            }
+        },
+		
+			
+		{
+            "start_date": {
+                "year":		"1994", 
+                "display_date": "Século XX"
+            },
+                      
+            "background": {
+                "color": "#333",
+                "opacity": "50",
+                "url": null
+            },      
+             
+            "text": {
+                "headline": "1994 - Acordo Trips",
+                "text": "<p>O Acordo sobre Aspectos dos Direitos de Propriedade Intelectual Relacionados ao Comércio (ADPIC/TRIPS).</p><p>Este acordo corresponde ao Anexo IV que instituiu a Organização Mundial do Comércio (OMC).</p><p>Com o advento do Acordo, houve uma alteração na estrutura tradicional dos direitos autorais por conta do destaque ao seu caráter empresarial e comercial, regulando, por exemplo, os casos de descumprimento das normas de comércio relacionadas aos direitos autorais e estabelecendo padrões mínimos de proteção.</p><p>Todos os países que aderiram à OMC.</p>"
+
+            }
+        },
+		
+		{
+            "start_date": {
+                "year":		"1996", 
+                "display_date": "Século XX"
+            },
+                      
+                      
+            "background": {
+                "color": "#333",
+                "opacity": "50",
+                "url": null
+            },  
+            "text": {
+                "headline": "1996 - WIPO Copyright Treaty (WCT)",
+                "text": "<p>Este Tratado é um acordo especial dentro da Convenção de Berna para proteção dos autores no ambiente digital.</p><p>Seus termos buscam expandir alguns dos direitos patrimoniais de forma a alcançar o ambiente digital.</p><p>Além disso, formaliza no âmbito dos direitos autorais a proteção aos programas de computador e os bancos de dados.</p><p>Este Tratado não foi ratificado pelo Brasil.</p>"
+
+            }
+        },
+		
+		{
+            "start_date": {
+                "year":		"1917", 
+                "display_date": "Brasil, Século XX"
+            },
+                      
+                      
+             "media": {
+                "caption": "",
+                "credit": "Bandeira do Brasil",
+                "url": "images/bandeira_brasil.jpg",
+				"thumbnail": "images/bandeira_brasil.jpg"
+            },
+            "text": {
+                "headline": "1917 - Entrada em vigor do primeiro Código Civil pátrio",
+                "text": "<p>Neste Código, os direitos de autor foram enquadrados como propriedade, nomeando-os de propriedade literária, científica e artística.</p><p>A proteção era voltada, especificadamente, para a esfera patrimonial.</p><p>Os direitos morais ainda não tinham o devido reconhecimento nem no nível nacional nem internacional.</p>"
+
+            }
+        },
+		
+		{
+            "start_date": {
+                "year":		"1973", 
+                "display_date": "Brasil, Século XX"
+            },
+                      
+                      
+             "media": {
+                "caption": "",
+                "credit": "Bandeira do Brasil",
+                "url": "images/bandeira_brasil.jpg",
+				"thumbnail": "images/bandeira_brasil.jpg"
+            },
+            "text": {
+                "headline": "1973 - Promulgação da lei 5.988, que regulamenta os direitos autorais",
+                "text": "<p>Desde a primeira legislação especial no século XIX não havia uma regulamentação compreensiva dos direitos autorais.</p><p>Em 1973, depois da revisão da Convenção de Berna em Paris em 1971, o Brasil volta a ter uma lei especial para tratar dos direitos autorais.</p><p>Esta Lei ficou vigente até o advento da Lei 9.610/98.</p>"
+
+            }
+        },
+		
+		{
+            "start_date": {
+                "year":		"1978", 
+                "display_date": "Brasil, Século XX"
+            },
+                      
+                      
+             "media": {
+                "caption": "",
+                "credit": "Bandeira do Brasil",
+                "url": "images/bandeira_brasil.jpg",
+				"thumbnail": "images/bandeira_brasil.jpg"
+            },
+            "text": {
+                "headline": "1978 - Promulgação da Lei 6.533 que regulamenta a profissão dos artistas e técnicos de espetáculos",
+                "text": "<p>Esta Lei regulamenta a profissão dos artistas, sejam intérpretes ou executantes, e também de técnicos de espetáculos de diversão.</p><p>Não afeta diretamente os direitos autorais, com exceção do que concerne a cessão de direitos conexos por artistas intérpretes ou executantes, proibida pela legislação.</p><p>Assim, são devidos direitos conexos a cada exibição ou execução da obra, independente do previsto no contrato.</p>"
+
+            }
+        },
+		
+		{
+            "start_date": {
+                "year":		"1978", 
+                "display_date": "Brasil, Século XX"
+            },
+                      
+                      
+             "media": {
+                "caption": " ",
+                "credit": "Bandeira do Brasil",
+                "url": "images/bandeira_brasil.jpg",
+				"thumbnail": "images/bandeira_brasil.jpg"
+            },
+            "text": {
+                "headline": "1978 - Promulgação da lei 6.615 que regulamenta a profissão de jornalistas",
+                "text": "<p>Esta Lei regulamenta a profissão de radialista.</p><p>É de especial interesse no que se refere aos direitos conexos dos radialistas, em especial na proibição de cessão permanente.</p>"
+
+            }
+        },
+		
+		{
+            "start_date": {
+                "year":		"1998", 
+                "display_date": "Brasil, Século XX"
+            },
+                      
+                      
+             "media": {
+                "caption": " ",
+                "credit": "Bandeira do Brasil",
+                "url": "images/bandeira_brasil.jpg",
+				"thumbnail": "images/bandeira_brasil.jpg"
+            },
+            "text": {
+                "headline": "1998 - Promulgação da Lei de Direitos Autorais (9.610)",
+                "text": "<p>É a Lei de regência dos direitos autorais no Brasil e hoje, regula os direitos conexos e os direitos de autor no Brasil.</p><p>Para entender os direitos autorais no Brasil é fundamental o domínio de suas normas.</p>"
+            }
+        },
+		
+		{
+            "start_date": {
+                "year":	"1998", 
+                "display_date": "Brasil, Século XX"
+            },
+                      
+                      
+             "media": {
+                "caption": " ",
+                "credit": "Bandeira do Brasil",
+                "url": "images/bandeira_brasil.jpg",
+				"thumbnail": "images/bandeira_brasil.jpg"
+            },
+			
+            "text": {
+                "headline": "1998 - Promulgação da Lei de Software, no Brasil (Lei 9.609/98)",
+                "text": "<p>Regula especificamente a proteção da linguagem computacional dos programas de computador, regulando especificamente esta criação.</p><p>À linguagem computacional atribui-se um caráter criativo análogo às obras literárias, e isso justificou sua proteção enquanto categoria de direitos autorais.</p><p>Aplica-se subsidiariamente a Lei de Direitos Autorais, para as omissões e questões não especificamente regulamentadas.</p>"
+            }
+        },
+		
+		{
+            "start_date": {
+                "year":		"2005", 
+                "display_date": "Século XXI"
+            },
+                      
+                      
+             "media": {
+                "credit": "UNESCO",
+                "url": "images/unesco.jpg",
+				"thumbnail": "images/unesco.jpg"
+            },
+            "text": {
+                "headline": "2005 - Convenção da Diversidade Cultural",
+                "text": "<p>O objetivo principal deste Tratado foi o reconhecimento da diversidade cultural como uma característica essencial da humanidade.</p><p>Representou uma vitória internacional do Brasil, em especial do então Ministro Gilberto Gil, seu principal proponente.</p><p>É administrada pela UNESCO e reafirma a diversidade como um dos pilares dos direitos culturais.</p>"
+            }
+        },
+		
+		{
+            "start_date": {
+                "year":		"2012", 
+                "display_date": "Século XXI"
+            },
+			
+             "media": {
+                "credit": "Cidade de Beijing (Pequim) - China<br/>gladtur",
+                "url": "images/cidade_pequim.jpg",
+				"thumbnail": "images/cidade_pequim.jpg"
+            },
+            "text": {
+                "headline": "2012 - Tratado de Beijing",
+                "text": "<p>Com este Acordo almeja-se atribuir direitos específicos aos intérpretes das obras audiovisuais para autorizarem sua fixação ou transmissão.</p><p>Às fixações são atribuídos direitos de reprodução, distribuição, aluguel e disponibilização (online, por exemplo).</p><p>Para as performances ao vivo, os direitos de fixação, transmissão e divulgação ao público.</p><p>O Brasil não ratificou este Tratado.</p>"
+            }
+        },
+		
+		{
+            "start_date": {
+                "year":		"2013", 
+                "display_date": "Século XXI"
+            },
+                      
+                      
+             "media": {
+                "credit": "Cidade de Marraqueche - Marrocos<br/>http://touristique.co",
+                "url": "images/cidade_marraquexe.jpg",
+				"thumbnail": "images/cidade_marraquexe.jpg"
+            },
+            "text": {
+                "headline": "2013 - Tratado de Marraqueche",
+                "text": "<p>Este foi o primeiro Tratado que estabeleceu limitações mandatórias aos direitos autorais no plano internacional.</p>Busca assegurar que as pessoas portadoras de deficiência visual tenham acesso às obras publicadas com mais facilidade.</p><p>O Brasil foi o principal líder das negociações que resultaram no Tratado.</p><p>No Brasil foi internalizado na ordem jurídica nacional como Emenda Constitucional, passando a fazer parte do bloco irrevogável de direitos fundamentais.</p><p>Representa a consolidação do acesso à cultura como direito fundamental no mais alto nível hierárquico, equiparado à proteção por direitos autorais.</p>"
+            }
+        },
+		
+		{
+            "start_date": {
+                "year":		"2002", 
+                "display_date": "Brasil, Século XXI"
+            },
+                      
+                      
+             "media": {
+                "credit": "Bandeira do Brasil",
+                "url": "images/bandeira_brasil.jpg",
+				"thumbnail": "images/bandeira_brasil.jpg"
+            },
+            "text": {
+                "headline": "2002 - Lei 10.406, Código Civil",
+                "text": "<p>O Código Civil é uma lei ordinária geral de regulamentação das relações pessoais, sejam de natureza econômica (contratos, propriedade, etc.) ou existencial (família, criança e adolescente, capacidade, etc.).</p><p>Deste modo, embora, por exemplo, não substitua a lei de direitos autorais ainda assim incide para complementar os seus significados.</p><p>Por exemplo, os princípios contratuais contemporâneos – como a boa-fé, a função social do contrato e o equilíbrio contratual – aplicam-se aos contratos de direitos autorais, complementando a regulamentação específica da Lei de Direitos Autorais.</p>"
+            }
+        },
+		
+		{
+            "start_date": {
+                "year":		"2013", 
+                "display_date": "Brasil, Século XXI"
+            },
+                      
+                      
+             "media": {
+                "caption": "",
+                "credit": "Bandeira do Brasil",
+                "url": "images/bandeira_brasil.jpg",
+				"thumbnail": "images/bandeira_brasil.jpg"
+            },
+            "text": {
+                "headline": "2013 - Lei 12.853 (Regulamentação da Gestão coletiva de direitos autorais)",
+                "text": "<p>Alterou a Lei de Direitos Autorais no que concerne à regulamentação da gestão coletiva no Brasil.</p><p>Desde a extinção do Conselho Nacional de Direitos Autorais no início da década de 1990 não havia uma instituição para regulamentar e supervisionar a atuação da gestão coletiva.</p><p>Esta lei foi o resultado objetivo da Comissão Parlamentar de Inquérito no Senado Federal sobre o sistema de gestão coletiva no Brasil.</p>"
+            }
+        }
+		
+		
+    ]
+}
