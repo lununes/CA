@@ -48,6 +48,7 @@ a {
   color: var(--link-color1);
   transition: 0.5s;
   font-weight: 500;
+  word-wrap:anywhere;
 }
 
 a:hover,
