@@ -118,6 +118,8 @@ Accordion
   margin: 0 30px 20px 30px;
 }
 
+.accordion .source {font-size:11px;}
+
 @media (max-width: 768px) {
   .accordion a {font-size: 18px;}
 
