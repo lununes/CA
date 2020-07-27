@@ -439,6 +439,7 @@ strong {
 
 #breadcrumb .nav-menu a {
   padding: 0 8px 3px 8px;
+  display: inline;
 }
 
 /*Série2*/
@@ -559,6 +560,10 @@ strong {
 @media (max-width: 320px) {
   #breadcrumb {
     min-height: 165px;
+  }
+
+  .serie4 #breadcrumb {
+    min-height: 100px;
   }
 }
 
