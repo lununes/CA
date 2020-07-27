@@ -4153,7 +4153,7 @@ Flipcard 2.0
 /* Série 4 */
 .serie4 .flip-card .item1 {
   background: linear-gradient(40deg, rgba(0, 0, 0, .4), rgba(255, 255, 255, .5)),
-    url(../../../../img/serie4/curso1/aula4/bg1-flipcard.jpg);
+    url(../img/serie4/curso1/aula4/bg1-flipcard.jpg);
 }
 
 /* .flip-card .item2 {
