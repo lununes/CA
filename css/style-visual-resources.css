@@ -199,6 +199,50 @@ Accordion
   margin-right: 5px;
 }
 
+.accordion .carousel-control-next, 
+.accordion .carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  opacity: .5;
+}
+
+.accordion .saiba-mais a,
+.accordion .atencao a,
+.accordion .para-refletir a {
+  display: inline;
+  font-size: inherit;
+  padding: 0;
+}
+
+.accordion .saiba-mais ul li,
+.accordion .atencao ul li,
+.accordion .para-refletir ul li {
+  border-bottom: none;
+}
+
+.accordion .flip-card p {margin:0 0 20px;}
+
+.accordion .flip-card .card-footer i {
+  position: relative;
+  font-size: inherit;
+  top:0;
+}
+
+.accordion .flip-card ul li {border-bottom: none;}
+
 /*Série 3*/
 .serie3 .accordion a:hover,
 .accordion a:focus,
@@ -433,6 +477,7 @@ Box de Atenção
 .atencao .fa-exclamation {
   left: 10px;
   top: 0;
+  right:auto;
   position: absolute;
   left: -29px;
   top: -25px;
@@ -2431,7 +2476,6 @@ Slider
   background-color: var(--azul-normal);
 }
 
-
 .carousel article {
   padding: 20px 60px;
 }
@@ -2458,6 +2502,15 @@ Slider
   top: 0;
   right: 0;
   margin-left: 0;
+}
+
+/* Série 4 */
+.serie4 .carousel .carousel-indicators li {
+  background-color: var(--azul-normal);
+}
+
+.serie4 .carousel .carousel-indicators .active {
+  background-color: var(--azul-over);
 }
 
 .carousel table td,
@@ -2521,6 +2574,19 @@ Slider
   background-position: -0.15rem 0;
 }
 
+
+.carousel-control-next-icon, 
+.carousel-control-prev-icon {
+  left:40%;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .carousel-control-next-icon, 
+  .carousel-control-prev-icon {
+    left:0;
+  }
+}
 
 /* --------------------------------
 
