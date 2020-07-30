@@ -243,6 +243,13 @@ Accordion
 
 .accordion .flip-card ul li {border-bottom: none;}
 
+.accordion .box-quote i, 
+.accordion .box-quote .svg-inline--fa, 
+.accordion .serie4 p i {
+  position:relative;
+  top:0;
+}
+
 /*Série 3*/
 .serie3 .accordion a:hover,
 .accordion a:focus,
@@ -1075,6 +1082,52 @@ Fotografias Hover & Accordion
 
 .serie3.aula4 .accordion-foto .accordion-foto-conteudo p {
   max-width: 100%;
+}
+
+/* -------------------------------- 
+
+HEADER ORDENADO (PASSOS)
+
+-------------------------------- */
+
+.passos-header  {
+  list-style: none;
+  counter-reset: contador;
+  padding: 0;
+}
+
+.passos-header >li {
+  counter-increment: contador;
+  margin-bottom: 4rem;
+  padding-left: 3rem;
+}
+
+.passos-header >li h4:before {
+  content: counter(contador);
+  background: var(--azul-normal);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-left: -3rem;
+  margin-right: 1rem;
+}
+
+.passos-header >li h4:after {
+  content: "";
+  /* border-bottom: 1px solid var(--azul-normal); */ /*Descomentar caso queira utilizar a borda ao invés do divisor*/
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.passos-header >h4 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  margin-left: 0;
+  padding-bottom: 4px;
 }
 
 
