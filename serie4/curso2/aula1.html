@@ -443,12 +443,12 @@
           Chrome, Safari, Opera, Edge */
 
           .timeline-horizontal2 .box-quote::-webkit-scrollbar {
-            width:6px;
+            width:12px;
             background-color: #f1f1f1;
           }
 
           .timeline-horizontal2 ol::-webkit-scrollbar {
-            height: 6px;
+            height: 12px;
             background-color: #f1f1f1;
           }
 
@@ -4094,6 +4094,20 @@
 <!-- Inicia o scroll no mousewheel (timeline horizontal) -->
 <script>
   jQuery(function ($) {
+    $.fn.vScroll = function (amount) {
+        amount = amount || 120;
+        $(this).bind("DOMMouseScroll mousewheel", function (event) {
+            var oEvent = event.originalEvent, 
+                direction = oEvent.detail ? oEvent.detail * -amount : oEvent.wheelDelta, 
+                position = $(this).scrollTop();
+            position += direction > 0 ? -amount : amount;
+            $(this).scrollLTop(position);
+            event.preventDefault();
+        })
+    };
+  });
+
+  jQuery(function ($) {
     $.fn.hScroll = function (amount) {
         amount = amount || 120;
         $(this).bind("DOMMouseScroll mousewheel", function (event) {
@@ -4109,6 +4123,7 @@
 
   $(document).ready(function() {
     $('.timeline-scroll').hScroll(100); // You can pass (optionally) scrolling amount
+    $('.box-quote').vScroll(100); // You can pass (optionally) scrolling amount
   });
 </script>
 
