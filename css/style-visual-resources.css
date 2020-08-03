@@ -250,6 +250,8 @@ Accordion
   top:0;
 }
 
+.accordion .box-quote li {border-bottom: none;}
+ 
 /*Série 3*/
 .serie3 .accordion a:hover,
 .accordion a:focus,
@@ -339,7 +341,7 @@ Box de Citação Curta
 
 .box-quote ul li {
   font-style: italic;
-  list-style: circle;
+  list-style: disc;
 }
 
 .box-quote ul li i {
@@ -2735,6 +2737,62 @@ Tabs
 
 -------------------------------- */
 
+.abas .wrapper{
+  position:relative;
+  margin:0 auto;
+  overflow:hidden;
+  padding:5px;
+  height:39px;
+  width: 100%;
+}
+
+.abas .nav-tabs .nav-link {
+  transition: 0s;
+}
+
+/* .serie4 .abas .nav-tabs .nav-link {border-bottom:1px solid var(--azul-normal);} */
+
+.abas .list {
+  position:absolute;
+  left:0px;
+  top:0px;
+  min-width:3500px;
+  margin-top:0px;
+}
+.abas .list li{
+  display:table-cell;
+    position:relative;
+    text-align:center;
+    cursor:grab;
+    cursor:-webkit-grab;
+    color:#efefef;
+    vertical-align:middle;
+}
+
+.abas .scroller {
+  text-align:center;
+  cursor:pointer;
+  display:none;
+  padding:7px 11px;
+  white-space:no-wrap;
+  vertical-align:middle;
+  background-color:#fff;
+  border:2px solid #dfdfdf;
+  border-radius: 20px;
+  width: 34px;
+  height: 34px;
+}
+
+.abas .scroller.scroller-left {
+  position: relative;
+  left: 82%;
+  padding: 7px 9px;
+}
+.abas .scroller .fa {
+  color:var(--main-color1);
+  font-size:1rem;
+}
+
 /*Série3*/
 .abas.serie3 .nav-tabs {
   border-color: var(--laranja);
@@ -2759,25 +2817,31 @@ Tabs
 }
 
 /*Série4*/
-.abas.serie4 .nav-tabs {
-  border-color: var(--azul-normal);
+.serie4 .abas .nav-tabs {
+  border-color: transparent;
 }
 
-.abas.serie4 .nav-tabs .nav-item.show .nav-link,
-.abas.serie4 .nav-tabs .nav-link.active {
-  color: #495057;
-  background-color: #fff;
+.serie4 .abas .nav-tabs .nav-item.show .nav-link,
+.serie4 .abas .nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: var(--azul-normal);
+  border-color: var(--azul-normal) var(--azul-normal);
+}
+
+.serie4  .abas .nav-tabs .nav-link:hover {
   border-color: var(--azul-normal) var(--azul-normal) var(--white-color);
+  color:var(--azul-normal);
 }
 
-.abas.serie4 .nav-tabs .nav-link:focus,
-.abas.serie4 .nav-tabs .nav-link:hover {
-  border-color: var(--azul-normal) var(--azul-normal) var(--white-color);
+.serie4  .abas .nav-tabs .nav-link:focus,
+.serie4  .abas .nav-tabs .nav-link:active {
+  color: #fff;
+  background-color: var(--azul-normal);
+  border-color: var(--azul-normal) var(--azul-normal);
 }
 
-.abas.serie4 .tab-content {
+.serie4 .abas .tab-content {
   border: 1px solid var(--azul-normal);
-  border-top: none;
   background: var(--white-color);
 }
 
@@ -4077,6 +4141,7 @@ Flipcard 2.0
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
   backface-visibility: hidden;
   padding: 1.25rem;
 }
