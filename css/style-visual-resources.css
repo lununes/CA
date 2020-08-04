@@ -802,6 +802,7 @@ Box de Saiba Mais
 
 .saiba-mais .box-quote ul {
   padding: 0;
+  font-size:15px;
 }
 
 .saiba-mais .box-quote ul li {
@@ -2632,7 +2633,8 @@ Slider
 
 .carousel-control-next-icon, 
 .carousel-control-prev-icon {
-  left:40%;
+  /* left:40%; */
+  left:0;
   position: relative;
 }
 

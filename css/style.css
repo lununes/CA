@@ -1562,7 +1562,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .program-course p,
-ul {
+.program-course ul {
   font-size: 14px;
 }
 
@@ -1790,9 +1790,6 @@ ul {
   color: #999;
 }
 
-#bloco2 p {
-  line-height: 24px;
-}
 
 #bloco2 .legenda {
   font-size: 11px;
