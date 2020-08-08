@@ -3460,6 +3460,7 @@ TIMELINE HORIZONTAL
 
 .timeline-horizontal2 {
   white-space: nowrap;
+  overflow:hidden;
 }
 
 .timeline-horizontal2 .box-quote {
@@ -3606,19 +3607,12 @@ margin-bottom: 8px;
 /* TIMELINE ARROWS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.timeline-horizontal2 .arrows {
-/* display: flex;
-justify-content: center;
-margin-bottom: 20px; */
-position: absolute;
-height: 455px;
-top: 0;
-left: 0;
-width: 100%;
+.timeline-horizontal2 .arrows .arrow.arrow__prev {
+  left:0;
 }
 
-.timeline-horizontal2 .arrows .arrow__prev {
-margin-right: 20px;
+.timeline-horizontal2 .arrows .arrow.arrow__next {
+  right:0;
 }
 
 .timeline-horizontal2 .disabled img,
@@ -3642,6 +3636,9 @@ fill:var(--azul-normal);
   outline: none;
   height: inherit;
   width: 130px;
+  position: absolute;
+  height: 455px;
+  top:0
 }
 
 .timeline-horizontal2 .arrows .arrow.arrow__prev {
