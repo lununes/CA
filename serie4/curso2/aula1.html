@@ -225,7 +225,7 @@
     <!--==========================
       Bloco 3 - Conceito de Recursos Educacionais Abertos
     ============================-->
-    <section id="bloco3" class="section-bg2 blocos">
+    <section id="bloco3" class="section-bg2">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-lg-10" data-wow-duration="0.5s">
@@ -392,11 +392,11 @@
       <!--Fim do Container-->
 
       <!-- Timeline Horizontal-->
-      <div class="container-fluid">
+      <div class="container-fluid section-bg mt-5">
         <div class="row justify-content-center">
           <div class="col-12 px-0">
             <section class="timeline-horizontal2">
-              <ol class="timeline-scroll section-bg">
+              <ol class="timeline-scroll">
                 <li>
                   <div class="box-quote">
                     <h4>1971</h4>
@@ -640,14 +640,27 @@
               <p class="source text-center">Fonte: <a href="https://wikieducator.org/Main_Page"
                   target="_blank">Wikieducator</a>.</p>
 
-              <!-- <div class="arrows">
+              <div class="arrows">
                   <button class="arrow arrow__prev disabled" disabled>
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
+                    <!-- <img src="../../img/timeline-arrow_prev.svg" alt="Voltar"> -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+                    <path d="M20,0C9,0,0,9,0,20s9,20,20,20s20-9,20-20S31,0,20,0z M25.4,29.8c-0.6,0.6-1.5,0.6-2.1,0L14.6,21
+                      c-0.6-0.6-0.6-1.4,0-2l8.8-8.8c0.3-0.3,0.7-0.4,1-0.4s0.7,0.1,1,0.4c0.6,0.6,0.6,1.5,0,2.1L17.7,20l7.7,7.7
+                      C26,28.3,26,29.2,25.4,29.8z"/>
+                    </svg>
                   </button>
-                  <button class="arrow arrow__next">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
+                  <button class="arrow arrow__next float-right">
+                    <!-- <img src="../../img/timeline-arrow_next.svg" alt="Avançar"> -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+                    <path  d="M20,40c11,0,20-9,20-20S31,0,20,0S0,9,0,20S9,40,20,40z M14.6,10.2c0.6-0.6,1.5-0.6,2.1,0l8.8,8.8
+                      c0.6,0.6,0.6,1.4,0,2l-8.8,8.8c-0.3,0.3-0.7,0.4-1,0.4s-0.7-0.1-1-0.4c-0.6-0.6-0.6-1.5,0-2.1l7.7-7.7l-7.7-7.7
+                      C14,11.7,14,10.8,14.6,10.2z"/>
+                    </svg>
+
                   </button>
-                </div> -->
+                </div>
             </section>
           </div>
         </div>
@@ -3852,7 +3865,7 @@
   <!-- Javascripts-->
   <script src="../../js/main.js"></script>
   <script src="../../js/main-timeline.js"></script>
-  <script src="../../js/timeline-horizontal.js"></script>
+  <script src="../../js/timeline-horizontal2.js"></script>
 
   <!--Acessibilidade-->
   <script src="../../js/jquery-2.2.1.min.js"></script>
@@ -3873,7 +3886,7 @@
   </script>
 
   <!-- Inicia o scroll no mousewheel (timeline horizontal) -->
-  <script>
+  <!-- <script>
     jQuery(function ($) {
       $.fn.hScroll = function (amount) {
         amount = amount || 120;
@@ -3891,7 +3904,7 @@
     $(document).ready(function () {
       $('.timeline-scroll').hScroll(100); // You can pass (optionally) scrolling amount
     });
-  </script>
+  </script> -->
 
 </body>
 
