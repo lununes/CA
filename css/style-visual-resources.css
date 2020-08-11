@@ -3656,7 +3656,7 @@ fill:var(--azul-normal);
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 991px) {
 
   .timeline-horizontal2 .box-quote {margin-bottom: 25px;}
 
