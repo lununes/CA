@@ -2839,8 +2839,8 @@ Tabs
   color:var(--azul-normal);
 }
 
-.serie4  .abas .nav-tabs .nav-link.active:hover {
-  color:fff;
+.serie4  .abas .nav-tabs .nav-link:hover.active {
+  color:#fff;
 }
 
 .serie4  .abas .nav-tabs .nav-link:focus,
