@@ -1,0 +1,2264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131194878-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131194878-1');
+    </script>
+
+
+    <meta charset="utf-8">
+    <title>Programa de Formação em Ciência Aberta - Série 4 | Curso 2 - Aula 2: Como criar REA?
+    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Ciência, Fiocruz, Curso, Ciência Aberta" name="keywords">
+    <meta
+        content="A série 4 do Programa de Formação em Ciência Aberta aborda a temática da Educação Aberta. Neste curso 2, o objetivo é conhecer o que são os Recursos Educacionais Abertos e seus benefícios para a Educação, bem como estimular a prática da utilização, criação e compartilhamento destes recursos."
+        name="description">
+
+    <!-- Favicons -->
+    <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/favicon.ico" rel="icon">
+    <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/indice.jpg"
+        rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8bfaea11f7.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Biblioteca CSS -->
+    <link href="../../lib/animate/animate.min.css" rel="stylesheet">
+
+    <!--<link href="font-awesome/css/all.css" rel="stylesheet">-->
+    <!-- Font Awesome -->
+    <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Ionicons-->
+    <link href="../../lib/aos/aos.css" rel="stylesheet">
+    <link href="../../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- CSS geral das aulas e recursos visuais -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style-visual-resources.css">
+
+</head>
+
+<body id="acessibilidade">
+
+    <!--==========================
+    Header
+  ============================-->
+    <header id="header" class="serie4">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <a href="https://campusvirtual.fiocruz.br/portal/formacao-modular/ciencia-aberta" class="scrollto"><img
+                        src="../../img/logo-cv-black.svg" alt="Ir para o Campus Virtual" title="Campus Virtual" /> </a>
+            </div>
+
+            <nav id="nav-menu-container" class="serie4">
+                <ul class="nav-menu serie4">
+                    <li class="menu-has-children"><a href="#">Aulas</a>
+                        <ul>
+                            <li>
+                                <h6>Curso 2 | Recursos Educacionais Abertos</h6>
+                            </li>
+                            <li class="d-none d-sm-block"><span class="section-divider serie4"></span></li>
+                            <li class="d-block d-sm-none"><span class="section-divider mobile"></span></li>
+                            <li><a href="aula1.html">Aula 1: O que são Recursos educacionais Abertos</a></li>
+                            <li><a href="aula2.html">Aula 2: Como criar REA?</a></li>
+                            <li><a href="aula3.html">Aula 3: Como encontrar, usar e compartilhar REA</a></li>
+                            <li><a href="aula4.html">Aula 4: Monitoramento e avaliação da qualidade de REA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='#' data-toggle="modal" data-target="#modal-bibliografia">Bibliografia</a></li>
+                    <li><a href='#' data-toggle="modal" data-target="#modal-creditos">Créditos</a></li>
+                    <!-- <li class="float-right"><a href="../../index.html"><i class="icon ion-md-apps" style="font-size: 18px;"></i> Outros Cursos do Ciência Aberta</a></li> -->
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+
+        <!--Breadcrumb-->
+        <div id="breadcrumb" class="d-none serie4">
+            <div class="container">
+                <div class="row" data-aos="flip-right">
+                    <div class="col-12">
+                        <ul class="nav-menu">
+                            <li><a href='aula1.html' target='_blank'><i class="fas fa-home"></i> Curso 2: Recursos
+                                    Educacionais
+                                    Abertos</a> > <a href='aula2.html' target='_blank'>Aula 2 - Como criar REA?</a></li>
+                            <li class="float-right">
+                                <div id="font-setting-buttons">
+                                    <div class="btn-group">
+                                        <a class="btn btn-outline-secondary decrease-me"><i class="fas fa-font"></i></a>
+                                        <a class="btn btn-outline-secondary reset-me"><i class="fas fa-font"></i></a>
+                                        <a class="btn btn-outline-secondary increase-me"><i class="fas fa-font"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fim do Breadcrumb-->
+
+    </header><!-- #header -->
+
+    <main id="main" class="serie4">
+
+        <!--==========================
+    Intro Section
+  ============================-->
+        <section id="intro" class="triangle serie4" data-aos="fade-in" data-aos-easing="ease-out-back"
+            data-aos-duration="1000" data-aos-delay="0">
+            <div class="intro-text">
+                <p class="headline-small serie4" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">Série 4
+                    | Curso
+                    2</p>
+                <h2 data-aos="fade-in" data-aos-duration="850" data-aos-delay="600"><span>Recursos Educacionais</span>
+                    Abertos
+                </h2>
+                <!--<img data-aos="fade-in" data-aos-duration="1500" data-aos-delay="900" src="img/logo-Escola-Corporativa-Fiocruz.png" alt="Logo da Escola Corporativa Fiocruz" title="Escola Corporativa Fiocruz"/>-->
+            </div>
+
+        </section><!-- #intro -->
+
+        <!--==========================
+      Bloco 1 - Introdução
+    ============================-->
+        <section id="bloco1" class="section-bg blocos" data-aos="fade-in" data-aos-easing="ease-out-back"
+            data-aos-duration="1000" data-aos-delay="0">
+            <div class="container">
+                <div class="section-header">
+                    <p class="headline-small text-center">Aula 2</p>
+                    <h3 class="section-title">Como criar REA?</h3>
+                    <span class="section-divider serie4 middle"></span>
+                </div>
+
+                <div class="row justify-content-center mt-5">
+                    <div class="col-12 col-lg-10 content">
+                        <p class="text-center">Esperamos que ao final desta aula você possa:</p>
+
+                        <!-- Lista -->
+                        <div class="row justify-content-center">
+                            <div class="obj-lista col-12 col-md-8">
+                                <ul class="list-group">
+                                    <li class="list-group-item wow slideInUp" data-wow-duration="0.5s"
+                                        data-wow-delay="0.5s"><i class="icon ion-md-checkmark-circle-outline"></i>
+                                        Compreender o processo de produção de REA.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Fim de lista -->
+                    </div>
+
+                </div>
+            </div>
+            <!--/container-->
+        </section><!-- #bloco1 -->
+
+        <!--==========================
+      Capa - Capítulos
+    ============================-->
+        <section class="capa-capitulos blocos">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 text-center">
+                        <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Ciclo de REA</h1>
+                    </div>
+                </div>
+            </div>
+        </section><!-- #call-to-action -->
+
+        <!--==========================
+      Bloco 2 - Ciclo de REA
+    ============================-->
+        <section id="bloco2" class="section-bg blocos">
+            <div class="container">
+                <div class="row wow justify-content-center">
+                    <div class="col-12 col-lg-10">
+
+                        <!-- Box citação -->
+                        <div class="row justify-content-center my-4">
+                            <div class="col-12 col-lg-10">
+                                <div class="box-quote option1 aos-init aos-animate" data-aos="flip-up">
+                                    <p style="font-size:1rem;"><i class="fas fa-quote-left"
+                                            style="font-size:2rem;"></i><strong>Se você tiver uma maçã e eu tiver uma
+                                            maçã, e trocarmos as maçãs, então cada um continuará com uma maçã. Mas se
+                                            você tiver uma ideia e eu tiver uma ideia, e trocarmos estas ideias, então
+                                            cada um de nós terá duas ideias.</strong><i class="fas fa-quote-right"
+                                            style="font-size:2rem;"></i></p>
+                                    <p class="text-right quote-autor">Citação atribuída a Bernard Shaw (<em>apud</em>
+                                        SIMON; VIEIRA, 2008, p. 15).</p>
+                                </div>
+                            </div>
+                            <!--fim da coluna-->
+                        </div>
+                        <!-- Fim do box citação -->
+
+                        <!--Box Simples -->
+                        <div class="row justify-content-center my-4">
+                            <div class="col-12 col-lg-8">
+                                <div class="box-quote option1 aos-init aos-animate" data-aos="flip-up">
+                                    <p style="font-size:18px;" class="text-center"><strong>REA está embasado em dois
+                                            pilares:<br /><span style="color:var(--azul-normal);font-size:24px;">a
+                                                abertura técnica e a licença aberta!</span></strong></p>
+                                </div>
+                            </div>
+                            <!--fim da coluna-->
+                        </div>
+                        <!--fim do Box Simples-->
+
+                        <p>A ideia dos movimentos do software livre de desenvolver software gratuito e de código aberto,
+                            bem como a busca do <em>Creative Commons </em>por alternativas de licenças abertas aos
+                            direitos autorais tradicionais, tiveram um forte impacto nas maneiras como pensamos sobre a
+                            educação e recursos educacionais.</p>
+
+                        <p>A tarefa de criar Recursos Educacionais Abertos (REA) representa um aprendizado constante
+                            sobre temas relacionados à Internet e tecnologias digitais e sobre os conceitos citados
+                            neste curso. Ao criar um REA, você contribui para ampliação da produção de conhecimento e
+                            culturas livres na Internet (PRETTO, 2012).</p>
+
+                        <p>Como já falamos na Aula 1, para permitir que outras pessoas façam alterações, adaptações e
+                            revisões será necessário compartilhar arquivos editáveis, ou seja, desenvolvidos em formatos
+                            abertos.</p>
+
+                        <p>Antes de entrarmos num maior detalhamento sobre o processo de criação de REA, destacamos
+                            abaixo um mapeamento das etapas que caracterizam o ciclo de vida de um REA.</p>
+
+                        <div class="row justify-content-center my-5">
+                            <div class="col-12">
+                                <img class="img-fluid rounded mx-auto d-block mb-3"
+                                    src="../../img/serie4/curso2/aula2/img1.jpg" alt="">
+                                <p class="source text-center">Fonte: <a
+                                        href='http://guiarea.fiocruz.br/index.php/Ciclo_de_produ%C3%A7%C3%A3o_de_REA%3F'
+                                        target='_blank'>Adaptado de Guia de Recursos Abertos da Fiocruz</a></p>
+                            </div>
+                        </div>
+
+                        <p>No intuito de simplificar o entendimento das principais etapas de criação de um REA, apresentamos abaixo uma estrutura e fluxo que poderá auxiliar o gerenciamento do processo de desenvolvimento de REA na sua instituição. O fluxo é um desdobramento do ciclo de vida de um REA, cobrindo as etapas até o momento da publicação.Durante o fluxo, algumas perguntas são feitas em vários pontos com orientações e indicações para consultar os especialistas em REA.</p>
+                    </div>
+                    <!--Fim da coluna-->
+                </div>
+                <!--fim da row-->
+            </div> <!-- fim container -->
+
+            <div class="container-fluid section-bg2 pb-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 p-0">
+                        <div class="section-header mt-5">
+                            <h4 class="text-center"> Fluxo de produção de Recursos Educacionais Abertos</h4>
+                            <span class="section-divider serie4 middle"></span>
+                        </div>
+                        <img class="img-fluid rounded mx-auto d-block mb-3" src="../../img/serie4/curso2/aula2/img2.jpg"
+                            alt="Fluxo de produção de recursos educacionais abertos">
+                        <p class="source text-center">Fonte: Adaptado de <a
+                                href='http://pressbooks.oer.hawaii.edu/oertraining2018' target='_blank'> UH OER
+                                Training</a> por William Meinke (<a href='https://creativecommons.org/licenses/by/4.0/'
+                                target='_blank'>Creative Commons Attribution 4.0 International License</a>) – 2018</p>
+                    </div>
+                </div>
+            </div>
+            <!--Fim do container-fluid-->
+
+            <div class="container mt-5">
+                <div class="row wow justify-content-center">
+                    <div class="col-12 col-lg-10">
+
+                        <p>Nesta perspectiva, deve se considerar em cada fase:</p>
+
+                        <!--Accordion-->
+                        <div class="row justify-content-center mt-4 mb-4">
+                            <div class="col-12">
+                                <!-- Início-->
+                                <ul id="accordion1" class="accordion aos-init aos-animate" data-aos="fade-up">
+
+                                    <!--Item 1-->
+                                    <li>
+                                        <a data-toggle="collapse" class="collapsed" href="#accordion1-item1"> 1) Fase de
+                                            organização e preparação (equivale no ciclo de REA ao Planejamento) <i
+                                                class="icon ion-md-remove"></i></a>
+                                        <div id="accordion1-item1" class="collapse">
+                                            <p>Ao desenvolver seu projeto de REA, recomenda-se explorar algumas questões
+                                                norteadoras:</p>
+
+                                            <!--Lista Simples-->
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="obj-lista col-12 col-lg-8 text-left">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item aos-init aos-animate"
+                                                            data-aos="fade-up"><i class="icon-bullet"></i> O REA que
+                                                            você precisa já existe? Seus próprios materiais de ensino
+                                                            podem ser adaptados para uso como REA?</li>
+                                                        <li class="list-group-item aos-init aos-animate"
+                                                            data-aos="fade-up"><i class="icon-bullet"></i> Como você
+                                                            define o público-alvo?</li>
+                                                        <li class="list-group-item aos-init aos-animate"
+                                                            data-aos="fade-up"><i class="icon-bullet"></i> Quais os
+                                                            objetivos educacionais? </li>
+                                                        <li class="list-group-item aos-init aos-animate"
+                                                            data-aos="fade-up"><i class="icon-bullet"></i> Para quais
+                                                            cursos seu REA pode ser usado?</li>
+                                                        <li class="list-group-item aos-init aos-animate"
+                                                            data-aos="fade-up"><i class="icon-bullet"></i> Você planeja
+                                                            desenvolver materiais adicionais (isto é, exercícios, pasta
+                                                            de trabalho) para acompanhar seu REA? </li>
+                                                        <li class="list-group-item aos-init aos-animate"
+                                                            data-aos="fade-up"><i class="icon-bullet"></i> Seu REA será
+                                                            interativo?</li>
+                                                        <li class="list-group-item aos-init aos-animate"
+                                                            data-aos="fade-up"><i class="icon-bullet"></i> Já possuo
+                                                            capacitação necessária para criar REA?</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--Fim de Lista Simples-->
+
+                                        </div>
+                                    </li>
+
+                                    <!--Item 2-->
+                                    <li>
+                                        <a data-toggle="collapse" class="collapsed" href="#accordion1-item2"> 2) Fase de
+                                            pré-produção (equivale no ciclo de REA ao Planejamento) <i
+                                                class="icon ion-md-remove"></i></a>
+                                        <div id="accordion1-item2" class="collapse">
+
+                                            <p>Essa fase envolve a curadoria dos recursos existentes que possam ser reutilizados e o planejamento do desenho geral do projeto, ainda não é a etapa de adaptação ou da criação de novos conteúdos. O foco deve ser a elaboração de um esboço básico e planejamento e gerenciamento de tempo, tarefas e equipe.</p>
+
+                                        </div>
+                                    </li>
+
+                                    <!--Item 3-->
+                                    <li>
+                                        <a data-toggle="collapse" class="collapsed" href="#accordion1-item3"> 3) Fase de
+                                            desenho (equivale a fase adaptar do ciclo de Rea) <i
+                                                class="icon ion-md-remove"></i></a>
+                                        <div id="accordion1-item3" class="collapse">
+
+                                            <p>Esta é a etapa anterior ao trabalho de conteúdo dos REA. Caso o projeto contemple apenas a adaptação do REA, essa pode ser a etapa final, além da preparação de documentos instrucionais. Durante esta fase, os contornos do projeto e os documentos do esboço são aprimorados, e os REA existentes são ajustados em locais onde se acredita serem aplicáveis. Todos os trabalhos e processos de design visual/gráfico que requerem assistência de um designer instrucional estão incluídos aqui.</p>
+
+                                        </div>
+                                    </li>
+
+                                    <!--Item 4-->
+                                    <li>
+                                        <a data-toggle="collapse" class="collapsed" href="#accordion1-item4"> 4) Fase de
+                                            desenvolvimento (equivale a fase criar do ciclo de REA) <i
+                                                class="icon ion-md-remove"></i></a>
+                                        <div id="accordion1-item4" class="collapse">
+
+                                            <p>Esta é a fase que mais demanda tempo de execução num projeto de REA, onde damos início a construção de novos materiais. Os REA existentes que estão sendo adaptados ou modificados passam por revisão e se verifica questões de propriedade intelectual (qual licença está no conteúdo, nas imagens, nos vídeos e se tudo foi atribuído de forma apropriada).</p>
+
+                                        </div>
+                                    </li>
+
+                                    <!--Item 5-->
+                                    <li>
+                                        <a data-toggle="collapse" class="collapsed" href="#accordion1-item5"> 5) Fase de
+                                            Publicação ( corresponde a fase publicação no ciclo de REA) <i
+                                                class="icon ion-md-remove"></i></a>
+                                        <div id="accordion1-item5" class="collapse">
+
+                                            <p>A fase final envolve publicar e compartilhar o conteúdo que foi criado. Isso inclui a criação de versões para exportação, o depósito de arquivos editáveis para posterior edição e adaptação (.odt, .html, etc) e a classificação e inclusão dos metadados para inserção no Repositório Digital de REA institucional. O novo conteúdo adaptado ou original dos REA é então disseminado aos alunos e compartilhado com a comunidade abertamente. Compartilhe também a experiência para auxiliar e incentivar outros educadores.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- Fim-->
+                            </div>
+                        </div>
+                        <!--Fim do Accordion-->
+
+                        <p>As fases de monitoramento e avaliação de REA descritos no ciclo de REA serão tratados na
+                            última aula do curso: <strong><a href='aula5.html' target='_blank'>Aula 4: Como avaliar a
+                                    qualidade de um REA</a></strong>.</p>
+
+                        <!-- Texto e Imagem à direita -->
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-md-6 order-2 order-md-1">
+                                <p>Considerando a possibilidade de não encontrar um REA já pronto ou que seja facilmente
+                                    adaptado para reutilizar em seu contexto, possivelmente será necessário desenvolver
+                                    um novo recurso educacional (Fase 5).</p>
+
+                                <p>Você pode produzir material pensando em diversos formatos e mídias. A seguir,
+                                    listamos alguns tipos de recursos educacionais, juntamente com alguns exemplos, e ao
+                                    final dicas de algumas ferramentas que podem ser adotadas para o processo de
+                                    produção de novos materiais.</p>
+                            </div>
+
+                            <div class="col-12 col-md-6 order-1 order-md-2">
+                                <img class="img-fluid rounded mx-auto d-block mb-3"
+                                    src="../../img/serie4/curso2/aula2/img3.png" alt="">
+                                <p class="source text-center">Fonte: Freepik</p>
+                            </div>
+                        </div>
+                        <!-- Fim de texto e imagem à direita -->
+
+                    </div>
+                    <!--Fim da coluna-->
+                </div>
+                <!--fim da row-->
+            </div> <!-- fim container -->
+        </section><!-- #bloco2 -->
+
+        <!--==========================
+      Capa - Capítulos
+    ============================-->
+        <section class="capa-capitulos blocos">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 text-center">
+                        <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Tipos de REA</h1>
+                    </div>
+                </div>
+            </div>
+        </section><!-- #call-to-action -->
+
+        <!--==========================
+      Bloco 3 - Tipos de REA
+    ============================-->
+        <section id="bloco3" class="section-bg2 blocos">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10">
+                        <p class="text-center">Que materiais educacionais podemos produzir como REA? Vejam alguns
+                            exemplos:</p>
+
+                        <div class="row justify-content-center align-items-center">
+                            <!-- Ítem 1 -->
+                            <div class="col-12 col-md-2 aos-init aos-animate" data-aos="flip-right">
+                                <img class="img-fluid rounded mx-auto d-block mb-3"
+                                    src="../../img/serie4/curso2/aula2/img4.svg" alt="">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p class="text-center text-md-left">Vídeos e Animações</p>
+                            </div>
+                            <div class="col-12 col-md-2 aos-init aos-animate" data-aos="flip-right">
+                                <img class="img-fluid rounded mx-auto d-block mb-3"
+                                    src="../../img/serie4/curso2/aula2/img5.svg" alt="">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p class="text-center text-md-left">Situações Problema</p>
+                            </div>
+                            <!-- Ítem2 -->
+                            <div class="col-12 col-md-2 aos-init aos-animate" data-aos="flip-right">
+                                <img class="img-fluid rounded mx-auto d-block mb-3"
+                                    src="../../img/serie4/curso2/aula2/img6.svg" alt="">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p class="text-center text-md-left">Áudio</p>
+                            </div>
+
+                            <div class="col-12 col-md-2 aos-init aos-animate" data-aos="flip-right">
+                                <img class="img-fluid rounded mx-auto d-block mb-3"
+                                    src="../../img/serie4/curso2/aula2/img7.svg" alt="">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p class="text-center text-md-left">Cursos completos</p>
+                            </div>
+
+                            <!-- Ítem3 -->
+                            <div class="col-12 col-md-2 aos-init aos-animate" data-aos="flip-right">
+                                <img class="img-fluid rounded mx-auto d-block mb-3"
+                                    src="../../img/serie4/curso2/aula2/img8.svg" alt="">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p class="text-center text-md-left">História em quadrinhos</p>
+                            </div>
+
+                            <div class="col-12 col-md-2 aos-init aos-animate" data-aos="flip-right">
+                                <img class="img-fluid rounded mx-auto d-block mb-3"
+                                    src="../../img/serie4/curso2/aula2/img9.svg" alt="">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p class="text-center text-md-left">Narração textual</p>
+                            </div>
+
+                            <!-- Ítem4 -->
+                            <div class="col-12 col-md-2 aos-init aos-animate" data-aos="flip-right">
+                                <img class="img-fluid rounded mx-auto d-block mb-3"
+                                    src="../../img/serie4/curso2/aula2/img10.svg" alt="">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p class="text-center text-md-left">Estudo de caso</p>
+                            </div>
+
+                            <div class="col-12 col-md-2 aos-init aos-animate" data-aos="flip-right">
+                                <img class="img-fluid rounded mx-auto d-block mb-3"
+                                    src="../../img/serie4/curso2/aula2/img11.svg" alt="">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p class="text-center text-md-left">Textos</p>
+                            </div>
+
+                            <!-- Ítem5 -->
+                            <div class="col-12 col-md-2 aos-init aos-animate" data-aos="flip-right">
+                                <img class="img-fluid rounded mx-auto d-block mb-3"
+                                    src="../../img/serie4/curso2/aula2/img12.svg" alt="">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p class="text-center text-md-left">Quiz</p>
+                            </div>
+
+                            <div class="col-12 col-md-2 aos-init aos-animate" data-aos="flip-right">
+                                <img class="img-fluid rounded mx-auto d-block mb-3"
+                                    src="../../img/serie4/curso2/aula2/img13.svg" alt="">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p class="text-center text-md-left">Jogos</p>
+                            </div>
+
+                            <!-- Ítem6 -->
+                            <div class="col-12 col-md-2 aos-init aos-animate" data-aos="flip-right">
+                                <img class="img-fluid rounded mx-auto d-block mb-3"
+                                    src="../../img/serie4/curso2/aula2/img14.svg" alt="">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p class="text-center text-md-left">Infográficos</p>
+                            </div>
+
+                            <div class="col-12 col-md-2 aos-init aos-animate" data-aos="flip-right">
+                                <img class="img-fluid rounded mx-auto d-block mb-3"
+                                    src="../../img/serie4/curso2/aula2/img15.svg" alt="">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p class="text-center text-md-left">Fotonovela</p>
+                            </div>
+                        </div>
+
+                        <!--Accordion-->
+                        <div class="row justify-content-center mt-4 mb-4">
+                            <div class="col-12">
+                                <!-- Início-->
+                                <ul id="accordion2" class="accordion aos-init aos-animate" data-aos="fade-up">
+
+                                    <!--Item 1-->
+                                    <li>
+                                        <a data-toggle="collapse" class="collapsed" href="#accordion2-item1"> Texto <i
+                                                class="icon ion-md-remove"></i></a>
+                                        <div id="accordion2-item1" class="collapse">
+
+                                            <!-- Texto e Imagem à direita -->
+                                            <div class="row justify-content-center">
+                                                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                                                    <p>Caso necessite criar um texto, você pode usar os programas de
+                                                        computador que você já está familiarizado. O que vai tornar o
+                                                        seu material um recurso educacional aberto será o formato
+                                                        técnico e a licença que você irá compartilhar. A estratégia é
+                                                        utilizar padrões de softwares abertos, com o objetivo de
+                                                        alcançar independência de plataforma onde os recursos serão
+                                                        exibidos, sobretudo, permitindo o uso, reuso e remix em
+                                                        diferentes softwares, sistemas operacionais sem a necessidade de
+                                                        depender de um pacote de aplicativos específico e proprietário.
+                                                        Um exemplo é o formato ODT, um formato aberto utilizado por
+                                                        vários pacotes de produtividade (<a
+                                                            href='https://www.openoffice.org/download/'
+                                                            target='_blank'>Open Office</a>, <a
+                                                            href='https://pt-br.libreoffice.org/' target='_blank'>Libre
+                                                            Office</a>, Google Docs, versões recentes do Microsoft
+                                                        Office). Ao salvar um documento em formato ODT, você está
+                                                        fazendo uso de um formato “aberto” (CADERNO REA, 2020).</p>
+
+                                                    <p>Além dos programas instalados no seu computador, você pode contar
+                                                        com espaços virtuais de colaboração. Um exemplo é o <a
+                                                            href='https://drive.google.com/' target='_blank'>Google
+                                                            Drive</a>, onde você pode criar documentos de texto,
+                                                        planilhas de cálculo, apresentação de slides, imagens em
+                                                        colaboração com colegas para os quais você permitir acesso. Um
+                                                        outro exemplo de editor de textos colaborativo é o <a
+                                                            href='https://writer.zoho.com/' target='_blank'>Zoho</a>
+                                                        (CADERNO REA, 2020).</p>
+                                                </div>
+
+                                                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                                                    <img class="img-fluid rounded mx-auto d-block mb-3"
+                                                        src="../../img/serie4/curso2/aula2/img16.jpg" alt="">
+                                                    <p class="source text-center">Fonte: Unsplash.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Fim de texto e imagem à direita -->
+
+                                            <p>Textos estão entre os recursos educacionais mais utilizadas em todas as
+                                                situações de aprendizagem. Afinal, eles não dependem de estrutura
+                                                física, câmera digital nem capacidade de edição de vídeos, que podem
+                                                limitar tecnicamente a produção de um curso, por exemplo.</p>
+
+                                            <h4 class="text-center mt-5">Algumas dicas para ajudar na elaboração dos
+                                                textos</h4>
+                                            <span class="section-divider serie4 middle"></span>
+
+                                            <!--Slider-->
+                                            <style>
+                                                #carousel1 .box-quote {
+                                                    min-height: 450px;
+                                                }
+                                            </style>
+                                            <section id="carousel1" class="carousel slide wow fadeInUp"
+                                                data-ride="false" aria-labelledby="carouselheading">
+                                                <div class="row justify-content-center">
+                                                    <div class="box-quote col-10">
+                                                        <ol class="carousel-indicators">
+                                                            <li data-target="#carousel1" data-slide-to="0"
+                                                                class="active"></li>
+                                                            <li data-target="#carousel1" data-slide-to="1"></li>
+                                                            <li data-target="#carousel1" data-slide-to="2"></li>
+                                                        </ol>
+
+                                                        <div class="carousel-inner">
+                                                            <article class="carousel-item active">
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-11 col-lg-12">
+                                                                        <p class="mx-0"><strong>1)</strong> Deve-se
+                                                                            elaborar o texto de forma a dialogar o
+                                                                            máximo possível com o aluno;</p>
+                                                                        <p class="mx-0"><strong>2)</strong> Deve-se
+                                                                            privilegiar uma linguagem clara, objetiva e
+                                                                            coloquial, adequada às características do
+                                                                            público e que seja incentivadora e dinâmica;
+                                                                        </p>
+                                                                        <p class="mx-0"><strong>3)</strong> Procure
+                                                                            evitar negações em excesso em uma mesma
+                                                                            frase, pois ela poderá ficar confusa;</p>
+                                                                        <p class="mx-0"><strong>4)</strong> Evite o uso
+                                                                            da voz passiva. Procure sempre usar verbos
+                                                                            ativos e diretos;</p>
+                                                                        <p class="mx-0"><strong>5)</strong> Use palavras
+                                                                            familiares ao leitor, sempre que possível,
+                                                                            se achar necessário, crie um glossário;</p>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+
+                                                            <article class="carousel-item">
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-11 col-lg-12">
+                                                                        <p class="mx-0"><strong>6)</strong> Use palavras
+                                                                            que representem conceitos concretos, sempre
+                                                                            que possível;</p>
+                                                                        <p class="mx-0"><strong>7)</strong> Explique
+                                                                            todos os termos técnicos. Para isso também
+                                                                            pode ser usado um glossário;</p>
+                                                                        <p class="mx-0"><strong>8)</strong> Abordagem
+                                                                            crítica-reflexiva dos conteúdos (ao longo do
+                                                                            material), levando o estudante a refletir e
+                                                                            posicionar-se diante do assunto;</p>
+                                                                        <p class="mx-0"><strong>9)</strong> Evitar
+                                                                            afirmações preconceituosas sobre etnia,
+                                                                            gênero, orientação sexual, religião, região
+                                                                            demográfica etc;</p>
+                                                                        <p class="mx-0"><strong>10)</strong> Use
+                                                                            expressões idiomáticas ou regionais com
+                                                                            parcimônia - lembre-se, na maioria dos
+                                                                            casos, o material vai ser utilizado por
+                                                                            pessoas de todas as regiões do país;</p>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+
+                                                            <article class="carousel-item">
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-11 col-lg-12">
+                                                                        <p class="mx-0"><strong>11)</strong> Sempre que
+                                                                            possível, dê exemplos, faça analogias, use
+                                                                            ilustrações, para esclarecer conceitos e
+                                                                            explicações;</p>
+                                                                        <p class="mx-0"><strong>12)</strong> Pense nas
+                                                                            perguntas e dúvidas que o aluno pode vir a
+                                                                            ter e procure respondê-las no texto;</p>
+                                                                        <p class="mx-0"><strong>13)</strong> Procure dar
+                                                                            destaque ao que é essencial/que o aluno deve
+                                                                            dar mais relevância;</p>
+                                                                        <p class="mx-0"><strong>14)</strong> Procure
+                                                                            sempre indicar material complementar para
+                                                                            que os alunos que desejarem possam
+                                                                            aprofundar os estudos;</p>
+                                                                        <p class="mx-0"><strong>15)</strong> Sugere-se
+                                                                            ao fim revisão gramatical.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+
+                                                        <a class="carousel-control-prev" href="#carousel1" role="button"
+                                                            data-slide="prev">
+                                                            <span class="carousel-control-prev-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="sr-only">Anterior</span>
+                                                        </a>
+                                                        <a class="carousel-control-next" href="#carousel1" role="button"
+                                                            data-slide="next">
+                                                            <span class="carousel-control-next-icon"
+                                                                aria-hidden="true"></span>
+
+                                                            <span class="sr-only">Próximo</span>
+                                                        </a>
+                                                    </div>
+                                                    <!--Fim do caroussel inner-->
+                                                </div>
+                                            </section>
+                                            <!--Fim do Slider-->
+
+                                        </div>
+                                    </li>
+
+                                    <!--Item 2-->
+                                    <li>
+                                        <a data-toggle="collapse" class="collapsed" href="#accordion2-item2"> Imagens <i
+                                                class="icon ion-md-remove"></i></a>
+                                        <div id="accordion2-item2" class="collapse">
+
+                                            <p>Diversos materiais educacionais são ricos em imagens, porém, nem sempre
+                                                este recurso é aproveitado de maneira significativa deixando de lado
+                                                todo o seu potencial educacional. Em muitos cursos, as imagens aparecem
+                                                como meras decoração. As Imagens podem ser ótimas ferramentas
+                                                pedagógicas se forem utilizadas de maneira adequada. É importante
+                                                ilustrar fluxos, procedimentos, situações, casos ou contar uma história
+                                                que auxiliem na aprendizagem do aluno.</p>
+
+                                            <h4 class="text-center mt-5">Tipos de imagens que podem ser utilizadas:</h4>
+                                            <span class="section-divider serie4 middle"></span>
+
+                                            <!--Lista Simples-->
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="obj-lista col-12 col-lg-6 text-left">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item wow slideInUp"
+                                                            data-wow-duration="0.5s" data-wow-delay="0.5s"><i
+                                                                class="icon-bullet"></i> Infográficos </li>
+                                                        <li class="list-group-item wow slideInUp"
+                                                            data-wow-duration="0.5s" data-wow-delay="0.5s"><i
+                                                                class="icon-bullet"></i> Ilustrações </li>
+                                                        <li class="list-group-item wow slideInUp"
+                                                            data-ow-duration="0.5s" data-wow-delay="0.5s"><i
+                                                                class="icon-bullet"></i> Quadros</li>
+                                                        <li class="list-group-item wow slideInUp"
+                                                            data-ow-duration="0.5s" data-wow-delay="0.5s"><i
+                                                                class="icon-bullet"></i> Gráficos</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="obj-lista col-12 col-lg-6 text-left">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item wow slideInUp"
+                                                            data-wow-duration="0.5s" data-wow-delay="0.5s"><i
+                                                                class="icon-bullet"></i>Mapas</li>
+                                                        <li class="list-group-item wow slideInUp"
+                                                            data-wow-duration="0.5s" data-wow-delay="0.5s"><i
+                                                                class="icon-bullet"></i> Histórias em Quadrinhos</li>
+                                                        <li class="list-group-item wow slideInUp"
+                                                            data-ow-duration="0.5s" data-wow-delay="0.5s"><i
+                                                                class="icon-bullet"></i> Mapas mentais</li>
+                                                        <li class="list-group-item wow slideInUp"
+                                                            data-ow-duration="0.5s" data-wow-delay="0.5s"><i
+                                                                class="icon-bullet"></i> Fotos</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--Fim de Lista Simples-->
+
+                                            <!-- Texto e Imagem à direita -->
+                                            <div class="row justify-content-center align-items-center">
+                                                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                                                    <p>As imagens e fotos podem ser produzidas com uma câmera digital,
+                                                        celular, software ou baixadas de banco de imagens da Internet.
+                                                        Para modificá-las (alterar o tamanho, mudar cores, corrigir
+                                                        erros, entre outros), o <a href='https://www.fotor.com/'
+                                                            target='_blank'>Fotor.com</a> é uma boa opção para fazer
+                                                        pequenas edições e colagens. Um software livre mais sofisticado
+                                                        é o <a href='https://www.gimp.org/' target='_blank'>GIMP</a>,
+                                                        que permite edição avançada de imagens. O programa está
+                                                        disponível para <em>Windows, MacOS e Linux</em>.</p>
+
+                                                    <p>Para compor seu recurso educacional, será preciso usar um editor
+                                                        de imagens. O <a href='http://canva.com'
+                                                            target='_blank'>Canva</a> é um editor online que pode ser
+                                                        utilizado gratuitamente (com algumas limitações) para criar
+                                                        diversos tipos de imagens (infográficos, mapas mentais entre
+                                                        outros). Um outro editor de imagens gratuito é o <a
+                                                            href='https://www.gimp.org/' target='_blank'>GIM</a>P, que
+                                                        pode ser utilizado livremente e possui recursos mais completos.
+                                                        <a href='aula1.html' target='_blank'>O <strong>formato
+                                                                aberto</strong></a> que deve ser utilizado para salvar
+                                                        imagens é o PNG.</p>
+                                                </div>
+
+                                                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                                                    <img class="img-fluid rounded mx-auto d-block mb-3"
+                                                        src="../../img/serie4/curso2/aula2/img17.jpg" alt="">
+                                                    <p class="source text-center">Fonte: Freepik</p>
+                                                </div>
+                                            </div>
+                                            <!-- Fim de texto e imagem à direita -->
+
+                                            <!--Início tabela horizontal-->
+                                            <div class="row justify-content-center my-5">
+                                                <div class="col-12 col-lg-8">
+                                                    <div class="table-responsive mb-3" data-aos="fade-up">
+                                                        <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="text-center" colspan="2">Abaixo listamos
+                                                                        alguns bancos imagens grátis na internet</th>
+                                                                </tr>
+                                                            </thead>
+
+                                                            <tbody>
+                                                                <tr class="text-center">
+                                                                    <td><a href='https://pixabay.com/'
+                                                                            target='_blank'>PixaBay</a></td>
+                                                                    <td><a href='https://www.freepik.com/'
+                                                                            target='_blank'>Freepik</a></td>
+                                                                </tr>
+
+                                                                <tr class="text-center">
+                                                                    <td><a href='https://commons.wikimedia.org/wiki/Main_Page'
+                                                                            target='_blank'>Wikimedia commons</a></td>
+                                                                    <td><a href='https://unsplash.com'
+                                                                            target='_blank'>Unsplash</a></td>
+                                                                </tr>
+
+                                                                <tr class="text-center">
+                                                                    <td><a href='https://search.creativecommons.org/?lang=es'
+                                                                            target='_blank'>Creative Commons</a></td>
+                                                                    <td><a href='http://www.fiocruzimagens.fiocruz.br/'
+                                                                            target='_blank'>Banco de imagens da
+                                                                            Fiocruz</a></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--fim da row-->
+                                            <!--Fim da Tabela horizontal-->
+                                            <div class="row justify-content-center mb-5">
+                                                <!--Atenção-->
+                                                <div class="atencao col-10 col-md-8 aos-init aos-animate"
+                                                    data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
+                                                    <div class="box-quote multi-border">
+                                                        <h5><i class="fas fa-exclamation"
+                                                                data-fa-transform="grow-25"></i>Atenção:</h5>
+                                                        <div class="saiba-mais-content">
+
+                                                            <p>É importante ler a política ou termo de uso do banco de
+                                                                imagens, pois alguns permitem somente o reuso, sem
+                                                                adaptação, ou exigem a atribuição de créditos. </p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Fim do Atenção-->
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <!--Item 3-->
+                                    <li>
+                                        <a data-toggle="collapse" class="collapsed" href="#accordion2-item3"> Vídeos <i
+                                                class="icon ion-md-remove"></i></a>
+                                        <div id="accordion2-item3" class="collapse">
+                                            <!-- Texto e Imagem à direita -->
+                                            <div class="row justify-content-center align-items-center">
+                                                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                                                    <p>Para trabalhar com vídeos, o ideal é gravar em um estúdio com
+                                                        câmera e equipamentos profissionais, mas entendemos que nem
+                                                        todos podem assumir os gastos para pagar um serviço profissional
+                                                        de gravação e edição. Com o avanço das câmeras dos celulares, é
+                                                        possível obter resultados interessantes usando um celular para
+                                                        gravar e editar os vídeos. Lembre-se que antes de produzir um
+                                                        vídeo ou qualquer outro tipo de recurso educacional, você poderá
+                                                        realizar uma busca para reutilizar os disponíveis na internet,
+                                                        desde que estejam registrados com uma licença aberta.</p>
+
+                                                    <p>Os vídeos apresentam potencial pedagógico eficaz para apoiar a
+                                                        aprendizagem ou promover o desenvolvimento de habilidades
+                                                        (imagens compostas, diagramas animados,
+                                                        metáforas/simbolismos/analogias visuais, modelagem de processos,
+                                                        ilustração de conceitos com exemplos reais, justaposição de
+                                                        situações contrastantes, demonstração de habilidades por
+                                                        especialistas) (KOUMI, 2006)</p>
+                                                </div>
+
+                                                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                                                    <img class="img-fluid rounded mx-auto d-block mb-3"
+                                                        src="../../img/serie4/curso2/aula2/img18.png" alt="">
+                                                    <p class="source text-center">Fonte: Própria</p>
+                                                </div>
+                                            </div>
+                                            <!-- Fim de texto e imagem à direita -->
+
+                                            <h4 class="text-center mt-5">Alguns recursos que podem ser produzidos como
+                                                vídeo:</h4>
+                                            <span class="section-divider serie4 middle"></span>
+
+                                            <!--Lista Simples-->
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="obj-lista col-12 col-lg-6 text-left">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item wow slideInUp"
+                                                            data-wow-duration="0.5s" data-wow-delay="0.5s"><i
+                                                                class="icon-bullet"></i> Aula completa</li>
+                                                        <li class="list-group-item wow slideInUp"
+                                                            data-wow-duration="0.5s" data-wow-delay="0.5s"><i
+                                                                class="icon-bullet"></i> Demonstração de uso de um
+                                                            software</li>
+                                                        <li class="list-group-item wow slideInUp"
+                                                            data-ow-duration="0.5s" data-wow-delay="0.5s"><i
+                                                                class="icon-bullet"></i> Apresentação de casos clínicos
+                                                            ou situações-problema</li>
+                                                        <li class="list-group-item wow slideInUp"
+                                                            data-wow-duration="0.5s" data-wow-delay="0.5s"><i
+                                                                class="icon-bullet"></i>Apresentar algum procedimento ou
+                                                            a utilização de algum tipo de aparelhagem ou para mostrar
+                                                            algum ambiente físico</li>
+                                                        <li class="list-group-item wow slideInUp"
+                                                            data-wow-duration="0.5s" data-wow-delay="0.5s"><i
+                                                                class="icon-bullet"></i> Apresentar documentários,
+                                                            entrevistas ou palestras</li>
+                                                        <li class="list-group-item wow slideInUp"
+                                                            data-ow-duration="0.5s" data-wow-delay="0.5s"><i
+                                                                class="icon-bullet"></i> O professor se apresentar para
+                                                            os alunos e apresentar sua disciplina</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--Fim de Lista Simples-->
+
+                                            <p>Para os vídeos, recomendamos adotar os <strong><a href='aula1.html'
+                                                        target='_blank'>formatos abertos</a></strong> .mkv, .webM,
+                                                .mp4(codec x264)</p>
+
+                                            <p><strong>Vale lembrar:</strong> Vídeos de curta duração, de 3 a 5 minutos, em geral são mais efetivos para a aprendizagem, segundo o conceito de <a href='https://blog.qualitor.com.br/micro-aprendizado/' target='_blank'>Micro Aprendizado</a>.</p>
+
+                                            <!--Saiba Mais-->
+                                            <div class="row justify-content-center my-5">
+                                                <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="400"
+                                                    class="saiba-mais col-10 col-lg-8 serie4 aos-init aos-animate">
+                                                    <div class="box-quote multi-border">
+                                                        <h5><i class="fas fa-question-circle"
+                                                                data-fa-transform="grow-25" aria-hidden="true"></i>Saiba
+                                                            mais:
+                                                        </h5>
+                                                        <div class="saiba-mais-content">
+                                                            <ul style="list-style: none;">
+                                                                <li><i class="icon ion-ios-arrow-forward"></i> Leia mais
+                                                                    sobre o potencial pedagógico dos vídeos <a
+                                                                        href='https://www.academia.edu/8092450/Potent_Pedagogic_Roles_for_Video_33_roles'
+                                                                        target='_blank'>clicando aqui</a> (texto em
+                                                                    inglês).</li>
+                                                                <li><i class="icon ion-ios-arrow-forward"></i> <a
+                                                                        href='https://campusvirtual.fiocruz.br/portal/node/7027'
+                                                                        target='_blank'>Veja aqui</a> um tutorial sobre
+                                                                    como elaborar vídeoaulas (em português).</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Fim do Saiba Mais-->
+
+                                        </div>
+                                    </li>
+
+                                    <!--Item 4-->
+                                    <li>
+                                        <a data-toggle="collapse" class="collapsed" href="#accordion2-item4"> Áudios <i
+                                                class="icon ion-md-remove"></i></a>
+                                        <div id="accordion2-item4" class="collapse">
+
+                                            <p>Áudios educativos (podcasts), no seu formato usual, contém apenas áudio,
+                                                mas variantes podem incluir imagens e vídeos. Neste guia, o foco serão
+                                                os podcasts apenas com áudio. A vantagem do podcast é que ele pode ser
+                                                ouvido em qualquer lugar e quantas vezes achar necessário. Um podcast
+                                                pode ser utilizado para passar um conceito ou como audionovela,
+                                                dramatização do gênero literário novela para representar um caso ou
+                                                situação específica com objetivo educacional.</p>
+
+                                            <p>Arquivos de áudio que podem conter conceitos, aulas, narração com
+                                                orientações para estudo ou feedback para os alunos. A criação e produção
+                                                de áudio pode ser um projeto especial para os alunos, algo que propicia
+                                                interação, criatividade e desenvolvimento de capacidades digitais.</p>
+
+                                            <p>Podem atuar como facilitadores, por poderem ser reproduzidos nos
+                                                computadores, tablets ou celulares, e em qualquer lugar: em casa, a
+                                                caminho do trabalho, no transporte público.</p>
+
+                                            <p>Conteúdo programático deve ser produzido especialmente para áudio.</p>
+
+                                            <p>Para gravação de um podcast não é necessários muitos recursos. Um áudio
+                                                pode ser gravado com um celular. Para edição de som, uma boa opção é o
+                                                <a href='https://www.audacityteam.org/download/'
+                                                    target='_blank'>Audacity</a>, que é um software livre e traz uma
+                                                extensa gama de recursos, incluindo redução de ruídos. É uma boa pedida
+                                                para quem se interessa pelo assunto e quer aprender mais. O <a
+                                                    href='https://www.audacityteam.org/download/'
+                                                    target='_blank'>Audacity</a> grava, reproduz, importa/exporta em
+                                                formatos que são fáceis de compartilhar como MP3.</p>
+
+                                        </div>
+                                    </li>
+
+                                    <!--Item 5-->
+                                    <li>
+                                        <a data-toggle="collapse" class="collapsed" href="#accordion2-item5">
+                                            Ferramentas de autoria <i class="icon ion-md-remove"></i></a>
+                                        <div id="accordion2-item5" class="collapse">
+
+                                            <p>As ferramentas de autoria permitem aos docentes criar os seus próprios
+                                                conteúdos da Web, de uma maneira muito simples, sem necessidade de
+                                                conhecimentos técnicos de design e programação web.</p>
+
+                                            <p>Além da possibilidade de criar e processar textos, as ferramentas de
+                                                autoria possibilitam que professores integrem diversos tipos de mídias
+                                                para criar conteúdos de aprendizagem estimulantes e interativos, e
+                                                algumas tornam possível transformar elementos digitais e objetos de
+                                                ensino de cursos já existentes para que estes sejam reutilizados em
+                                                novos cursos. Destacamos abaixo, algumas que estão disponíveis para uso
+                                                gratuito, como:</p>
+
+                                            <!--Flip Cards 2.0 CSS -->
+                                            <div id="flip-card-1" class="row justify-content-center mt-5 mb-5">
+                                                <style>
+                                                    #flip-card-1 .flip-card {
+                                                        min-height: 465px;
+                                                    }
+
+                                                    #flip-card-1 .flip-card .card-text {
+                                                        height: 320px;
+                                                    }
+                                                </style>
+
+                                                <!--FlipCard 1-->
+                                                <div class="col-xs-12 col-lg-6 mb-5">
+                                                    <div class="flip-card">
+                                                        <input type="checkbox" id="flipcard1" class="more no-print"
+                                                            aria-hidden="true">
+                                                        <div class="flip-card-inner">
+                                                            <!-- FRENTE -->
+                                                            <div class="flip-card-front item1 no-print">
+                                                                <div class="card-title">
+                                                                    <h3>H5P</h3>
+                                                                </div>
+                                                                <div class="card-footer">
+                                                                    <div class="card-btn">
+                                                                        <label for="flipcard1" class="button"
+                                                                            aria-hidden="true">
+                                                                            <svg class="ic-virar"
+                                                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                x="0px" y="0px" viewBox="0 0 40 40"
+                                                                                style="enable-background:new 0 0 40 40;"
+                                                                                xml:space="preserve">
+                                                                                <g>
+                                                                                    <g>
+                                                                                        <path
+                                                                                            d="M29.8,32.1c-0.4,0-0.9-0.3-1-0.7c-0.2-0.6,0.1-1.1,0.7-1.3c4.5-1.3,7.3-3.5,7.3-5.7c0-1.4-1.1-2.6-2.1-3.3
+                                                                        c-0.5-0.3-0.6-1-0.2-1.5c0.3-0.5,1-0.6,1.5-0.2c1.9,1.4,2.9,3.1,2.9,4.9c0,3.2-3.2,6-8.7,7.7C30,32.1,29.9,32.1,29.8,32.1z" />
+                                                                                    </g>
+                                                                                    <path
+                                                                                        d="M21.8,31l-4.5-3.4c-0.5-0.3-1.1-0.3-1.5,0.2c-0.3,0.5-0.3,1.1,0.2,1.5l2.7,2c-4.2-0.1-8-0.9-11-2.2c-2.9-1.3-4.6-3-4.6-4.7
+                                                                    c0-1.6,1.5-2.9,2.7-3.7c0.5-0.3,0.6-1,0.3-1.4c-0.3-0.5-1-0.6-1.4-0.3c-2.4,1.5-3.7,3.4-3.7,5.5c0,2.6,2.1,4.9,5.8,6.6
+                                                                    c2.8,1.3,6.4,2.1,10.2,2.3l-1,0.7c-0.5,0.3-0.6,1-0.3,1.5c0.2,0.3,0.5,0.5,0.9,0.5c0.2,0,0.4-0.1,0.6-0.2l4.5-3.1
+                                                                    c0.3-0.2,0.4-0.5,0.5-0.8C22.3,31.5,22.1,31.2,21.8,31z" />
+                                                                                </g>
+                                                                                <g>
+                                                                                    <path
+                                                                                        d="M29.5,38.5h-18c-2.2,0-4-1.8-4-4v-27c0-2.2,1.8-4,4-4h18c2.2,0,4,1.8,4,4v27C33.5,36.7,31.7,38.5,29.5,38.5z M11.5,5.5
+                                                                    c-1.1,0-2,0.9-2,2v27c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2v-27c0-1.1-0.9-2-2-2H11.5z" />
+                                                                                </g>
+                                                                            </svg>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- VERSO -->
+                                                            <div class="flip-card-back">
+                                                                <div class="card-title">
+                                                                    <h4>H5P</h4>
+                                                                </div>
+                                                                <div class="card-text">
+                                                                    <p>É possível criar recursos interativos com <a
+                                                                            href='https://h5p.org/'
+                                                                            target='_blank'>H5P</a>. Uma plataforma
+                                                                        livre e aberta, baseada em nuvem, que permite
+                                                                        que qualquer um crie uma grande variedade de
+                                                                        recursos multimídia sem necessidade de aprender
+                                                                        programação. Todos os tipos de conteúdo do H5P
+                                                                        podem ser inseridos em websites e no ambiente
+                                                                        virtual de aprendizagem, como o Moodle, por
+                                                                        exemplo, usando o plugin disponível
+                                                                        gratuitamente ou já incorporado na versão do
+                                                                        Moodle mais recente. Os recursos desenvolvidos
+                                                                        no H5P reportam análises e resultados das
+                                                                        atividades para o Moodle.</p>
+
+                                                                    <p>O conteúdo do H5P publicado é baseado em HTML5,
+                                                                        não utiliza Flash, tornando o acesso mais fácil
+                                                                        para você e seus aprendizes. Além disso, todos
+                                                                        recursos são gerados automaticamente sob a
+                                                                        licença Creative Commmons Attibutions 4.0
+                                                                        International, a menos que o autor do conteúdo
+                                                                        altere a licença.</p>
+
+                                                                    <p>Através do H5P é possível criar os recursos
+                                                                        educacionais interativos, como:</p>
+
+                                                                    <ul>
+                                                                        <li>Apresentações</li>
+                                                                        <li><em>Flashcards</em> ou jogo de cartas</li>
+                                                                        <li>Tarefas com imagens do tipo “arraste e
+                                                                            solte;</li>
+                                                                        <li>Vídeos interativos</li>
+                                                                        <li>Quiz e outros</li>
+                                                                        <li>Imagens interativas</li>
+                                                                    </ul>
+
+                                                                    <p><strong>Exemplos:</strong> Para ver exemplos de
+                                                                        recursos interativos H5P, acesse <a
+                                                                            href='https://h5p.org/content-types-and-applications'
+                                                                            target='_blank'>https://h5p.org/content-types-and-applications</a>
+                                                                    </p>
+
+                                                                </div>
+                                                                <div class="card-footer no-print">
+                                                                    <label for="flipcard1" class="button return"
+                                                                        aria-hidden="true">
+                                                                        <i class="fas fa-arrow-left"></i>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Fim Flipcard 1-->
+
+                                                <!--FlipCard 2-->
+                                                <div class="col-xs-12 col-lg-6 mb-5">
+                                                    <div class="flip-card">
+                                                        <input type="checkbox" id="flipcard2" class="more no-print"
+                                                            aria-hidden="true">
+                                                        <div class="flip-card-inner">
+                                                            <!-- FRENTE -->
+                                                            <div class="flip-card-front item1 no-print">
+                                                                <div class="card-title">
+                                                                    <h3>eXeLearning</h3>
+                                                                </div>
+                                                                <div class="card-footer">
+                                                                    <div class="card-btn">
+                                                                        <label for="flipcard2" class="button"
+                                                                            aria-hidden="true">
+                                                                            <svg class="ic-virar"
+                                                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                x="0px" y="0px" viewBox="0 0 40 40"
+                                                                                style="enable-background:new 0 0 40 40;"
+                                                                                xml:space="preserve">
+                                                                                <g>
+                                                                                    <g>
+                                                                                        <path
+                                                                                            d="M29.8,32.1c-0.4,0-0.9-0.3-1-0.7c-0.2-0.6,0.1-1.1,0.7-1.3c4.5-1.3,7.3-3.5,7.3-5.7c0-1.4-1.1-2.6-2.1-3.3
+                                                                        c-0.5-0.3-0.6-1-0.2-1.5c0.3-0.5,1-0.6,1.5-0.2c1.9,1.4,2.9,3.1,2.9,4.9c0,3.2-3.2,6-8.7,7.7C30,32.1,29.9,32.1,29.8,32.1z" />
+                                                                                    </g>
+                                                                                    <path
+                                                                                        d="M21.8,31l-4.5-3.4c-0.5-0.3-1.1-0.3-1.5,0.2c-0.3,0.5-0.3,1.1,0.2,1.5l2.7,2c-4.2-0.1-8-0.9-11-2.2c-2.9-1.3-4.6-3-4.6-4.7
+                                                                    c0-1.6,1.5-2.9,2.7-3.7c0.5-0.3,0.6-1,0.3-1.4c-0.3-0.5-1-0.6-1.4-0.3c-2.4,1.5-3.7,3.4-3.7,5.5c0,2.6,2.1,4.9,5.8,6.6
+                                                                    c2.8,1.3,6.4,2.1,10.2,2.3l-1,0.7c-0.5,0.3-0.6,1-0.3,1.5c0.2,0.3,0.5,0.5,0.9,0.5c0.2,0,0.4-0.1,0.6-0.2l4.5-3.1
+                                                                    c0.3-0.2,0.4-0.5,0.5-0.8C22.3,31.5,22.1,31.2,21.8,31z" />
+                                                                                </g>
+                                                                                <g>
+                                                                                    <path
+                                                                                        d="M29.5,38.5h-18c-2.2,0-4-1.8-4-4v-27c0-2.2,1.8-4,4-4h18c2.2,0,4,1.8,4,4v27C33.5,36.7,31.7,38.5,29.5,38.5z M11.5,5.5
+                                                                    c-1.1,0-2,0.9-2,2v27c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2v-27c0-1.1-0.9-2-2-2H11.5z" />
+                                                                                </g>
+                                                                            </svg>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- VERSO -->
+                                                            <div class="flip-card-back">
+                                                                <div class="card-title">
+                                                                    <h4>eXeLearning</h4>
+                                                                </div>
+                                                                <div class="card-text">
+                                                                    <p><a href='https://exelearning.net/'
+                                                                            target='_blank'>eXe</a> é a abreviatura de
+                                                                        “eLearning XHTML editor” e um software de código
+                                                                        aberto que disponibiliza, de maneira simples, a
+                                                                        possibilidade de criar documentos HTML para
+                                                                        aprendizagem. Basicamente, é uma ferramenta que
+                                                                        auxilia professores e alunos a publicar qualquer
+                                                                        tipo de conteúdo de aprendizagem na Web sem
+                                                                        necessidade de ser proficiente nas linguagens de
+                                                                        marcação de páginas HTML ou XML.</p>
+
+                                                                    <p>O projeto <a href='https://exelearning.net/'
+                                                                            target='_blank'>eXeLearning</a> é uma
+                                                                        ferramenta de autoria disponibilizada
+                                                                        gratuitamente, como software aberto (Open
+                                                                        Source).</p>
+
+                                                                    <p>Os recursos criados com <a
+                                                                            href='https://exelearning.net/'
+                                                                            target='_blank'>eXeLearning</a> podem ser
+                                                                        exportados em diversos formatos:</p>
+
+                                                                    <ul>
+                                                                        <li>IMS Content Package</li>
+                                                                        <li>IMS Common Cartridge forma</li>
+                                                                        <li>Página web simples</li>
+                                                                        <li>Sites web autocontidos</li>
+                                                                        <li>SCORM 1.2</li>
+                                                                        <li>Arquivo texto simples</li>
+                                                                        <li>Conjunto de anotações</li>
+                                                                    </ul>
+
+
+                                                                </div>
+                                                                <div class="card-footer no-print">
+                                                                    <label for="flipcard2" class="button return"
+                                                                        aria-hidden="true">
+                                                                        <i class="fas fa-arrow-left"></i>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Fim Flipcard 2-->
+                                            </div>
+                                            <!--Fim de Flip Cards CSS -->
+
+                                        </div>
+                                    </li>
+
+                                    <!--Item 6-->
+                                    <li>
+                                        <a data-toggle="collapse" class="collapsed" href="#accordion2-item6"> Narrativas
+                                            Digitais <i class="icon ion-md-remove"></i></a>
+                                        <div id="accordion2-item6" class="collapse">
+
+                                            <p>Histórias contadas digitalmente através de filmes multimídia que podem
+                                                incluir: fotografia, vídeo, animação, som, música, texto e muitas vezes
+                                                uma voz narrativa. A narrativa digital, inglês se denomina Digital
+                                                Storytelling, combina a força da narrativa e da tecnologia (MARINHOS,
+                                                2020).</p>
+
+                                            <!-- Timeline ZigZag -->
+                                            <div class="row justify-content-center my-5">
+                                                <div class="timeline-zigzag col-12 col-lg-10">
+
+                                                    <div class="container-fluid blue-bg">
+                                                        <div class="container">
+                                                            <!--1ª sessão-->
+                                                            <div class="row align-items-center timeline-z-estrutura">
+                                                                <div class="col-2 text-center bottom">
+                                                                    <div class="circle-timeline-z">1</div>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p>Contar histórias é um meio eficaz que pode ser
+                                                                        usado para capturar e compartilhar conhecimento
+                                                                        tácito, aprimorar o aprendizado reflexivo e
+                                                                        promover comunidades de prática.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                            <!--path between 1-2-->
+                                                            <div class="row timeline-z">
+                                                                <div class="col-2">
+                                                                    <div class="corner top-right"></div>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <hr />
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <div class="corner left-bottom"></div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!--2ª sessão-->
+                                                            <div
+                                                                class="row align-items-center justify-content-end timeline-z-estrutura">
+                                                                <div class="col-6 text-right">
+                                                                    <p>Para realizar plenamente o potencial de
+                                                                        aprendizado da narrativa digital, as histórias
+                                                                        devem ser compartilhadas entre os alunos, e os
+                                                                        indivíduos precisam de oportunidades para
+                                                                        refletir colaborativamente.</p>
+                                                                </div>
+                                                                <div class="col-2 text-center full">
+                                                                    <div class="circle-timeline-z">2</div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!--path between 2-3-->
+                                                            <div class="row timeline-z">
+                                                                <div class="col-2">
+                                                                    <div class="corner right-bottom"></div>
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <hr />
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <div class="corner top-left"></div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!--3ª sessão-->
+                                                            <div class="row align-items-center timeline-z-estrutura">
+                                                                <div class="col-2 text-center top">
+                                                                    <div class="circle-timeline-z">3</div>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p>O processo de criação, compartilhamento e
+                                                                        discussão de histórias digitais, portanto, pode
+                                                                        ser uma ponte que liga conceitos abstratos a
+                                                                        experiências pessoais que aprimoram a
+                                                                        experiência de aprendizagem.</p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!-- Fim da timeline ZigZag -->
+
+                                            <p>A seguir apresentaremos alguns formatos de narrativas digitais: </p>
+
+                                            <!--Slider-->
+                                            <section id="carousel2"
+                                                class="carousel slide serie4 aos-init aos-animate my-5"
+                                                data-aos="fade-up" data-ride="false" aria-labelledby="carouselheading">
+                                                <div class="row justify-content-center">
+                                                    <div class="box-quote col-12 p-0">
+                                                        <ol class="carousel-indicators">
+                                                            <li data-target="#carousel2" data-slide-to="0"
+                                                                class="active"></li>
+                                                            <li data-target="#carousel2" data-slide-to="1"></li>
+                                                            <li data-target="#carousel2" data-slide-to="2"></li>
+                                                        </ol>
+
+                                                        <div class="carousel-inner">
+                                                            <!-- Ítem 1 -->
+                                                            <article class="carousel-item active p-0">
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-12 p-0">
+                                                                        <img class="img-fluid rounded mx-auto d-block mb-3"
+                                                                            src="../../img/serie4/curso2/aula2/img-slider1.jpg"
+                                                                            alt=""
+                                                                            title="Fonte: MARTINEZ et al.(2010).">
+                                                                    </div>
+                                                                    <div class="col-10 mt-3 mb-5">
+                                                                        <h4 class="text-center">História em quadrinhos
+                                                                        </h4>
+                                                                        <p>Fonte: MARTINEZ <em>et al</em>.(2010).</p>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+
+                                                            <!-- Ítem 2 -->
+                                                            <article class="carousel-item p-0">
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-12 p-0">
+                                                                        <img class="img-fluid rounded mx-auto d-block mb-3"
+                                                                            src="../../img/serie4/curso2/aula2/img-slider2.jpg"
+                                                                            alt=""
+                                                                            title="Fonte: Fotonovela 'Maria' - Projeto OCA e Coletivo da Cidade">
+                                                                    </div>
+                                                                    <div class="col-10 mt-3 mb-5">
+                                                                        <h4 class="text-center">Narrativas de Fotonovela
+                                                                        </h4>
+                                                                        <p>Fonte: <a
+                                                                                href='https://archive.org/details/MariaFotonovelaOCAColetivodaCidade/mode/2up'
+                                                                                target='_blank'>Fotonovela "Maria" -
+                                                                                Projeto OCA e Coletivo da Cidade "Maria"
+                                                                                - Projeto OCA e Coletivo da Cidade</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+
+                                                            <!-- Ítem 3 -->
+                                                            <article class="carousel-item p-0">
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-12 p-0">
+                                                                        <img class="img-fluid rounded mx-auto d-block mb-3"
+                                                                            src="../../img/serie4/curso2/aula2/img-slider3.jpg"
+                                                                            alt="" title="Fonte: Youtube">
+                                                                    </div>
+                                                                    <div class="col-10 mt-3 mb-5">
+                                                                        <h4 class="text-center">Narrativas em Vídeo</h4>
+                                                                        <p ml-0>Vídeo de Apresentação da cidade virtual
+                                                                            fictícia criada pela Universidade Aberta do
+                                                                            SUS da Universidade Federal de Ciências da
+                                                                            Saúde de Porto Alegre - UNA-SUS/UFCSPA.</p>
+                                                                        <p ml-0>> <a href='https://youtu.be/Ft_we-eDkAs'
+                                                                                target='_blank'>Assista aqui!</a></p>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+
+                                                        <a class="carousel-control-prev" href="#carousel2" role="button"
+                                                            data-slide="prev">
+                                                            <span class="carousel-control-prev-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="sr-only">Anterior</span>
+                                                        </a>
+                                                        <a class="carousel-control-next" href="#carousel2" role="button"
+                                                            data-slide="next">
+                                                            <span class="carousel-control-next-icon"
+                                                                aria-hidden="true"></span>
+
+                                                            <span class="sr-only">Próximo</span>
+                                                        </a>
+                                                    </div>
+                                                    <!--Fim do caroussel inner-->
+                                                </div>
+                                            </section>
+                                            <!--Fim do Slider-->
+
+                                        </div>
+                                    </li>
+
+                                    <!--Item 7-->
+                                    <li>
+                                        <a data-toggle="collapse" class="collapsed" href="#accordion2-item7">
+                                            Infográficos <i class="icon ion-md-remove"></i></a>
+                                        <div id="accordion2-item7" class="collapse">
+
+                                            <!-- Texto e Imagem à direita -->
+                                            <div class="row justify-content-center">
+                                                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                                                    <p>A infografia é vista como recursos gráficos que enriquecem o
+                                                        texto tornando a informação visualmente atrativa, e que “implica
+                                                        filtragem da informação, estabelecer relações, diferenciar
+                                                        padrões e representá-los de uma forma que permitam ao leitor
+                                                        compreender que tal informação constrói algo com significado”.
+                                                    </p>
+
+                                                    <ul type="disc">
+                                                        <li style="border-bottom: none;">Podem ser utilizados tanto no
+                                                            material didático como atividade proposta para o aluno;</li>
+                                                        <li style="border-bottom: none;">Podem resumir artigos
+                                                            graficamente;</li>
+                                                        <li style="border-bottom: none;">Necessitam de um roteiro prévio
+                                                            para serem produzidos.</li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                                                    <img class="img-fluid rounded mx-auto d-block w-75 mb-3"
+                                                        src="../../img/serie4/curso2/aula2/img19.jpg" alt="">
+                                                    <p class="source text-center">Fonte: <a
+                                                            href='https://periodicos.fiocruz.br/' target='_blank'>Portal
+                                                            de periódicos Fiocruz</a></p>
+                                                </div>
+                                            </div>
+                                            <!-- Fim de texto e imagem à direita -->
+
+
+                                        </div>
+                                    </li>
+
+                                    <!--Item 8-->
+                                    <li>
+                                        <a data-toggle="collapse" class="collapsed" href="#accordion2-item8"> Casos
+                                            interativos <i class="icon ion-md-remove"></i></a>
+                                        <div id="accordion2-item8" class="collapse">
+
+                                            <p>Utilizados para apresentar casos clínicos. No exemplo, é possível clicar
+                                                e obter informações onde se quer destacar alguns pontos do exame do
+                                                paciente.</p>
+
+                                            <div class="row justify-content-center">
+                                                <div class="col-12">
+                                                    <img class="img-fluid rounded mx-auto d-block w-75 mb-3"
+                                                        src="../../img/serie4/curso2/aula2/img20.png" alt="">
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </li>
+
+                                    <!--Item 9-->
+                                    <li>
+                                        <a data-toggle="collapse" class="collapsed" href="#accordion2-item9"> MOOC <i
+                                                class="icon ion-md-remove"></i></a>
+                                        <div id="accordion2-item9" class="collapse">
+
+                                            <p>Curso Online Aberto e Massivo, do inglês Massive Open Online Course
+                                                (MOOC), é um tipo de curso aberto oferecido por meio de ambientes
+                                                virtuais de aprendizagem, e que utilizam REA nas suas aulas, que visam
+                                                oferecer para um grande número de alunos a oportunidade de ampliar seus
+                                                conhecimentos. MOOC é um desenvolvimento recente na área de educação a
+                                                distância, e uma progressão dos ideais de educação aberta (INICIATIVA
+                                                EDUCAÇÃO ABERTA, 2019).</p>
+
+                                            <p>Embora o projeto e participação em um MOOC possa ser oferecido por uma
+                                                universidade, os MOOC normalmente são gratuitos e não exigem
+                                                pré-requisitos e podem ou não oferecer certificados de participação.</p>
+
+                                            <div class="row justify-content-center">
+                                                <div class="col-12">
+                                                    <img class="img-fluid rounded mx-auto d-block w-75 mb-3"
+                                                        src="../../img/serie4/curso2/aula2/img21.jpg" alt="">
+                                                </div>
+                                            </div>
+
+                                            <p><a href='https://campusvirtual.fiocruz.br/' target='_blank'>O Campus
+                                                    Virtual Fiocruz</a> oferece diversos cursos MOOCs relacionados às
+                                                áreas de saúde e comunicação/divulgação da ciência. Neste momento de
+                                                pandemia quel estamos vivendo, cabe destacar o recém lançado curso
+                                                COVID-19 – Manejo da infecção causada pelo novo Coronavírus. Devido a
+                                                emergência de capacitação a nível nacional, a estratégia utilizada foi
+                                                criar um MOOC que teria a possibilidade de alcançar a ampla rede de
+                                                profissionais de saúde que estão na linha de frente no combate à
+                                                COVID-19 (FIOCRUZ, 2020). A proposta foi concebida priorizando recursos
+                                                educacionais abertos, reunindo textos, videos com especialistas, casos
+                                                clínicos e conta com avaliação por módulo e certificação. Atualmente o
+                                                curso conta mais de 40.000 inscrições, sendo o curso mais acessado no
+                                                Campus Virtual (<a
+                                                    href='https://campusvirtual.fiocruz.br/gestordecursos/hotsite/covid19/relatorios'
+                                                    target='_blank'>clique aqui</a> para acessar o número atualizado de
+                                                participantes em tempo real).
+                                            </p>
+
+                                            <p><i class="icon ion-ios-arrow-forward"></i> Acesse os MOOcs da Fiocruz em
+                                                <a href='https://mooc.campusvirtual.fiocruz.br/'
+                                                    target='_blank'>https://mooc.campusvirtual.fiocruz.br/</a></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- Fim-->
+                            </div>
+                        </div>
+                        <!--Fim do Accordion-->
+                    </div>
+                </div>
+                <!--fim da row-->
+            </div>
+            <!--Fim do Container-->
+        </section><!-- #bloco3 -->
+
+        <!--==========================
+      Capa - Capítulos
+    ============================-->
+        <section class="capa-capitulos blocos">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 text-center">
+                        <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Habilidades
+                            Digitais Docentes</h1>
+                    </div>
+                </div>
+            </div>
+        </section><!-- #call-to-action -->
+
+        <!--==========================
+      Bloco 4 - Habilidades Digitais Docentes
+    ============================-->
+        <section id="bloco4" class="section-bg blocos">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <p>Você consegue relacionar quais habilidades você já possui?</p>
+                        <p>Quais ainda  precisa aprimorar para desenvolver sua competência digital como docente? E para produzir recursos educacionais abertos?</p>
+
+                        <h4 class="text-center mt-5">Abaixo listamos as principais competências digitais:</h4>
+                        <span class="section-divider serie4 middle"></span>
+
+                        <!-- Texto e Imagem à direita -->
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-md-12 col-lg-7 order-2 order-lg-1">
+                                <!--Slider-->
+                                <style>
+                                    #carousel3 .box-quote {
+                                        min-height: 450px;
+                                    }
+
+                                    #carousel3 .carousel-control-next-icon,
+                                    #carousel3 .carousel-control-prev-icon {
+                                        left: 0;
+                                    }
+                                </style>
+                                <section id="carousel3" class="carousel slide wow fadeInUp" data-ride="false"
+                                    aria-labelledby="carouselheading">
+                                    <div class="row justify-content-center">
+                                        <div class="box-quote col-10">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carousel3" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel3" data-slide-to="1"></li>
+                                                <li data-target="#carousel3" data-slide-to="2"></li>
+                                            </ol>
+
+                                            <div class="carousel-inner">
+                                                <article class="carousel-item px-lg-5 active">
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-11 col-lg-12">
+                                                            <p class="mx-0"><strong>1)</strong> Criar e editar áudio e
+                                                                vídeo;</p>
+                                                            <p class="mx-0"><strong>2)</strong> Explorar as imagens
+                                                                digitais;</p>
+                                                            <p class="mx-0"><strong>3)</strong> Usar conteúdos
+                                                                audiovisuais;</p>
+                                                            <p class="mx-0"><strong>4)</strong> Usar infográfico para
+                                                                estimular visualmente estudantes;</p>
+                                                            <p class="mx-0"><strong>5)</strong> Criar vídeo com imagens
+                                                                e tutoriais em vídeo;</p>
+                                                        </div>
+                                                    </div>
+                                                </article>
+
+                                                <article class="carousel-item px-lg-5">
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-11 col-lg-12">
+                                                            <p class="mx-0"><strong>6)</strong> Coletar adequado
+                                                                conteúdo da Web para a aprendizagem;</p>
+                                                            <p class="mx-0"><strong>7)</strong> Compreender as questões
+                                                                relacionadas com direitos autorais e uso ético de
+                                                                materiais e recursos didáticos;</p>
+                                                            <p class="mx-0"><strong>8)</strong> Utilizar as ferramentas
+                                                                digitais para criar questionários de avaliação;</p>
+                                                            <p class="mx-0"><strong>9)</strong> Utilizar dispositivos
+                                                                móveis (por exemplo, smartphones);</p>
+                                                            <p class="mx-0"><strong>10)</strong> Usar ferramentas
+                                                                digitais para gerir o tempo adequadamente;</p>
+                                                        </div>
+                                                    </div>
+                                                </article>
+
+                                                <article class="carousel-item px-lg-5">
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-11 col-lg-12">
+                                                            <p class="mx-0"><strong>11)</strong> Conhecer como usar o
+                                                                YouTube;</p>
+                                                            <p class="mx-0"><strong>12)</strong> Utilizar Blogs e
+                                                                ferramentas de anotação e compartilhar esse conteúdo com
+                                                                seus alunos e estudantes;</p>
+                                                            <p class="mx-0"><strong>13)</strong> Utilizar ambientes
+                                                                virtuais de aprendizagem;</p>
+                                                            <p class="mx-0"><strong>14)</strong> Conhecer as licenças e
+                                                                saber identificá-las;</p>
+                                                            <p class="mx-0"><strong>15)</strong> Conhecer os principais
+                                                                formatos abertos.</p>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                            <a class="carousel-control-prev" href="#carousel3" role="button"
+                                                data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Anterior</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carousel3" role="button"
+                                                data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                                                <span class="sr-only">Próximo</span>
+                                            </a>
+                                        </div>
+                                        <!--Fim do caroussel inner-->
+                                    </div>
+                                </section>
+                                <!--Fim do Slider-->
+                            </div>
+
+                            <div class="col-12 col-md-8 col-lg-5 order-1 order-lg-2">
+                                <img class="img-fluid rounded mx-auto d-block mb-3"
+                                    src="../../img/serie4/curso2/aula2/img22.jpg" alt="">
+                                <p class="source text-center">Fonte: Freepik</p>
+                            </div>
+                        </div>
+                        <!-- Fim de texto e imagem à direita -->
+
+                        <!--Saiba Mais-->
+                        <div class="row justify-content-center my-5">
+                            <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="400"
+                                class="saiba-mais col-10 col-md-8 serie4 aos-init aos-animate">
+                                <div class="box-quote multi-border">
+                                    <h5><i class="fas fa-question-circle" data-fa-transform="grow-25"
+                                            aria-hidden="true"></i>Saiba mais:
+                                    </h5>
+                                    <div class="saiba-mais-content">
+                                        <p>Caso queira mapear suas competências digitais e conhecer caminhos para as
+                                            melhores práticas de tecnologia aplicada à aprendizagem dos alunos, acesse a
+                                            <a href='https://guiaedutec.com.br/' target='_blank'>Autoavaliação de
+                                                Competências Digitais de Professores</a> do Guia Edutec.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fim do Saiba Mais-->
+
+                        <h4 class="text-center mt-5">Ferramentas úteis</h4>
+                        <span class="section-divider serie4 middle"></span>
+
+                        <!--Box Simples -->
+                        <div class="row justify-content-center my-5" id="box-simples2">
+                            <style>
+                                @media (min-width: 992px) {
+                                    #box-simples2 .box-quote {
+                                        min-height: 320px;
+                                    }
+                                }
+                            </style>
+                            <div class="col-12 col-lg-4">
+                                <div class="box-quote option1 aos-init aos-animate p-3" data-aos="flip-up">
+                                    <h4 class="text-center">Webconferências/Webinar</h4>
+                                    <span class="section-divider serie4 middle" style="max-width: 100%;"></span>
+                                    <p class="text-center"><a href='https://meet.jit.si/' target='_blank'>Jitsi</a></p>
+                                    <p class="text-center"><a href='https://www.eztalks.com/'
+                                            target='_blank'>Eztalks</a></p>
+                                </div>
+                            </div>
+                            <!--fim da coluna-->
+
+                            <div class="col-12 col-lg-4">
+                                <div class="box-quote option1 aos-init aos-animate p-3" data-aos="flip-up">
+                                    <h4 class="text-center">Colaboração on-line</h4>
+                                    <span class="section-divider serie4 middle" style="max-width: 100%;"></span>
+                                    <p class="text-center"><a href='https://www.google.com/docs/about/'
+                                            target='_blank'>Google Docs (Documentos, Planilhas slides)</a></p>
+                                    <p class="text-center"><a href='https://moodle.com/pt/' target='_blank'>Fóruns
+                                            Moodle </a></p>
+                                    <p class="text-center"><a href='https://pt.wikipedia.org/wiki/Wikimedia_Commons'
+                                            target='_blank'>Wikimedia</a></p>
+                                    <p class="text-center"><a href='https://writer.zoho.com/' target='_blank'>Zoho</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--fim da coluna-->
+
+                            <div class="col-12 col-lg-4">
+                                <div class="box-quote option1 aos-init aos-animate p-3" data-aos="flip-up">
+                                    <h4 class="text-center">Editor de imagens/Infográficos</h4>
+                                    <span class="section-divider serie4 middle" style="max-width: 100%;"></span>
+                                    <p class="text-center"><a href='https://www.gimp.org/' target='_blank'>Gimp</a></p>
+                                    <p class="text-center"><a href='https://www.fotor.com/'
+                                            target='_blank'>Fotor.com</a></p>
+                                </div>
+                            </div>
+                            <!--fim da coluna-->
+
+                            <div class="col-12 col-lg-4">
+                                <div class="box-quote option1 aos-init aos-animate p-3" data-aos="flip-up">
+                                    <h4 class="text-center">Porftólio / Diário de Aprendizagem</h4>
+                                    <span class="section-divider serie4 middle" style="max-width: 100%;"></span>
+                                    <p class="text-center"><a href='https://wordpress.com/'
+                                            target='_blank'>Wordpress</a></p>
+                                    <p class="text-center"><a href='https://sites.google.com/' target='_blank'>Google
+                                            sites</a></p>
+                                    <p class="text-center"><a href='https://padlet.com/' target='_blank'>Padlet</a></p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="box-quote option1 aos-init aos-animate p-3" data-aos="flip-up">
+                                    <h4 class="text-center">Apresentações interativas, Quizz, enquetes</h4>
+                                    <span class="section-divider serie4 middle" style="max-width: 100%;"></span>
+                                    <p class="text-center"><a href='https://h5p.org/' target='_blank'>H5P</a></p>
+                                    <p class="text-center"><a href='https://www.google.com/forms/about/'
+                                            target='_blank'>Google Forms</a></p>
+                                </div>
+                            </div>
+                            <!--fim da coluna-->
+
+                            <div class="col-12 col-lg-4">
+                                <div class="box-quote option1 aos-init aos-animate p-3" data-aos="flip-up">
+                                    <h4 class="text-center">Ferramenta de autoria</h4>
+                                    <span class="section-divider serie4 middle" style="max-width: 100%;"></span>
+                                    <p class="text-center"><a href='https://exelearning.org/'
+                                            target='_blank'>Exelearning</a></p>
+                                    <p class="text-center"><a href='https://h5p.org/' target='_blank'>H5P</a></p>
+                                </div>
+                            </div>
+                            <!--fim da coluna-->
+                        </div>
+                        <!--fim do Box Simples-->
+
+                    </div>
+                </div>
+                <!--Fim da row-->
+            </div>
+            <!--Fim do Container-->
+        </section><!-- #bloco4 -->
+
+
+        <!--==========================
+      Capa - Capítulos
+    ============================-->
+        <section class="capa-capitulos blocos">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 text-center">
+                        <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Conclusão</h1>
+                    </div>
+                </div>
+            </div>
+        </section><!-- #call-to-action -->
+
+        <!--==========================
+      Bloco 5 - Conclusão
+    ============================-->
+        <section id="bloco5" class="pt-5 section-bg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <p>Nesta segunda aula foram abordados os diversos tipos de recursos disponíveis e algumas
+                            ferramentas que podem viabilizar a criação de REA.</p>
+
+                        <p>A combinação de diversas estratégias de aprendizagem e recursos pode tornar mais rico o
+                            processo de aprendizagem e possibilitar o alcance dos objetivos educacionais com maior
+                            sucesso. </p>
+
+                        <p>A tecnologia aplicada à educação tem muitas possibilidades e caminhos. Explore, aprenda e não
+                            tenha medo de experimentar!</p>
+
+                        <p>Na próxima aula você aprenderá como usar e compartilhar REA.</p>
+
+                    </div>
+                </div>
+                <!--fim da row-->
+            </div>
+            <!--/container-->
+        </section><!-- #bloco7 -->
+
+
+        <!--==========================
+      Bloco 8 - Navegação entre aulas
+    ============================-->
+        <section id="nav-class" class="serie4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 cta-btn-previous text-center">
+                        <a class="cta-btn align-middle" href="aula1.html" target="_blank">Aula Anterior</a>
+                    </div>
+                    <div class="col-lg-6 cta-btn-next text-center">
+                        <a class="cta-btn align-middle" href="aula3.html">Próxima Aula</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==========================
+      Bloco 9 - Barra de logos
+    ============================-->
+        <section id="barra-logos" class="blocos serie4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h6 class="text-center">Parceiros:</h6>
+                    </div>
+                    <div class="col-md-3 offset-md-2">
+                        <a href="http://escolacorporativa.fiocruz.br/" target="_blank"><img class="mx-auto d-block"
+                                src="../../img/logo-Escola-Corporativa-Fiocruz.png"
+                                alt="Logo da Escola Corporativa da Fiocruz"></a>
+                    </div>
+                    <div class="col-md-3 offset-md-2">
+                        <a href="https://www.uminho.pt/" target="_blank"><img class="mx-auto d-block"
+                                src="../../img/logo-uminho.png" alt="Logo da Universidade do Minho"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==========================
+      Modais - Bibliografia & Créditos
+    ============================-->
+
+        <!-- Modal Bibliografia-->
+        <div class="modal fade serie4" id="modal-bibliografia" tabindex="-1" role="dialog"
+            aria-labelledby="modal-bibliografiaTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-bibliografiaTitle">Referências bibliográficas</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <!--Accordion-->
+                        <ul id="accordion-bibliografia" class="accordion wow fadeInUp">
+
+                            <!--Item 1-->
+                            <li>
+                                <a data-toggle="collapse" class="collapsed" href="#aula1"> Aula 1 | O que são Recursos
+                                    educacionais Abertos <i class="icon ion-md-remove"></i></a>
+                                <div id="aula1" class="collapse">
+                                    <ul>
+                                        <li>The Current State of Open Educational Resources (2006) <a
+                                                href='https://opencontent.org/blog/archives/24'
+                                                target='_blank'>https://opencontent.org/blog/archives/247</a>
+                                        </li>
+
+                                        <li>
+                                            Hodgins, Wayne. (2000). Into the future [online]. Available: <a
+                                                href='http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.87.8864&rep=rep1&type=pdf'
+                                                target='_blank'>http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.87.8864&rep=rep1&type=pdf</a>
+                                        </li>
+
+                                        <li>LOM. (2000). LOM working draft v4.1 [online]. Available: <a
+                                                href='http://ltsc.ieee.org/doc/wg12/LOMv4.1.htm'
+                                                target='_blank'>http://ltsc.ieee.org/doc/wg12/LOMv4.1.htm</a>
+
+                                        </li>
+
+                                        <li>SANTANA, B.; ROSSINI, C.; PRETTO, N. (2012) <strong>Recursos educacionais
+                                                abertos: práticas colaborativas e políticas públicas.</strong> Casa de
+                                            Cultura Digital e Edufba, 2012. Disponível em: <a
+                                                href='http://www.aberta.org.br/livrorea/livro/home.html'
+                                                target='_blank'>http://www.aberta.org.br/livrorea/livro/home.html</a>.
+                                            Acesso em 01 fev. 2017.
+                                        </li>
+
+                                        <li>UNESCO (2002). <strong>Forum on the Impact of Open Courseware for Higher
+                                                Education in Developing Countries</strong>. Disponível em: <a
+                                                href='http://unesdoc.unesco.org/images/0012/001285/128515e.pdf'
+                                                target='_blank'>http://unesdoc.unesco.org/images/0012/001285/128515e.pdf</a>.
+                                            Acesso em 03 fev 2017.
+                                        </li>
+
+                                        <li>UNESCO & Commonwealth of Learning (2015). <strong>Guidelines for Open
+                                                Educational Resources (OER) in Higher Education</strong>. Disponível em:
+                                            <a href='http://unesdoc.unesco.org/images/0021/002136/213605e.pdf'
+                                                target='_blank'>http://unesdoc.unesco.org/images/0021/002136/213605e.pdf</a>.
+                                            Acesso em 09 fev 2017.
+                                        </li>
+
+                                        <li>EDUCAÇÃO ABERTA. Recursos Educacionais Abertos (REA): Um caderno para
+                                            professores. Campinas, 2013. Disponível em: <a
+                                                href='http://educacaoaberta.org/cadernorea'
+                                                target='_blank'>http://educacaoaberta.org/cadernorea</a></li>
+
+                                        <li>WILEY, David (2015). The Access Compromise and the 5th R. Disponível <a
+                                                href='https://opencontent.org/blog/archives/3221'
+                                                target='_blank'>https://opencontent.org/blog/archives/3221</a>. Acesso
+                                            em: 17 jun 2020.</li>
+
+                                        <li>Almeida, Fernando & José, Oliveira & José, Cruz. (2011). Open Standards And
+                                            Open Source: Enabling Interoperability. International Journal of Software
+                                            Engineering & Applications. 2. 10.5121/ijsea.2011.2101.</li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!--Item 2-->
+                            <li>
+                                <a data-toggle="collapse" class="collapsed" href="#aula2"> Aula 2 | Como criar REA? <i
+                                        class="icon ion-md-remove"></i></a>
+                                <div id="aula2" class="collapse">
+                                    <ul>
+                                        <li>EDUCAÇÃO ABERTA. Recursos Educacionais Abertos (REA): Um caderno para
+                                            professores. Campinas, 2013. Disponível em: <a
+                                                href='http://educacaoaberta.org/cadernorea'
+                                                target='_blank'>http://educacaoaberta.org/cadernorea</a> Acessado em
+                                            07.2020.</li>
+
+                                        <li>INICIATIVA EDUCAÇÃO ABERTA. Curso de Extensão. Disponível em:<a
+                                                href='http://www.aberta.org.br'
+                                                target='_blank'>http://www.aberta.org.br</a>. Acesso em
+                                            07.2020.(Parceria com a Coordenação de Aperfeiçoamento de Pessoal de Nível
+                                            Superior;Universidade Federal do ABC; Universidade de Brasília;Universidade
+                                            Estadual de Campinas.
+                                        </li>
+
+                                        <li>MARTINEZ VELEZ, Nora Angélica; MEDINA-MORA ICAZA, María Elena y BERENZON
+                                            GORN, Shoshana.La búsqueda de moderación en el consumo de alcohol:
+                                            Adaptación de los conocimientos a la práctica. Salud Ment [online]. 2010,
+                                            vol.33, n.2, pp.161-167. ISSN 0185-3325.</li>
+
+                                        <li>Escola, computador e Cia. Ilimitada.Disponível em: <a
+                                                href='https://marinhos.wordpress.com/2013/05/30/narrativas-digitais-na-escola-uma-experiencia-que-pode-ser-fantastica/'
+                                                target='_blank'>https://marinhos.wordpress.com/2013/05/30/narrativas-digitais-na-escola-uma-experiencia-que-pode-ser-fantastica/</a>.Acessado
+                                            em 07.2020. </li>
+
+                                        <li>MEINKE, William. UH OER Training. 2018. Disponível em: <a
+                                                href='http://pressbooks.oer.hawaii.edu/oertraining2018'
+                                                target='_blank'>UH OER Training</a></li>
+
+                                        <li>PRETTO, N. <strong>Professores-autores em rede</strong>. In: SANTANA, B.;
+                                            ROSSINI, C.; PRETTO, N. (2012) Recursos educacionais abertos: práticas
+                                            colaborativas e políticas públicas. Casa de Cultura Digital e Edufba, 2012.
+                                            Disponível em: <a href='http://www.aberta.org.br/livrorea/livro/home.html'
+                                                target='_blank'>http://www.aberta.org.br/livrorea/livro/home.html</a>.
+                                            Acesso em 01 fev. 2017.</li>
+
+                                        <li>KOUMI, J. (2006). <em>Designing Video and Multimedia for open and flexible
+                                                learning</em>. London: Routledge.</li>
+
+                                        <li>SIMON, I. e VIEIRA, M. O Rossio não rival. In: PRETTO, N. De L. e SILVEIRA:
+                                            S. A. Alem das redes de colaboração: internet, diversidade cultural e
+                                            tecnologias do poder, Salvador: Edufba, 2008.</li>
+
+                                        <li>SANTANA, B.; ROSSINI, C.; PRETTO, N. (2012) Recursos educacionais abertos:
+                                            práticas colaborativas e políticas públicas. Casa de Cultura Digital e
+                                            Edufba, 2012. Disponível em: <a
+                                                href='http://www.aberta.org.br/livrorea/livro/home.html'
+                                                target='_blank'>http://www.aberta.org.br/livrorea/livro/home.html</a>.
+                                            Acesso em 01 fev. 2017.</li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!--Item 3-->
+                            <li>
+                                <a data-toggle="collapse" class="collapsed" href="#aula3"> Aula 3 | Como encontrar, usar
+                                    e compartilhar REA <i class="icon ion-md-remove"></i></a>
+                                <div id="aula3" class="collapse">
+                                    <ul>
+                                        <li>E-docente: A IMPORTÂNCIA DO LIVRO DIDÁTICO NA PRÁTICA PEDAGÓGICA, 2019. Blog disponível em: <a href='https://edocente.com.br/importancia-do-livro-didatico-na-pratica-pedagogica/' target='_blank'>https://edocente.com.br/importancia-do-livro-didatico-na-pratica-pedagogica/</a>. Acesso em 22/07/2020.</li>
+
+                                        <li>Pfeffer, T. (Last Updated 2008, March 27). OER stories: Klagenfurt OpenCourseWare. OER Wiki. Retrieved May 14, 2008, <a href='http://oerwiki.iiep-unesco.org/index.php?title=OER_stories:_Klagenfurt_OpenCourseWare' target='_blank'>http://oerwiki.iiep-unesco.org/index.php?title=OER_stories:_Klagenfurt_OpenCourseWare</a></li>
+
+                                        <li>Rosa, M.  O  livro didático, o currículo e a atividade dos professores de Ciências do Ensino Fundamental1Textbooks, the curriculum and Science teachers’ activities on Elementary School Marcelo D’Aquino Rosa (<a href='mailto:marcelodaquino87@gmail.com' target='_blank'>marcelodaquino87@gmail.com</a>)Programa de Pós-graduação Multiun. em Ensino de Ciências e Matemática –PECIM-  UniversidadeEstadual de Campinas –UNICAMP. Disponível em: <a href='https://periodicos.uffs.edu.br/index.php/RIS/article/view/7664/5136' target='_blank'>https://periodicos.uffs.edu.br/index.php/RIS/article/view/7664/5136</a>
+                                        </li>
+
+                                        <li>Schmidt, P. (2007, novembro) "7.3.2 Perspectiva do professor". Esboço do Kit de Ferramentas OER da UNESCO. WikiEducator . Recuperado em 21 de março de 2008, em <a href='http://www.wikieducator.org/UNESCO_OER_Toolkit_Draft#Learner_perspectiveAcesso em 21/07/2020' target='_blank'>http://www.wikieducator.org/UNESCO_OER_Toolkit_Draft#Learner_perspectiveAcesso em 21/07/2020</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!--Item 4-->
+                                <li>
+                        <a data-toggle="collapse" class="collapsed" href="#aula4"> Aula 4 | Monitoramento e
+                            avaliação da qualidade de REA <i class="icon ion-md-remove"></i></a>
+                        <div id="aula4" class="collapse">
+  
+                            <ul>
+                                <li>Brasil. Ministério do Planejamento, Orçamento e Gestão. Secretaria de Logística e Tecnologia da Informação. e-MAG Modelo de Acessibilidade em Governo Eletrônico [Internet].. [Acesso em 07.2020]. Disponível em: <a href='https://www.gov.br/governodigital/pt-br/acessibilidade-digital/modelo-de-acessibilidade' target='_blank'>https://www.gov.br/governodigital/pt-br/acessibilidade-digital/modelo-de-acessibilidade</a> 
+                                </li>
+  
+                                <li>FILATRO, Andrea. Design instrucional na prática. São Paulo: Pearson Education do Brasil, 2008.</li>
+  
+                                <li>Lopes, IL. Estudos sobre qualidade da informação em saúde na web e a visão de entidades de classe brasileiras. Tempus: Actas de Saúde Coletiva. 2008, 2: 1-23/li>
+  
+                                <li>PEDROSO, J. V. (Coord.). Recursos educativos digitais de qualidade ao serviço das escolas. 2008. Disponível em: <a href='http://www.crie.min-edu.pt/index.php?section=314&module=navigationmodule' target='_blank'>http://www.crie.min-edu.pt/index.php?section=314&module=navigationmodule</a>. Acessado em: 17 de novembro de 2011.</li>
+  
+                                <li>MENDONÇA, Ana Paula Bernardo. Critérios de qualidade para sites de saúde: uma proposta. 2013. 97f. Dissertação (Modalidade Profissional em Saúde Pública) - Escola Nacional de Saúde Pública Sergio Arouca, Fundação Oswaldo Cruz, Rio de Janeiro, RJ, 2013 pdf <a href='http://www6.ensp.fiocruz.br/repositorio/sites/default/files/arquivos/CriteriosQualidade.pdf' target='_blank'>http://www6.ensp.fiocruz.br/repositorio/sites/default/files/arquivos/CriteriosQualidade.pdf</a>
+                                </li> 
+  
+                                <li>NIELSEN, Jakob. 10 Usability Heuristics for User Interface Design. 1994. Disponível em: <a href='https://www.nngroup.com/articles/ten-usability-heuristics/' target='_blank'>https://www.nngroup.com/articles/ten-usability-heuristics/</a>. Acessado em: 27 jul. 2019.
+                                </li>
+  
+                                <li>WILEY, David. The access compromise and the 5thR. 2014. Disponível em: <a href='https://opencontent.org/blog/archives/3221' target='_blank'>https://opencontent.org/blog/archives/3221</a>. Acessado em: 05 de dezembro de 2018.</li> 
+                            </ul> 
+                        </div> 
+                                 </li>  
+                        </ul> <!--Fim do Accordion-->
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                    </div>
+                </div>
+        </div><!-- Modal Bibliografia End -->
+
+        <!-- Modal Créditos-->
+        <div class="modal fade serie4" id="modal-creditos" tabindex="-1" role="dialog" aria-labelledby="modal-creditosTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="modal-creditosTitle">Créditos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+
+                <h6>Ministério da Saúde</h6>
+
+                <ul>
+                    <li>Eduardo Pazuello (interino)<br /> <small><em>Ministro</em></small></li>
+                </ul>
+
+                <h6>Fundação Oswaldo Cruz – Fiocruz</h6>
+
+                <ul>
+                    <li>Nísia Trindade Lima<br /> <small><em>Presidente</em></small></li>
+                </ul>
+
+                <h6>Vice-Presidência Ensino, Informação e Comunicação (VPEIC)</h6>
+
+                <ul>
+                    <li>Cristiani Vieira Machado<br /> <small><em>Vice-Presidente</em></small></li>
+                </ul>
+
+
+                <h6>Campus Virtual Fiocruz</h6>
+
+                <ul>
+                    <li>Ana Cristina da Matta Furniel<br /> <small><em>Coordenadora</em></small></li>
+                </ul>
+
+                <h6>Coordenação de Informação e Comunicação</h6>
+
+                <ul>
+                    <li>José Languardia<br /> <small><em></em>Coordenador</em></small></li>
+                </ul>
+
+                <h6>Escola Corporativa Fiocruz</h6>
+
+                <ul>
+                    <li>Carla Xavier dos Santos Kaufmann<br /> <small><em>Diretora</em></small></li>
+                </ul>
+
+
+                <h6>Coordenadores acadêmicos</h6>
+
+                <ul>
+                    <li>Ana Cristina da Matta Furniel<br /> <small><em>Campus Virtual Fiocruz</em></small></li>
+                </ul>
+
+                <h6>Coordenadores de produção</h6>
+
+                <ul>
+                    <li>Ana Paula Bernardo Mendonça – Campus Virtual Fiocruz</li>
+                </ul>
+
+                <h6>Conteudistas:</h6>
+
+                <ul>
+
+                    <li>Ana Cristina da Matta Furniel - Fiocruz<br /> <small><em>Socióloga, Especialista em Comunicação e
+                        Saúde e Mestre em Política e Relações Internacionais</em></small></li>
+
+                    <li>Ana Paula Mendonca - Fiocruz<br /> <small><em>Analista de sistemas, Especialista em Design
+                        Instrucional e Mestre em Saúde Pública </em></small></li>
+
+                    <li>Rosane Mendes da Silva - Fiocruz<br /><small><em>Analista de Sistemas, Mestre em Saúde
+                        Pública</em></small></li>
+                </ul>
+
+                <h6>Colaboração</h6>
+
+                <ul>
+                    <li>Maria Luiza Panza Bruno <br /> <small><em>Design Instrucional, Mestranda em Pedagogia do E-learning
+                        </em></small></li>
+                </ul>
+
+                <h6>Revisoras de Português</h6>
+
+                <ul>
+                    <li>Flavia Lobato<br /> <small><em>Jornalista</em></small></li>
+
+                    <li>Isabella Schincariol<br /> <small><em>Jornalista</em></small></li>
+                </ul>
+
+                <h6>Designers Educacionais</h6>
+
+                <ul>
+                    <li>Maria Luiza Panza Bruno</li>
+                </ul>
+
+
+                <h6>Designer de Interface:</h6>
+
+                <ul>
+                    <li>Luciana Nunes <br /> <small><em>Webdesigner</em></small></li>
+                </ul>
+
+                <h6>Recursos Educacionais:</h6>
+
+                <ul>
+                    <li>Carmélia Brito - Campus Virtual Fiocruz<br /> <small><em>Bibliotecária</em></small></li>
+                    <li>Rosane Mendes - Campus Virtual Fiocruz<br /> <small><em>Analista de sistemas, responsável Plataforma
+                        Educare</em></small></li>
+                </ul>
+
+                <h6>Suporte Técnico de Tecnologia da Informação:</h6>
+
+                <ul>
+                    <li>Bruno Alexandre de Oliveira - Campus Virtual Fiocruz <br /> <small><em>Desenvolvedor</em></small>
+                    </li>
+                    <li>Eduardo Xavier da Silva - Campus Virtual Fiocruz<br /> <small><em>Desenvolvedor</em></small></li>
+                    <li>Orlando Terra - Campus Virtual Fiocruz<br /> <small><em>Analista de suporte</em></small></li>
+                </ul>
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+            </div>
+        </div><!-- Modal Créditos End -->
+
+    </main>
+
+    <a href="#" class="back-to-top serie4"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Biblioteca de JavaScripts-->
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../lib/jquery/jquery-migrate.min.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../lib/easing/easing.min.js"></script>
+    <script src="../../lib/aos/aos.js"></script>
+    <script src="../../lib/superfish/hoverIntent.js"></script>
+    <script src="../../lib/superfish/superfish.min.js"></script>
+    <script src="../../lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="../../lib/wow/wow.min.js"></script>
+
+    <!--Ionicons-->
+    <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+
+    <!-- Javascripts-->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/main-timeline.js"></script>
+    <script src="../../js/timeline-horizontal.js"></script>
+
+
+    <!--Acessibilidade-->
+    <script src="../../js/jquery-2.2.1.min.js"></script>
+    <script src="../../js/jquery.font-accessibility.min.js"></script>
+
+    <script>
+        $(function () {
+            /* Botões de Acessibilidade */
+            $('#font-setting-buttons').easyView({
+                container: '#acessibilidade',
+                increaseSelector: '.increase-me',
+                decreaseSelector: '.decrease-me',
+                normalSelector: '.reset-me',
+                contrastSelector: '.change-me'
+            });
+
+        });
+    </script>
+
+
+
+</body>
+
+</html>

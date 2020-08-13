@@ -1,0 +1,412 @@
+/*Série 4 - Aula 4*/
+
+/* -------------------------------- 
+
+Infográfico (esquema) circular
+
+-------------------------------- */
+
+#aula4-circle .circle-container {
+    position: relative;
+    width: 33em;
+    height: 33em;
+    padding: 5.8em;
+    /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+    border: none;
+    border-radius: 50%;
+    margin: 8em auto;
+}
+
+#aula4-circle .circle-container .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10em;
+    height: 10em;
+    margin: -5em;
+    /* 2em = 4em/2 */
+    /* half the width */
+    /*border: 2px solid var(--main-color2);*/
+    border-radius: 50%;
+    background-color: var(--azul-normal);
+    text-align: center;
+}
+
+/*#aula4-circle .circle-container div {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: 4em; height: 4em;
+    margin: -2em; /* 2em = 4em/2 */
+/* half the width /
+}*/
+
+#aula4-circle .circle-container .inner-circle {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#aula4-circle .circle-container .deg-middle .inner-circle {
+    top: 50%;
+   width: 70%;
+}
+
+#aula4-circle .circle-container .circle p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.25rem;
+    position: relative;
+    top: 0;
+}
+
+#aula4-circle .circle-container a {
+    border-radius: 50%;
+    border: transparent;
+    overflow: visible;
+    position: relative;
+    width: 0;
+    height: 0;
+    margin: -10px -20px 0;
+    top: 1.4rem;
+}
+
+#aula4-circle a {
+    text-decoration: none !important;
+}
+
+#aula4-circle i.fas {
+    position: relative;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation:
+        move 1s ease-out infinite alternate;
+    /*pulse 3s infinite;*/
+}
+
+#aula4-circle .fa-plus-circle {
+    color: var(--azul-pressed);
+    display: block;
+    font-size: 33px;
+    position: absolute;
+    align-self: end;
+    top: 82%;
+}
+
+@media (max-width: 768px) {
+
+    #aula4-circle .fa-plus-circle {
+        font-size: 23px;
+        left: 5px;
+    }
+
+    #aula4-circle .deg-middle .fa-plus-circle {
+        left: 26px;
+        top: -8px;
+    }
+
+}
+
+#aula4-circle .fa-plus-circle:hover {
+    color: #fff;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*#aula4-circle .inner-circle span {
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 1s ease-out infinite alternate;
+}*/
+
+/*#aula4-circle .inner-circle .fa-plus-circle {
+    color: var(--main-color3);
+    display: block;
+    font-size: 33px;
+    position: absolute;
+    align-self: end;
+    top: 82%;
+}*/
+
+/*@keyframes move {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}*/
+
+#aula4-circle .circle-container hr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 1px;
+    background-color: var(--azul-normal);
+    transform: translate(-50%);
+    margin: 0;
+}
+
+#aula4-circle .circle-container hr::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 2px;
+    background-color: var(--azul-normal);
+    transform: translate(-50%) rotate(60deg);
+}
+
+#aula4-circle .circle-container hr::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 2px;
+    background-color: var(--azul-normal);
+    transform: translate(-50%) rotate(120deg);
+}
+
+@media (max-width: 575px) {
+
+    #aula4-circle .circle-container .circle p {
+        font-size: 10px;
+        line-height: 1rem;
+    }
+}
+
+#aula4-circle .circle-container .circle p a {
+    margin: 0;
+    top: 0;
+    left: 0;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+#aula4-circle .circle-container img {
+    display: block;
+    width: 100%;
+}
+
+
+#aula4-circle .deg-middle {
+    -webkit-transform: translate(0em);
+    -moz-transform: translate(0em);
+    -ms-transform: translate(0em);
+    -o-transform: translate(0em);
+    transform: translate(0em);
+}
+
+/* 12em = half the width of the wrapper */
+
+
+#aula4-circle .circle-container .deg-middle a {
+
+    text-align: center
+}
+
+@media (max-width: 575px) {
+
+    #aula4-circle .circle-container .deg-middle p {
+        left: 10%;
+        top: 40%;
+    }
+}
+
+#aula4-circle .deg0 {
+    -webkit-transform: translate(16em);
+    -moz-transform: translate(16em);
+    -ms-transform: translate(16em);
+    -o-transform: translate(16em);
+    transform: translate(16em);
+}
+
+/* 12em = half the width of the wrapper */
+#aula4-circle .lt-ie9 .deg0 {
+    margin-left: 10em;
+}
+
+#aula4-circle .deg60 {
+    -webkit-transform: rotate(60deg) translate(16em) rotate(-60deg);
+    -moz-transform: rotate(60deg) translate(16em) rotate(-60deg);
+    -ms-transform: rotate(60deg) translate(16em) rotate(-60deg);
+    -o-transform: rotate(60deg) translate(16em) rotate(-60deg);
+    transform: rotate(60deg) translate(16em) rotate(-60deg);
+}
+
+#aula4-circle .lt-ie9 .deg60 {
+    margin: 6.485em;
+}
+
+#aula4-circle .deg120 {
+    -webkit-transform: rotate(120deg) translate(16em) rotate(-120deg);
+    -moz-transform: rotate(120deg) translate(16em) rotate(-120deg);
+    -ms-transform: rotate(120deg) translate(16em) rotate(-120deg);
+    -o-transform: rotate(120deg) translate(16em) rotate(-120deg);
+    transform: rotate(120deg) translate(16em) rotate(-120deg);
+}
+
+#aula4-circle .deg180 {
+    -webkit-transform: translate(-17em);
+    -moz-transform: translate(-17em);
+    -ms-transform: translate(-17em);
+    -o-transform: translate(-17em);
+    transform: translate(-17em);
+}
+
+#aula4-circle .lt-ie9 .deg180 {
+    margin-left: -14em;
+}
+
+#aula4-circle .deg240 {
+    -webkit-transform: rotate(240deg) translate(17em) rotate(-240deg);
+    -moz-transform: rotate(240deg) translate(17em) rotate(-240deg);
+    -ms-transform: rotate(240deg) translate(17em) rotate(-240deg);
+    -o-transform: rotate(240deg) translate(17em) rotate(-240deg);
+    transform: rotate(240deg) translate(17em) rotate(-240deg);
+}
+
+#aula4-circle .lt-ie9 .deg240 {
+    margin: -10.485em;
+}
+
+
+#aula4-circle .deg300 {
+    -webkit-transform: rotate(300deg) translate(17em) rotate(-300deg);
+    -moz-transform: rotate(300deg) translate(17em) rotate(-300deg);
+    -ms-transform: rotate(300deg) translate(17em) rotate(-300deg);
+    -o-transform: rotate(300deg) translate(17em) rotate(-300deg);
+    transform: rotate(300deg) translate(17em) rotate(-300deg);
+}
+
+#aula4-circle .circle-container a:not(.center):before {
+    content: '';
+}
+
+#aula4-circle .circle-container a:not(.center):after {
+    box-shadow: none;
+    background: transparent;
+}
+
+
+
+@media (max-width: 575px) {
+
+    #aula4-circle .circle-container {
+        width: 15em;
+        height: 15em;
+        margin: 10em auto;
+    }
+
+    #aula4-circle .circle-container hr {
+        width: 20em;
+    }
+
+    #aula4-circle .circle-container hr::after {
+        width: 20em;
+    }
+
+    #aula4-circle .circle-container hr::before {
+        width: 20em;
+    }
+
+    #aula4-circle .circle-container .circle {
+        width: 6em;
+        height: 6em;
+        margin: -3em -3em;
+        /* 2em = 4em/2 */
+        /* half the width */
+    }
+
+    #aula4-circle .circle-container a {
+        width: 0;
+        height: 0;
+        margin: -0.7em -1.2em 0;
+    }
+
+    #aula4-circle .circle-container div p {
+        font-size: 0.65em;
+        top: 60px;
+        width: 81px;
+        line-height: 1.5em
+    }
+
+    #aula4-circle .deg0 {
+        -webkit-transform: rotate(-0deg) translate(7em) rotate(0deg);
+        -moz-transform: rotate(-0deg) translate(7em) rotate(0deg);
+        -ms-transform: rotate(-0deg) translate(7em) rotate(0deg);
+        -o-transform: rotate(-0deg) translate(7em) rotate(0deg);
+        transform: rotate(-0deg) translate(7em) rotate(0deg);
+    }
+
+    #aula4-circle .deg60 {
+        -webkit-transform: rotate(60deg) translate(10em) rotate(-60deg);
+        -moz-transform: rotate(60deg) translate(10em) rotate(-60deg);
+        -ms-transform: rotate(60deg) translate(10em) rotate(-60deg);
+        -o-transform: rotate(60deg) translate(10em) rotate(-60deg);
+        transform: rotate(60deg) translate(10em) rotate(-60deg);
+    }
+
+    #aula4-circle .deg120 {
+        -webkit-transform: rotate(120deg) translate(10em) rotate(-120deg);
+        -moz-transform: rotate(120deg) translate(10em) rotate(-120deg);
+        -ms-transform: rotate(120deg) translate(10em) rotate(-120deg);
+        -o-transform: rotate(120deg) translate(10em) rotate(-120deg);
+        transform: rotate(120deg) translate(10em) rotate(-120deg);
+
+    }
+
+    #aula4-circle .deg180 {
+        -webkit-transform: rotate(0deg) translate(-7em) rotate(-0deg);
+        -moz-transform: rotate(0deg) translate(-7em) rotate(-0deg);
+        -ms-transform: rotate(0deg) translate(-7em) rotate(-0deg);
+        -o-transform: rotate(0deg) translate(-7em) rotate(-0deg);
+        transform: rotate(0deg) translate(-7em) rotate(-0deg);
+    }
+
+    #aula4-circle .deg240 {
+        -webkit-transform: rotate(240deg) translate(10em) rotate(-240deg);
+        -moz-transform: rotate(240deg) translate(10em) rotate(-240deg);
+        -ms-transform: rotate(240deg) translate(10em) rotate(-240deg);
+        -o-transform: rotate(240deg) translate(10em) rotate(-240deg);
+        transform: rotate(240deg) translate(10em) rotate(-240deg);
+    }
+
+    #aula4-circle .deg300 {
+        -webkit-transform: rotate(300deg) translate(10em) rotate(-300deg);
+        -moz-transform: rotate(300deg) translate(10em) rotate(-300deg);
+        -ms-transform: rotate(300deg) translate(10em) rotate(-300deg);
+        -o-transform: rotate(300deg) translate(10em) rotate(-300deg);
+        transform: rotate(300deg) translate(10em) rotate(-300deg);
+    }
+}
