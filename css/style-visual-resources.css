@@ -2395,6 +2395,8 @@ Modal
   color: var(--link-color1);
   margin-top: 10px;
   /* padding: 2px 10px; */
+  border-radius: 25px;
+  padding: 8px 20px;
 }
 
 .modal.serie1 .btn-secondary:hover {
